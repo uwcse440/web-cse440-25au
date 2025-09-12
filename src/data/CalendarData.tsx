@@ -36,12 +36,18 @@ const dayOfWeekValues = [
 ] as const;
 type dayOfWeek = (typeof dayOfWeekValues)[number];
 
-const TIME_AND_LOCATION_LECTURE = {
+// Type for time and location
+export type TimeAndLocation = {
+  time: string;
+  location: string;
+};
+
+const TIME_AND_LOCATION_LECTURE: TimeAndLocation = {
   time: "10:00 to 11:20",
   location: "CSE2 G10",
 };
 
-const TIME_AND_LOCATIONS_SECTION = [
+const TIME_AND_LOCATIONS_SECTION: TimeAndLocation[] = [
   {
     time: "11:30 - 12:20",
     location: "MGH 058",
@@ -52,22 +58,22 @@ const TIME_AND_LOCATIONS_SECTION = [
   },
 ];
 
-const TIME_AND_LOCATION_EXAM_QA = {
+const TIME_AND_LOCATION_EXAM_QA: TimeAndLocation = {
   time: "4:00 to 5:00",
   location: "Zoom",
 };
 
-const TIME_AND_LOCATION_POSTER_SESSION = {
+const TIME_AND_LOCATION_POSTER_SESSION: TimeAndLocation = {
   time: "11:00 to 12:00",
   location: "CSE Atrium",
 };
 
-const TIME_AND_LOCATION_OFFICE_HOUR_JESSE = {
+const TIME_AND_LOCATION_OFFICE_HOUR_JESSE: TimeAndLocation = {
   time: "12:00 to 1:00",
   location: "CSE2 152",
 };
 
-const TIME_AND_LOCATION_OFFICE_HOUR_KATELYN = {
+const TIME_AND_LOCATION_OFFICE_HOUR_KATELYN: TimeAndLocation = {
   time: "3:00 to 4:00",
   location: "CSE2 152",
 };
