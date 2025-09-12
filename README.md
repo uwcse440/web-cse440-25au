@@ -1,6 +1,6 @@
-# web-cse440-24au
+# web-cse440-25au
 
-Course website for the Autumn 2024 offering of CSE 440.
+Course website for the Autumn 2025 offering of CSE 440.
 
 ## Installation of System Dependencies
 
