@@ -3,9 +3,9 @@ import { AssertionError } from "assert";
 export type CourseStoreLinkHREF = string;
 
 const CourseStoreLinkKeyValues = [
-  "linkCanvas",
-  "linkGitHub",
-  "linkUniversitySyllabusGuidelines",
+  // "linkCanvas",
+  // "linkGitHub",
+  // "linkUniversitySyllabusGuidelines",
 ] as const;
 export type CourseStoreLinkKey = (typeof CourseStoreLinkKeyValues)[number];
 
@@ -18,9 +18,12 @@ export function assertIsCourseStoreLinkKey(
 }
 
 export interface CourseStoreData {
-  linkCanvas?: CourseStoreLinkHREF;
-  linkGitHub?: CourseStoreLinkHREF;
-  linkUniversitySyllabusGuidelines?: CourseStoreLinkHREF;
+  // None of these were actually dynamic, have all been moved to CourseData.
+  // Upon adding dynamic fields, revisit whether we want the indirection of the CourseStoreLinkKey. 
+  //
+  // linkCanvas?: CourseStoreLinkHREF;
+  // linkGitHub?: CourseStoreLinkHREF;
+  // linkUniversitySyllabusGuidelines?: CourseStoreLinkHREF;
 }
 
 export interface CourseStore extends CourseStoreData {}
