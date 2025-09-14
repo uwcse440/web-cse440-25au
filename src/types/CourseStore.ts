@@ -19,7 +19,7 @@ export type CourseStoreLinkKey = (typeof CourseStoreLinkKeyValues)[number];
 
 export interface CourseStoreData {
   // None of these were actually dynamic, have all been moved to CourseData.
-  // Upon adding dynamic fields, revisit whether we want the indirection of the CourseStoreLinkKey. 
+  // Upon adding dynamic fields, revisit whether we want the indirection of the CourseStoreLinkKey.
   //
   // linkCanvas?: CourseStoreLinkHREF;
   // linkGitHub?: CourseStoreLinkHREF;

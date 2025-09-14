@@ -9,7 +9,7 @@ export type CourseDataLinkKey = {
 
 export const courseData = {
   // Link to course Canvas. No trailing slash.
-  linkCanvas: { 
+  linkCanvas: {
     href: "https://canvas.uw.edu/courses/1828371",
   },
 
@@ -37,5 +37,5 @@ export const courseData = {
   // Link to university syllabus policies and guidelines.
   linkUniversitySyllabusGuidelines: {
     href: "https://registrar.washington.edu/curriculum/syllabus-guidelines/",
-  },   
+  },
 } as const;
