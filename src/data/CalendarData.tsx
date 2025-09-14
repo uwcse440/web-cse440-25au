@@ -2,7 +2,6 @@ import * as React from "react";
 
 import { ok as assert } from "assert";
 
-import { CourseStoreLink } from "@/components/links/CourseStoreLink";
 import { SiteLinks } from "@/data/SiteLinks";
 import {
   AssignmentCalendarItem,

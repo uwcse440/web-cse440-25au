@@ -4,7 +4,6 @@ import Image from "next-image-export-optimizer";
 import { TBD } from "@/components/TBD";
 import { UnderDevelopment } from "@/components/UnderDevelopment";
 import { CourseDataLink } from "@/components/links/CourseDataLink";
-import { CourseStoreLink } from "@/components/links/CourseStoreLink";
 import { SiteLink } from "@/components/links/SiteLink";
 import { default as AssignmentsOverview } from "@/contentcomponents/AssignmentsOverview.mdx";
 import { courseData } from "@/data/CourseData";
@@ -123,7 +122,7 @@ The course is overwhelmingly organized around a group project, in which students
 
 - Canvas
 
-  <CourseStoreLink outerComponent="p" linkKey="linkCanvas" />
+  <CourseDataLink linkKey={courseData.linkCanvas} outerComponent="p" />
 
 Course information and material will primarily be provided on this website.
 
