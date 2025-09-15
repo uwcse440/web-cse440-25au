@@ -1,32 +1,22 @@
 const rimraf = require("rimraf");
 
-const CLEAN_PATHS = [
-  // Next.js cache.
+// All paths to clean
+const PATHS_TO_CLEAN = [
+  // Next.js
   ".next",
-  // Export output.
   "dist",
-  // Next.js runtime environment variables.
   "next-env.d.ts",
-  // next-image-export-optimizer cache.
+  // next-image-export-optimizer
   "public/images/next-image-export-optimizer-hashes.json",
-];
-
-const CLEAN_GLOBS = [
-  // next-image-export-optimizer caches.
   "public/**/images-optimized",
 ];
 
-CLEAN_PATHS.forEach((path_current) => {
+// Clean all paths, handling errors individually
+PATHS_TO_CLEAN.forEach((path) => {
   try {
-    rimraf.sync(path_current);
-  } catch (error) {
-    console.log(error);
-  }
-});
+    const isGlob = path.includes("**");
 
-CLEAN_GLOBS.forEach((path_current) => {
-  try {
-    rimraf.sync(path_current, { glob: true });
+    rimraf.sync(path, { glob: isGlob });
   } catch (error) {
     console.log(error);
   }
