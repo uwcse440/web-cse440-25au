@@ -52,7 +52,7 @@ const nextConfig = {
     nextImageExportOptimizer_quality: "100",
     nextImageExportOptimizer_storePicturesInWEBP: "true",
 
-    // Disabling blurry placeholder images, requires setting this to false
+    // Disabling blurry placeholder images would require setting this to false
     // and passing placeholder="empty" to all <ExportedImage> components.
     nextImageExportOptimizer_generateAndUseBlurImages: "true",
   },

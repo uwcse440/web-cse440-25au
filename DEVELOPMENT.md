@@ -1,6 +1,6 @@
 # Development Notes
 
-## Javascript Dependencies
+## JavaScript Dependencies
 
 As of 2024-10-14, ESLint is pinned:
 
