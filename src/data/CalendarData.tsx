@@ -331,7 +331,7 @@ export const calendarData: {
     },
     {
       type: "studio",
-      title: "Design Presentations",
+      title: "Design Meetings",
       dates: [
         verifyCalendarDate("2025-10-28", "Tue"),
         verifyCalendarDate("2025-10-30", "Thu"),
@@ -340,7 +340,7 @@ export const calendarData: {
     },
     {
       type: "studio",
-      title: "Design Presentations",
+      title: "Design Meetings",
       date: verifyCalendarDate("2025-10-31", "Fri"),
       timeAndLocations: TIME_AND_LOCATIONS_SECTION,
     },
@@ -531,7 +531,7 @@ export const calendarData: {
     },
     // assignment_3_3: {
     //   type: "assignment",
-    //   title: "Assignment 3.3: Design Presentations",
+    //   title: "Assignment 3.3: Design Meetings",
     //   link: SiteLinks.assignment_3_3_top.href,
     //   // date: verifyCalendarDate("2024-10-28", "Mon"),
     // },
