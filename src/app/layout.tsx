@@ -11,8 +11,8 @@ import { LayoutSidebar } from "./layoutSidebar";
 
 // TODO: Pull course title from a configuration
 export const metadata = {
-  title: "CSE 440 - Introduction to HCI - Autumn 2024",
-  description: "CSE 440 - Introduction to HCI - Autumn 2024",
+  title: "CSE 440 - Introduction to HCI - Autumn 2025",
+  description: "CSE 440 - Introduction to HCI - Autumn 2025",
 };
 
 interface LayoutProps extends React.PropsWithChildren<{}> {}
