@@ -411,7 +411,7 @@ export const calendarData: {
       type: "assignment",
       title: "Assignment 0: Introduction Slide",
       link: SiteLinks.assignment_0_top.href,
-      date: verifyCalendarDate("2024-10-02", "Wed"),
+      date: verifyCalendarDate("2025-10-01", "Wed"),
       submission: "canvas",
       submitCanvasTime: "8:00pm",
       submitCanvasLink:
