@@ -207,7 +207,9 @@ export const calendarData: {
       title: "Introduction and Overview",
       // slides: "https://canvas.uw.edu/files/124292361/",
     },
-    // Lecture 2 is a studio
+    //
+    // Studio Lecture
+    //
     {
       type: "lecture",
       date: verifyCalendarDate("2025-10-02", "Thu"),
@@ -219,73 +221,74 @@ export const calendarData: {
       type: "lecture",
       date: verifyCalendarDate("2025-10-07", "Tue"),
       timeAndLocation: TIME_AND_LOCATION_LECTURE,
-      title: "TBD / Design Research",
+      title: "Design Research",
       // slides: "https://canvas.uw.edu/files/124808608/",
     },
     {
       type: "lecture",
       date: verifyCalendarDate("2025-10-09", "Thu"),
       timeAndLocation: TIME_AND_LOCATION_LECTURE,
-      title: "TBD / Design of Everyday Things",
+      title: "Design of Everyday Things",
       // slides: "https://canvas.uw.edu/files/125129909/",
     },
     {
       type: "lecture",
       date: verifyCalendarDate("2025-10-14", "Tue"),
       timeAndLocation: TIME_AND_LOCATION_LECTURE,
-      title: "TBD / Design of Everyday Things",
+      title: "Design of Everyday Things",
       // slides: "https://canvas.uw.edu/files/125129909/",
     },
     {
       type: "lecture",
       date: verifyCalendarDate("2025-10-16", "Thu"),
       timeAndLocation: TIME_AND_LOCATION_LECTURE,
-      title: "TBD / Task Analysis",
+      title: "Task Analysis",
       // slides: "https://canvas.uw.edu/files/125310883/",
     },
-    // James Away 10-20
-    // James Away 10-21
+    //
+    // Studio Lecture
+    //
     {
       type: "lecture",
-      date: verifyCalendarDate("2025-10-21", "Tue"),
+      date: verifyCalendarDate("2025-10-23", "Thu"),
       timeAndLocation: TIME_AND_LOCATION_LECTURE,
-      title: "TBD / Storyboarding and Paper Prototyping",
+      title: "Storyboarding and Paper Prototyping",
       // slides: "https://canvas.uw.edu/files/125517925/",
     },
     {
       type: "lecture",
       date: verifyCalendarDate("2025-11-04", "Tue"),
       // timeAndLocation: TIME_AND_LOCATION_LECTURE,
-      title: "TBD / Models and Human Performance",
-      slides: "https://canvas.uw.edu/files/126193990/",
+      title: "Models and Human Performance",
+      // slides: "https://canvas.uw.edu/files/126193990/",
     },
     {
       type: "lecture",
       date: verifyCalendarDate("2025-11-06", "Thu"),
       // timeAndLocation: TIME_AND_LOCATION_LECTURE,
-      title: "TBD / Inspection and Usability Testing",
-      slides: "https://canvas.uw.edu/files/126329737/",
+      title: "Inspection and Usability Testing",
+      // slides: "https://canvas.uw.edu/files/126329737/",
     },
     {
       type: "lecture",
       date: verifyCalendarDate("2025-11-13", "Thu"),
       timeAndLocation: TIME_AND_LOCATION_LECTURE,
-      title: "TBD / Patterns and Interface Implementation",
+      title: "Patterns and Interface Implementation",
       // slides: "https://canvas.uw.edu/files/126569767/",
     },
+    // {
+    //   type: "lecture",
+    //   date: verifyCalendarDate("202X-11-14", "Thu"),
+    //   timeAndLocation: TIME_AND_LOCATION_LECTURE,
+    //   title: "History",
+    //   slides: "https://canvas.uw.edu/files/126691264/",
+    // },
     {
       type: "lecture",
-      date: verifyCalendarDate("2024-11-14", "Thu"),
-      timeAndLocation: TIME_AND_LOCATION_LECTURE,
-      title: "History",
-      slides: "https://canvas.uw.edu/files/126691264/",
-    },
-    {
-      type: "lecture",
-      date: verifyCalendarDate("2024-11-21", "Thu"),
+      date: verifyCalendarDate("2025-11-20", "Thu"),
       timeAndLocation: TIME_AND_LOCATION_LECTURE,
       title: "Designing for Diverse Needs",
-      slides: "https://canvas.uw.edu/files/127038308/",
+      // slides: "https://canvas.uw.edu/files/127038308/",
     },
   ],
 
@@ -315,7 +318,7 @@ export const calendarData: {
     },
     {
       type: "studio",
-      dates: [verifyCalendarDate("2025-10-23", "Thu")],
+      dates: [verifyCalendarDate("2025-10-21", "Tue")],
       timeAndLocation: TIME_AND_LOCATION_LECTURE,
       title: "Studio",
       // slides: "https://canvas.uw.edu/files/125633734/",
@@ -323,9 +326,9 @@ export const calendarData: {
     {
       type: "studio",
       dates: [
-        verifyCalendarDate("2024-11-26", "Tue"),
-        verifyCalendarDate("2024-12-03", "Tue"),
-        verifyCalendarDate("2024-12-05", "Thu"),
+        verifyCalendarDate("2025-11-25", "Tue"),
+        verifyCalendarDate("2025-12-02", "Tue"),
+        verifyCalendarDate("2025-12-04", "Thu"),
       ],
       timeAndLocation: TIME_AND_LOCATION_LECTURE,
       title: "Studio",
@@ -351,9 +354,9 @@ export const calendarData: {
     {
       type: "event",
       title: "Exam Q&A",
-      date: verifyCalendarDate("2024-11-18", "Mon"),
+      date: verifyCalendarDate("2025-11-17", "Mon"),
       timeAndLocation: TIME_AND_LOCATION_EXAM_QA,
-      slides: "https://canvas.uw.edu/files/126571016/",
+      // slides: "https://canvas.uw.edu/files/126571016/",
     },
     {
       type: "event",
@@ -480,31 +483,31 @@ export const calendarData: {
       type: "assignment",
       title: "Assignment 2.1: Design Research Plan",
       link: SiteLinks.assignment_2_1_top.href,
-      date: verifyCalendarDate("2024-10-10", "Thu"),
+      date: verifyCalendarDate("2025-10-09", "Thu"),
       submission: "canvas",
       submitCanvasTime: "3:00pm",
-      submitCanvasLink:
-        "https://canvas.uw.edu/courses/1746586/assignments/9730292",
+      // submitCanvasLink:
+      //   "https://canvas.uw.edu/courses/1746586/assignments/9730292",
     },
     assignment_2_2: {
       type: "assignment",
       title: "Assignment 2.2: Design Research Check-In",
       link: SiteLinks.assignment_2_2_top.href,
-      date: verifyCalendarDate("2024-10-17", "Thu"),
+      date: verifyCalendarDate("2025-10-16", "Thu"),
       submission: "canvas",
       submitCanvasTime: "3:00pm",
-      submitCanvasLink:
-        "https://canvas.uw.edu/courses/1746586/assignments/9730293",
+      // submitCanvasLink:
+      //   "https://canvas.uw.edu/courses/1746586/assignments/9730293",
     },
     milestone_2_report: {
       type: "assignment",
       title: "Milestone 2: Report",
       link: SiteLinks.milestone_2_report_top.href,
-      date: verifyCalendarDate("2024-10-21", "Mon"),
+      date: verifyCalendarDate("2025-10-20", "Mon"),
       submission: "canvas",
       submitCanvasTime: "3:00pm",
-      submitCanvasLink:
-        "https://canvas.uw.edu/courses/1746586/assignments/9755342",
+      // submitCanvasLink:
+      //   "https://canvas.uw.edu/courses/1746586/assignments/9755342",
     },
 
     //
@@ -514,47 +517,51 @@ export const calendarData: {
       type: "assignment",
       title: "Assignment 3.1: Task Review",
       link: SiteLinks.assignment_3_1_top.href,
-      date: verifyCalendarDate("2024-10-23", "Wed"),
+      date: verifyCalendarDate("2025-10-23", "Thu"),
       submission: "canvas",
       submitCanvasTime: "3:00pm",
-      submitCanvasLink:
-        "https://canvas.uw.edu/courses/1746586/assignments/9759789",
+      // submitCanvasLink:
+      //   "https://canvas.uw.edu/courses/1746586/assignments/9759789",
     },
     assignment_3_2: {
       type: "assignment",
       title: "Assignment 3.2: Design Review",
       link: SiteLinks.assignment_3_2_top.href,
-      date: verifyCalendarDate("2024-10-28", "Mon"),
+      date: verifyCalendarDate("2025-10-27", "Mon"),
       submission: "canvas",
       submitCanvasTime: "3:00pm",
-      submitCanvasLink:
-        "https://canvas.uw.edu/courses/1746586/assignments/9764927",
+      // submitCanvasLink:
+      //   "https://canvas.uw.edu/courses/1746586/assignments/9764927",
     },
-    // assignment_3_3: {
-    //   type: "assignment",
-    //   title: "Assignment 3.3: Design Meetings",
-    //   link: SiteLinks.assignment_3_3_top.href,
-    //   // date: verifyCalendarDate("2024-10-28", "Mon"),
-    // },
+    assignment_3_3: {
+      type: "assignment",
+      title: "Assignment 3.3: Design Meeting Reflection",
+      link: SiteLinks.assignment_3_3_top.href,
+      date: verifyCalendarDate("2025-11-01", "Sat"),
+      submission: "canvas",
+      submitCanvasTime: "3:00pm",
+      // submitCanvasLink:
+      //   "https://canvas.uw.edu/courses/1746586/assignments/9764927",
+    },
     assignment_3_4: {
       type: "assignment",
       title: "Assignment 3.4: Scenarios and Storyboards",
       link: SiteLinks.assignment_3_4_top.href,
-      date: verifyCalendarDate("2024-11-05", "Tue"),
+      date: verifyCalendarDate("2025-11-04", "Tue"),
       submission: "canvas",
       submitCanvasTime: "3:00pm",
-      submitCanvasLink:
-        "https://canvas.uw.edu/courses/1746586/assignments/9776564",
+      // submitCanvasLink:
+      //   "https://canvas.uw.edu/courses/1746586/assignments/9776564",
     },
     milestone_3_report: {
       type: "assignment",
       title: "Milestone 3: Report",
       link: SiteLinks.milestone_3_report_top.href,
-      date: verifyCalendarDate("2024-11-08", "Fri"),
+      date: verifyCalendarDate("2025-11-07", "Fri"),
       submission: "canvas",
       submitCanvasTime: "3:00pm",
-      submitCanvasLink:
-        "https://canvas.uw.edu/courses/1746586/assignments/9776723",
+      // submitCanvasLink:
+      //   "https://canvas.uw.edu/courses/1746586/assignments/9776723",
     },
 
     //
@@ -564,41 +571,41 @@ export const calendarData: {
       type: "assignment",
       title: "Assignment 4.1: Paper Prototype",
       link: SiteLinks.assignment_4_1_top.href,
-      date: verifyCalendarDate("2024-11-12", "Tue"),
+      date: verifyCalendarDate("2025-11-11", "Tue"),
       submission: "canvas",
       submitCanvasTime: "3:00pm",
-      submitCanvasLink:
-        "https://canvas.uw.edu/courses/1746586/assignments/9793018",
+      // submitCanvasLink:
+      //   "https://canvas.uw.edu/courses/1746586/assignments/9793018",
     },
     assignment_4_2: {
       type: "assignment",
       title: "Assignment 4.2: Heuristic Evaluation",
       link: SiteLinks.assignment_4_2_top.href,
-      date: verifyCalendarDate("2024-11-14", "Thu"),
+      date: verifyCalendarDate("2025-11-13", "Thu"),
       submission: "canvas",
       submitCanvasTime: "3:00pm",
-      submitCanvasLink:
-        "https://canvas.uw.edu/courses/1746586/assignments/9793114",
+      // submitCanvasLink:
+      //   "https://canvas.uw.edu/courses/1746586/assignments/9793114",
     },
     assignment_4_3: {
       type: "assignment",
       title: "Assignment 4.3: Usability Testing",
       link: SiteLinks.assignment_4_3_top.href,
-      date: verifyCalendarDate("2024-11-25", "Mon"),
+      date: verifyCalendarDate("2025-11-24", "Mon"),
       submission: "canvas",
       submitCanvasTime: "3:00pm",
-      submitCanvasLink:
-        "https://canvas.uw.edu/courses/1746586/assignments/9795140",
+      // submitCanvasLink:
+      //   "https://canvas.uw.edu/courses/1746586/assignments/9795140",
     },
     milestone_4_report: {
       type: "assignment",
       title: "Milestone 4: Report",
       link: SiteLinks.milestone_4_report_top.href,
-      date: verifyCalendarDate("2024-11-27", "Wed"),
+      date: verifyCalendarDate("2025-11-26", "Wed"),
       submission: "canvas",
       submitCanvasTime: "8:00pm",
-      submitCanvasLink:
-        "https://canvas.uw.edu/courses/1746586/assignments/9795144",
+      // submitCanvasLink:
+      //   "https://canvas.uw.edu/courses/1746586/assignments/9795144",
     },
 
     //
@@ -608,37 +615,37 @@ export const calendarData: {
       type: "assignment",
       title: "Assignment 5: Digital Mockup",
       link: SiteLinks.assignment_5_digital_mockup_top.href,
-      date: verifyCalendarDate("2024-12-02", "Mon"),
+      date: verifyCalendarDate("2025-12-01", "Mon"),
       submission: "canvas",
       submitCanvasTime: "3:00pm",
-      submitCanvasLink:
-        "https://canvas.uw.edu/courses/1746586/assignments/9821454",
+      // submitCanvasLink:
+      //   "https://canvas.uw.edu/courses/1746586/assignments/9821454",
     },
     assignment_5_poster_initial: {
       type: "assignment",
       title: "Assignment 5: Initial Poster",
       link: SiteLinks.assignment_5_poster_top.href,
-      date: verifyCalendarDate("2024-12-02", "Mon"),
+      date: verifyCalendarDate("2025-12-01", "Mon"),
       submission: "canvas",
       submitCanvasTime: "3:00pm",
-      submitCanvasLink:
-        "https://canvas.uw.edu/courses/1746586/assignments/9821457",
+      // submitCanvasLink:
+      //   "https://canvas.uw.edu/courses/1746586/assignments/9821457",
     },
     assignment_5_poster_final: {
       type: "assignment",
       title: "Assignment 5: Final Poster",
       link: SiteLinks.assignment_5_poster_top.href,
-      date: verifyCalendarDate("2024-12-04", "Wed"),
+      date: verifyCalendarDate("2025-12-03", "Wed"),
       submission: "canvas",
       submitCanvasTime: "3:00pm",
-      submitCanvasLink:
-        "https://canvas.uw.edu/courses/1746586/assignments/9821486",
+      // submitCanvasLink:
+      //   "https://canvas.uw.edu/courses/1746586/assignments/9821486",
     },
     assignment_5_web_post_initial: {
       type: "assignment",
       title: "Assignment 5: Initial Web Post",
       link: SiteLinks.assignment_5_web_post_top.href,
-      date: verifyCalendarDate("2024-12-04", "Wed"),
+      date: verifyCalendarDate("2025-12-03", "Wed"),
       submission: "canvas",
       submitCanvasTime: "3:00pm",
     },
@@ -646,7 +653,7 @@ export const calendarData: {
       type: "assignment",
       title: "Assignment 5: Final Web Post",
       link: SiteLinks.assignment_5_web_post_top.href,
-      date: verifyCalendarDate("2024-12-06", "Fri"),
+      date: verifyCalendarDate("2025-12-05", "Fri"),
       submission: "canvas",
       submitCanvasTime: "8:00pm",
     },
