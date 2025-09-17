@@ -175,8 +175,6 @@ export function filterStudioCalendarItems(
   }) as StudioCalendarItem[];
 }
 
-
-
 // import * as React from "react";
 
 // import { Reading } from "@/types/Reading";
