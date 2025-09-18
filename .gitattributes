@@ -1,0 +1,13 @@
+# Configure Git to handle line endings across operating systems.
+#
+# '* text=auto' tells Git to:
+#   1. Automatically detect whether files are text or binary.
+#   2. For text files, convert line endings to LF when adding files to the repository.
+#   3. When checking out files on Windows, convert line endings to CRLF.
+#
+# This helps:
+#   - Ensure consistent line endings in the repository regardless of contributor operating systems.
+#   - Prevent unnecessary line ending changes in diffs when collaborating across platforms.
+#   - Avoid "false" changes that only involve line ending differences.
+
+* text=auto

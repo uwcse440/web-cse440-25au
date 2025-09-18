@@ -1,0 +1,31 @@
+import {
+    Grid,
+} from '@mui/material';
+
+import { ProjectCard } from "@/components/project/ProjectCard.tsx";
+
+import { ProjectLinks } from "@/app/projects/projectlinks";
+
+# Projects
+
+## Project Theme
+
+As a focus for Autumn 2025,
+we asked students to explore self-tracking and everyday interaction with personal data.
+
+People have long sought to better understand themselves, but continuing technology advances enable new approaches.
+Students examined problems people encounter in gathering and gaining value from personal data,
+then explored how a combination of design and machine intelligence
+can help go beyond simple data fetishes to help people in using personal data as part of reaching their goals.
+
+{ProjectLinks.length > 0 && <h2>Project Pages</h2>}
+
+<Grid container spacing={4}>
+    {ProjectLinks.map((projectLink, projectLinkIndex) => {
+        return (
+            <Grid item key={projectLinkIndex}>
+                <ProjectCard name={projectLink.anchor} logo={projectLink.logo} path={projectLink.href} />
+            </Grid>
+        )
+    })}
+</Grid>
