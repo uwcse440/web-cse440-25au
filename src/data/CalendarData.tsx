@@ -68,13 +68,13 @@ const TIME_AND_LOCATION_POSTER_SESSION: TimeAndLocation = {
 };
 
 const TIME_AND_LOCATION_OFFICE_HOUR_JESSE: TimeAndLocation = {
-  time: "12:00 to 1:00",
-  location: "CSE2 152",
+  time: "3:00 to 4:00",
+  location: "CSE2 151",
 };
 
-const TIME_AND_LOCATION_OFFICE_HOUR_KATELYN: TimeAndLocation = {
-  time: "3:00 to 4:00",
-  location: "CSE2 152",
+const TIME_AND_LOCATION_OFFICE_HOUR_TEANNA: TimeAndLocation = {
+  time: "12:00 to 1:00",
+  location: "CSE 5th Floor Breakout",
 };
 
 export function parseCalendarDate(calendarDate: CalendarDate): Date {
@@ -373,38 +373,40 @@ export const calendarData: {
   ],
 
   officeHours: [
-    // {
-    //   type: "officeHour",
-    //   title: "Office Hour: Katelyn",
-    //   timeAndLocation: TIME_AND_LOCATION_OFFICE_HOUR_KATELYN,
-    //   dates: [
-    //     verifyCalendarDate("2024-10-02", "Wed"),
-    //     verifyCalendarDate("2024-10-09", "Wed"),
-    //     verifyCalendarDate("2024-10-16", "Wed"),
-    //     verifyCalendarDate("2024-10-23", "Wed"),
-    //     verifyCalendarDate("2024-10-30", "Wed"),
-    //     verifyCalendarDate("2024-11-06", "Wed"),
-    //     verifyCalendarDate("2024-11-13", "Wed"),
-    //     verifyCalendarDate("2024-11-20", "Wed"),
-    //     verifyCalendarDate("2024-12-04", "Wed"),
-    //   ],
-    // },
-    // {
-    //   type: "officeHour",
-    //   title: "Office Hour: Jesse",
-    //   timeAndLocation: TIME_AND_LOCATION_OFFICE_HOUR_JESSE,
-    //   dates: [
-    //     verifyCalendarDate("2024-10-03", "Thu"),
-    //     verifyCalendarDate("2024-10-10", "Thu"),
-    //     verifyCalendarDate("2024-10-17", "Thu"),
-    //     verifyCalendarDate("2024-10-24", "Thu"),
-    //     verifyCalendarDate("2024-10-31", "Thu"),
-    //     verifyCalendarDate("2024-11-07", "Thu"),
-    //     verifyCalendarDate("2024-11-14", "Thu"),
-    //     verifyCalendarDate("2024-11-21", "Thu"),
-    //     verifyCalendarDate("2024-12-05", "Thu"),
-    //   ],
-    // },
+    {
+      type: "officeHour",
+      title: "Office Hour: Jesse",
+      timeAndLocation: TIME_AND_LOCATION_OFFICE_HOUR_JESSE,
+      dates: [
+        verifyCalendarDate("2025-10-01", "Wed"),
+        verifyCalendarDate("2025-10-08", "Wed"),
+        verifyCalendarDate("2025-10-15", "Wed"),
+        verifyCalendarDate("2025-10-22", "Wed"),
+        // verifyCalendarDate("2025-10-29", "Wed"), // Away / Design Meetings
+        verifyCalendarDate("2025-11-05", "Wed"),
+        verifyCalendarDate("2025-11-12", "Wed"),
+        // verifyCalendarDate("2025-11-19", "Wed"), // Exam Grading
+        verifyCalendarDate("2025-11-26", "Wed"),
+        verifyCalendarDate("2025-12-03", "Wed"),
+      ],
+    },
+    {
+      type: "officeHour",
+      title: "Office Hour: Teanna",
+      timeAndLocation: TIME_AND_LOCATION_OFFICE_HOUR_TEANNA,
+      dates: [
+        verifyCalendarDate("2025-10-02", "Thu"),
+        verifyCalendarDate("2025-10-09", "Thu"),
+        verifyCalendarDate("2025-10-16", "Thu"),
+        verifyCalendarDate("2025-10-23", "Thu"),
+        // verifyCalendarDate("2025-10-30", "Thu"), // Design Meetings
+        verifyCalendarDate("2025-11-06", "Thu"),
+        verifyCalendarDate("2025-11-13", "Thu"),
+        verifyCalendarDate("2025-11-20", "Thu"),
+        // verifyCalendarDate("2025-11-27", "Thu"), // Thanksgiving
+        verifyCalendarDate("2025-12-04", "Thu"),
+      ],
+    },
   ],
 
   assignments: {
