@@ -5,6 +5,7 @@ import { ok as assert } from "assert";
 import { SiteLinks } from "@/data/SiteLinks";
 import {
   AssignmentCalendarItem,
+  AwayCalendarItem,
   CalendarDate,
   CalendarItem,
   CalendarWeek,
@@ -126,6 +127,7 @@ export function calendarWeeks(): CalendarWeek[] {
 export function calendarItems(): CalendarItem[] {
   return [
     ...Object.values(calendarData.assignments),
+    ...calendarData.aways,
     ...calendarData.events,
     ...calendarData.holidays,
     ...calendarData.lectures,
@@ -173,6 +175,7 @@ export const calendarData: {
   lectures: LectureCalendarItem[];
   studios: StudioCalendarItem[];
   events: EventCalendarItem[];
+  aways: AwayCalendarItem[];
   officeHours: OfficeHourCalendarItem[];
   assignments: { [key: string]: AssignmentCalendarItem };
 } = {
@@ -369,6 +372,31 @@ export const calendarData: {
       title: "Poster Session",
       date: verifyCalendarDate("2025-12-08", "Mon"),
       timeAndLocation: TIME_AND_LOCATION_POSTER_SESSION,
+    },
+  ],
+
+  aways: [
+    {
+      type: "away",
+      title: "James Away",
+      dates: [
+        verifyCalendarDate("2025-10-20", "Mon"),
+        verifyCalendarDate("2025-10-21", "Tue"),
+      ],
+    },
+    {
+      type: "away",
+      title: "Jesse Away",
+      dates: [
+        verifyCalendarDate("2025-10-27", "Mon"),
+        verifyCalendarDate("2025-10-28", "Tue"),
+        verifyCalendarDate("2025-10-29", "Wed"),
+      ],
+    },
+    {
+      type: "away",
+      title: "Teanna Away",
+      dates: [],
     },
   ],
 

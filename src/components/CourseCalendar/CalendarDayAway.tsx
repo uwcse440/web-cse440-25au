@@ -20,7 +20,7 @@ export const CalendarDayAway: React.FunctionComponent<{
           item
           xs={12}
           sx={{
-            borderLeftColor: "pink",
+            borderLeftColor: "orange",
             borderLeftStyle: "solid",
             borderLeftWidth: 5,
             paddingLeft: 1,
