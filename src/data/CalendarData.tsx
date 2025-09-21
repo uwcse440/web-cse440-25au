@@ -521,6 +521,16 @@ export const calendarData: {
       // submitCanvasLink:
       //   "https://canvas.uw.edu/courses/1746586/assignments/9755342",
     },
+    milestone_2_contribution_statement: {
+      type: "assignment",
+      title: "Milestone 2: Contribution Statement",
+      link: SiteLinks.milestone_1_report_top.href,
+      date: verifyCalendarDate("2025-10-22", "Wed"),
+      submission: "canvas",
+      submitCanvasTime: "8:00pm",
+      // submitCanvasLink:
+      //   "https://canvas.uw.edu/courses/1828371/assignments/10688281",
+    },
 
     //
     // Milestone 3
@@ -575,6 +585,16 @@ export const calendarData: {
       // submitCanvasLink:
       //   "https://canvas.uw.edu/courses/1746586/assignments/9776723",
     },
+    milestone_3_contribution_statement: {
+      type: "assignment",
+      title: "Milestone 3: Contribution Statement",
+      link: SiteLinks.milestone_1_report_top.href,
+      date: verifyCalendarDate("2025-11-09", "Sun"),
+      submission: "canvas",
+      submitCanvasTime: "8:00pm",
+      // submitCanvasLink:
+      //   "https://canvas.uw.edu/courses/1828371/assignments/10688281",
+    },
 
     //
     // Milestone 4
@@ -618,6 +638,16 @@ export const calendarData: {
       submitCanvasTime: "8:00pm",
       // submitCanvasLink:
       //   "https://canvas.uw.edu/courses/1746586/assignments/9795144",
+    },
+    milestone_4_contribution_statement: {
+      type: "assignment",
+      title: "Milestone 4: Contribution Statement",
+      link: SiteLinks.milestone_1_report_top.href,
+      date: verifyCalendarDate("2025-11-28", "Fri"),
+      submission: "canvas",
+      submitCanvasTime: "8:00pm",
+      // submitCanvasLink:
+      //   "https://canvas.uw.edu/courses/1828371/assignments/10688281",
     },
 
     //
@@ -668,6 +698,16 @@ export const calendarData: {
       date: verifyCalendarDate("2025-12-05", "Fri"),
       submission: "canvas",
       submitCanvasTime: "8:00pm",
+    },
+    milestone_5_contribution_statement: {
+      type: "assignment",
+      title: "Milestone 5: Contribution Statement",
+      link: SiteLinks.milestone_1_report_top.href,
+      date: verifyCalendarDate("2025-12-07", "Sun"),
+      submission: "canvas",
+      submitCanvasTime: "8:00pm",
+      // submitCanvasLink:
+      //   "https://canvas.uw.edu/courses/1828371/assignments/10688281",
     },
   },
 };
