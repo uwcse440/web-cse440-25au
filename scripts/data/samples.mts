@@ -1,6 +1,5 @@
 import { writeFile } from "fs/promises";
 
-// import { ProjectSampleAssignments } from "@/types/ProjectSamples";
 import fetch from "node-fetch";
 
 import { secrets } from "../../secrets/data-samples.mts";
@@ -249,36 +248,29 @@ async function organizeSamples(canvasFiles: CanvasFile[]) {
         folderName: folder.name,
         projectName: sampleProject.projectName,
         projectUrl: sampleProject.projectUrl,
-        // assignments: files.reduce(
-        //   (
-        //     assignments: Partial<ProjectSampleAssignments>,
-        //     file: CanvasFile,
-        //   ): Partial<ProjectSampleAssignments> => {
-        //     const assignmentKey = file.filename
-        //       .toLowerCase()
-        //       .replace(".pdf", "");
+        assignments: files.reduce(
+          (
+            assignments: Record<string, string | string[]>,
+            file: CanvasFile,
+          ): Record<string, string | string[]> => {
+            const assignmentKey = file.filename
+              .toLowerCase()
+              .replace(".pdf", "");
 
-        //     // if (assignmentKey.startsWith("m4_a42")) {
-        //     //   if (!assignments.m4_a42) {
-        //     //     assignments.m4_a42 = [];
-        //     //   }
+            if (assignmentKey.startsWith("m4_a42")) {
+              if (!assignments["m4_a42"]) {
+                assignments["m4_a42"] = [];
+              }
 
-        //     //   assignments.m4_a42.push(file.url);
+              (assignments["m4_a42"] as string[]).push(file.url);
+            } else {
+              assignments[assignmentKey] = file.url;
+            }
 
-        //     //   return assignments;
-        //     // } else {
-        //     //   // TODO: why was this so difficult to type
-        //     //   const untypedAssignments = assignments as any;
-
-        //     //   untypedAssignments[assignmentKey] = file.url;
-
-        //     //   return untypedAssignments as Partial<ProjectSampleAssignments>;
-        //     // }
-
-        //     return assignments
-        //   },
-        //   {} as Partial<ProjectSampleAssignments>,
-        // ),
+            return assignments;
+          },
+          {} as Record<string, string | string[]>,
+        ),
       };
     }),
   );
@@ -295,7 +287,7 @@ async function exportSamples(samples) {
     "\n" +
     `export const projectSamples: ProjectSamples = ${JSON.stringify(samples, null, 2)};\n`;
 
-  await writeFile("samples.ts", content, "utf-8");
+  await writeFile("./src/data/ProjectSamplesData.ts", content, "utf-8");
 
   return { message: "Samples exported to samples.ts" };
 }
