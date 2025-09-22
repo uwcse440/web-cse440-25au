@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "clean": "node scripts/clean.ts",
+    "data:samples": "ts-node-esm scripts/data/samples.mts",
     "dev": "next dev",
     "export": "next build && next-image-export-optimizer",
     "format": "prettier . --write",
@@ -42,10 +43,12 @@
     "eslint-config-prettier": "9.1.x",
     "http-server": "14.1.x",
     "next-image-export-optimizer": "1.15.0",
+    "node-fetch": "3.3.x",
     "prettier": "3.3.x",
     "prettier-plugin-packagejson": "2.5.x",
     "rimraf": "6.0.x",
     "sharp": "0.33.5",
+    "ts-node": "10.9.x",
     "typescript": "5.5.x",
     "webpack": "5.93.x"
   },

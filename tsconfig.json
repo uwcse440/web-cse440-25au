@@ -16,6 +16,7 @@
     "incremental": true,
     "experimentalDecorators": true,
     "useDefineForClassFields": true,
+    "allowImportingTsExtensions": true,
     "plugins": [
       {
         "name": "next"
@@ -30,6 +31,7 @@
     "next-env.d.ts",
     ".next/types/**/*.ts",
     "dist/types/**/*.ts",
+    "**/*.mts",
     "**/*.ts",
     "**/*.tsx"
   ],
