@@ -5,6 +5,7 @@ import { ok as assert } from "assert";
 import { SiteLinks } from "@/data/SiteLinks";
 import {
   AssignmentCalendarItem,
+  AwayCalendarItem,
   CalendarDate,
   CalendarItem,
   CalendarWeek,
@@ -126,6 +127,7 @@ export function calendarWeeks(): CalendarWeek[] {
 export function calendarItems(): CalendarItem[] {
   return [
     ...Object.values(calendarData.assignments),
+    ...calendarData.aways,
     ...calendarData.events,
     ...calendarData.holidays,
     ...calendarData.lectures,
@@ -173,6 +175,7 @@ export const calendarData: {
   lectures: LectureCalendarItem[];
   studios: StudioCalendarItem[];
   events: EventCalendarItem[];
+  aways: AwayCalendarItem[];
   officeHours: OfficeHourCalendarItem[];
   assignments: { [key: string]: AssignmentCalendarItem };
 } = {
@@ -372,6 +375,31 @@ export const calendarData: {
     },
   ],
 
+  aways: [
+    {
+      type: "away",
+      title: "James Away",
+      dates: [
+        verifyCalendarDate("2025-10-20", "Mon"),
+        verifyCalendarDate("2025-10-21", "Tue"),
+      ],
+    },
+    {
+      type: "away",
+      title: "Jesse Away",
+      dates: [
+        verifyCalendarDate("2025-10-27", "Mon"),
+        verifyCalendarDate("2025-10-28", "Tue"),
+        verifyCalendarDate("2025-10-29", "Wed"),
+      ],
+    },
+    {
+      type: "away",
+      title: "Teanna Away",
+      dates: [],
+    },
+  ],
+
   officeHours: [
     {
       type: "officeHour",
@@ -434,8 +462,8 @@ export const calendarData: {
       date: verifyCalendarDate("2025-09-25", "Thu"),
       submission: "canvas",
       submitCanvasTime: "10:00pm",
-      // submitCanvasLink:
-      //   "https://canvas.uw.edu/courses/1746586/assignments/9635629",
+      submitCanvasLink:
+        "https://canvas.uw.edu/courses/1828371/assignments/10688263",
     },
     assignment_1_2: {
       type: "assignment",
@@ -444,8 +472,8 @@ export const calendarData: {
       date: verifyCalendarDate("2025-09-29", "Mon"),
       submission: "canvas",
       submitCanvasTime: "3:00pm",
-      // submitCanvasLink:
-      //   "https://canvas.uw.edu/courses/1746586/assignments/9634760",
+      submitCanvasLink:
+        "https://canvas.uw.edu/courses/1828371/assignments/10688264",
     },
     assignment_1_3: {
       type: "assignment",
@@ -454,8 +482,8 @@ export const calendarData: {
       date: verifyCalendarDate("2025-10-02", "Thu"),
       submission: "canvas",
       submitCanvasTime: "3:00pm",
-      // submitCanvasLink:
-      //   "https://canvas.uw.edu/courses/1746586/assignments/9634761",
+      submitCanvasLink:
+        "https://canvas.uw.edu/courses/1828371/assignments/10688265",
     },
     assignment_1_4: {
       type: "assignment",
@@ -464,8 +492,8 @@ export const calendarData: {
       date: verifyCalendarDate("2025-10-03", "Fri"),
       submission: "canvas",
       submitCanvasTime: "8:00pm",
-      // submitCanvasLink:
-      //   "https://canvas.uw.edu/courses/1746586/assignments/9636906",
+      submitCanvasLink:
+        "https://canvas.uw.edu/courses/1828371/assignments/10688266",
     },
     milestone_1_report: {
       type: "assignment",
@@ -474,8 +502,18 @@ export const calendarData: {
       date: verifyCalendarDate("2025-10-06", "Mon"),
       submission: "canvas",
       submitCanvasTime: "3:00pm",
-      // submitCanvasLink:
-      //   "https://canvas.uw.edu/courses/1746586/assignments/9636932",
+      submitCanvasLink:
+        "https://canvas.uw.edu/courses/1828371/assignments/10688282",
+    },
+    milestone_1_contribution_statement: {
+      type: "assignment",
+      title: "Milestone 1: Contribution Statement",
+      link: SiteLinks.milestone_1_report_top.href,
+      date: verifyCalendarDate("2025-10-08", "Wed"),
+      submission: "canvas",
+      submitCanvasTime: "8:00pm",
+      submitCanvasLink:
+        "https://canvas.uw.edu/courses/1828371/assignments/10688281",
     },
 
     //
@@ -510,6 +548,16 @@ export const calendarData: {
       submitCanvasTime: "3:00pm",
       // submitCanvasLink:
       //   "https://canvas.uw.edu/courses/1746586/assignments/9755342",
+    },
+    milestone_2_contribution_statement: {
+      type: "assignment",
+      title: "Milestone 2: Contribution Statement",
+      link: SiteLinks.milestone_1_report_top.href,
+      date: verifyCalendarDate("2025-10-22", "Wed"),
+      submission: "canvas",
+      submitCanvasTime: "8:00pm",
+      // submitCanvasLink:
+      //   "https://canvas.uw.edu/courses/1828371/assignments/10688281",
     },
 
     //
@@ -565,6 +613,16 @@ export const calendarData: {
       // submitCanvasLink:
       //   "https://canvas.uw.edu/courses/1746586/assignments/9776723",
     },
+    milestone_3_contribution_statement: {
+      type: "assignment",
+      title: "Milestone 3: Contribution Statement",
+      link: SiteLinks.milestone_1_report_top.href,
+      date: verifyCalendarDate("2025-11-09", "Sun"),
+      submission: "canvas",
+      submitCanvasTime: "8:00pm",
+      // submitCanvasLink:
+      //   "https://canvas.uw.edu/courses/1828371/assignments/10688281",
+    },
 
     //
     // Milestone 4
@@ -608,6 +666,16 @@ export const calendarData: {
       submitCanvasTime: "8:00pm",
       // submitCanvasLink:
       //   "https://canvas.uw.edu/courses/1746586/assignments/9795144",
+    },
+    milestone_4_contribution_statement: {
+      type: "assignment",
+      title: "Milestone 4: Contribution Statement",
+      link: SiteLinks.milestone_1_report_top.href,
+      date: verifyCalendarDate("2025-11-28", "Fri"),
+      submission: "canvas",
+      submitCanvasTime: "8:00pm",
+      // submitCanvasLink:
+      //   "https://canvas.uw.edu/courses/1828371/assignments/10688281",
     },
 
     //
@@ -658,6 +726,16 @@ export const calendarData: {
       date: verifyCalendarDate("2025-12-05", "Fri"),
       submission: "canvas",
       submitCanvasTime: "8:00pm",
+    },
+    milestone_5_contribution_statement: {
+      type: "assignment",
+      title: "Milestone 5: Contribution Statement",
+      link: SiteLinks.milestone_1_report_top.href,
+      date: verifyCalendarDate("2025-12-07", "Sun"),
+      submission: "canvas",
+      submitCanvasTime: "8:00pm",
+      // submitCanvasLink:
+      //   "https://canvas.uw.edu/courses/1828371/assignments/10688281",
     },
   },
 };

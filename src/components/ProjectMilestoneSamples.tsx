@@ -1,80 +1,71 @@
 import * as React from "react";
 
 import { AppLink } from "@/components/links/AppLink";
-import { TBD } from "@/components/TBD";
-import {
-  getProjectSamplesStore,
-  ProjectSamplesProjectKeyValues,
-} from "@/data/ProjectSamplesData";
-import {
-  assertProjectSampleMilestoneKey,
-  ProjectSamplesMilestoneKey,
-} from "@/types/ProjectSamplesStore";
-import { Alert } from "@mui/material";
+import { projectSamples } from "@/data/ProjectSamplesData";
+import { ProjectSampleAssignments } from "@/types/ProjectSamples";
 
 interface ProjectMilestoneSamplesProps {
-  milestone: ProjectSamplesMilestoneKey;
+  assignment: keyof ProjectSampleAssignments;
 }
 
 export const ProjectMilestoneSamples: React.FunctionComponent<
   ProjectMilestoneSamplesProps
 > = (props) => {
-  // Validate props, TypeScript does not validate in MDX
-  assertProjectSampleMilestoneKey(props.milestone);
+  // // Validate props, TypeScript does not validate in MDX
+  // assertProjectSampleMilestoneKey(props.milestone);
 
   return (
     <React.Fragment>
       {(() => {
-        const projectSamplesStore = getProjectSamplesStore();
-
         return (
           <ul>
-            {ProjectSamplesProjectKeyValues.map((sampleKeyCurrent) => {
-              const sampleCurrent =
-                projectSamplesStore.samples[sampleKeyCurrent];
-
-              const renderMilestone: ProjectSamplesMilestoneKey = (() => {
-                if (
-                  props.milestone == "assignment1b" &&
-                  [
-                    "bookwurm",
-                    "dash",
-                    "jasper",
-                    "wishingwell", // 17wi
-                    "backtrack",
-                    "hermes",
-                    "pilltender",
-                    "simpark", // 17au
-                    "laundr",
-                    "note",
-                    "pawsitive",
-                    "seek", // 19wi
-                  ].includes(sampleKeyCurrent)
-                ) {
-                  return "assignment1c";
-                }
-
-                return props.milestone;
-              })();
-
-              return (
-                // Ensure we have a sample for this project
-                !!sampleCurrent.sampleCanvasLinks?.[renderMilestone] && (
-                  <React.Fragment key={sampleKeyCurrent}>
+            {projectSamples.projects.map((projectCurrent) => {
+              if (props.assignment === "m4_a42") {
+                return (
+                  <React.Fragment key={projectCurrent.folderName}>
                     <li>
-                      <AppLink
-                        href={sampleCurrent.sampleCanvasLinks[renderMilestone]}
-                      >
-                        {"Sample " + renderMilestone}
-                      </AppLink>
+                      {"Sample Submissions "}
+                      {projectCurrent.assignments.m4_a42.map(
+                        (urlCurrent, index) => {
+                          return (
+                            <React.Fragment key={index}>
+                              <AppLink href={urlCurrent}>{index + 1}</AppLink>
+                              {index <
+                              projectCurrent.assignments.m4_a42.length - 1
+                                ? ", "
+                                : ""}
+                            </React.Fragment>
+                          );
+                        },
+                      )}
                       {" from "}
-                      <AppLink href={sampleCurrent.link}>
-                        {sampleCurrent.name}
+                      <AppLink href={projectCurrent.projectUrl}>
+                        {projectCurrent.projectName}
                       </AppLink>
+                      {" in Autumn 2024"}
                     </li>
                   </React.Fragment>
-                )
-              );
+                );
+              } else {
+                return (
+                  <React.Fragment key={projectCurrent.folderName}>
+                    <li>
+                      <AppLink
+                        href={
+                          projectCurrent.assignments[props.assignment] as string
+                        }
+                      >
+                        {"Sample Submission"}
+                      </AppLink>
+                      {" from "}
+                      <AppLink href={projectCurrent.projectUrl}>
+                        {projectCurrent.projectName}
+                      </AppLink>
+                      {" in Autumn 2024"}
+                    </li>
+                  </React.Fragment>
+                );
+              }
             })}
           </ul>
         );

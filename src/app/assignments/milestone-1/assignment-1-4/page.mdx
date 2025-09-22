@@ -1,4 +1,5 @@
 import { AssignmentDueDateTime } from "@/components/AssignmentDueDateTime";
+import { ProjectMilestoneSamples } from "@/components/ProjectMilestoneSamples";
 import { TBD } from "@/components/TBD";
 import { UnderDevelopment } from "@/components/UnderDevelopment";
 import { AssignmentSubmitCanvasLink } from "@/components/links/AssignmentSubmitCanvasLink";
@@ -6,6 +7,7 @@ import { default as CanvasGroupsNotCreated } from '@/contentcomponents/CanvasGro
 import { default as ClarityAndPresentationReference } from "@/contentcomponents/ClarityAndPresentationReference.mdx";
 import { default as ContributionStatementReference } from "@/contentcomponents/ContributionStatementReference.mdx";
 import { default as GroupAssignment } from "@/contentcomponents/GroupAssignment.mdx";
+import { default as PriorSamplesWarning } from "@/contentcomponents/PriorSamplesWarning.mdx";
 import { CourseDataLink } from "@/components/links/CourseDataLink";
 import { SiteLink } from "@/components/links/SiteLink";
 import { SiteLinks } from "@/data/SiteLinks";
@@ -17,7 +19,7 @@ export const pathDesignIdeationForm = '/assignments/design-ideation-worksheet.pd
 
 # Assignment 1.4: Design Ideation
 
-<UnderDevelopment display={true} />
+<UnderDevelopment display={false} />
 
 Due: <AssignmentDueDateTime assignmentKey={calendarData.assignments.assignment_1_4} />
 
@@ -98,7 +100,7 @@ Submit via Canvas here:
 
 ## Completion Grading
 
-This assignment will be graded on completion of __5 components__:
+This assignment will be graded on completion of the following components:
 
 1. __Ideation in Each Design Dimension__ (5 total):
 
@@ -107,3 +109,9 @@ This assignment will be graded on completion of __5 components__:
    All ideas should be different.
 
 2. __Clarity and Presentation__
+
+## Prior Samples
+
+<PriorSamplesWarning />
+
+<ProjectMilestoneSamples assignment='m1_a14' />

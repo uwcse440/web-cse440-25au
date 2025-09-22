@@ -1,19 +1,22 @@
 import { AssignmentDueDateTime } from "@/components/AssignmentDueDateTime";
 import { TBD } from "@/components/TBD";
 import { UnderDevelopment } from "@/components/UnderDevelopment";
+import { AppLink } from "@/components/links/AppLink";
 import { AssignmentSubmitCanvasLink } from "@/components/links/AssignmentSubmitCanvasLink";
 import { CourseDataLink } from "@/components/links/CourseDataLink";
 import { SiteLink } from "@/components/links/SiteLink";
 import { default as ClarityAndPresentationReference } from "@/contentcomponents/ClarityAndPresentationReference.mdx";
 import { default as ExcludedTopics } from "@/contentcomponents/ExcludedTopics.mdx";
 import { default as IndividualAssignment } from "@/contentcomponents/IndividualAssignment.mdx";
+import { default as PriorSamplesWarning } from "@/contentcomponents/PriorSamplesWarning.mdx";
 import { calendarData } from "@/data/CalendarData";
 import { courseData } from "@/data/CourseData";
+import { projectSamples } from "@/data/ProjectSamplesData";
 import { SiteLinks } from "@/data/SiteLinks";
 
 # Assignment 1.1: Individual Brainstorm
 
-<UnderDevelopment display={true} />
+<UnderDevelopment display={false} />
 
 Due: <AssignmentDueDateTime assignmentKey={calendarData.assignments.assignment_1_1} />
 
@@ -24,6 +27,7 @@ The goal of this assignment is to help get you started in thinking of ideas for 
 Friday's section will then build on these in brainstorming additional potential directions for project proposals.
 
 Propose three starting points for brainstorming domains, problems, and goals that might be supported via self-tracking.
+Revisit the course theme description in <SiteLink linkKey={SiteLinks.milestone_1_top}/> if that is helpful in your brainstorming.
 
 By domain, we mean an aspect of life. Domains that are already common in self-tracking include:
 
@@ -34,7 +38,9 @@ By domain, we mean an aspect of life. Domains that are already common in self-tr
 
 Be sure to focus on problems, goals, and spaces of opportunity,
 as it is too early to focus on a specific potential design solution.
-One way to help yourself identify a related problems, goals, and opportunities is to ask "Why?". For example:
+One way to help yourself identify related problems, goals, and opportunities 
+is to consider a hierarchy of opportunities that result from asking "Why?". 
+In the context of a budgeting app, for example:
 
 - Why is a person using a budgeting app?
 - Why is a person tracking their spending?
@@ -86,7 +92,7 @@ as part of a larger brainstorm and effort to identify people interested in worki
 
 ## Completion Grading
 
-This assignment will be graded on completion of __3 components__:
+This assignment will be graded on completion of the following components:
 
 1. __Each Unique Proposed Idea__ (3 total):
 
@@ -97,3 +103,12 @@ This assignment will be graded on completion of __3 components__:
    Be clear regarding the domain of each idea, ensure each idea is from a different domain.
 
    At least one idea must be in a domain not in the above list (i.e., finances, wellness, health, mood).
+
+## Prior Samples
+
+<PriorSamplesWarning />
+
+Examples of brainstorms are linked from prior offerings,
+but be sure your submission is designed for the format, requirements, and emphasis of this assignment:
+
+- <AppLink href={projectSamples.m1_a11.url}>Samples Submissions</AppLink> in Autumn 2024

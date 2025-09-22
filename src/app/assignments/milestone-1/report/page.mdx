@@ -1,18 +1,20 @@
 import { AssignmentDueDateTime } from "@/components/AssignmentDueDateTime";
 import { TBD } from "@/components/TBD";
+import { ProjectMilestoneSamples } from "@/components/ProjectMilestoneSamples";
 import { UnderDevelopment } from "@/components/UnderDevelopment";
 import { AssignmentSubmitCanvasLink } from "@/components/links/AssignmentSubmitCanvasLink";
 import { CourseDataLink } from "@/components/links/CourseDataLink";
 import { SiteLink } from "@/components/links/SiteLink";
 import { default as ContributionStatementReference } from "@/contentcomponents/ContributionStatementReference.mdx";
 import { default as GroupAssignment } from "@/contentcomponents/GroupAssignment.mdx";
+import { default as PriorSamplesWarning } from "@/contentcomponents/PriorSamplesWarning.mdx";
 import { SiteLinks } from "@/data/SiteLinks";
 import { calendarData } from "@/data/CalendarData";
 import { courseData } from "@/data/CourseData";
 
 # Milestone 1 Report
 
-<UnderDevelopment display={true} />
+<UnderDevelopment display={false} />
 
 Due: <AssignmentDueDateTime assignmentKey={calendarData.assignments.milestone_1_report} />
 
@@ -170,3 +172,9 @@ This milestone report will be graded on a scale of __20 points__:
    Provide meaningful ideas for people, focus, and method to consider in design research.
 
 8. __Clarity and Presentation__: (2 points)
+
+## Prior Samples
+
+<PriorSamplesWarning />
+
+<ProjectMilestoneSamples assignment='m1_report' />

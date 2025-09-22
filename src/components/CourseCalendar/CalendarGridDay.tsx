@@ -3,6 +3,7 @@ import * as React from "react";
 import { ok as assert } from "assert";
 
 import { CalendarDayAssignments } from "@/components/CourseCalendar/CalendarDayAssignments";
+import { CalendarDayAway } from "@/components/CourseCalendar/CalendarDayAway";
 import { CalendarDayEvent } from "@/components/CourseCalendar/CalendarDayEvent";
 import { CalendarDayHoliday } from "@/components/CourseCalendar/CalendarDayHoliday";
 import { CalendarDayLecture } from "@/components/CourseCalendar/CalendarDayLecture";
@@ -68,6 +69,7 @@ export const CalendarGridDay: React.FunctionComponent<{
           }}
         >
           <CalendarDayHoliday calendarItems={calendarItems} />
+          <CalendarDayAway calendarItems={calendarItems} />
 
           <CalendarDayEvent calendarItems={calendarItems} />
           <CalendarDayLecture calendarItems={calendarItems} />
