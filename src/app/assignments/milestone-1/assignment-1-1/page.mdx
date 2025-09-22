@@ -1,14 +1,17 @@
 import { AssignmentDueDateTime } from "@/components/AssignmentDueDateTime";
 import { TBD } from "@/components/TBD";
 import { UnderDevelopment } from "@/components/UnderDevelopment";
+import { AppLink } from "@/components/links/AppLink";
 import { AssignmentSubmitCanvasLink } from "@/components/links/AssignmentSubmitCanvasLink";
 import { CourseDataLink } from "@/components/links/CourseDataLink";
 import { SiteLink } from "@/components/links/SiteLink";
 import { default as ClarityAndPresentationReference } from "@/contentcomponents/ClarityAndPresentationReference.mdx";
 import { default as ExcludedTopics } from "@/contentcomponents/ExcludedTopics.mdx";
 import { default as IndividualAssignment } from "@/contentcomponents/IndividualAssignment.mdx";
+import { default as PriorSamplesWarning } from "@/contentcomponents/PriorSamplesWarning.mdx";
 import { calendarData } from "@/data/CalendarData";
 import { courseData } from "@/data/CourseData";
+import { projectSamples } from "@/data/ProjectSamplesData";
 import { SiteLinks } from "@/data/SiteLinks";
 
 # Assignment 1.1: Individual Brainstorm
@@ -100,3 +103,12 @@ This assignment will be graded on completion of the following components:
    Be clear regarding the domain of each idea, ensure each idea is from a different domain.
 
    At least one idea must be in a domain not in the above list (i.e., finances, wellness, health, mood).
+
+## Prior Samples
+
+<PriorSamplesWarning />
+
+Examples of brainstorms are linked from prior offerings,
+but be sure your submission is designed for the format, requirements, and emphasis of this assignment:
+
+- <AppLink href={projectSamples.m1_a11.url}>Samples Submissions</AppLink> in Autumn 2024

@@ -1,5 +1,9 @@
 import { writeFile } from "fs/promises";
 
+import {
+  ProjectSampleAssignments,
+  ProjectSamples,
+} from "@/types/ProjectSamples";
 import fetch from "node-fetch";
 
 import { secrets } from "../../secrets/data-samples.mts";
@@ -202,7 +206,9 @@ async function fetchFolder(folderId: number): Promise<CanvasFolder> {
   return data;
 }
 
-async function organizeSamples(canvasFiles: CanvasFile[]) {
+async function organizeSamples(
+  canvasFiles: CanvasFile[],
+): Promise<ProjectSamples> {
   // Find the root file named "m1_a11.pdf".
   const file_m1_a11 = canvasFiles.find(
     (file) => file.filename === "m1_a11.pdf",
@@ -270,7 +276,7 @@ async function organizeSamples(canvasFiles: CanvasFile[]) {
             return assignments;
           },
           {} as Record<string, string | string[]>,
-        ),
+        ) as any as ProjectSampleAssignments,
       };
     }),
   );
@@ -281,7 +287,7 @@ async function organizeSamples(canvasFiles: CanvasFile[]) {
   };
 }
 
-async function exportSamples(samples) {
+async function exportSamples(samples: ProjectSamples) {
   const content =
     'import { ProjectSamples } from "@/types/ProjectSamples";\n' +
     "\n" +
