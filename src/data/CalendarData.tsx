@@ -208,7 +208,7 @@ export const calendarData: {
       date: verifyCalendarDate("2025-09-25", "Thu"),
       timeAndLocation: TIME_AND_LOCATION_LECTURE,
       title: "Introduction and Overview",
-      slides: "https://canvas.uw.edu/files/139022063/",
+      slides: "https://canvas.uw.edu/files/139097581/",
     },
     //
     // Studio Lecture

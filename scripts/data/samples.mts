@@ -16,12 +16,6 @@ const SAMPLE_PROJECTS: Array<{
   projectUrl: string;
 }> = [
   {
-    folderName: "betbreaker",
-    projectName: "BetBreaker",
-    projectUrl:
-      "https://courses.cs.washington.edu/courses/cse440/24au/projects/betbreaker/",
-  },
-  {
     folderName: "boredwalk",
     projectName: "BoredWalk",
     projectUrl:
@@ -34,12 +28,6 @@ const SAMPLE_PROJECTS: Array<{
       "https://courses.cs.washington.edu/courses/cse440/24au/projects/dawgsense/",
   },
   {
-    folderName: "focusshift",
-    projectName: "FocusShift",
-    projectUrl:
-      "https://courses.cs.washington.edu/courses/cse440/24au/projects/focusshift/",
-  },
-  {
     folderName: "gemhunter",
     projectName: "Gem Hunter",
     projectUrl:
@@ -50,12 +38,6 @@ const SAMPLE_PROJECTS: Array<{
     projectName: "Husky Ride",
     projectUrl:
       "https://courses.cs.washington.edu/courses/cse440/24au/projects/huskyride/",
-  },
-  {
-    folderName: "planventure",
-    projectName: "Planventure",
-    projectUrl:
-      "https://courses.cs.washington.edu/courses/cse440/24au/projects/planventure/",
   },
   {
     folderName: "potpal",

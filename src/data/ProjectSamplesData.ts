@@ -2,39 +2,9 @@ import { ProjectSamples } from "@/types/ProjectSamples";
 
 export const projectSamples: ProjectSamples = {
   m1_a11: {
-    url: "https://canvas.uw.edu/files/100000138813766",
+    url: "https://canvas.uw.edu/files/100000139096905",
   },
   projects: [
-    {
-      folderName: "betbreaker",
-      projectName: "BetBreaker",
-      projectUrl:
-        "https://courses.cs.washington.edu/courses/cse440/24au/projects/betbreaker/",
-      assignments: {
-        m1_a12: "https://canvas.uw.edu/files/100000138813656",
-        m1_a13: "https://canvas.uw.edu/files/100000138813657",
-        m1_a14: "https://canvas.uw.edu/files/100000138813658",
-        m1_report: "https://canvas.uw.edu/files/100000138813659",
-        m2_a21: "https://canvas.uw.edu/files/100000138882005",
-        m2_a22: "https://canvas.uw.edu/files/100000138813660",
-        m2_report: "https://canvas.uw.edu/files/100000138813661",
-        m3_a31: "https://canvas.uw.edu/files/100000138813662",
-        m3_a32: "https://canvas.uw.edu/files/100000138813663",
-        m3_a34: "https://canvas.uw.edu/files/100000138813664",
-        m3_report: "https://canvas.uw.edu/files/100000138813665",
-        m4_a41: "https://canvas.uw.edu/files/100000138813666",
-        m4_a42: [
-          "https://canvas.uw.edu/files/100000138813667",
-          "https://canvas.uw.edu/files/100000138813669",
-          "https://canvas.uw.edu/files/100000138813670",
-          "https://canvas.uw.edu/files/100000138813671",
-        ],
-        m4_a43: "https://canvas.uw.edu/files/100000138813672",
-        m4_report: "https://canvas.uw.edu/files/100000138813677",
-        m5_a51: "https://canvas.uw.edu/files/100000138813679",
-        m5_poster: "https://canvas.uw.edu/files/100000138813680",
-      },
-    },
     {
       folderName: "boredwalk",
       projectName: "BoredWalk",
@@ -98,36 +68,6 @@ export const projectSamples: ProjectSamples = {
       },
     },
     {
-      folderName: "focusshift",
-      projectName: "FocusShift",
-      projectUrl:
-        "https://courses.cs.washington.edu/courses/cse440/24au/projects/focusshift/",
-      assignments: {
-        m1_a12: "https://canvas.uw.edu/files/100000138813725",
-        m1_a13: "https://canvas.uw.edu/files/100000138813726",
-        m1_a14: "https://canvas.uw.edu/files/100000138813727",
-        m1_report: "https://canvas.uw.edu/files/100000138813728",
-        m2_a21: "https://canvas.uw.edu/files/100000138813729",
-        m2_a22: "https://canvas.uw.edu/files/100000138813730",
-        m2_report: "https://canvas.uw.edu/files/100000138813731",
-        m3_a31: "https://canvas.uw.edu/files/100000138813732",
-        m3_a32: "https://canvas.uw.edu/files/100000138813733",
-        m3_a34: "https://canvas.uw.edu/files/100000138813734",
-        m3_report: "https://canvas.uw.edu/files/100000138813735",
-        m4_a41: "https://canvas.uw.edu/files/100000138813736",
-        m4_a42: [
-          "https://canvas.uw.edu/files/100000138813737",
-          "https://canvas.uw.edu/files/100000138813738",
-          "https://canvas.uw.edu/files/100000138813739",
-          "https://canvas.uw.edu/files/100000138813740",
-        ],
-        m4_a43: "https://canvas.uw.edu/files/100000138813741",
-        m4_report: "https://canvas.uw.edu/files/100000138813742",
-        m5_a51: "https://canvas.uw.edu/files/100000138813743",
-        m5_poster: "https://canvas.uw.edu/files/100000138813744",
-      },
-    },
-    {
       folderName: "gemhunter",
       projectName: "Gem Hunter",
       projectUrl:
@@ -155,36 +95,6 @@ export const projectSamples: ProjectSamples = {
         m4_report: "https://canvas.uw.edu/files/100000138813763",
         m5_a51: "https://canvas.uw.edu/files/100000138813764",
         m5_poster: "https://canvas.uw.edu/files/100000138813765",
-      },
-    },
-    {
-      folderName: "planventure",
-      projectName: "Planventure",
-      projectUrl:
-        "https://courses.cs.washington.edu/courses/cse440/24au/projects/planventure/",
-      assignments: {
-        m1_a12: "https://canvas.uw.edu/files/100000138813767",
-        m1_a13: "https://canvas.uw.edu/files/100000138813768",
-        m1_a14: "https://canvas.uw.edu/files/100000138813769",
-        m1_report: "https://canvas.uw.edu/files/100000138813770",
-        m2_a21: "https://canvas.uw.edu/files/100000138813771",
-        m2_a22: "https://canvas.uw.edu/files/100000138813772",
-        m2_report: "https://canvas.uw.edu/files/100000138813773",
-        m3_a31: "https://canvas.uw.edu/files/100000138813774",
-        m3_a32: "https://canvas.uw.edu/files/100000138813775",
-        m3_a34: "https://canvas.uw.edu/files/100000138813776",
-        m3_report: "https://canvas.uw.edu/files/100000138813777",
-        m4_a41: "https://canvas.uw.edu/files/100000138813779",
-        m4_a42: [
-          "https://canvas.uw.edu/files/100000138813780",
-          "https://canvas.uw.edu/files/100000138813781",
-          "https://canvas.uw.edu/files/100000138813782",
-          "https://canvas.uw.edu/files/100000138813783",
-        ],
-        m4_a43: "https://canvas.uw.edu/files/100000138813784",
-        m4_report: "https://canvas.uw.edu/files/100000138813785",
-        m5_a51: "https://canvas.uw.edu/files/100000138813786",
-        m5_poster: "https://canvas.uw.edu/files/100000138813787",
       },
     },
     {
