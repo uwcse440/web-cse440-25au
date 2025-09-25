@@ -6,7 +6,7 @@ import {
 } from "@/types/ProjectSamples";
 import fetch from "node-fetch";
 
-import { secrets } from "../../secrets/data-samples.mts";
+import { secrets } from "../../secrets/data-samples";
 
 const SAMPLE_COURSE_NAME_MATCH = "CSE 440 Au 25";
 
@@ -32,12 +32,6 @@ const SAMPLE_PROJECTS: Array<{
     projectName: "Gem Hunter",
     projectUrl:
       "https://courses.cs.washington.edu/courses/cse440/24au/projects/gemhunter/",
-  },
-  {
-    folderName: "huskyride",
-    projectName: "Husky Ride",
-    projectUrl:
-      "https://courses.cs.washington.edu/courses/cse440/24au/projects/huskyride/",
   },
   {
     folderName: "potpal",

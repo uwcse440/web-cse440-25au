@@ -157,6 +157,36 @@ export const projectSamples: ProjectSamples = {
       },
     },
     {
+      folderName: "tiltd",
+      projectName: "Tiltd",
+      projectUrl:
+        "https://courses.cs.washington.edu/courses/cse440/24au/projects/tiltd/",
+      assignments: {
+        m1_a12: "https://canvas.uw.edu/files/100000138813829",
+        m1_a13: "https://canvas.uw.edu/files/100000138813830",
+        m1_a14: "https://canvas.uw.edu/files/100000138813831",
+        m1_report: "https://canvas.uw.edu/files/100000138813832",
+        m2_a21: "https://canvas.uw.edu/files/100000138813833",
+        m2_a22: "https://canvas.uw.edu/files/100000138813834",
+        m2_report: "https://canvas.uw.edu/files/100000138813835",
+        m3_a31: "https://canvas.uw.edu/files/100000138813837",
+        m3_a32: "https://canvas.uw.edu/files/100000138813839",
+        m3_a34: "https://canvas.uw.edu/files/100000138813840",
+        m3_report: "https://canvas.uw.edu/files/100000139101940",
+        m4_a41: "https://canvas.uw.edu/files/100000138813841",
+        m4_a42: [
+          "https://canvas.uw.edu/files/100000138813843",
+          "https://canvas.uw.edu/files/100000138813844",
+          "https://canvas.uw.edu/files/100000138813845",
+          "https://canvas.uw.edu/files/100000138813846",
+        ],
+        m4_a43: "https://canvas.uw.edu/files/100000138813847",
+        m4_report: "https://canvas.uw.edu/files/100000138813848",
+        m5_a51: "https://canvas.uw.edu/files/100000138813849",
+        m5_poster: "https://canvas.uw.edu/files/100000138813850",
+      },
+    },
+    {
       folderName: "wanderlust",
       projectName: "Wanderlust",
       projectUrl:
