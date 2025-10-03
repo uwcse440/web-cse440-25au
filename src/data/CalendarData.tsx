@@ -526,8 +526,8 @@ export const calendarData: {
       date: verifyCalendarDate("2025-10-09", "Thu"),
       submission: "canvas",
       submitCanvasTime: "3:00pm",
-      // submitCanvasLink:
-      //   "https://canvas.uw.edu/courses/1746586/assignments/9730292",
+      submitCanvasLink:
+        "https://canvas.uw.edu/courses/1828371/assignments/10688267",
     },
     assignment_2_2: {
       type: "assignment",
@@ -536,8 +536,8 @@ export const calendarData: {
       date: verifyCalendarDate("2025-10-16", "Thu"),
       submission: "canvas",
       submitCanvasTime: "3:00pm",
-      // submitCanvasLink:
-      //   "https://canvas.uw.edu/courses/1746586/assignments/9730293",
+      submitCanvasLink:
+        "https://canvas.uw.edu/courses/1828371/assignments/10688268",
     },
     milestone_2_report: {
       type: "assignment",
@@ -546,8 +546,8 @@ export const calendarData: {
       date: verifyCalendarDate("2025-10-20", "Mon"),
       submission: "canvas",
       submitCanvasTime: "3:00pm",
-      // submitCanvasLink:
-      //   "https://canvas.uw.edu/courses/1746586/assignments/9755342",
+      submitCanvasLink:
+        "https://canvas.uw.edu/courses/1828371/assignments/10688284",
     },
     milestone_2_contribution_statement: {
       type: "assignment",
@@ -556,8 +556,8 @@ export const calendarData: {
       date: verifyCalendarDate("2025-10-22", "Wed"),
       submission: "canvas",
       submitCanvasTime: "8:00pm",
-      // submitCanvasLink:
-      //   "https://canvas.uw.edu/courses/1828371/assignments/10688281",
+      submitCanvasLink:
+        "https://canvas.uw.edu/courses/1828371/assignments/10688283",
     },
 
     //
@@ -570,8 +570,8 @@ export const calendarData: {
       date: verifyCalendarDate("2025-10-23", "Thu"),
       submission: "canvas",
       submitCanvasTime: "3:00pm",
-      // submitCanvasLink:
-      //   "https://canvas.uw.edu/courses/1746586/assignments/9759789",
+      submitCanvasLink:
+        "https://canvas.uw.edu/courses/1828371/assignments/10688269",
     },
     assignment_3_2: {
       type: "assignment",
@@ -580,8 +580,8 @@ export const calendarData: {
       date: verifyCalendarDate("2025-10-27", "Mon"),
       submission: "canvas",
       submitCanvasTime: "3:00pm",
-      // submitCanvasLink:
-      //   "https://canvas.uw.edu/courses/1746586/assignments/9764927",
+      submitCanvasLink:
+        "https://canvas.uw.edu/courses/1828371/assignments/10688270",
     },
     assignment_3_3: {
       type: "assignment",
@@ -600,8 +600,8 @@ export const calendarData: {
       date: verifyCalendarDate("2025-11-04", "Tue"),
       submission: "canvas",
       submitCanvasTime: "3:00pm",
-      // submitCanvasLink:
-      //   "https://canvas.uw.edu/courses/1746586/assignments/9776564",
+      submitCanvasLink:
+        "https://canvas.uw.edu/courses/1828371/assignments/10688271",
     },
     milestone_3_report: {
       type: "assignment",
@@ -610,8 +610,8 @@ export const calendarData: {
       date: verifyCalendarDate("2025-11-07", "Fri"),
       submission: "canvas",
       submitCanvasTime: "3:00pm",
-      // submitCanvasLink:
-      //   "https://canvas.uw.edu/courses/1746586/assignments/9776723",
+      submitCanvasLink:
+        "https://canvas.uw.edu/courses/1828371/assignments/10688286",
     },
     milestone_3_contribution_statement: {
       type: "assignment",
@@ -620,8 +620,8 @@ export const calendarData: {
       date: verifyCalendarDate("2025-11-09", "Sun"),
       submission: "canvas",
       submitCanvasTime: "8:00pm",
-      // submitCanvasLink:
-      //   "https://canvas.uw.edu/courses/1828371/assignments/10688281",
+      submitCanvasLink:
+        "https://canvas.uw.edu/courses/1828371/assignments/10688285",
     },
 
     //
@@ -634,8 +634,8 @@ export const calendarData: {
       date: verifyCalendarDate("2025-11-11", "Tue"),
       submission: "canvas",
       submitCanvasTime: "3:00pm",
-      // submitCanvasLink:
-      //   "https://canvas.uw.edu/courses/1746586/assignments/9793018",
+      submitCanvasLink:
+        "https://canvas.uw.edu/courses/1828371/assignments/10688272",
     },
     assignment_4_2: {
       type: "assignment",
@@ -644,8 +644,8 @@ export const calendarData: {
       date: verifyCalendarDate("2025-11-13", "Thu"),
       submission: "canvas",
       submitCanvasTime: "3:00pm",
-      // submitCanvasLink:
-      //   "https://canvas.uw.edu/courses/1746586/assignments/9793114",
+      submitCanvasLink:
+        "https://canvas.uw.edu/courses/1828371/assignments/10688273",
     },
     assignment_4_3: {
       type: "assignment",
@@ -654,8 +654,8 @@ export const calendarData: {
       date: verifyCalendarDate("2025-11-24", "Mon"),
       submission: "canvas",
       submitCanvasTime: "3:00pm",
-      // submitCanvasLink:
-      //   "https://canvas.uw.edu/courses/1746586/assignments/9795140",
+      submitCanvasLink:
+        "https://canvas.uw.edu/courses/1828371/assignments/10688274",
     },
     milestone_4_report: {
       type: "assignment",
@@ -664,8 +664,8 @@ export const calendarData: {
       date: verifyCalendarDate("2025-11-26", "Wed"),
       submission: "canvas",
       submitCanvasTime: "8:00pm",
-      // submitCanvasLink:
-      //   "https://canvas.uw.edu/courses/1746586/assignments/9795144",
+      submitCanvasLink:
+        "https://canvas.uw.edu/courses/1828371/assignments/10688288",
     },
     milestone_4_contribution_statement: {
       type: "assignment",
@@ -674,8 +674,8 @@ export const calendarData: {
       date: verifyCalendarDate("2025-11-28", "Fri"),
       submission: "canvas",
       submitCanvasTime: "8:00pm",
-      // submitCanvasLink:
-      //   "https://canvas.uw.edu/courses/1828371/assignments/10688281",
+      submitCanvasLink:
+        "https://canvas.uw.edu/courses/1828371/assignments/10688287",
     },
 
     //
@@ -688,8 +688,8 @@ export const calendarData: {
       date: verifyCalendarDate("2025-12-01", "Mon"),
       submission: "canvas",
       submitCanvasTime: "3:00pm",
-      // submitCanvasLink:
-      //   "https://canvas.uw.edu/courses/1746586/assignments/9821454",
+      submitCanvasLink:
+        "https://canvas.uw.edu/courses/1828371/assignments/10688275",
     },
     assignment_5_poster_initial: {
       type: "assignment",
@@ -698,8 +698,8 @@ export const calendarData: {
       date: verifyCalendarDate("2025-12-01", "Mon"),
       submission: "canvas",
       submitCanvasTime: "3:00pm",
-      // submitCanvasLink:
-      //   "https://canvas.uw.edu/courses/1746586/assignments/9821457",
+      submitCanvasLink:
+        "https://canvas.uw.edu/courses/1828371/assignments/10688277",
     },
     assignment_5_poster_final: {
       type: "assignment",
@@ -708,8 +708,8 @@ export const calendarData: {
       date: verifyCalendarDate("2025-12-03", "Wed"),
       submission: "canvas",
       submitCanvasTime: "3:00pm",
-      // submitCanvasLink:
-      //   "https://canvas.uw.edu/courses/1746586/assignments/9821486",
+      submitCanvasLink:
+        "https://canvas.uw.edu/courses/1828371/assignments/10688276",
     },
     assignment_5_web_post_initial: {
       type: "assignment",
@@ -734,8 +734,8 @@ export const calendarData: {
       date: verifyCalendarDate("2025-12-07", "Sun"),
       submission: "canvas",
       submitCanvasTime: "8:00pm",
-      // submitCanvasLink:
-      //   "https://canvas.uw.edu/courses/1828371/assignments/10688281",
+      submitCanvasLink:
+        "https://canvas.uw.edu/courses/1828371/assignments/10688289",
     },
   },
 };
