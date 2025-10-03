@@ -218,7 +218,7 @@ export const calendarData: {
       date: verifyCalendarDate("2025-10-02", "Thu"),
       timeAndLocation: TIME_AND_LOCATION_LECTURE,
       title: "Design Diamond",
-      // slides: "https://canvas.uw.edu/files/124602714/",
+      slides: "https://canvas.uw.edu/files/139426346",
     },
     {
       type: "lecture",
