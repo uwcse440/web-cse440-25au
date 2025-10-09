@@ -232,14 +232,14 @@ export const calendarData: {
       date: verifyCalendarDate("2025-10-09", "Thu"),
       timeAndLocation: TIME_AND_LOCATION_LECTURE,
       title: "Design of Everyday Things",
-      // slides: "https://canvas.uw.edu/files/125129909/",
+      slides: "https://canvas.uw.edu/files/139792644/",
     },
     {
       type: "lecture",
       date: verifyCalendarDate("2025-10-14", "Tue"),
       timeAndLocation: TIME_AND_LOCATION_LECTURE,
       title: "Design of Everyday Things",
-      // slides: "https://canvas.uw.edu/files/125129909/",
+      slides: "https://canvas.uw.edu/files/139792644/",
     },
     {
       type: "lecture",
