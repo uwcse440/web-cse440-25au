@@ -246,7 +246,7 @@ export const calendarData: {
       date: verifyCalendarDate("2025-10-16", "Thu"),
       timeAndLocation: TIME_AND_LOCATION_LECTURE,
       title: "Task Analysis",
-      // slides: "https://canvas.uw.edu/files/125310883/",
+      slides: "https://canvas.uw.edu/files/140111397/",
     },
     //
     // Studio Lecture
