@@ -256,7 +256,7 @@ export const calendarData: {
       date: verifyCalendarDate("2025-10-23", "Thu"),
       timeAndLocation: TIME_AND_LOCATION_LECTURE,
       title: "Storyboarding and Paper Prototyping",
-      // slides: "https://canvas.uw.edu/files/125517925/",
+      slides: "https://canvas.uw.edu/files/140457549/",
     },
     {
       type: "lecture",
@@ -387,11 +387,7 @@ export const calendarData: {
     {
       type: "away",
       title: "Jesse Away",
-      dates: [
-        verifyCalendarDate("2025-10-27", "Mon"),
-        verifyCalendarDate("2025-10-28", "Tue"),
-        verifyCalendarDate("2025-10-29", "Wed"),
-      ],
+      dates: [],
     },
     {
       type: "away",
@@ -410,7 +406,7 @@ export const calendarData: {
         verifyCalendarDate("2025-10-08", "Wed"),
         verifyCalendarDate("2025-10-15", "Wed"),
         verifyCalendarDate("2025-10-22", "Wed"),
-        // verifyCalendarDate("2025-10-29", "Wed"), // Away / Design Meetings
+        verifyCalendarDate("2025-10-29", "Wed"),
         verifyCalendarDate("2025-11-05", "Wed"),
         verifyCalendarDate("2025-11-12", "Wed"),
         // verifyCalendarDate("2025-11-19", "Wed"), // Exam Grading
@@ -427,7 +423,7 @@ export const calendarData: {
         verifyCalendarDate("2025-10-09", "Thu"),
         verifyCalendarDate("2025-10-16", "Thu"),
         verifyCalendarDate("2025-10-23", "Thu"),
-        // verifyCalendarDate("2025-10-30", "Thu"), // Design Meetings
+        verifyCalendarDate("2025-10-30", "Thu"),
         verifyCalendarDate("2025-11-06", "Thu"),
         verifyCalendarDate("2025-11-13", "Thu"),
         verifyCalendarDate("2025-11-20", "Thu"),
@@ -590,8 +586,8 @@ export const calendarData: {
       date: verifyCalendarDate("2025-11-01", "Sat"),
       submission: "canvas",
       submitCanvasTime: "3:00pm",
-      // submitCanvasLink:
-      //   "https://canvas.uw.edu/courses/1746586/assignments/9764927",
+      submitCanvasLink:
+        "https://canvas.uw.edu/courses/1828371/assignments/10802466",
     },
     assignment_3_4: {
       type: "assignment",
