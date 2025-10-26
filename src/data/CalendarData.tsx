@@ -387,11 +387,7 @@ export const calendarData: {
     {
       type: "away",
       title: "Jesse Away",
-      dates: [
-        verifyCalendarDate("2025-10-27", "Mon"),
-        verifyCalendarDate("2025-10-28", "Tue"),
-        verifyCalendarDate("2025-10-29", "Wed"),
-      ],
+      dates: [],
     },
     {
       type: "away",
@@ -410,7 +406,7 @@ export const calendarData: {
         verifyCalendarDate("2025-10-08", "Wed"),
         verifyCalendarDate("2025-10-15", "Wed"),
         verifyCalendarDate("2025-10-22", "Wed"),
-        // verifyCalendarDate("2025-10-29", "Wed"), // Away / Design Meetings
+        verifyCalendarDate("2025-10-29", "Wed"),
         verifyCalendarDate("2025-11-05", "Wed"),
         verifyCalendarDate("2025-11-12", "Wed"),
         // verifyCalendarDate("2025-11-19", "Wed"), // Exam Grading
@@ -427,7 +423,7 @@ export const calendarData: {
         verifyCalendarDate("2025-10-09", "Thu"),
         verifyCalendarDate("2025-10-16", "Thu"),
         verifyCalendarDate("2025-10-23", "Thu"),
-        // verifyCalendarDate("2025-10-30", "Thu"), // Design Meetings
+        verifyCalendarDate("2025-10-30", "Thu"),
         verifyCalendarDate("2025-11-06", "Thu"),
         verifyCalendarDate("2025-11-13", "Thu"),
         verifyCalendarDate("2025-11-20", "Thu"),
