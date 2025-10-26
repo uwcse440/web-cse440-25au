@@ -256,7 +256,7 @@ export const calendarData: {
       date: verifyCalendarDate("2025-10-23", "Thu"),
       timeAndLocation: TIME_AND_LOCATION_LECTURE,
       title: "Storyboarding and Paper Prototyping",
-      // slides: "https://canvas.uw.edu/files/125517925/",
+      slides: "https://canvas.uw.edu/files/140457549/",
     },
     {
       type: "lecture",
