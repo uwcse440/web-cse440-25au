@@ -6,14 +6,15 @@ import { AssignmentSubmitCanvasLink } from "@/components/links/AssignmentSubmitC
 import { CourseDataLink } from "@/components/links/CourseDataLink";
 import { SiteLink } from "@/components/links/SiteLink";
 import { default as ClarityAndPresentationReference } from "@/contentcomponents/ClarityAndPresentationReference.mdx";
+import { default as GroupAssignment } from "@/contentcomponents/GroupAssignment.mdx";
 import { default as PriorSamplesWarning } from "@/contentcomponents/PriorSamplesWarning.mdx";
 import { calendarData } from "@/data/CalendarData";
 import { courseData } from "@/data/CourseData";
 import { SiteLinks } from "@/data/SiteLinks";
 
-# Assignment 3.3: Design Meetings
+# Assignment 3.3: Design Meeting
 
-<UnderDevelopment display={true} />
+<UnderDevelopment display={false} />
 
 In Class: Tuesday, October 29; Thursday, October 31; Friday, November 1
 
@@ -27,7 +28,7 @@ and consider a direction to pursue in the remainder of your project.
 Each design meeting scheduling slot is 20 minutes.
 Plan for 15 minutes of discussion, with transition time before and after your discussion.
 Staff will have reviewed your submission prior to this discussion,
-so you should plan for this to be a discussion of your design direction.
+so you should plan for this to be a discussion of each design and your design direction.
 If you have particular things you want to be sure to cover in discussion,
 you should explicitly raise those as questions to the staff.
 
@@ -35,11 +36,14 @@ Groups are only expected to be present during their scheduled slot.
 Groups may quietly use another portion of the room on the same day they are scheduled.
 We ask that groups scheduled for another day meet elsewhere.
 
-## Submission
+After your design meeting, capture your understanding of key feedback on each design.
+Then also capture your understanding of feedback on design selection and direction for the remainder of your project.
+
+## Meeting Sign Up
 
 Sign Up Due: <AssignmentDueDateTime assignmentKey={calendarData.assignments.assignment_3_2} />
 
-Presentations will directly use the same Slides deck you prepared and submitted in Assignment 3.2.
+Meetings will directly use the same Slides deck you prepared and submitted in Assignment 3.2.
 You may continue to update those in-place in the Drive folder for course project files,
 based on feedback or in preparing for discussion.
 
@@ -57,6 +61,42 @@ Be prepared to discuss your design research, tasks, and designs.
 
 If a member of your group will need to join via video, arrange for that to work smoothly.
 
+## Submission
+
+Due: <AssignmentDueDateTime assignmentKey={calendarData.assignments.assignment_3_3} />
+
+Within the Drive folder for course project files:
+
+- Identify the Slides deck corresponding to this assignment for your group.
+  The deck provides a template for this assignment.
+  Edit the deck in-place, so that you can easily share it in critique.
+
+- Prepare a Slides deck with the following structure:
+
+  - 1 slide: Design problem.
+  - For each of 3 designs proposed in Assignment 3.2:
+     - 1 slide: Title, brief description, key sketch or sketches of the approach.
+     - 1 slide: Feedback on the design.
+  - 1 slide: Feedback on design selection and direction.
+
+Reminders and requirements:
+
+- Submission via Canvas is also required, in support of grading.
+  - Remove instruction slides and template markings from your deck before submission.
+
+  - Export a PDF of your deck, via the menu: File -> Download -> PDF Document (.pdf).
+
+- <GroupAssignment />
+- <ClarityAndPresentationReference />
+
+The Drive folder for course project files is here:
+
+<CourseDataLink linkKey={courseData.linkDriveProjectFiles} outerComponent="p"/>
+
+Submit via Canvas here:
+
+<AssignmentSubmitCanvasLink assignmentKey={calendarData.assignments.assignment_3_3} />
+
 ## Completion Grading
 
 This assignment will be graded on completion of the following components:
@@ -69,6 +109,23 @@ This assignment will be graded on completion of the following components:
 2. __Preparation and Participation in Discussion__
 
    Be prepared for and actively participate in discussion of a direction to pursue in the remainder of your project.
+
+3. __Current Design Problem__
+
+   This may be taken directly from your Assignment 3.2,
+   or it may be updated if your framing of the design problem has evolved in defining tasks and exploring designs.
+
+4. __3 Proposed Designs__
+
+   Each Design should consist of:
+     - Title, brief description, key sketch or sketches of the approach.
+     - Feedback on the design
+
+5. __Feedback on Design Selection and Direction__
+
+   Provide a summary of feedback received on design selection and the direction for the remainder of your project.
+
+6. __Clarity and Presentation__
 
 {/* ## Prior Samples
 
