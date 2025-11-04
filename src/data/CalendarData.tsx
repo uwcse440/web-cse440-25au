@@ -261,14 +261,14 @@ export const calendarData: {
     {
       type: "lecture",
       date: verifyCalendarDate("2025-11-04", "Tue"),
-      // timeAndLocation: TIME_AND_LOCATION_LECTURE,
+      timeAndLocation: TIME_AND_LOCATION_LECTURE,
       title: "Models and Human Performance",
-      // slides: "https://canvas.uw.edu/files/126193990/",
+      slides: "https://canvas.uw.edu/files/141069214/",
     },
     {
       type: "lecture",
       date: verifyCalendarDate("2025-11-06", "Thu"),
-      // timeAndLocation: TIME_AND_LOCATION_LECTURE,
+      timeAndLocation: TIME_AND_LOCATION_LECTURE,
       title: "Inspection and Usability Testing",
       // slides: "https://canvas.uw.edu/files/126329737/",
     },
