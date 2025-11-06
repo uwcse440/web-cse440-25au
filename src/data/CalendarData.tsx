@@ -60,7 +60,7 @@ const TIME_AND_LOCATIONS_SECTION: TimeAndLocation[] = [
 
 const TIME_AND_LOCATION_EXAM_QA: TimeAndLocation = {
   time: "4:00 to 5:00",
-  location: "Zoom",
+  location: "CSE 503 and Zoom",
 };
 
 const TIME_AND_LOCATION_POSTER_SESSION: TimeAndLocation = {
@@ -270,7 +270,7 @@ export const calendarData: {
       date: verifyCalendarDate("2025-11-06", "Thu"),
       timeAndLocation: TIME_AND_LOCATION_LECTURE,
       title: "Inspection and Usability Testing",
-      // slides: "https://canvas.uw.edu/files/126329737/",
+      slides: "https://canvas.uw.edu/files/141177552/",
     },
     {
       type: "lecture",
