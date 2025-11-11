@@ -277,7 +277,7 @@ export const calendarData: {
       date: verifyCalendarDate("2025-11-13", "Thu"),
       timeAndLocation: TIME_AND_LOCATION_LECTURE,
       title: "Patterns and Interface Implementation",
-      // slides: "https://canvas.uw.edu/files/126569767/",
+      slides: "https://canvas.uw.edu/files/141398087/",
     },
     // {
     //   type: "lecture",
@@ -359,7 +359,7 @@ export const calendarData: {
       title: "Exam Q&A",
       date: verifyCalendarDate("2025-11-17", "Mon"),
       timeAndLocation: TIME_AND_LOCATION_EXAM_QA,
-      // slides: "https://canvas.uw.edu/files/126571016/",
+      slides: "https://canvas.uw.edu/files/141410815/",
     },
     {
       type: "event",
