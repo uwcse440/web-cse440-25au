@@ -279,19 +279,19 @@ export const calendarData: {
       title: "Patterns and Interface Implementation",
       slides: "https://canvas.uw.edu/files/141398087/",
     },
-    // {
-    //   type: "lecture",
-    //   date: verifyCalendarDate("202X-11-14", "Thu"),
-    //   timeAndLocation: TIME_AND_LOCATION_LECTURE,
-    //   title: "History",
-    //   slides: "https://canvas.uw.edu/files/126691264/",
-    // },
     {
       type: "lecture",
       date: verifyCalendarDate("2025-11-20", "Thu"),
       timeAndLocation: TIME_AND_LOCATION_LECTURE,
       title: "Designing for Diverse Needs",
-      // slides: "https://canvas.uw.edu/files/127038308/",
+      slides: "https://canvas.uw.edu/files/141860835/",
+    },
+    {
+      type: "lecture",
+      date: verifyCalendarDate("2025-11-25", "Tue"),
+      timeAndLocation: TIME_AND_LOCATION_LECTURE,
+      title: "History",
+      // slides: "https://canvas.uw.edu/files/126691264/",
     },
   ],
 
@@ -329,7 +329,7 @@ export const calendarData: {
     {
       type: "studio",
       dates: [
-        verifyCalendarDate("2025-11-25", "Tue"),
+        // verifyCalendarDate("2025-11-25", "Tue"),
         verifyCalendarDate("2025-12-02", "Tue"),
         verifyCalendarDate("2025-12-04", "Thu"),
       ],
