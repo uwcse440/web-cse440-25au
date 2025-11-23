@@ -49,14 +49,15 @@ RewriteRule ^calendar[/]?$ calendar.html
 RewriteRule ^projects[/]?$ projects.html
 RewriteRule ^projects/template[/]?$ projects/template.html
 
-# RewriteRule ^projects/betbreaker[/]?$ projects/betbreaker.html
-# RewriteRule ^projects/boredwalk[/]?$ projects/boredwalk.html
-# RewriteRule ^projects/dawgsense[/]?$ projects/dawgsense.html
-# RewriteRule ^projects/focusshift[/]?$ projects/focusshift.html
-# RewriteRule ^projects/gemhunter[/]?$ projects/gemhunter.html
-# RewriteRule ^projects/huskyride[/]?$ projects/huskyride.html
-# RewriteRule ^projects/planventure[/]?$ projects/planventure.html
-# RewriteRule ^projects/potpal[/]?$ projects/potpal.html
-# RewriteRule ^projects/preparebear[/]?$ projects/preparebear.html
-# RewriteRule ^projects/tiltd[/]?$ projects/tiltd.html
-# RewriteRule ^projects/wanderlust[/]?$ projects/wanderlust.html
+RewriteRule ^projects/abroad[/]?$ projects/abroad.html
+RewriteRule ^projects/campuskey[/]?$ projects/campuskey.html
+RewriteRule ^projects/focusflow[/]?$ projects/focusflow.html
+RewriteRule ^projects/foodpassport[/]?$ projects/foodpassport.html
+RewriteRule ^projects/goalkeeper[/]?$ projects/goalkeeper.html
+RewriteRule ^projects/netizen[/]?$ projects/netizen.html
+RewriteRule ^projects/nextleap[/]?$ projects/nextleap.html
+RewriteRule ^projects/personalizehealthycare[/]?$ projects/personalizehealthycare.html
+RewriteRule ^projects/pomopet[/]?$ projects/pomopet.html
+RewriteRule ^projects/quackback[/]?$ projects/quackback.html
+RewriteRule ^projects/reform[/]?$ projects/reform.html
+RewriteRule ^projects/rxflect[/]?$ projects/rxflect.html
