@@ -47,7 +47,7 @@ import { ProjectTeamGallery } from "@/components/project/ProjectTeamGallery";
   * - If an import is not working, double-check that you have the correct file extension.
   */}
 
-import imageTeamPerson1 from "public/images/projects/template/team/firstname1.png";
+import imageTeamPerson1 from "public/images/projects/goalkeeper/team/Photo_Jacklyn.jpg";
 import imageTeamPerson2 from "public/images/projects/template/team/firstname2.png";
 import imageTeamPerson3 from "public/images/projects/template/team/firstname3.png";
 import imageTeamPerson4 from "public/images/projects/template/team/firstname4.png";
@@ -57,9 +57,13 @@ import imagePlaceholder400x400 from "public/images/projects/template/post/400x40
 import imagePlaceholder600x300 from "public/images/projects/template/post/600x300.png";
 import imagePlaceholder1200x800 from "public/images/projects/template/post/1200x800.png";
 
-# Project Template
+import overview from "public/images/projects/goalkeeper/post/overview.png";
+import set_goals from "public/images/projects/goalkeeper/post/set_goals.png";
+import use_during_drinking from "public/images/projects/goalkeeper/post/use_during_drinking.png";
+import visual_cues from "public/images/projects/goalkeeper/post/visual_cues.png";
+import drinking_progress from "public/images/projects/goalkeeper/post/drinking_progress.png";
 
-<ProjectSubtitle>Optional Subtitle</ProjectSubtitle>
+# GoalKeeper
 
 ## Team
 
@@ -72,19 +76,23 @@ import imagePlaceholder1200x800 from "public/images/projects/template/post/1200x
 
 <ProjectTeamGallery members={[
     {
-        name: ["Name Line 1", "Name Line 2"],
+        name: ["Jacklyn", "Cui"],
         photo: imageTeamPerson1,
     },
     {
-        name: ["Name Line 1", "Name Line 2"],
+        name: ["Ronin", "Crawford"],
         photo: imageTeamPerson2,
     },
     {
-        name: ["Name Line 1", "Name Line 2"],
+        name: ["Jamie", "Gashler"],
         photo: imageTeamPerson3,
     },
     {
-        name: ["Name Line 1", "Name Line 2"],
+        name: ["Victor", "Wong"],
+        photo: imageTeamPerson4,
+    },
+    {
+        name: ["Patricia", "Lee"],
         photo: imageTeamPerson4,
     },
 ]} />
@@ -107,95 +115,105 @@ import imagePlaceholder1200x800 from "public/images/projects/template/post/1200x
   * Later in the template you will also find examples of the plural `ProjectImagesBlock` tag.
 */}
 
+It is often difficult for people to reduce their alcohol use, even when they genuinely want
+to cut back, because drinking can become habitual and socially reinforced. Existing tools
+for managing consumption are often too tedious, or backfire by creating guilt-driven cycles
+of motivation and relapse. Additionally, people are not interested manual tracking that
+involves high-effort, but more interested in support that helps them stay connected to their
+long-term goals.
+
 <ProjectImageBlock
     image={{
-        src: imagePlaceholder1200x800,
-        alt: "Every image requires alt text. This should describe the content of that image."
+        src: overview,
+        alt: "Four koozies standing in a row with the first in red, second in purple and the remaining in green.",
+        caption: "Koozie designs with different colors",
     }}
-    caption={
-        "A good caption supports helps a reader understand what is important. " +
-        "It thus supports skimming and also provides an emphasis on key points of related text."
-    }
     width={6}
     maxHeight={"400px"}
 >
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-incididunt ut labore et dolore magna aliqua. Nunc sed id semper risus in
-hendrerit. Maecenas volutpat blandit aliquam etiam erat velit scelerisque in
-dictum. Integer feugiat scelerisque varius morbi enim nunc faucibus. Risus at
-ultrices mi tempus imperdiet nulla malesuada pellentesque. Habitant morbi
-tristique senectus et netus et malesuada fames ac. Vel eros donec ac odio
-tempor orci. Nisl nisi scelerisque eu ultrices vitae. In egestas erat imperdiet
-sed. Faucibus purus in massa tempor. Ipsum faucibus vitae aliquet nec.
-
-Ullamcorper sit amet. Posuere sollicitudin aliquam ultrices sagittis orci a
-scelerisque purus. Tellus cras adipiscing enim eu turpis egestas pretium aenean
-pharetra. Enim sed faucibus turpis in eu mi bibendum neque egestas. Faucibus
-scelerisque eleifend donec pretium vulputate sapien nec sagittis aliquam.
-Natoque penatibus et magnis dis. Ullamcorper velit sed ullamcorper morbi
-tincidunt. Arcu dui vivamus arcu felis bibendum ut tristique. Consectetur
-adipiscing elit pellentesque habitant morbi.
+    Our design, **GoalKeeper**, is a customizable Koozie for folks who continue drinking after
+    college. This offers a convenient way for users to automatically track their drinking,
+    create goals, and manage habits with friends through a companion social app. You can work
+    together with friends to reflect on and share progress while staying motivated. The main
+    purpose of the Koozie is to encourage mindful drinking in conjunction with a sustained
+    connection to personal and social goals.
 
 </ProjectImageBlock>
 
 ## Design Walkthrough
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eget porttitor augue.
-Vestibulum sed ex quis quam egestas interdum. Donec nec semper orci, id iaculis odio.
-Fusce rutrum lacus et volutpat luctus. Praesent accumsan volutpat lacus, ac vehicula ante gravida ut.
-Donec quis imperdiet justo. Pellentesque semper eleifend ex a rutrum.
+    One of our main objectives is to build a tracking system that avoids the issues people
+    have with current methods, which include high-effort manual tracking and invasive design.
+    Koozie is already popular in drinking contexts and offers a convenient way for users to
+    automatically track their drinking goals and those of their friends through a companion
+    social app. People can work together along with buddies, which provides incentives for
+    users to reflect on and share their progress in a motivating way. Specifically, The main
+    purpose of the Koozie is not to serve as a perfect drink counter, but rather to encourage
+    mindful drinking and sustained connection to personal and social goals.
 
-### Title for a Task
+    The GoalKeeper Koozie allows for easy, passive tracking that can be fit onto any cup
+    shape and size. One of our tasks is to collaborate with friends on alcohol consumption.
+    We chose this task because from our findings, we realized that a lot of people depend on
+    the people around them to keep them accountable with their drinking habits. So, our
+    design supports the user by connecting them with their friends and emphasizes that it is
+    not an isolating journey. Our other task is to set and manage personalized drinking goals.
+    Each person has their own set of goals that they want to achieve and thus, our app becomes
+    a space to reflect and manage said goals. This combination of tasks allows us to design A
+    Koozie that is simple, portable, and lightweight for easy tracking, and an app that lets
+    the user reflect on their individual and/or shared goals.
+
+
+### Set, track, and Manage Drinking Goals with Friends
 
 <ProjectImagesBlock
     images={[
         {
-            src: imagePlaceholder300x600,
-            alt: "Every image requires alt text. This should describe the content of that image.",
+            src: set_goals,
+            alt: "Users can set their drinking goals on the App by choosing duration, limit and period.",
         },
         {
-            src: imagePlaceholder300x600,
-            alt: "Every image requires alt text. This should describe the content of that image.",
+            src: use_during_drinking,
+            alt: "Users can use their koozie during an drinking event.",
+        },
+        {
+            src: visual_cues,
+            alt: "Koozie acts like an visual cue.",
         },
     ]}
     direction={"row"}
-    caption={
-        "This caption is applied to the entire block of images. " +
-        "See that it spans across the area of the images."
-    }
-    width={6}
+    caption="After specifying the goal in App, user can use the kooize during drinking sessions."
     maxHeight={"400px"}
 >
 
-Euismod quis viverra nibh cras pulvinar mattis nunc sed. Risus quis varius quam
-quisque. Mi tempus imperdiet nulla malesuada pellentesque elit. Felis eget
-velit aliquet sagittis id consectetur purus ut. Eu augue ut lectus arcu.
-Maecenas ultricies mi eget mauris. Nec ullamcorper sit amet risus nullam eget
-felis eget nunc. Et molestie ac feugiat sed lectus vestibulum mattis. Fames ac
-turpis egestas integer. Auctor augue mauris augue neque gravida.
+    First, users could specify a goal in-app on how much they plan to drink during a given
+    time period. During a drinking event, users wrap their GoalKeeper koozies around their
+    cup(s), which detects the weight of a cup/drink and tracks the number of drinks from a
+    dial the user sets initially. Then the koozie sends their drink info to their phone
+    via bluetooth. The koozie acts as a visual reminder of a users goal as they are
+    actively drinking that they’ve made commitments and want to keep using it to track their
+    consumption.
 
 </ProjectImagesBlock>
 
 <ProjectImageBlock
     image={{
-        src: imagePlaceholder1200x800,
-        alt: "Every image requires alt text. This should describe the content of that image.",
+        src: drinking_progress,
+        alt: "Users can track their drinking progress and communicate with friends on companion App.",
     }}
-    caption={
-        "A good caption supports helps a reader understand what is important. " +
-        "It thus supports skimming and also provides an emphasis on key points of related text."
-    }
+    caption="Users can track their drinking progress and communicate with friends on companion App."
     width={6}
     maxHeight={"400px"}
 >
 
-Euismod quis viverra nibh cras pulvinar mattis nunc sed. Risus quis varius quam
-quisque. Mi tempus imperdiet nulla malesuada pellentesque elit. Felis eget
-velit aliquet sagittis id consectetur purus ut. Eu augue ut lectus arcu.
-Maecenas ultricies mi eget mauris. Nec ullamcorper sit amet risus nullam eget
-felis eget nunc. Et molestie ac feugiat sed lectus vestibulum mattis. Fames ac
-turpis egestas integer. Auctor augue mauris augue neque gravida.
+    After an event, the app stores the koozie drink info and creates a report on the Progress
+    page. When the user clicks the Progress button, they can see their drinking habits over
+    time and indicated by different colors, and there would be a notification push to the user.
+    Furthermore, they can see their friends’ drinking and goals over time if they decided to
+    share. Friends that are under or over limits are indicated with color. This lets friends
+    monitor in real time, and they can then act on this in a way that suits the needs of the
+    friend. After the goal time is over, the user can update their goal for next time in the
+    Set a Goal page.
 
 </ProjectImageBlock>
 
