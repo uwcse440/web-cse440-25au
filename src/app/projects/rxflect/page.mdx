@@ -48,7 +48,7 @@ import { ProjectTeamGallery } from "@/components/project/ProjectTeamGallery";
   */}
 
 import imageTeamPerson1 from "public/images/projects/rxflect/team/photo_kenny.jpg";
-import imageTeamPerson2 from "public/images/projects/rxflect/team/photo_johny.png";
+import imageTeamPerson2 from "public/images/projects/rxflect/team/photo_johny.jpeg";
 import imageTeamPerson3 from "public/images/projects/rxflect/team/photo_han.png";
 import imageTeamPerson4 from "public/images/projects/rxflect/team/photo_kaung.png";
 import imageTeamPerson5 from "public/images/projects/rxflect/team/photo_amar.jpg";
@@ -61,6 +61,7 @@ import intial_calender from "public/images/projects/rxflect/post/initial_calende
 import revised_calender from "public/images/projects/rxflect/post/revised_calender.png";
 import home_page from "public/images/projects/rxflect/post/home_page.png"
 import notification from "public/images/projects/rxflect/post/notification.png"
+import navigation_bar from "public/images/projects/rxflect/post/navigation_bar.png"
 import task1_part1 from "public/images/projects/rxflect/post/task_one_img_one.png"
 import task1_part2 from "public/images/projects/rxflect/post/task_one_img_two.png"
 import task1_part3 from "public/images/projects/rxflect/post/task_one_img_three.png"
@@ -143,7 +144,9 @@ import revised_preview from "public/images/projects/rxflect/post/revised_preview
     ]}
     direction={"row"}
     caption={
-        "The home page of Rxflect and receiving a notification from Rxflect."
+        <div style={{ textAlign: "center" }}>
+        The home page of Rxflect and receiving a notification from Rxflect.
+        </div>
     }
     width={6}
     maxHeight={"300px"}
@@ -166,10 +169,23 @@ come up during conversations with healthcare providers or trusted individuals.
 
 </ProjectImagesBlock>
 
-Our goal with Rxflect is to make daily journaling feel manageable and to give users 
-something that actually helps them understand their own medication journey. 
-We want the process to feel smoother, more personal, and less overwhelming so 
+<ProjectImagesBlock
+    images={[
+        {
+            src: navigation_bar,
+            alt: "A small blue arrow at the bottom of the screen indicating the navigation bar can slide up.",
+        },
+    ]}
+    direction={"row"}
+    caption={"The arrow hints that the navigation bar can slide up when needed."}
+    width={4}
+    maxHeight={"150px"}
+>
+Our goal with Rxflect is to make daily journaling feel manageable and to give users
+something that actually helps them understand their own medication journey.
+We want the process to feel smoother, more personal, and less overwhelming so
 people can stay consistent and get real value from the reflections they record. 
+</ProjectImagesBlock>
 
 
 
@@ -200,7 +216,9 @@ journaling mode and information about their medical condition and
     ]}
     direction={"row"}
     caption={
-        "Screens showing the check-in flow of getting started with Rxflect. From setting up their profile, medical condition, medicine and dosage, and when to remind them to begin journaling."
+        <div style={{ textAlign: "center" }}>
+        Screens showing the check-in flow of getting started with Rxflect. From setting up their profile, medical condition, medicine and dosage, and when to remind them to begin journaling.
+         </div>
     }
     width={12}
     maxHeight={"500px"}
@@ -291,7 +309,11 @@ and provides a well informed report that they can share to discuss with trusted 
 
     ]}
     caption={
-        "Users can view, share, or download the newly created report. When sharing, they can directly add who they want to share the report with and toggle specific sharing options."
+        <div style={{ textAlign: "center" }}>
+            Users can view, share, or download the newly created report. When sharing, 
+            they can directly add who they want to share the report with and toggle specific 
+            sharing options.
+        </div>
     }
     width={12}
     maxHeight={"250px"}
@@ -340,9 +362,11 @@ and medicine side effects and interactions of other medicine.
         +"The third image is viewing and sharing the newly created report.",
     }}
     caption={
-        "Initial prototype of how selecting journal entries to create and share a report."
+        <div style={{ textAlign: "center" }}>
+        Initial prototype of how selecting journal entries to create and share a report.
+        </div>
     }
-    width={8}
+    width={6}
     maxHeight={"600px"}
 >
 
