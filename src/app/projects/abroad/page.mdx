@@ -61,6 +61,11 @@ import group_photo from "public/images/projects/abroad/group_photo.png"
 import imageFestival from "public/images/projects/abroad/festival.png";
 import imageFrustration from "public/images/projects/abroad/overwhelmed.png";
 
+import imageEvents1 from "public/images/projects/abroad/screen_events_1.png";
+import imageEvents2 from "public/images/projects/abroad/screen_events_2.png";
+import imageEvents3 from "public/images/projects/abroad/screen_events_3.png";
+import imageEvents4 from "public/images/projects/abroad/screen_events_4.png";
+
 # Abroad
 
 <ProjectSubtitle>Knowledge Travels</ProjectSubtitle>
@@ -147,25 +152,31 @@ location, meet other attendees in person, and create more informed discoveries f
 
 ## Design Walkthrough
 
+After identifying relevant data sources (primarily, other current and past study-abroad students and travelers)
+we turned our focus towards providing useability in areas that mattered most to our target audience: improving 
+their experience by making connections with others and discovering more niche local events. These tasks were easy
+in some ways in terms of essential design, but difficult to implement specifics on. Social connections could be established
+through the same system as standard social media apps, but this might destroy what makes study-abroad special; similarly,
+we could just display maps of 'hot spot' local events (this was actually a heavily considered initial design), but this
+might remove the 'tangible and niche advice' element we aim to achieve by leveraging past travelers as a data source. 
 
-
-### Title for a Task
+### Finding local events
 
 <ProjectImagesBlock
     images={[
         {
-            src: imagePlaceholder300x600,
-            alt: "Every image requires alt text. This should describe the content of that image.",
+            src: imageEvents1,
+            alt: "Opening screen",
         },
         {
-            src: imagePlaceholder300x600,
-            alt: "Every image requires alt text. This should describe the content of that image.",
+            src: imageEvents2,
+            alt: "Events near me",
         },
     ]}
     direction={"row"}
     caption={
-        "This caption is applied to the entire block of images. " +
-        "See that it spans across the area of the images."
+        "The initial screen can direct users to discover events near them. " +
+        "Users can additionally make thier own events for others to join."
     }
     width={6}
     maxHeight={"400px"}
@@ -180,19 +191,25 @@ turpis egestas integer. Auctor augue mauris augue neque gravida.
 
 </ProjectImagesBlock>
 
-<ProjectImageBlock
-    image={{
-        src: imagePlaceholder1200x800,
-        alt: "Every image requires alt text. This should describe the content of that image.",
-    }}
+<ProjectImagesBlock
+    images={[
+        {
+            src: imageEvents3,
+            alt: "Event details",
+        },
+        {
+            src: imageEvents4,
+            alt: "Past reviews",
+        },
+    ]}
+    direction={"row"}
     caption={
-        "A good caption supports helps a reader understand what is important. " +
-        "It thus supports skimming and also provides an emphasis on key points of related text."
+        "Users can investigate the event details (distance away, cost if any, date, etc). " +
+        "Past events hosted on 'Abroad' in nearby locations and their post-event reviews will come up to inform present ones."
     }
     width={6}
     maxHeight={"400px"}
 >
-
 Euismod quis viverra nibh cras pulvinar mattis nunc sed. Risus quis varius quam
 quisque. Mi tempus imperdiet nulla malesuada pellentesque elit. Felis eget
 velit aliquet sagittis id consectetur purus ut. Eu augue ut lectus arcu.
@@ -200,9 +217,9 @@ Maecenas ultricies mi eget mauris. Nec ullamcorper sit amet risus nullam eget
 felis eget nunc. Et molestie ac feugiat sed lectus vestibulum mattis. Fames ac
 turpis egestas integer. Auctor augue mauris augue neque gravida.
 
-</ProjectImageBlock>
+</ProjectImagesBlock>
 
-### Title for a Task
+### Making connections with other study-abroad students
 
 A pellentesque sit amet porttitor eget dolor morbi non arcu. Mus mauris vitae
 ultricies leo. Auctor neque vitae tempus quam. Id semper risus in hendrerit
