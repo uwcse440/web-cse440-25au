@@ -13,6 +13,9 @@ import task1_slide1 from "public/images/projects/quackback/post/task1_slide1.png
 import task1_slide2 from "public/images/projects/quackback/post/task1_slide2.png";
 import task1_slide3 from "public/images/projects/quackback/post/task1_slide3.png";
 
+import task2_slide1 from "public/images/projects/quackback/post/task2_slide1.png";
+import task2_slide2 from "public/images/projects/quackback/post/task2_slide2.png";
+
 # QuackBack
 
 <ProjectSubtitle>Commitments to your friends shouldn't be muddled due to your busy life. QuackBack helps you remember to talk to your friends!</ProjectSubtitle>
@@ -113,6 +116,8 @@ and sync busy hours for unobtrusive support.
     maxHeight={"400px"}
 >
 
+</ProjectImageBlock>
+
 QuackBack helps students reconnect by providing subtle, timely cues. 
 When you haven’t interacted with a friend for a while, the duck-shaped 
 trinket glows red and quacks a couple times, signaling that it might be a good moment to check in. 
@@ -127,25 +132,28 @@ notification history. This builds a personal history of your relationships that
 QuackBack can draw from in the future. Once you've reconnected, the duck pulses green, 
 reflecting a healthy, active connection and reinforcing the positive effort you’ve made.
 
+### Balancing Social Goals and Mental Health
 
-</ProjectImagesBlock>
 
-<ProjectImageBlock
-    image={{
-        src: imagePlaceholder1200x800,
-        alt: "Every image requires alt text. This should describe the content of that image.",
-    }}
+<ProjectImagesBlock
+    images={[
+        {
+            src: task2_slide1,
+            alt: "Different screens of the UI to introduce how we make it easier for the user to log interactions and utilize the calendar feature to make sure the duck and app don't disturb them when they don't want to be disturbed. Particularly, the import calendar feature.",
+        },
+        {
+            src: task2_slide2,
+            alt: "Describes the flow to delete a friend, maintaining mental health, and protecting the user's privacy.",
+        }
+    ]}
+    direction={"column"}
     caption={
-        "A good caption supports helps a reader understand what is important. " +
-        "It thus supports skimming and also provides an emphasis on key points of related text."
+        "Shows all the work flows of how the task Balancing social goals and mental health is achieved by the user."
     }
-    width={6}
+    width={8}
     maxHeight={"400px"}
 >
-
 </ProjectImageBlock>
-
-### Balancing Social Goals and Mental Health
 
 QuackBack supports students in maintaining relationships without overwhelming 
 their mental bandwidth. Using the calendar feature, you can import or add your 
@@ -157,33 +165,6 @@ you to extend your do-not-disturb period at any moment. You can adjust this thro
 the DND button or set a maximum DND duration in the settings. This ensures QuackBack 
 respects your boundaries while still helping you stay connected on your own terms.
 
-
-<ProjectImagesBlock
-    images={[
-        {
-            src: imagePlaceholder300x600,
-            alt: "Every image requires alt text. This should describe the content of that image.",
-        },
-        {
-            src: imagePlaceholder300x600,
-            alt: "Every image requires alt text. This should describe the content of that image.",
-        },
-        {
-            src: imagePlaceholder300x600,
-            alt: "Every image requires alt text. This should describe the content of that image.",
-        },
-        {
-            src: imagePlaceholder300x600,
-            alt: "Every image requires alt text. This should describe the content of that image.",
-        }
-    ]}
-    caption={
-        "The text above is outside the image block, then we have these full width images."
-    }
-    width={12}
-    maxHeight={"400px"}
->
-</ProjectImagesBlock>
 
 ## Design Research and Key Insights
 
