@@ -1,56 +1,13 @@
-{/* CSE 440 Project Post Template
-  *
-  * This template aims to guide you in how to use the supported syntax.
-  *
-  * Refer to the assignment description for details on what content is expected.
-  *
-  * If you delete or modify template content that you later find you need,
-  * the original template can also be found in `/src/app/projects/template/page.mdx`.
-  *
-  * Note this template's use of comment syntax.
-  * Curly brackets delineate a code block, within which you can then initiate a comment.
-  * The column of `*` characters has no effect and is included only for readability.
-  */}
-
-{/* Tool Documentation
-  *
-  * This post is primarily formatted in Markdown.
-  * For one example of how to use Markdown, see <https://www.markdownguide.org/>.
-  *
-  * The post then uses [MDX](https://mdxjs.com/) to embedded JSX components.
-  * You are not expected to fully understand these components,
-  * but can just embed them in your Markdown like you would any HTML tag.
-  */}
-
-{/* Project Imports
-  *
-  * These import components you can then use in your post.
-  * You could inspect those components, but this template is intended to be sufficient.
-  *
-  * The full [MUI](https://mui.com/material-ui/getting-started/overview/) component library is also available,
-  * but we do not expect or recommend you will need or want additional components.
-  * If you find the provided components insufficient, we encourage you to check in with the course staff.
-  */}
-
 import { ProjectImageBlock } from "@/components/project/ProjectImageBlock";
 import { ProjectImagesBlock } from "@/components/project/ProjectImagesBlock";
 import { ProjectSubtitle } from "@/components/project/ProjectSubtitle";
 import { ProjectTeamGallery } from "@/components/project/ProjectTeamGallery";
 
-{/* Image Imports
-  *
-  * Every image should be imported via its path in your `images` directory.
-  * - That directory is within `public/images/projects`.
-  * - These imports all reference the `template` project, you will reference your own project directory.
-  * - Give your images meaningful names (e.g., "overview.png").
-  * - Only `.jpg` and `.png` file extensions are supported.
-  * - If an import is not working, double-check that you have the correct file extension.
-  */}
 
-import imageTeamPerson1 from "public/images/projects/template/team/firstname1.png";
-import imageTeamPerson2 from "public/images/projects/template/team/firstname2.png";
-import imageTeamPerson3 from "public/images/projects/template/team/firstname3.png";
-import imageTeamPerson4 from "public/images/projects/template/team/firstname4.png";
+import imageTeamPerson1 from "public/images/projects/template/team/colin.jpg";
+import imageTeamPerson2 from "public/images/projects/template/team/Kyle.jpeg";
+import imageTeamPerson3 from "public/images/projects/template/team/ivy.png";
+import imageTeamPerson4 from "public/images/projects/template/team/katharine.jpg";
 
 import imagePlaceholder300x600 from "public/images/projects/template/post/300x600.png";
 import imagePlaceholder400x400 from "public/images/projects/template/post/400x400.png";
@@ -72,19 +29,19 @@ import imagePlaceholder1200x800 from "public/images/projects/template/post/1200x
 
 <ProjectTeamGallery members={[
     {
-        name: ["Name Line 1", "Name Line 2"],
+        name: ["Colin", "Lim"],
         photo: imageTeamPerson1,
     },
     {
-        name: ["Name Line 1", "Name Line 2"],
+        name: ["Kyunghyun", "Kim"],
         photo: imageTeamPerson2,
     },
     {
-        name: ["Name Line 1", "Name Line 2"],
+        name: [Ivory", "Wang"],
         photo: imageTeamPerson3,
     },
     {
-        name: ["Name Line 1", "Name Line 2"],
+        name: ["Katharine", "Zhang"],
         photo: imageTeamPerson4,
     },
 ]} />
