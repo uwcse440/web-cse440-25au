@@ -48,7 +48,7 @@ import { ProjectTeamGallery } from "@/components/project/ProjectTeamGallery";
   */}
 
 import imageTeamPerson1 from "public/images/projects/template/team/firstname1.png";
-import imageTeamPerson2 from "public/images/projects/template/team/firstname2.png";
+import imageTin from "public/images/projects/template/team/tin.png";
 import imageAnna from "public/images/projects/abroad/team/anna.png";
 import imageVainavi from "public/images/projects/abroad/team/vainavi.png";
 import imageWill from "public/images/projects/abroad/team/will.png";
@@ -70,6 +70,11 @@ import imageFriends1 from "public/images/projects/abroad/screen_friends_1.png";
 import imageFriends2 from "public/images/projects/abroad/screen_friends_2.png";
 import imageFriends3 from "public/images/projects/abroad/screen_friends_3.png";
 import imageFriends4 from "public/images/projects/abroad/screen_friends_4.png";
+
+import paperEvent from "public/images/projects/abroad/paper_events_screen.png";
+import paperFriend from "public/images/projects/abroad/paper_friends_screen";
+import paperRSVP from "public/images/projects/abroad/paper_RSVP_screen.png";
+import paperMain from "public/images/projects/abroad/paper_main_screen.png";
 
 # Abroad
 
@@ -95,7 +100,7 @@ import imageFriends4 from "public/images/projects/abroad/screen_friends_4.png";
     },
     {
         name: ["Tin Tran", "he/him"],
-        photo: imageTeamPerson2,
+        photo: imageTin,
     },
     {
         name: ["Anna Pettis", "she/her"],
@@ -345,96 +350,155 @@ making connections and discovering local social events.
 
 ## Iterative Design and Key Insights
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-incididunt ut labore et dolore magna aliqua. Et tortor consequat id porta nibh
-venenatis. Nisl vel pretium lectus quam. Volutpat blandit aliquam etiam erat
-velit. Ornare arcu odio ut sem nulla pharetra diam sit amet. Habitant morbi
-tristique senectus et netus et malesuada fames ac. A arcu cursus vitae congue
-mauris rhoncus aenean. Ornare massa eget egestas purus. Luctus venenatis lectus
-magna fringilla. Leo integer malesuada nunc vel. Egestas purus viverra accumsan
-in nisl nisi. Risus at ultrices mi tempus imperdiet.
+Our iterative design process for Abroad evolved significantly from the initial concept to the final digital mock up.
+Starting with our idealization of Abroad in Milestone 1 and 2, we quickly realized our early design lacked a focus and
+was turning into a kitchen sink design. In milestone 3, we saw our designs lacked sufficient detail to support meaningful
+user interactions. The paper prototyping phase revealed fundamental issues without tasks flows. Particularly showing how
+users felt overwhelmed and struggled to discover events and build connections. 
 
-### Title for an Insight
+Through heuristic evaluation, we identified multiple problems, with the reviewers noting excessive text on the main event
+page, and how our layout wasn’t seamless and consistent. Usability testing revealed that participants couldn’t unfriend
+someone in the friends lists. This led to multiple redesigns including splitting event information from past reviews,
+introducing a bucket list feature, and adding a proper RSVP system with text reminders. Going from paper model to digital
+mockups forced us to properly implement details we glossed over in the paper prototype. 
+
+
+### Information overload obscured the core value of connecting students with past traveler experiences
+
+
+During heuristic evaluation, multiple people commented that our events page was too cluttered and violated the Aesthetic
+and Minimalist Design heuristic by presenting too much information simultaneously. One evaluator noted “the events page
+having too many words for someone on a phone to reasonably read.” This criticism saw us revamp our entire events screen,
+opting to split it into more readable screens. 
+
 
 <ProjectImageBlock
     image={{
-        src: imagePlaceholder1200x800,
-        alt: "Every image requires alt text. This should describe the content of that image.",
+        src: paperEvent,
+        alt: "The first iteration in the paper prototype phase for the events page ",
     }}
     caption={
-        "A good caption supports helps a reader understand what is important. " +
-        "It thus supports skimming and also provides an emphasis on key points of related text."
+        "The first iteration of the events page being too cluttered and an information overload."
     }
     width={6}
     maxHeight={"400px"}
 >
 
-Quis eleifend quam adipiscing vitae. Justo nec ultrices dui sapien eget mi.
-Viverra maecenas accumsan lacus vel facilisis volutpat. Dignissim suspendisse
-in est ante in nibh mauris. Vitae ultricies leo integer malesuada. Ultrices mi
-tempus imperdiet nulla. Erat velit scelerisque in dictum. Elit ut aliquam purus
-sit amet luctus. Congue quisque egestas diam in arcu cursus euismod. Proin nibh
-nisl condimentum id venenatis a condimentum. Nisl nunc mi ipsum faucibus vitae.
-Ac tortor dignissim convallis aenean et. Bibendum enim facilisis gravida neque
-convallis a cras semper. Sed risus ultricies tristique nulla aliquet enim
-tortor at auctor. Sed felis eget velit aliquet sagittis id consectetur purus
-ut. Ac odio tempor orci dapibus ultrices in iaculis nunc sed. Aliquet lectus
-proin nibh nisl condimentum id. Ornare aenean euismod elementum nisi quis
-eleifend quam adipiscing vitae. Parturient montes nascetur ridiculus mus mauris
-vitae ultricies. Id velit ut tortor pretium viverra suspendisse.
+The original design displayed event information (time, location, description) alongside a scrolling list of past attendees
+and reviews and tips. In practice, usability testers fixated on the event details and “rarely made it to the feature of
+interacting with past users who had also attended events.” Which was a key element in our design.
 
 </ProjectImageBlock>
-
-### Title for an Insight
 
 <ProjectImagesBlock
     images={[
         {
-            src: imagePlaceholder300x600,
-            alt: "Every image requires alt text. This should describe the content of that image.",
+            src: imageEvents3,
+            alt: "Event near you.",
         },
         {
-            src: imagePlaceholder300x600,
-            alt: "Every image requires alt text. This should describe the content of that image.",
+            src: imageEvents4,
+            alt: "Previous travler reviews/tips",
         },
     ]}
     direction={"row"}
     caption={
-        "This caption is applied to the entire block of images. " +
-        "See that it spans across the area of the images."
+        "A new split screen with a less cluttered events near you and reviews page"
     }
     width={6}
     maxHeight={"400px"}
 >
 
-Feugiat vivamus at augue eget arcu. Bibendum est ultricies integer quis auctor
-elit sed vulputate mi. At tempor commodo ullamcorper a lacus vestibulum sed.
-Vitae aliquet nec ullamcorper sit amet risus. Morbi non arcu risus quis varius
-quam quisque id diam. Nulla pellentesque dignissim enim sit amet venenatis.
-Morbi tristique senectus et netus et malesuada fames ac turpis. Molestie a
-iaculis at erat pellentesque adipiscing commodo elit at. Ut eu sem integer
-vitae justo eget magna. Etiam non quam lacus suspendisse faucibus. Nulla
-aliquet enim tortor at auctor urna nunc id. Lobortis elementum nibh tellus
-molestie. Mauris in aliquam sem fringilla ut morbi tincidunt. In nisl nisi
-scelerisque eu ultrices vitae auctor.
+We fundamentally restructured the information architecture by separating these concerns. The revised design presents event
+details first on a cleaner, more minimal screen with a prominent “Events Near You” at the top. This then led to a list of events
+that each had its main event details. Clicking on each one would then provide more information about the event and a button to show
+past travelers reviews and tips. This separation ensures users first understand what the event is, then can choose to see knowledge
+from previous travelers. 
 
-</ProjectImagesBlock>
+</ProjectImageBlock>
 
-### Title for an Insight
+
+### Social connection required concrete affordances, not just conceptual features
+
+
+Usability testing revealed that “testers were confused by the friend requesting process, and that limited the potential networks that
+were formed.” Participants understood the concept of connecting with other students but found no clear pathway to actually act on it.
+One of the participants commented, “I want to meet people, but I don’t know where to start” while another asked, “How do I find students
+with similar interests?” The initial paper prototype just included a friends list and profiles but provided no mechanism for discovery
+or meaningful connections.
+
+<ProjectImageBlock
+    image={{
+        src: PaperFriend,
+        alt: "The first iteration in the paper prototype phase for the friends page",
+    }}
+    caption={
+        "Our old friends page with no way meaningfully add friends or to remove friends"
+    }
+    width={6}
+    maxHeight={"400px"}
+>
+
+This insight extended beyond interface design, instead questioning how we were conceptualizing social features. We treated "making friends"
+as a single binary action (add friend: yes/no) rather than recognizing it as a process requiring scaffolding, context, and shared interest
+discovery. The original design showed a list of other students with a basic "Add Friend" button, but offered no information about why you might
+want to connect with any particular person or what you might do together. 
+
+</ProjectImageBlock>
 
 <ProjectImagesBlock
     images={[
         {
-            src: imagePlaceholder600x300,
-            alt: "Every image requires alt text. This should describe the content of that image.",
-            caption: "These are two images stacked in a column. " +
-                     "Notice that the text on the left is not broken up by the images."
+            src: imageFriends1,
+            alt: "Friends Lists",
         },
         {
-            src: imagePlaceholder600x300,
-            alt: "Every image requires alt text. This should describe the content of that image.",
-            caption: "These are two images stacked in a column. " +
-                     "Notice that the text on the left is not broken up by the images."
+            src: imageFriends3,
+            alt: "Recommended friends",
+        },
+        {
+            src: imageFriends4,
+            alt: "Your bucket list",
+        },
+    ]}
+    direction={"row"}
+    caption={
+        "A revamped firends page where you can add/remove friends and find new connections with similar interests"
+    }
+    width={6}
+    maxHeight={"400px"}
+>
+
+Our redesign introduced a "Bucket List" feature that transforms networking into concrete shared experiences. Users create lists of experiences
+they want to have like visiting the Eiffel Tower, trying ramen, or attending a sports match, and the system recommends other students with
+overlapping bucket list items. This provides natural conversation starters and activity partners rather than forcing cold networking. We also
+added event-based connection points, after attending an event, you can easily add other attendees as friends, creating connections from shared
+experiences. The revised friends interface shows not just names but common interests and upcoming plans, giving every connection concrete context
+and purpose.
+
+</ProjectImageBlock>
+
+
+### Event commitment needed trust-building mechanisms beyond a simple join button
+
+Heuristic evaluation identified that our "Join" button violated the User Control and Freedom heuristic because users couldn't easily verify their
+commitment status or manage their attendance after clicking the “Join” button. Usability testing showed participants hesitated to commit to events
+because they lacked confidence about logistics and didn't trust they'd actually remember to attend. One participant said, "I'd join this, but I know
+I'll forget about it by next week." Another questioned, "Can I really get there? What if something comes up?" The original toggle between "Join" and
+"Joined" provided no sense of commitment, reminder system, or easy withdrawal.
+
+
+<ProjectImagesBlock
+    images={[
+        {
+            src: paperMain,
+            alt: "Main screen",
+            caption: "The main screen of Abroad showing you can host an event, events, near you, and upcoming events"
+        },
+        {
+            src: paperRSVP,
+            alt: "The RSVP page for events",
+            caption: "The RSVP page with no ability to unRSVP or change your status"
         },
     ]}
     direction={"column"}
@@ -442,12 +506,35 @@ scelerisque eu ultrices vitae auctor.
     maxHeight={"200px"}
 >
 
-Leo duis ut diam quam. Sit amet volutpat consequat mauris nunc congue nisi. Id
-eu nisl nunc mi ipsum. Rhoncus aenean vel elit scelerisque mauris pellentesque
-pulvinar pellentesque habitant. Duis ut diam quam nulla porttitor massa id.
-Facilisis volutpat est velit egestas. Nulla facilisi cras fermentum odio eu
-feugiat pretium. Lectus magna fringilla urna porttitor rhoncus dolor. Mollis
-nunc sed id semper risus in. Quis imperdiet massa tincidunt nunc. Sed
-adipiscing diam donec adipiscing.
+This insight revealed a gap between our technical model (binary event attendance: true/false) and users' needs around commitment. Students studying
+abroad face uncertainty, with unfamiliar transportation, unpredictable schedules, and social anxiety about attending alone being key factors. A single
+button couldn't address these complex concerns or build the trust needed for users to actually commit to and attend events.
+
+
+</ProjectImagesBlock>
+
+<ProjectImagesBlock
+    images={[
+        {
+            src: imageEvents1,
+            alt: "Main screen",
+            caption: "The welcome screen with small descriptions for each button for a better user experience"
+        },
+        {
+            src: imageEvents3,
+            alt: "RSVP and event details screen",
+            caption: "New RSVP options with the ability to opt in for text reminders"
+        },
+    ]}
+    direction={"column"}
+    width={6}
+    maxHeight={"200px"}
+>
+
+We redesigned the entire RSVP flow into a deliberate, supportive process. The new "RSVP" button opens a modal with multiple affordances.Users
+can opt in for text reminders, view directions and transportation options, see who else is attending, and easily modify or cancel their RSVP
+status. We added an "Upcoming Events" dashboard widget that consolidates all events the user has RSVP'd to, with filters for "Events you're
+hosting," "Events you're attending," and "Events you've been invited to." This transformation of event commitment from a single click to a
+supported process directly addresses the practical barriers that kept participants from fully engaging with events in our testing sessions.
 
 </ProjectImagesBlock>
