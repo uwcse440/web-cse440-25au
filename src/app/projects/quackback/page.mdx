@@ -4,15 +4,14 @@ import { ProjectSubtitle } from "@/components/project/ProjectSubtitle";
 import { ProjectTeamGallery } from "@/components/project/ProjectTeamGallery";
 
 
-import imageTeamPerson1 from "public/images/projects/template/team/colin.jpg";
-import imageTeamPerson2 from "public/images/projects/template/team/Kyle.jpeg";
-import imageTeamPerson3 from "public/images/projects/template/team/ivy.png";
-import imageTeamPerson4 from "public/images/projects/template/team/katharine.jpg";
+import imageTeamPerson1 from "public/images/projects/quackback/team/colin.jpg";
+import imageTeamPerson2 from "public/images/projects/quackback/team/Kyle.jpeg";
+import imageTeamPerson3 from "public/images/projects/quackback/team/ivy.png";
+import imageTeamPerson4 from "public/images/projects/quackback/team/katharine.jpg";
 
-import imagePlaceholder300x600 from "public/images/projects/template/post/300x600.png";
-import imagePlaceholder400x400 from "public/images/projects/template/post/400x400.png";
-import imagePlaceholder600x300 from "public/images/projects/template/post/600x300.png";
-import imagePlaceholder1200x800 from "public/images/projects/template/post/1200x800.png";
+import task1_slide1 from "public/images/projects/quackback/post/task1_slide1.png";
+import task1_slide2 from "public/images/projects/quackback/post/task1_slide2.png";
+import task1_slide3 from "public/images/projects/quackback/post/task1_slide3.png";
 
 # QuackBack
 
@@ -94,20 +93,23 @@ and sync busy hours for unobtrusive support.
 <ProjectImagesBlock
     images={[
         {
-            src: imagePlaceholder300x600,
-            alt: "Every image requires alt text. This should describe the content of that image.",
+            src: task1_slide1,
+            alt: "This flow shows how to view a friend's profile through the homepage of the app by clicking the friend's name. You can see the friend's name, an AI summary of all your past interactions with this friend, uploaded photos, voice memos, and journal entries organized by date, and an edit button at the top right corner. When clicking the edit button, users can delete photos, voice memos, and journal entries if they'd like. A warning pop up asking if they want to delete the element will show up every time an element is deleted. There is also a search bar functionality to search for a specific friend from the homepage.",
         },
         {
-            src: imagePlaceholder300x600,
-            alt: "Every image requires alt text. This should describe the content of that image.",
+            src: task1_slide2,
+            alt: "Describes the flow to add a new friend by clicking the "add friend" icon in the homepage.",
+        },
+        {
+            src: task1_slide3,
+            alt: "Describes how to add all the text entries, voice memos, and images to save a particular interaction with friend(s), and shows that the friend's profile page will be updated accordingly with all the new information.",
         },
     ]}
-    direction={"row"}
+    direction={"column"}
     caption={
-        "This caption is applied to the entire block of images. " +
-        "See that it spans across the area of the images."
+        "Shows all the work flows of how the task Reaching out to Friends is achieved by the user."
     }
-    width={6}
+    width={8}
     maxHeight={"400px"}
 >
 
