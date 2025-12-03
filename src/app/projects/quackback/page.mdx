@@ -80,12 +80,12 @@ import imagePlaceholder1200x800 from "public/images/projects/template/post/1200x
 Our design challenge focuses on supporting university students who want to maintain their 
 existing relationships but struggle to do so consistently. Many students face significant barriers 
 to social interaction, not because they lack the desire to connect, 
-but because they lack the mental energy required to initiate it. 
+but because they lack the mental energy or space required to initiate it. 
 Academic demands, work commitments, and mental-health pressures often 
 consume their cognitive bandwidth, making even small social efforts feel overwhelming.
 
 Through our research, we found that one of the most effective ways to lower this 
-“activation barrier” is to provide students with timely cues—natural or intentionally 
+“activation barrier” is to provide students with timely cues— natural or intentionally 
 designed reminders that bring specific friends or social opportunities to mind. 
 These cues help externalize the effort of remembering, prompting students to reach 
 out when they otherwise might not have the capacity to generate ideas for interaction. 
@@ -97,11 +97,13 @@ relationships feel more manageable, intuitive, and emotionally rewarding.
 
 ## Design Walkthrough
 
-QuackBack is a duck-shaped trinket and app that delivers contextual cues 
-to help students maintain relationships. It combines manual inputs and limited 
-automatic tracking to surface timely reminders, such as photos or messages. 
-Users can pause it when needed, set limits to avoid prolonged silence, and sync 
-busy hours for unobtrusive support.
+QuackBack is a duck-shaped color-changing trinket and app that delivers contextual cues 
+to help students maintain relationships. The trinket will provide visual cues in the real world, 
+separated from the busy ecosystem that is our phones. More functionalities to encourage a balance 
+in social interaction for the user is then introduced in the app. It combines manual inputs from
+the user & the physical duck and limited automatic tracking to surface timely reminders, 
+such as photos or messages. Users can pause it when needed, set limits to avoid prolonged silence, 
+and sync busy hours for unobtrusive support.
 
 ### Reaching Out to Friends
 
@@ -127,14 +129,16 @@ busy hours for unobtrusive support.
 
 QuackBack helps students reconnect by providing subtle, timely cues. 
 When you haven’t interacted with a friend for a while, the duck-shaped 
-trinket glows red and quacks, signaling that it might be a good moment to check in. 
+trinket glows red and quacks a couple times, signaling that it might be a good moment to check in. 
 Through the companion app, you can open that friend’s profile to review past interaction 
-logs—voice notes, photos, or text entries you’ve saved—to remind yourself of shared moments 
-or conversation starters.
+logs—voice notes, photos, or text entries you’ve saved—to remind yourself of shared moments.
+These can serve as conversation starters.
 
 After you hang out or catch up, you can easily log the interaction with a quick voice note, 
-text entry, or image upload. This builds a personal history of your relationships that 
-QuackBack can draw from in the future. Once you've reconnected, the duck glows green, 
+text entry, or image upload. Note that these interactions aren't just restricted to in-person
+interactions, but online as well, if the user allows the app to access call history and text
+notification history. This builds a personal history of your relationships that 
+QuackBack can draw from in the future. Once you've reconnected, the duck pulses green, 
 reflecting a healthy, active connection and reinforcing the positive effort you’ve made.
 
 
@@ -198,35 +202,35 @@ respects your boundaries while still helping you stay connected on your own term
 ## Design Research and Key Insights
 
 Our participants were University of Washington students who often felt they weren’t 
-meeting their own social expectations—such as replying too slowly or not reaching out 
-as much as they’d like—and who all identified at least one close friend they genuinely 
+meeting their own social expectations, such as common forgetfulness or not reaching out 
+as much as they’d like, and who all identified at least one close friend they genuinely 
 cared about.
 
 To understand their interaction patterns and barriers, we structured our research 
 around two components. First, a personal inventory captured numerical data on how 
-often participants communicated, with whom, and through which mediums, helping us 
-identify behavioral patterns. Second, interviews encouraged students to reflect on 
-why they struggle to engage with their existing circles. Together, these methods 
+often participants communicated, with whom, through which mediums, and in what contexts,
+helping us identify behavioral patterns. Second, interviews encouraged students to 
+reflect on why they struggle to engage with their existing circles. Together, these methods 
 revealed key factors driving dissatisfaction and clarified where support is most needed.
 
 
 ### Comfort and Emotional Well-Being Shape Social Engagement
 
 For many students, emotional safety and personal well-being strongly influence when 
-and how they socialize—even with close friends. Participants shared that they only 
+and how they socialize, even with close friends. Participants shared that they only 
 engage in social activities when the environment feels comfortable, familiar, or 
 aligned with mutual interests. Individuals who appear overly opinionated, judgmental, 
 or intense discourage them from initiating conversation. Environments that are crowded, 
 high-energy, or sophisticated can trigger anxiety, making them less likely to branch out 
-or attend events altogether.
+or attend events altogether unless accompanied by a friend they are comfortable with.
 
 They also prioritize physical and emotional health above social obligations. 
 Sleep, meals, and personal routines take precedence, and if they feel tired or 
-mentally unwell, they intentionally withdraw—even from close relationships—until 
+mentally unwell, they intentionally withdraw from most social interaction until 
 they regain stability. This highlights how maintaining well-being is essential for 
 enabling consistent, meaningful social interaction.
 
-### Well-Being and Obligations Override Social Intentions
+### Obligations Override Social Intentions
 
 <ProjectImagesBlock
     images={[
@@ -247,10 +251,10 @@ enabling consistent, meaningful social interaction.
 >
 
 College students consistently prioritize academics, career responsibilities, 
-and their physical and emotional well-being before choosing to socialize—even 
-with close friends. When they feel stressed, short on time, emotionally drained, 
+and their physical and emotional well-being before choosing to socialize. 
+When they feel stressed, short on time, emotionally drained, 
 anxious, or tired, they intentionally withdraw from interactions. This makes spontaneous 
-or casual connection difficult, especially in environments that feel overwhelming, 
+or casual connections difficult, especially in environments that feel overwhelming, 
 unfamiliar, or unsafe.
 
 Two of our interview participants highlighted this pattern: P1 places mental health 
@@ -261,15 +265,17 @@ have firm personal limits they are unwilling to compromise.
 
 </ProjectImagesBlock>
 
-### Privacy and Controlled Access Are Essential
+### Lack of reason to reach out
 
-Participants emphasized that any social-support tool must respect strict boundaries around 
-personal data. They want full control over what QuackBack can access—whether photos, messages, 
-calendars, or interaction logs—and expect the system to use only what they explicitly allow. 
-Even helpful features, like automatic detection of interactions, can feel invasive if not clearly 
-consented to or easily adjustable. Transparent permissions and the ability to opt in or out at 
-any time is crucial. To maintain trust, QuackBack prioritizes user privacy, through transparency 
-and user control.
+Throughout our design research investigating the interaction patterns and barriers
+of college students, we found that many students would only initiate social interactions
+with their friends over a common ground. Whether that'd be an event, shared interest,
+course work, career goals, etc., many students need a common ground and cues to get
+started talking. Some cues often relate to these shared qualities between friends
+such as instagram reels that remind them of a friend, or an experience that reminds them
+of their friend(s). These often serve the basis for reaching out to their friend(s) and
+maintaining social connection.
+
 
 ## Iterative Design and Key Insights
 
@@ -303,8 +309,9 @@ The majority of our heuristic evaluation feedback centered on issues of user con
 and overall clarity. Even though our prototype incorporated familiar visual signals, many 
 evaluators struggled to understand the app’s purpose, page flows, and component interactions 
 without additional context. Users frequently felt stuck, noting unclear paths for actions 
-such as adding friends or setting up the DND calendar. The DND feature, in particular, was 
-widely misunderstood—most participants were unsure of what it was for or how it functioned. 
+such as adding friends, allowing/disallowing the app to access text/call information,
+and setting up the DND calendar. The DND feature, in particular, was 
+widely misunderstood as most participants were unsure of what it was for or how it functioned. 
 In response, we incorporated clearer visual cues, more intuitive navigation elements, and 
 additional guidance to make key tasks and features easier to understand.
 
@@ -331,16 +338,31 @@ additional guidance to make key tasks and features easier to understand.
     width={6}
     maxHeight={"400px"}
 >
+</ProjectImagesBlock>
 
 Despite improvements made after heuristic testing, our usability tests revealed 
 persistent confusion across all three sessions. Participants frequently struggled 
 to understand how to complete core actions or where to locate key features. 
-Adding a friend, for example, remained highly ambiguous, and the visual separation 
-between components lacked clear affordances, making it difficult for users to determine 
-how to interact with different elements. This pattern appeared across nearly all major features. 
-In response, we refined the prototype by strengthening visual cues, adding guided walkthroughs, 
-and simplifying or enhancing workflows to better support users as they navigate essential tasks.
+Adding a friend, for example, remained highly ambiguous (since we had 2 types of + icons).
+Futhermore, the visual separation between components lacked clear affordances, 
+making it difficult for users to determine how to interact with different elements. 
+For example, all testing participants struggled to understandhow to 
+import calendar, use the calendar, and the purpose of the calendar within our mockup.
+This pattern appeared across nearly all major features. In response, we refined 
+the prototype by strengthening visual cues, adding guided walkthroughs, and
+simplifying or enhancing workflows to better support users as they navigate essential tasks.
 
 
-</ProjectImagesBlock>
+
+
+### Privacy and Controlled Access Are Essential
+
+Participants emphasized that any social-support tool must respect strict boundaries around 
+personal data. They want full control over what QuackBack can access—whether photos, messages, 
+calendars, or interaction logs—and expect the system to use only what they explicitly allow. 
+Even helpful features, like automatic detection of interactions, can feel invasive if not clearly 
+consented to or easily adjustable. Transparent permissions and the ability to opt in or out at 
+any time is crucial. However, that quality of our design was not clear to all our participants,
+leading to recurring feedback on concerns despite iterating the design. To address this, we
+incorporated walk throughs and added more cues (text) to encourage visibility of this characteristic.
 
