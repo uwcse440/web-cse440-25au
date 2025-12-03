@@ -47,15 +47,27 @@ import { ProjectTeamGallery } from "@/components/project/ProjectTeamGallery";
   * - If an import is not working, double-check that you have the correct file extension.
   */}
 
-import imageTeamPerson1 from "public/images/projects/template/team/firstname1.png";
+import imageTeamPerson1 from "public/images/projects/nextLeap/team/noa.png";
 import imageTeamPerson2 from "public/images/projects/template/team/firstname2.png";
 import imageTeamPerson3 from "public/images/projects/template/team/firstname3.png";
-import imageTeamPerson4 from "public/images/projects/template/team/firstname4.png";
+import imageTeamPerson4 from "public/images/projects/nextLeap/team/raghavi.png";
 
-import imagePlaceholder300x600 from "public/images/projects/template/post/300x600.png";
+import two from "public/images/projects/nextLeap/post/2.png";
+import three from "public/images/projects/nextLeap/post/3.png";
+import four from "public/images/projects/nextLeap/post/4.png";
+import five from "public/images/projects/nextLeap/post/5.png";
+import six from "public/images/projects/nextLeap/post/6.png";
+import seven from "public/images/projects/nextLeap/post/7.png";
+import eight from "public/images/projects/nextLeap/post/8.png";
+import nine from "public/images/projects/nextLeap/post/9.png";
+import ten from "public/images/projects/nextLeap/post/10.png";
+import eleven from "public/images/projects/nextLeap/post/11.png";
+import twelve from "public/images/projects/nextLeap/post/12.png";
+
+import imagePlaceholder300x600 from "public/images/projects/template/post/400x400.png";
 import imagePlaceholder400x400 from "public/images/projects/template/post/400x400.png";
 import imagePlaceholder600x300 from "public/images/projects/template/post/600x300.png";
-import imagePlaceholder1200x800 from "public/images/projects/template/post/1200x800.png";
+import one from "public/images/projects/nextLeap/post/1.png";
 
 # Next Leap
 
@@ -72,19 +84,20 @@ import imagePlaceholder1200x800 from "public/images/projects/template/post/1200x
 
 <ProjectTeamGallery members={[
     {
-        name: ["Noa Joseph-Laleh", "Name Line 2"],
+        name: ["Noa Joseph-Laleh", "She/Her"],
         photo: imageTeamPerson1,
+        
     },
     {
-        name: ["Czarin Dela Cruz", "Name Line 2"],
+        name: ["Czarin Dela Cruz", "She/Her"],
         photo: imageTeamPerson2,
     },
     {
-        name: ["Hasan Wazir", "Name Line 2"],
+        name: ["Hasan Wazir", "He/Him"],
         photo: imageTeamPerson3,
     },
     {
-        name: ["Raghavi Putluri", "Name Line 2"],
+        name: ["Raghavi Putluri", "She/Her"],
         photo: imageTeamPerson4,
     },
 ]} />
@@ -109,12 +122,11 @@ import imagePlaceholder1200x800 from "public/images/projects/template/post/1200x
 
 <ProjectImageBlock
     image={{
-        src: imagePlaceholder1200x800,
-        alt: "Every image requires alt text. This should describe the content of that image."
+        src: one,
+        alt: "NextLeap logo featuring a dancer silhouette with the tagline ‘Train with clarity. Move with confidence.’"
     }}
     caption={
-        "A good caption supports helps a reader understand what is important. " +
-        "It thus supports skimming and also provides an emphasis on key points of related text."
+        "NextLeap combines structured guidance and supportive feedback to help dancers practice with confidence."
     }
     width={6}
     maxHeight={"400px"}
@@ -140,18 +152,17 @@ The second focus task, staying motivated and overcoming mental blocks, supports 
 <ProjectImagesBlock
     images={[
         {
-            src: imagePlaceholder300x600,
-            alt: "Every image requires alt text. This should describe the content of that image.",
+            src: two,
+            alt: "Smart mirror home screen showing options like Learn, Improve, Connect, Goals, Warm-up, and Gallery.",
         },
         {
-            src: imagePlaceholder300x600,
-            alt: "Every image requires alt text. This should describe the content of that image.",
+            src: three,
+            alt: "Smart mirror displaying a dancer with real-time form corrections and recording indicators.",
         },
     ]}
     direction={"row"}
     caption={
-        "This caption is applied to the entire block of images. " +
-        "See that it spans across the area of the images."
+        "NextLeap guides dancers through clear tutorials and real-time feedback to build precise technique and confidence."
     }
     width={6}
     maxHeight={"400px"}
@@ -165,12 +176,11 @@ As the user practices, the system records their attempt and plays it back with r
 
 <ProjectImageBlock
     image={{
-        src: imagePlaceholder1200x800,
-        alt: "Every image requires alt text. This should describe the content of that image.",
+        src: four,
+        alt: "Smart mirror showing a dancer with on-screen corrections for arm placement and leg alignment, plus Done and Replay Feedback buttons.",
     }}
     caption={
-        "A good caption supports helps a reader understand what is important. " +
-        "It thus supports skimming and also provides an emphasis on key points of related text."
+        "NextLeap delivers clear, real-time corrections to help dancers practice safely and refine their technique."
     }
     width={6}
     maxHeight={"400px"}
@@ -191,24 +201,16 @@ Staying motivated during independent practice is often difficult, especially whe
 <ProjectImagesBlock
     images={[
         {
-            src: imagePlaceholder300x600,
-            alt: "Every image requires alt text. This should describe the content of that image.",
+            src: five,
+            alt: "Smart mirror showing a ‘Session Complete’ screen with feedback noting improved turns and a View Progress button.",
         },
         {
-            src: imagePlaceholder300x600,
-            alt: "Every image requires alt text. This should describe the content of that image.",
+            src: six,
+            alt: "Smart mirror displaying before-and-after images for plié progress with highlighted improvements and a Done button.",
         },
-        {
-            src: imagePlaceholder300x600,
-            alt: "Every image requires alt text. This should describe the content of that image.",
-        },
-        {
-            src: imagePlaceholder300x600,
-            alt: "Every image requires alt text. This should describe the content of that image.",
-        }
     ]}
     caption={
-        "The text above is outside the image block, then we have these full width images."
+        "NextLeap celebrates small wins and shows visible progress to keep dancers motivated and confident in their growth."
     }
     width={12}
     maxHeight={"400px"}
@@ -257,14 +259,14 @@ Our research showed that dancers rely heavily on instructor judgment to understa
 <ProjectImagesBlock
     images={[
         {
-            src: imagePlaceholder400x400,
-            alt: "Every image requires alt text. This should describe the content of that image.",
-            caption: "This caption is applied to the image. Each can have a different caption.",
+            src: eight,
+            alt: "Smart mirror showing Plié Step 1 with a dancer in first position and a speech bubble giving setup instructions.",
+            caption: "Step 1 provides foundational cues to help dancers enter the movement safely and with proper alignment.",
         },
         {
-            src: imagePlaceholder400x400,
-            alt: "Every image requires alt text. This should describe the content of that image.",
-            caption: "This caption is applied to the image. Each can have a different caption.",
+            src: nine,
+            alt: "Smart mirror showing Plié Step 2 with the dancer bending their knees and a speech bubble offering posture reminders.",
+            caption: "Step 2 builds on the technique with guided corrections that reinforce safe progression and good form."
         },
     ]}
     direction={"row"}
@@ -298,12 +300,11 @@ Finally, we translated the design into a digital mockup, refining visual hierarc
 
 <ProjectImageBlock
     image={{
-        src: imagePlaceholder1200x800,
-        alt: "Every image requires alt text. This should describe the content of that image.",
+        src: ten,
+        alt: "Remote control interface with directional arrows, an OK button, voice search, home, back, power, and media controls.",
     }}
     caption={
-        "A good caption supports helps a reader understand what is important. " +
-        "It thus supports skimming and also provides an emphasis on key points of related text."
+        "The updated remote enables faster, more intuitive navigation through skills and dance styles."
     }
     width={6}
     maxHeight={"400px"}
@@ -320,18 +321,17 @@ To address the feedback about the difficulty of navigating long lists of skills 
 <ProjectImagesBlock
     images={[
         {
-            src: imagePlaceholder300x600,
-            alt: "Every image requires alt text. This should describe the content of that image.",
+            src: eleven,
+            alt: "Smart mirror showing a prerequisite check pop-up asking whether the user has learned first and second position before continuing.",
         },
         {
-            src: imagePlaceholder300x600,
-            alt: "Every image requires alt text. This should describe the content of that image.",
+            src: seven,
+            alt: "Smart mirror displaying a completion screen with the message ‘Great Work! You met your goal!’ and options to set a new goal or exit.",
         },
     ]}
     direction={"row"}
     caption={
-        "This caption is applied to the entire block of images. " +
-        "See that it spans across the area of the images."
+        "NextLeap guides safe progression by checking foundational skills and celebrating completed goals."
     }
     width={6}
     maxHeight={"400px"}
@@ -350,16 +350,9 @@ To address these concerns we introduced a prerequisite pop-up window which guide
 <ProjectImagesBlock
     images={[
         {
-            src: imagePlaceholder600x300,
+            src: twelve,
             alt: "Every image requires alt text. This should describe the content of that image.",
-            caption: "These are two images stacked in a column. " +
-                     "Notice that the text on the left is not broken up by the images."
-        },
-        {
-            src: imagePlaceholder600x300,
-            alt: "Every image requires alt text. This should describe the content of that image.",
-            caption: "These are two images stacked in a column. " +
-                     "Notice that the text on the left is not broken up by the images."
+            caption: "NextLeap guides safe progression by checking foundational skills and celebrating completed goals."
         },
     ]}
     direction={"column"}
