@@ -57,6 +57,23 @@ import imagePlaceholder300x600 from "public/images/projects/template/post/300x60
 import imagePlaceholder400x400 from "public/images/projects/template/post/400x400.png";
 import imagePlaceholder600x300 from "public/images/projects/template/post/600x300.png";
 import imagePlaceholder1200x800 from "public/images/projects/template/post/1200x800.png";
+import intial_calender from "public/images/projects/rxflect/post/initial_calender.jpg";
+import revised_calender from "public/images/projects/rxflect/post/revised_calender.png";
+import home_page from "public/images/projects/rxflect/post/home_page.png"
+import notification from "public/images/projects/rxflect/post/notification.png"
+import task1_part1 from "public/images/projects/rxflect/post/task_one_img_one.png"
+import task1_part2 from "public/images/projects/rxflect/post/task_one_img_two.png"
+import task1_part3 from "public/images/projects/rxflect/post/task_one_img_three.png"
+import task2_part1 from "public/images/projects/rxflect/post/task_two_img_one.png"
+import task2_part2 from "public/images/projects/rxflect/post/task_two_img_two.png"
+import task2_part3 from "public/images/projects/rxflect/post/task_two_img_three.png"
+import task2_part4 from "public/images/projects/rxflect/post/task_two_img_four.png"
+import task2_part5 from "public/images/projects/rxflect/post/task_two_img_five.png"
+import task2_part6 from "public/images/projects/rxflect/post/task_two_img_six.png"
+import task2_part7 from "public/images/projects/rxflect/post/task_two_img_seven.png"
+import design_img1 from "public/images/projects/rxflect/post/design_img_one.jpg"
+import initial_preview from "public/images/projects/rxflect/post/initial_preview.png"
+import revised_preview from "public/images/projects/rxflect/post/revised_preview.png"
 
 # RxFlect
 
@@ -112,17 +129,24 @@ import imagePlaceholder1200x800 from "public/images/projects/template/post/1200x
   * Later in the template you will also find examples of the plural `ProjectImagesBlock` tag.
 */}
 
-<ProjectImageBlock
-    image={{
-        src: imagePlaceholder1200x800,
-        alt: "Every image requires alt text. This should describe the content of that image."
-    }}
+<ProjectImagesBlock
+    images={[
+        {
+            src: home_page,
+            alt: "Home page for our app Rxflect. It showcases a start journaling button, daily reminder bar, average mood"+
+            "the number of entries made, a calendar view button, view progress button, create report button, medication button, and an ability to scroll down to view recent reflections",
+        },
+        {
+            src: notification,
+            alt: "A phone screen that lights up recieving a notification from Rxflect to do your daily check-in.",
+        },
+    ]}
+    direction={"row"}
     caption={
-        "A good caption supports helps a reader understand what is important. " +
-        "It thus supports skimming and also provides an emphasis on key points of related text."
+        "The home page of Rxflect and receiving a notification from Rxflect."
     }
     width={6}
-    maxHeight={"400px"}
+    maxHeight={"300px"}
 >
 
 Managing medication can affect people in a lot of different ways, and it is often hard to 
@@ -140,12 +164,14 @@ It also keeps track of symptoms and experiences in the background so users can l
 and simple reports. These reports highlight trends, changes, and anything important that might 
 come up during conversations with healthcare providers or trusted individuals. 
 
+</ProjectImagesBlock>
+
 Our goal with Rxflect is to make daily journaling feel manageable and to give users 
 something that actually helps them understand their own medication journey. 
 We want the process to feel smoother, more personal, and less overwhelming so 
 people can stay consistent and get real value from the reflections they record. 
 
-</ProjectImageBlock>
+
 
 ## Design Walkthrough
 
@@ -156,104 +182,123 @@ with someone they trust. These tasks work together to make tracking symptoms and
 
 ### Expressing Their Well-Being Through Guided Journaling
 
+With users using Rxflect, it helps provide guiding questions based on a 
+journaling mode and information about their medical condition and
+ medication effects. As when user inputs their medical condition 
+ and medication, the journaling provides specific questions to 
+ different medical conditions and how much a user wants to journal. 
+ This design provides structured yet flexible journaling guidance, 
+ helping users determine what to record and how much to write based on their daily health.
+
 <ProjectImagesBlock
     images={[
         {
-            src: imagePlaceholder300x600,
-            alt: "Every image requires alt text. This should describe the content of that image.",
-        },
-        {
-            src: imagePlaceholder300x600,
-            alt: "Every image requires alt text. This should describe the content of that image.",
+            src: task1_part1,
+            alt: "Home page for our app Rxflect. It showcases a start journaling button, daily reminder bar, average mood"+
+            "the number of entries made, a calendar view button, view progress button, create report button, medication button, and an ability to scroll down to view recent reflections",
         },
     ]}
     direction={"row"}
     caption={
-        "This caption is applied to the entire block of images. " +
-        "See that it spans across the area of the images."
+        "Screens showing the check-in flow of getting started with Rxflect. From setting up their profile, medical condition, medicine and dosage, and when to remind them to begin journaling."
     }
-    width={6}
-    maxHeight={"400px"}
+    width={12}
+    maxHeight={"500px"}
 >
-
-When users first begin using RxFlect, they set up a few pieces of basic information like their
-profile, medications, and the conditions they want to track. 
-This allows the app to personalize prompts and reports later on. 
-Users can also set journaling reminders so they can stay consistent without feeling pressured.
-
 </ProjectImagesBlock>
 
-Once reminders are set, the journaling flow becomes the main way users reflect on their day. 
-When they start a journal entry, RxFlect asks them to choose how much they want to write. 
-Light mode is for quick check-ins, and Heavy mode is for days when users want to go deeper.
-
-<ProjectImageBlock
-    image={{
-        src: imagePlaceholder1200x800,
-        alt: "Every image requires alt text. This should describe the content of that image.",
-    }}
-    caption={
-        "A good caption supports helps a reader understand what is important. " +
-        "It thus supports skimming and also provides an emphasis on key points of related text."
-    }
-    width={6}
-    maxHeight={"400px"}
->
-
-The prompts change based on the journaling style and the conditions the user entered earlier. 
-Light mode keeps things simple with short mood or symptom questions. 
-Heavy mode opens up more space for context and self-reflection. This flexibility helps 
-users stay consistent by allowing them to choose what feels manageable in the moment.
-
-After writing, the entry is saved automatically. Over time, users can 
-scroll through their history and start to notice patterns that later appear in 
-their generated reports.
-
-
-</ProjectImageBlock>
-
-### Reflecting on Medical Treatment with a Trusted Individual
-
-Many users want a clear way to summarize how they have been feeling for appointments or conversations with someone close to them. RxFlect supports this by offering a simple but customizable report tool. 
-
-From the home page, users can tap Create Report. They can choose from preset date ranges like 
-Past Week or This Month, or use a custom range if they want a more specific time window. 
-Once they confirm the dates, RxFlect automatically generates a default report built from 
-their journal entries.
 
 <ProjectImagesBlock
     images={[
         {
-            src: imagePlaceholder300x600,
-            alt: "Every image requires alt text. This should describe the content of that image.",
+            src: task1_part2,
+            alt: "Four images in a series and starting from the very left, is a screen showcasing a light or heavy mode to determine which type of journaling a user want to do."
+            + "Second image is in light mode, where is it a how are you feeling screen, where you select an emoji going from great, good, fair, low, and struggling."
+            + "Third image is in light mode, where a screen indicating how is your energy level for today, where the range of input it 1 to 5."
+            + " The fourth image is in light mode, where it showcases an optional textbox that allows user to write or record down any more thoughts for the day.",
         },
         {
-            src: imagePlaceholder300x600,
-            alt: "Every image requires alt text. This should describe the content of that image.",
+            src: task1_part3,
+            alt: "Five images in a series that and starting from the very left, is a screen in hard mode journaling where is it a how are you feeling screen, where you select an emoji going from great, good, fair, low, and struggleing."
+            + "Second image is in hard mode, where a screen is asking about your physical well being by inputting a scale from 1 to 5 for energy level and sleep quality." 
+            + "Third image is in hard mode, where a screen is asking about your physical state by having the user select options such as pain, tension, restlessness, and more."
+            + "Fourth image is in hard mode, where a screen is asking about side effects your experiencing by having the user select all options that apply such as headache, nausua, fatigue, and more."
+            + "Fifth image is in hard mode, where it showcases an optional textboox that allows user to write or record down any more thoughts for the day.",
+        },
+    ]}
+    direction={"column"}
+    caption={
+        "Choose between Light or Hard mode to journal depending how much a user want to journal on a given day."
+    }
+    width={16}
+    maxHeight={"300px"}
+>
+
+</ProjectImagesBlock>
+
+### Reflecting on Medical Treatment with a Trusted Individual
+
+With all the journaling a user does, we wanted a way to provide users to share the information with 
+a trusted individual. Sharing information can be difficult as it’s time consuming to
+review each journal entry and remember what you experienced. So to help reflect on 
+your medical treatment, users can generate a report within a given time frame to aggregate
+information that they had been recording within that time frame. Furthermore, before saving 
+the report, the user can review and edit the report to better reflect what they have been
+experiencing. This design helps a user better understand what they have been experiencing 
+and provides a well informed report that they can share to discuss with trusted individuals.
+
+<ProjectImagesBlock
+    images={[
+        {
+            src: task2_part1,
+            alt: "On the home page in Rxflect, you press the create report button to start generating a report.",
         },
         {
-            src: imagePlaceholder300x600,
-            alt: "Every image requires alt text. This should describe the content of that image.",
+            src: task2_part2,
+            alt: "Once you click on create report button, there are multiple options to select the dates you want the report to capture. With quick select buttons that selects the past week, past month, past three months, and all time" 
+            + "Then the second option is the user selecting a range from one date to another date to create the report. Once selected, you click generate report.",
         },
         {
-            src: imagePlaceholder300x600,
-            alt: "Every image requires alt text. This should describe the content of that image.",
-        }
+            src: task2_part3,
+            alt: "Once generate report is clicked, a default report is made for the user with graphs illustrating user's physical well being, side effects occurance and key insights.",
+        },
+        {
+            src: task2_part4,
+            alt: "Settings options to customize the report. From toggling which visualizations a user want, enable or disable sections such as charts, side effects summary, key insights and more. User can also add notes, highlight sections and attach photos",
+        },
+        {
+            src: task2_part5,
+            alt: "A popup with a confirm and cancel button to make sure you want to confirm the creation and changes of the report or cancel the changes made.",
+        },
     ]}
     caption={
-        "The text above is outside the image block, then we have these full width images."
+        "Users can create and edit a report to better reflect on their experience with their medical condition and treatment."
     }
     width={12}
-    maxHeight={"400px"}
+    maxHeight={"250px"}
 >
 </ProjectImagesBlock>
-The default report includes basic trends like mood, symptoms, side effects, or medication notes. 
-Users can edit the report by selecting the Edit button. This lets them choose which charts or 
-insights to include so the report reflects what matters most to them.
+<ProjectImagesBlock
+    images={[
+        {
+            src: task2_part6,
+            alt: "Once user saves their report, they can view their report, press the share button to share it with a trusted indiviual, or download the report.",
+        },
+        {
+            src: task2_part7,
+            alt: "Once you press the share button, it brings you to a new screen that shows who you have shared the report with. In addition there is a Add Trusted Indiviual option to share the report with sharing preferences such as Auto Share, notify before sharing, and more",
+        },
 
-After editing, the app shows a confirmation pop-up to save changes. 
-The final report can be downloaded or shared directly through Trusted Connections on the home page.
- Users can also revisit past reports or manage who they share them with.
+    ]}
+    caption={
+        "Users can view, share, or download the newly created report. When sharing, they can directly add who they want to share the report with and toggle specific sharing options."
+    }
+    width={12}
+    maxHeight={"250px"}
+>
+</ProjectImagesBlock>
+
+
 ## Design Research and Key Insights
 
 Our design research focused on understanding how people manage their medication routines 
@@ -280,41 +325,38 @@ that they would like to journal more but are unsure what they should write
 about the effects of their medication. As they are not sure what is important 
 to write, especially when they are taking multiple medications at the same time. 
 This led us to wanting to focus on making journaling easier and help understand 
-common symptoms that might be worth noting down. This results in Rxflect to have 
+common symptoms that might be worth noting down. This resulted in Rxflect to have 
 guiding questions for journaling, common symptoms for specific medical conditions, 
 and medicine side effects and interactions of other medicine.
 
 ### Clear Visualization of Patient History and Reporting
 
-<ProjectImagesBlock
-    images={[
-        {
-            src: imagePlaceholder400x400,
-            alt: "Every image requires alt text. This should describe the content of that image.",
-            caption: "This caption is applied to the image. Each can have a different caption.",
-        },
-        {
-            src: imagePlaceholder400x400,
-            alt: "Every image requires alt text. This should describe the content of that image.",
-            caption: "This caption is applied to the image. Each can have a different caption.",
-        },
-    ]}
-    direction={"row"}
+<ProjectImageBlock
+    image={{
+        src: design_img1,
+        alt: "A paper sketch of how the report initially looked. It has 3 images, where the the first image "
+        + "in the far left is an image of you selecting which journal entry one by one you done in a month." 
+        + "middle image is then how the report is created after selecting the journal entries."
+        +"The third image is viewing and sharing the newly created report.",
+    }}
+    caption={
+        "Initial prototype of how selecting journal entries to create and share a report."
+    }
     width={8}
-    maxHeight={"400px"}
+    maxHeight={"600px"}
 >
 
 Interviews with both patients and clinicians showed how difficult it is to make sense of large 
 amounts of unorganized medical information. Healthcare professionals like Cenny and Derpy 
 highlighted the need for clear weekly or monthly trends, simple timelines of key events in
- a patient's medical journey, and easy visuals that help clinicians quickly understand 
- consistency or changes in a patient’s condition. Issues such as recency bias and incomplete 
- or overly vague patient recollections further reinforced the importance of accessible, 
- accurate historical context. These findings shaped the design direction toward creating 
- clear visualizations based on patient history and reporting, such as graphs, to help 
- doctors efficiently review patient histories and make more informed decisions.
+a patient's medical journey, and easy visuals that help clinicians quickly understand 
+consistency or changes in a patient’s condition. Issues such as recency bias and incomplete 
+or overly vague patient recollections further reinforced the importance of accessible, 
+accurate historical context. These findings shaped the design direction toward creating 
+clear visualizations based on patient history and reporting, such as graphs, to help 
+doctors efficiently review patient histories and make more informed decisions.
 
-</ProjectImagesBlock>
+</ProjectImageBlock>
 
 ### Clear Summaries for Communication Between Patients and Doctors
 
@@ -355,17 +397,24 @@ more user control, and flexibility of core features.
 
 ### Minimalistic Design
 
-<ProjectImageBlock
-    image={{
-        src: imagePlaceholder1200x800,
-        alt: "Every image requires alt text. This should describe the content of that image.",
-    }}
+<ProjectImagesBlock
+    images={[
+        {
+            src: initial_preview,
+            alt: "A paper calender of the month January, where user is selecting 8 days of when they journal into their report."
+        },
+        {
+            src: revised_preview,
+            alt: "A revised digital calender where now has color icons on a day to indicate different actions a user taken to help select days to put in your report. Blue being you journaled, orange being refilled prescription, and red being you experienced a symptom"
+        },
+
+    ]}
+    direction={"row"}
     caption={
-        "A good caption supports helps a reader understand what is important. " +
-        "It thus supports skimming and also provides an emphasis on key points of related text."
+        "Preview screen(left) originally wasn't clear how to exit, what it achievied, had a confusing layout and what you could select. In the revised preview(right), made it clear what you have accomplished with a straighfoward button to move on to the next task."
     }
     width={6}
-    maxHeight={"400px"}
+    maxHeight={"300px"}
 >
 
 In our design process, we wanted to ensure that our design would be minimalistic to avoid 
@@ -377,35 +426,35 @@ visuals and layouts. So going into our digital mock up, we standardized
 how we wanted our layout and visuals to look to ensure consistency is 
 upheld to satisfy our minimalist design.
 
-</ProjectImageBlock>
+</ProjectImagesBlock>
 
 ### Presentation of Information
 
 <ProjectImagesBlock
     images={[
         {
-            src: imagePlaceholder300x600,
-            alt: "Every image requires alt text. This should describe the content of that image.",
+            src: intial_calender,
+            alt: "A paper calender of the month January, where user is selecting 8 days of when they journal into their report."
         },
         {
-            src: imagePlaceholder300x600,
-            alt: "Every image requires alt text. This should describe the content of that image.",
+            src: revised_calender,
+            alt: "A revised digital calender where now has color icons on a day to indicate different actions a user taken to help select days to put in your report. Blue being you journaled, orange being refilled prescription, and red being you experienced a symptom"
         },
+
     ]}
     direction={"row"}
     caption={
-        "This caption is applied to the entire block of images. " +
-        "See that it spans across the area of the images."
+        "Left image was our initial calendar design to select days to report for journaling," +
+        " where the right image is our revised version to help show more actions a user done."
     }
     width={6}
-    maxHeight={"400px"}
+    maxHeight={"300px"}
 >
 
 Participants commented that a lot of screens either showed too much information at once or 
 did not show enough for users to understand what was happening. 
 For example, the calendar screen did not show which days the user 
-actually journaled, so people were confused about what days to select 
-when building a report. On the journaling side, some participants felt 
+actually journaled, so people were confused about what days they could review. On the journaling side, some participants felt 
 overwhelmed by long lists of prompts, while others wanted more context or simpler options.
 
 In response to this feedback, we redesigned key screens to convey 
@@ -419,25 +468,6 @@ not overwhelm the user with info.
 
 ### Flexibility of Journaling and Report Creation
 
-<ProjectImagesBlock
-    images={[
-        {
-            src: imagePlaceholder600x300,
-            alt: "Every image requires alt text. This should describe the content of that image.",
-            caption: "These are two images stacked in a column. " +
-                     "Notice that the text on the left is not broken up by the images."
-        },
-        {
-            src: imagePlaceholder600x300,
-            alt: "Every image requires alt text. This should describe the content of that image.",
-            caption: "These are two images stacked in a column. " +
-                     "Notice that the text on the left is not broken up by the images."
-        },
-    ]}
-    direction={"column"}
-    width={6}
-    maxHeight={"200px"}
->
 
 From our usability testing, we realized that the overall flow of the app felt too strict 
 and did not match how people actually journal or create reports. A lot of participants 
@@ -454,4 +484,3 @@ added more optional steps. We also loosened the report creation process
 so users can jump between sections without being forced into a single path.
 
 
-</ProjectImagesBlock>
