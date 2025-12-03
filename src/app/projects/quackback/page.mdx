@@ -9,12 +9,21 @@ import imageTeamPerson2 from "public/images/projects/quackback/team/Kyle.jpeg";
 import imageTeamPerson3 from "public/images/projects/quackback/team/ivy.png";
 import imageTeamPerson4 from "public/images/projects/quackback/team/katharine.jpg";
 
+import designOverview from "public/images/projects/quackback/team/DesignOverview.png";
+import workLife from "public/images/projects/quackback/team/WorkLife.png";
+import privacy from "public/images/projects/quackback/team/Privacy.png";
+import walkthrough from "public/images/projects/quackback/team/Walkthrough.png";
+
 import task1_slide1 from "public/images/projects/quackback/post/task1_slide1.png";
 import task1_slide2 from "public/images/projects/quackback/post/task1_slide2.png";
 import task1_slide3 from "public/images/projects/quackback/post/task1_slide3.png";
 
 import task2_slide1 from "public/images/projects/quackback/post/task2_slide1.png";
 import task2_slide2 from "public/images/projects/quackback/post/task2_slide2.png";
+
+import imagePlaceholder300x600 from "public/images/projects/quackback/post/300x600.png";
+import imagePlaceholder400x400 from "public/images/projects/quackback/post/400x400.png";
+import imagePlaceholder1200x800 from "public/images/projects/quackback/post/1200x800.png";
 
 # QuackBack
 
@@ -39,7 +48,7 @@ import task2_slide2 from "public/images/projects/quackback/post/task2_slide2.png
         photo: imageTeamPerson2,
     },
     {
-        name: [Ivory", "Wang"],
+        name: ["Ivory", "Wang"],
         photo: imageTeamPerson3,
     },
     {
@@ -52,12 +61,12 @@ import task2_slide2 from "public/images/projects/quackback/post/task2_slide2.png
 
 <ProjectImageBlock
     image={{
-        src: imagePlaceholder1200x800,
-        alt: "Every image requires alt text. This should describe the content of that image."
+        src: designOverview,
+        alt: "Four mobile phone screens showcasing QuackBack app features: friends list homepage with search and interaction history, contact profile showing AI summary and past interactions, add new interaction options for voice memos, text entries, and images, and calendar view with import functionality for scheduling do-not-disturb periods."
     }}
     caption={
-        "A good caption supports helps a reader understand what is important. " +
-        "It thus supports skimming and also provides an emphasis on key points of related text."
+        "QuackBack tracks your interactions, warns you when you’re neglecting a friend, and stores conversation starters. " +
+        "You can also block out busy times to take a break from the duck."
     }
     width={6}
     maxHeight={"400px"}
@@ -101,7 +110,7 @@ and sync busy hours for unobtrusive support.
         },
         {
             src: task1_slide2,
-            alt: "Describes the flow to add a new friend by clicking the "add friend" icon in the homepage.",
+            alt: "Describes the flow to add a new friend by clicking the \"add friend\" icon in the homepage.",
         },
         {
             src: task1_slide3,
@@ -115,8 +124,6 @@ and sync busy hours for unobtrusive support.
     width={8}
     maxHeight={"400px"}
 >
-
-</ProjectImageBlock>
 
 QuackBack helps students reconnect by providing subtle, timely cues. 
 When you haven’t interacted with a friend for a while, the duck-shaped 
@@ -132,8 +139,9 @@ notification history. This builds a personal history of your relationships that
 QuackBack can draw from in the future. Once you've reconnected, the duck pulses green, 
 reflecting a healthy, active connection and reinforcing the positive effort you’ve made.
 
-### Balancing Social Goals and Mental Health
+</ProjectImagesBlock>
 
+### Balancing Social Goals and Mental Health
 
 <ProjectImagesBlock
     images={[
@@ -153,7 +161,6 @@ reflecting a healthy, active connection and reinforcing the positive effort you�
     width={8}
     maxHeight={"400px"}
 >
-</ProjectImageBlock>
 
 QuackBack supports students in maintaining relationships without overwhelming 
 their mental bandwidth. Using the calendar feature, you can import or add your 
@@ -165,6 +172,7 @@ you to extend your do-not-disturb period at any moment. You can adjust this thro
 the DND button or set a maximum DND duration in the settings. This ensures QuackBack 
 respects your boundaries while still helping you stay connected on your own terms.
 
+</ProjectImagesBlock>
 
 ## Design Research and Key Insights
 
@@ -199,22 +207,16 @@ enabling consistent, meaningful social interaction.
 
 ### Obligations Override Social Intentions
 
-<ProjectImagesBlock
-    images={[
-        {
-            src: imagePlaceholder400x400,
-            alt: "Every image requires alt text. This should describe the content of that image.",
-            caption: "This caption is applied to the image. Each can have a different caption.",
-        },
-        {
-            src: imagePlaceholder400x400,
-            alt: "Every image requires alt text. This should describe the content of that image.",
-            caption: "This caption is applied to the image. Each can have a different caption.",
-        },
-    ]}
-    direction={"row"}
-    width={8}
-    maxHeight={"400px"}
+<ProjectImageBlock
+    image={{
+            src: workLife,
+            alt: "Four mobile phone screens showcasing QuackBack app features: friends list homepage with search and interaction history, contact profile showing AI summary and past interactions, add new interaction options for voice memos, text entries, and images, and calendar view with import functionality for scheduling do-not-disturb periods."
+        }}
+        caption={
+            "Balancing is hard!"
+        }
+        width={6}
+        maxHeight={"400px"}
 >
 
 College students consistently prioritize academics, career responsibilities, 
@@ -230,7 +232,7 @@ load has led to increasing social isolation. These examples emphasize that stude
 have firm personal limits they are unwilling to compromise.
 
 
-</ProjectImagesBlock>
+</ProjectImageBlock>
 
 ### Lack of reason to reach out
 
@@ -258,20 +260,6 @@ user experience.
 
 ### Lack of Clarity and User Control Hindered Navigation
 
-
-<ProjectImageBlock
-    image={{
-        src: imagePlaceholder1200x800,
-        alt: "Every image requires alt text. This should describe the content of that image.",
-    }}
-    caption={
-        "A good caption supports helps a reader understand what is important. " +
-        "It thus supports skimming and also provides an emphasis on key points of related text."
-    }
-    width={6}
-    maxHeight={"400px"}
->
-
 The majority of our heuristic evaluation feedback centered on issues of user control, freedom, 
 and overall clarity. Even though our prototype incorporated familiar visual signals, many 
 evaluators struggled to understand the app’s purpose, page flows, and component interactions 
@@ -282,30 +270,20 @@ widely misunderstood as most participants were unsure of what it was for or how 
 In response, we incorporated clearer visual cues, more intuitive navigation elements, and 
 additional guidance to make key tasks and features easier to understand.
 
-</ProjectImageBlock>
-
 ### Key Features Lacked Usability and Clear Affordances
 
-<ProjectImagesBlock
-    images={[
+<ProjectImageBlock
+    image={
         {
-            src: imagePlaceholder300x600,
+            src: walkthrough,
             alt: "Every image requires alt text. This should describe the content of that image.",
-        },
-        {
-            src: imagePlaceholder300x600,
-            alt: "Every image requires alt text. This should describe the content of that image.",
-        },
-    ]}
-    direction={"row"}
+        }}
     caption={
-        "This caption is applied to the entire block of images. " +
-        "See that it spans across the area of the images."
+        "Added Walkthrough Animation"
     }
     width={6}
     maxHeight={"400px"}
 >
-</ProjectImagesBlock>
 
 Despite improvements made after heuristic testing, our usability tests revealed 
 persistent confusion across all three sessions. Participants frequently struggled 
@@ -319,11 +297,20 @@ This pattern appeared across nearly all major features. In response, we refined
 the prototype by strengthening visual cues, adding guided walkthroughs, and
 simplifying or enhancing workflows to better support users as they navigate essential tasks.
 
-
-
+</ProjectImageBlock>
 
 ### Privacy and Controlled Access Are Essential
-
+<ProjectImageBlock
+    image={{
+        src: privacy,
+        alt: "Every image requires alt text. This should describe the content of that image.",
+    }}
+    caption={
+        "Privacy Settings Page"
+    }
+    width={6}
+    maxHeight={"400px"}
+>
 Participants emphasized that any social-support tool must respect strict boundaries around 
 personal data. They want full control over what QuackBack can access—whether photos, messages, 
 calendars, or interaction logs—and expect the system to use only what they explicitly allow. 
@@ -332,4 +319,6 @@ consented to or easily adjustable. Transparent permissions and the ability to op
 any time is crucial. However, that quality of our design was not clear to all our participants,
 leading to recurring feedback on concerns despite iterating the design. To address this, we
 incorporated walk throughs and added more cues (text) to encourage visibility of this characteristic.
+
+</ProjectImageBlock>
 
