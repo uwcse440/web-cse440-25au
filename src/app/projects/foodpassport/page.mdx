@@ -47,10 +47,10 @@ import { ProjectTeamGallery } from "@/components/project/ProjectTeamGallery";
   * - If an import is not working, double-check that you have the correct file extension.
   */}
 
-import imageTeamPerson1 from "public/images/projects/foodpassport/team/Aiden.jpg";
-import imageTeamPerson2 from "public/images/projects/foodpassport/team/Andy.jpg";
-import imageTeamPerson3 from "public/images/projects/foodpassport/team/Kass.jpg";
-import imageTeamPerson4 from "public/images/projects/foodpassport/team/Mawi.jpg";
+import imageTeamPerson1 from "public/images/projects/foodpassport/team/Aiden.png";
+import imageTeamPerson2 from "public/images/projects/foodpassport/team/Andy.png";
+import imageTeamPerson3 from "public/images/projects/foodpassport/team/Kass.png";
+import imageTeamPerson4 from "public/images/projects/foodpassport/team/Mawi.png";
 
 import imagePlaceholder300x600 from "public/images/projects/template/post/300x600.png";
 import imagePlaceholder400x400 from "public/images/projects/template/post/400x400.png";
@@ -59,7 +59,6 @@ import imagePlaceholder1200x800 from "public/images/projects/template/post/1200x
 
 import teamLogo from "public/images/projects/foodpassport/project_thumb.png";
 
-import contextImage from "public/images/projects/foodpassport/post/context.png";
 import countrySelectImage from "public/images/projects/foodpassport/post/country_select.png";
 import tripDetailsImage from "public/images/projects/foodpassport/post/trip_details.png";
 import taskSelectionImage from "public/images/projects/foodpassport/post/task_selection.png";
@@ -73,13 +72,18 @@ import usPersonalReflection from "public/images/projects/foodpassport/post/us_pe
 import reviewImage from "public/images/projects/foodpassport/post/review.png";
 import personalReflectionImage from "public/images/projects/foodpassport/post/personal_reflections.png";
 
+import paperPrototypeImage from "public/images/projects/foodpassport/post/paper_prototype.png";
+import reviewConfirmImage from "public/images/projects/foodpassport/post/review_confirm.png";
+import reviewNowImage from "public/images/projects/foodpassport/post/review_now.png";
 import taskSelectionPaperImage from "public/images/projects/foodpassport/post/task_selection_paper.jpg";
+import reviewPaperImage from "public/images/projects/foodpassport/post/review_paper.png";
+import tripDetailsPaperImage from "public/images/projects/foodpassport/post/trip_details_paper.png";
 
 # Food Passport
 
 <ProjectSubtitle>Stamp Your Way Through the World’s Kitchens</ProjectSubtitle>
 
-## Team (Will get better pictures later)
+## Team
 
 {/* The ProjectTeamGallery displays names and images of your project team.
   * - Split each name across two lines to ensure consistent rendering.
@@ -147,7 +151,6 @@ tasks from a set of guided activities such as trying a new dish/restaurant, read
 and watching videos made by other users. Users complete those tasks to enrich their cultural understanding
 and insight. Over time, users will earn “passport stamps” which function as community badges.
 Food Passport celebrates food as a dynamic expression of identity, community connection, and personal growth.
-
 
 </ProjectImageBlock>
 
@@ -218,24 +221,41 @@ they are and are not prepared for. The full process is displayed below.
 
 ### Evaluate and Reflect on the Experience
 
-After completing tasks, users are asked to fill out a short review on the experience. This is small
-and used to encourage short reflection and evaluation of the task.
+After completing tasks, users are asked to fill out a short review on the experience. This review is quick and allows
+the user to evaluate the overall task, in terms of effectiveness and enjoyability. This is used to ease the user into
+further thinking and to evaluate if the task is relevant and should continue to be used. Users can also decide to defer
+the review process until later in the case where they are not able to properly evaluate at the current moment.
 
-<ProjectImageBlock
-    image={{
+<ProjectImagesBlock
+    images={[
+        {
+        src: reviewNowImage,
+        alt: "Review Now or Later"
+        },
+        {
         src: reviewImage,
-        alt: "Screen of Review Page"
-    }}
+        alt: "Review Prompt"
+        },
+        {
+        src: reviewConfirmImage,
+        alt: "Confirm Review as Received"
+        }
+    ]}
     caption={
         "Review Page"
     }
-    width={4}
+    width={12}
     maxHeight={"400px"}
 >
-</ProjectImageBlock>
+</ProjectImagesBlock>
 
-Users are also able to keep track of their past reviews and edit those less than 24 hours old.
-They also have access to all of their previous reflections, restaurants visited and more.
+There is also a more comprehensive reflection once a user completes all of their tasks and achieves the passport stamp.
+Compared to the small reviews, this final reflection focuses on what parts of the task checklist were most useful
+and what the user learned about the culture by interacting with foods.
+
+Users are also able to keep track of their past reviews and edit ones that are less than 24 hours old. The 24 hour time
+limit is used to preserve the authenticity of the reviews and allow edits to minor mistakes. They can access all of their
+previous reflections, restaurants visited and more.
 
 <ProjectImagesBlock
     images={[
@@ -257,7 +277,7 @@ They also have access to all of their previous reflections, restaurants visited 
         }
     ]}
     caption={
-        "Some of the review aspects"
+        "Some of the review/reflection aspects."
     }
     width={12}
     maxHeight={"400px"}
@@ -266,79 +286,46 @@ They also have access to all of their previous reflections, restaurants visited 
 
 ## Design Research and Key Insights
 
-Our design research aimed to understand how people discover new foods, what makes unfamiliar
-cuisines intimidating. And how users build cultural understanding through their food experience.
-We took the time to conduct structured interviews with students and adults who enjoy exploring restaurants
-but often rely on the tools that already exist such as Yelp or Tiktok. We chose this method to gather the stories,
-emotions and their personal motivation, since food discovery is deeply tied to comfort, identity, and social connection.
-Through the quarter, we work to gather insights through critique, heuristic evaluations, and usability tests,
-which reveal gaps between our intention and how users actually understood our interaction with the early prototypes.
-This combination of the interview with the iterative testing shape the foundation of the Food Passport.
+Our design research aimed to understand how people discover new foods, challenges they face, and how people
+build cultural understanding through their food experience.
+We conducted semi-structured interviews with four students and adults who frequently travel or live abroad.
+The participants included:
+ 
+ * __Participant 1:__ Retired ex-military, deployed multiple tiems, frequent traveller, last travelled to Japan.
+ * __Participant 2:__ Cambodian student, studied abroad.
+ * __Participant 3:__ College staff, travels semi-frequently, last travelled to Spain.
+ * __Participant 4:__ Part-time college student, travels out of country once a year and out of state once every two months.
 
-### Food is Emotional: Seek Comfort, Connection, and Cultural  eaning
+We chose this group since they had perspectives of multiple cultures and likely had deeper and very valuable connections
+to certain foods and cultures. We used interviews to gather the stories, emotions, and their personal motivation since
+other research methods are less likely to garner the insightful qualitative information we are looking for. From these
+interviews, we came away with the following three key insights.
 
-How we learn this:
+### Food is Emotional: Seek Comfort, Connection, and Cultural Meaning
 
-During the interview we conduct before any design, participants consistently describe food as a way
-to feel connected, find comfort, or explore identity. One participant had shared that trying food from
-home makes them feel grounded, while another had said they try new cuisine to understand people better.
-
-Evidence: 
-
-One of the participants said “I don’t like seafood so I stayed away from sushi spots and stuff…but I did go
-to the McDonalds there once which had different items than over here (USA).” They look for familiar food and
-they are ok with some changes. Another person said “I usually travel within Washington but sometimes go out
-of state once a year… I love trying new foods as much as possible! When I cook, I usually tend to stick to
-whatever I already know how to cook but when I go out to eat, I try to find new places or cuisines to try”.
-The participant connects to food exploration through curiosity and discovery when they can’t travel.
-
-How this shape our design:
-
-This led directly to the concept of the passport stamps and a cultural journey, not just restaurant finders.
-Our app celebrates progress, reflection and learning instead of just merely on rating or transaction. It
-grounded our design in personal growth, not consumption.
-
-### People Avoid Unfamiliar Foods when the Learning Feels Intimidating or Boring
-
-How we learn this:
-In both the interview and early paper prototype testing, use mentioned skipping or overlooking anything
-that felt like “reading and article” etc. In usability tests we notice that the tester ignores or overlooks
-the “Learn” task due to it blended into the interface looping like a plane button.
-
-Evidence:
-
-<ProjectImagesBlock
-    images={[
-        {
-            src: taskSelectionPaperImage,
-            alt: "Paper Prototype for Task Selection.",
-        },
-        {
-            src: taskSelectionImage,
-            alt: "Refined Digital Mockup for Task Selection.",
-        }
-    ]}
-    caption={
-        "Shift of Paper Prototype to Digital Mockup of Task Selection."
-    }
-    width={12}
-    maxHeight={"400px"}
->
-</ProjectImagesBlock>
-
-How this shape our design:
-
-We redesigned the Learn task to be more visual, structured, and interactive, shifting from the bottom
-to like more of a micro lesson.  This reduced intimidation and encouraged cultural explorations.
+Participants consistently described food as a way connect with their culture/community, find comfort, or explore identity.
+One participant shared that trying food from home makes them feel grounded, while another stated they try new cuisines to
+understand people better. Moreover, one of the participants claimed “I don’t like seafood so I stayed away from sushi spots
+and stuff...but I did go to the McDonald's (in Japan) once which had different items than over here (USA).” From this, we
+learned that they look for familiar food but are fine exploring some changes. Another person said “I usually travel within
+(my home state) but sometimes go out of state once a year...I love trying new foods as much as possible! When I cook, I
+usually tend to stick to whatever I already know how to cook but when I go out to eat, I try to find new places or cuisines
+to try.” We learned that people who aren't able to travel connect to food exploration through curiosity and discovery. This
+directly led to the concept of the passport stamps and our focus on cultural journey which distinguishes Food Passport from
+existing restaurant finders. Food Passport celebrates learning, progress, reflection instead of merely relying on ratings or
+transactions. It grounded our design in personal growth, not consumption.
 
 ### Users Want to Track Progress and Reflect
 
-How we learned this:
-Several participants said they liked the idea of seeing what they’ve tried over time like a journal.
-During the usability test, testers naturally tried to navigate back to their past task to see their progress
-and see their reflections.
+Several participants expressed that they liked the idea of seeing what they’ve tried over time like a journal so they could
+reflect on their progress. During usability testing, testers tried to navigate back to their previous tasks to see their
+progress and reflections, but it was not fully supported. When asked about what they expected to happen, they
+responded that familiarity with similar apps made them believe that it would be possible.
 
-Evidence:
+To facilitate this task, we created sections for users to add personal reflections and access past reviews so the user
+can examine and evaluate their overall journey. We also added shortcuts to both of these options to provide clearer navigation
+and accessibility. Adding the ability to track progress and reflect transforms the Food Passport from a checklist into a
+long-term personal growth tool.
 
 <ProjectImagesBlock
     images={[
@@ -352,59 +339,86 @@ Evidence:
         }
     ]}
     caption={
-        "These are parts of the apps where there is the review and the personal reflection page.."
+        "Viewing old reviews and adding personal journal entries."
     }
     width={12}
     maxHeight={"400px"}
 >
 </ProjectImagesBlock>
 
-How this shaped our design:
+### Accessibility and Familiarity are Barriers
 
-We create personal reflection and past reviews that allow the user to return to their journey and review
-cultural insight. This transforms the Food Passport from a checklist into a long-term personal growth tool.
+Through interviews we found that traveling is not possible for many people due to financial, physical, or personal
+reasons among others. Due to this, accessibility to cultural experiences are not the same for everyone. One participant
+adds that cultural barriers such as the method of eating or customs can make it difficult to try new things.
+
+This insight became the basis of two aspects of our design. First, we added the country and stamp ideas to accommodate
+for users who lack the ability to travel. This brings the traveling aspect to them and allows for them to continue their
+food exploration from wherever they are. We also incorporated a live-location feature to identify local places that users
+could try that give a similar experience. Second, we added the "Learn" subcategory of tasks which help users learn important
+context, history, or lessons that are immersive and help break down the wall of unfamiliarity.
 
 ## Iterative Design and Key Insights
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-incididunt ut labore et dolore magna aliqua. Et tortor consequat id porta nibh
-venenatis. Nisl vel pretium lectus quam. Volutpat blandit aliquam etiam erat
-velit. Ornare arcu odio ut sem nulla pharetra diam sit amet. Habitant morbi
-tristique senectus et netus et malesuada fames ac. A arcu cursus vitae congue
-mauris rhoncus aenean. Ornare massa eget egestas purus. Luctus venenatis lectus
-magna fringilla. Leo integer malesuada nunc vel. Egestas purus viverra accumsan
-in nisl nisi. Risus at ultrices mi tempus imperdiet.
-
-### Title for an Insight
+Our iterative design process combined paper prototyping, inspection, usability testing, and a digital mockup
+to progressively refine our concept. Paper prototypes helped us explore the design space, understand our target
+users, and identify the core feature flows. Inspection and usability testing then highlighted underdeveloped areas,
+especially the unintuitive flows for leaving reviews, obtaining stamps, and navigating between screens. These insights
+revealed gaps we failed to fully consider during early prototyping. We used this feedback to create the digital mockup which
+improved navigation, redesigned the task checklist for earning a stamp, and expanded the review and edit-review flows,
+ultimately making the interface more intuitive and cohesive.
 
 <ProjectImageBlock
     image={{
-        src: imagePlaceholder1200x800,
-        alt: "Every image requires alt text. This should describe the content of that image.",
+        src: paperPrototypeImage,
+        alt: "Paper Prototype."
     }}
     caption={
-        "A good caption supports helps a reader understand what is important. " +
-        "It thus supports skimming and also provides an emphasis on key points of related text."
+        "Paper Prototype."
     }
-    width={6}
+    width={12}
     maxHeight={"400px"}
 >
-
-Quis eleifend quam adipiscing vitae. Justo nec ultrices dui sapien eget mi.
-Viverra maecenas accumsan lacus vel facilisis volutpat. Dignissim suspendisse
-in est ante in nibh mauris. Vitae ultricies leo integer malesuada. Ultrices mi
-tempus imperdiet nulla. Erat velit scelerisque in dictum. Elit ut aliquam purus
-sit amet luctus. Congue quisque egestas diam in arcu cursus euismod. Proin nibh
-nisl condimentum id venenatis a condimentum. Nisl nunc mi ipsum faucibus vitae.
-Ac tortor dignissim convallis aenean et. Bibendum enim facilisis gravida neque
-convallis a cras semper. Sed risus ultricies tristique nulla aliquet enim
-tortor at auctor. Sed felis eget velit aliquet sagittis id consectetur purus
-ut. Ac odio tempor orci dapibus ultrices in iaculis nunc sed. Aliquet lectus
-proin nibh nisl condimentum id. Ornare aenean euismod elementum nisi quis
-eleifend quam adipiscing vitae. Parturient montes nascetur ridiculus mus mauris
-vitae ultricies. Id velit ut tortor pretium viverra suspendisse.
-
 </ProjectImageBlock>
+
+### People Avoid Unfamiliar Foods when the Learning Feels Intimidating or Boring
+
+In the interviews, participants mentioned that they gained most of their food recommendations from social media,
+community forums, or local recommendations. They also claimed that they would avoid anything that felt like
+"reading an article." This was supported in our heuristic evaluations where participants claimed that many of the instructions
+and provided screens were text-heavy and lacked freedom of choice. This was also present in our usability testing where
+participants ignored or overlooked the "Learn" tasks due to it being blended into the interface.
+
+We redesigned the interface to be more visual, structured, and interactive. We increased user freedom by adding navigation
+buttons and increased the visibility of task selection progress. This was done to discourage user early exits. We also focused
+on shifting tasks to be more digestible micro-lessons which aimed to reduce intimidation and encourage cultural exploration.
+
+<ProjectImagesBlock
+    images={[
+        {
+            src: tripDetailsPaperImage,
+            alt: "Paper Prototype for Trip Details.",
+        },
+        {
+            src: reviewPaperImage,
+            alt: "Paper Prototype for Review.",
+        },
+        {
+            src: taskSelectionPaperImage,
+            alt: "Paper Prototype for Task Selection.",
+        },
+        {
+            src: taskSelectionImage,
+            alt: "Refined Digital Mockup for Task Selection.",
+        }
+    ]}
+    caption={
+        "Initial Paper Prototype to Final Paper Prototype to Digital Mockup."
+    }
+    width={12}
+    maxHeight={"300px"}
+>
+</ProjectImagesBlock>
 
 ### Title for an Insight
 
