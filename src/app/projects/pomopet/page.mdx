@@ -77,6 +77,8 @@ import reflection2 from "public/images/projects/pomopet/post/r2.png";
 import ioa1 from "public/images/projects/pomopet/post/IOA1.png";
 import ioa2 from "public/images/projects/pomopet/post/IOA2.png";
 
+import logo from "public/images/projects/pomopet/post/logo.png";
+
 # Pomopet
 
 {/*<ProjectSubtitle>Optional Subtitle</ProjectSubtitle>
@@ -133,11 +135,25 @@ import ioa2 from "public/images/projects/pomopet/post/IOA2.png";
   * Later in the template you will also find examples of the plural `ProjectImagesBlock` tag.
 */}
 
+<ProjectImageBlock
+    image={{
+        src: logo,
+        alt: "A yellow chick with the project name pomopet to its right"
+    }}
+    caption={
+        "Pomopet's mascot and your first productivity companion!"
+    }
+    width={12}
+    maxHeight={"400px"}
+>
+
 Being able to manage your time, study, and get work done is something that every student needs to do to be successful, but this can be difficult for a multitude of reasons. From structuring their schedules to effectively completing assignments, to lack of motivation, or feelings of isolation from tackling everything alone, all of these factors eventually lead to burnout and poor productivity.
 
 Current platforms focus on only tracking individual productivity, but over-rely on self-accountability to consistently use the app and build and maintain long-term motivation, leading to an eventual return to poor productivity due to not feeling a need to get things done.
 
 Pomopet combines a physical light-up companion that pairs with a social platform to encourage and motivate users to improve productivity through gamification and social accountability. Allowing friends to form groups to work alongside each other toward goals, unlocking collaborative rewards, gamifying productivity, and holding each other accountable to achieve their productivity goals.
+
+</ProjectImageBlock>
 
 ## Design Walkthrough
 
@@ -174,7 +190,7 @@ When first creating a plan, the user navigates from the home page to begin creat
     caption={
         "After completing their session, the user completes a reflection activity to see what goals they achieved, and input any feedback they had from their session. After completing the reflection, they can claim their session reward, and move back to the home page."
     }
-    width={6}
+    width={12}
     maxHeight={"400px"}
 >
 
@@ -212,7 +228,7 @@ Users can access their group of friends, or join a group by using the group code
     caption={
         "You and others in the group chat can decide what reward you want to set for completing a study session, and once decided, can navigate to the home page to start working in the session. Other group members can change the reward set up until the session begins. After the session starts, the users once again can set the goals they want to achieve during the session, the length of time they have, and the colors of their Pomopets, like in the first focus task."
     }
-    width={12}
+    width={20}
     maxHeight={"400px"}
 >
 </ProjectImagesBlock>
@@ -243,7 +259,7 @@ Users can access their group of friends, or join a group by using the group code
     caption={
         "Users can talk about their group reward after receiving it, and can use the currency they claimed from the session to buy items to customize their pet's home with."
     }
-    width={8}
+    width={12}
     maxHeight={"400px"}
 >
 </ProjectImagesBlock>
@@ -285,8 +301,8 @@ From our design research, one key insight that came up was the preference of col
     maxHeight={"400px"}
 >
 
-</ProjectImagesBlock>
 From our design research, one key insight that came up was the preference of collaboration over competition when it came to a source of motivation. Although there was a general consensus that competition was a source of motivation, participants believed that it was not long term and could potentially become toxic. On the contrary, collaboration was much more preferred as the pressure from working with others is less emotionally taxing compared to competition, and can be a long term motivation. From this insight, we wanted to remove all forms of competition, and to find ways for users to collaborate with other users and friends. This resulted in users in Pomopet collaborating with others during study sessions.
+</ProjectImagesBlock>
 
 
 
@@ -304,9 +320,9 @@ From our design research, one key insight that came up was the preference of col
     width={8}
     maxHeight={"400px"}
 >
+One participant mentioned that they found value in self-growth and finding satisfaction in accomplishments. They believed that there is motivation in self improvements and bettering oneself. Another user found satisfaction in being able to see progression and accomplishments, similar to something like BeReal or Spotify Wrap. To respond to this, we added ways for users to reflect on their study sessions so they can understand how well they did and how much they accomplished. This is then recorded and users can look back on it.
 </ProjectImagesBlock>
 
-One participant mentioned that they found value in self-growth and finding satisfaction in accomplishments. They believed that there is motivation in self improvements and bettering oneself. Another user found satisfaction in being able to see progression and accomplishments, similar to something like BeReal or Spotify Wrap. To respond to this, we added ways for users to reflect on their study sessions so they can understand how well they did and how much they accomplished. This is then recorded and users can look back on it.
 
 
 ### Rewards to Encourage Task Completion
@@ -323,9 +339,9 @@ One participant mentioned that they found value in self-growth and finding satis
     width={8}
     maxHeight={"400px"}
 >
+Participants generally viewed rewards as a good incentive to encourage task completion and as a sustainable form of motivation. Participants would usually set up rewards that they would treat themselves with after completing their tasks. Other participants also wanted to see something tangible as a result of their hard work after completing tasks. This encouraged us to implement a gamified reward system for completing tasks and also ways for groups to form rewards after completing tasks. This way users have ways to feel rewarded in both the app and in real life.
 </ProjectImagesBlock>
 
-Participants generally viewed rewards as a good incentive to encourage task completion and as a sustainable form of motivation. Participants would usually set up rewards that they would treat themselves with after completing their tasks. Other participants also wanted to see something tangible as a result of their hard work after completing tasks. This encouraged us to implement a gamified reward system for completing tasks and also ways for groups to form rewards after completing tasks. This way users have ways to feel rewarded in both the app and in real life.
 
 ## Iterative Design and Key Insights
 
