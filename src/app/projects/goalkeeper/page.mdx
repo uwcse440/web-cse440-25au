@@ -65,6 +65,14 @@ import visual_cues from "public/images/projects/goalkeeper/post/visual_cues.png"
 import drinking_progress from "public/images/projects/goalkeeper/post/drinking_progress.png";
 import celebration_board from "public/images/projects/goalkeeper/post/celebration_board.png";
 
+import board_help from "public/images/projects/goalkeeper/post/board-help.png";
+import friends_help from "public/images/projects/goalkeeper/post/friends-help.png";
+import intro1 from "public/images/projects/goalkeeper/post/intro1.png";
+import intro2 from "public/images/projects/goalkeeper/post/intro2.png";
+import intro3 from "public/images/projects/goalkeeper/post/intro3.png";
+import intro4 from "public/images/projects/goalkeeper/post/intro4.png";
+import progress_edit_help from "public/images/projects/goalkeeper/post/progress-edit-help.png";
+import progress_help from "public/images/projects/goalkeeper/post/progress-help.png";
 
 # GoalKeeper
 
@@ -263,7 +271,7 @@ long-term goals.
 
 ### Socially Motivated Tracking
 
-{/*
+
 <ProjectImagesBlock
     images={[
         {
@@ -281,7 +289,7 @@ long-term goals.
     width={8}
     maxHeight={"400px"}
 >
-*/}
+
 
     We found people are much more likely to track and be aware of their drinking habits when there
     is social connection involved. In our design research participants frequently mentioned real 
@@ -290,7 +298,7 @@ long-term goals.
     that we should build in a core social element to help users achieve their goals. This manifested
     in our design as the friends system and celebration board.
 
-{/*</ProjectImagesBlock>*/}
+</ProjectImagesBlock>
 
 ### Tracking Exact Numbers Can Be Harmful
     A very important finding in our design was that seeing too many precise statistics can be more
@@ -317,7 +325,7 @@ long-term goals.
 
 ### Insights from Heuristic Evaluation
 
-{/*
+
 <ProjectImageBlock
     image={{
         src: imagePlaceholder1200x800,
@@ -330,7 +338,7 @@ long-term goals.
     width={6}
     maxHeight={"400px"}
 >
-*/}
+
 
     The first heuristic that the evaluation showed we were failing to successfully meet was
     **Visibility of System Status**. The heuristic evaluation revealed a lot of confusion with
@@ -346,12 +354,11 @@ long-term goals.
     However, we also will add some level of tutorial/documentation to make it as easy as
     possible for the users to use our design.
 
-
-{/*</ProjectImageBlock>*/}
+</ProjectImageBlock>
 
 ### Insights from Usability Testing
 
-{/*<ProjectImagesBlock
+<ProjectImagesBlock
     images={[
         {
             src: imagePlaceholder300x600,
@@ -369,7 +376,7 @@ long-term goals.
     }
     width={6}
     maxHeight={"400px"}
->*/}
+>
 
     We found 3 friends after a game night who were willing to be a part of our usability tests.
     We provided each of the participants with some overall context “This koozie and app is to
@@ -393,29 +400,9 @@ long-term goals.
     limits).
 
 
-{/*</ProjectImagesBlock>*/}
+</ProjectImagesBlock>
 
-### Insights from the overall process
-{/*
-<ProjectImagesBlock
-    images={[
-        {
-            src: imagePlaceholder600x300,
-            alt: "Every image requires alt text. This should describe the content of that image.",
-            caption: "These are two images stacked in a column. " +
-                     "Notice that the text on the left is not broken up by the images."
-        },
-        {
-            src: imagePlaceholder600x300,
-            alt: "Every image requires alt text. This should describe the content of that image.",
-            caption: "These are two images stacked in a column. " +
-                     "Notice that the text on the left is not broken up by the images."
-        },
-    ]}
-    direction={"column"}
-    width={6}
-    maxHeight={"200px"}
->*/}
+### Tutorialization and Ease of Use
 
     We learned through feedback on our design that physical rewards (gift cards, etc.) had a
     lot of problems associated with them as a concept. We concluded that these physical rewards
@@ -426,13 +413,29 @@ long-term goals.
     their own achievements that they can look back on and share with their friends. This new
     concept merges together the social and goal setting aspects of our design in a convenient and
     engaging manner.
-    
+
+<ProjectImagesBlock
+    images={[
+        {
+            src: board_help,
+            alt: "Help on the celebration board page.",
+        },
+        {
+            src: friends_help,
+            alt: "Help on the friends page.",
+        },
+    ]}
+    direction={"row"}
+    width={6}
+    caption="Extra information on the Help Page"
+>
+
     During our usability testing, we found that some people experience confusion when using our prototype.
     The prototype had no guidance on how to get started or how to connect the koozie, which makes it
     difficult for first-time users. So, we added an introduction on how to use the koozie to address this.
     In the digital mockup, the app opens with an introduction screen, followed by a simple walkthrough that
     explains how to pair the koozie to the app and how to use the koozie for the most accurate tracking,
-    making users feel more confident and supported from the start.
+    making users feel more confident and supported from the start. Help buttons have also been added
+    across multiple screens to offer ongoing guidance and prevent users from feeling lost.
 
-
-{/*</ProjectImagesBlock>*/}
+</ProjectImagesBlock>
