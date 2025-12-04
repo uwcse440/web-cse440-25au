@@ -51,11 +51,8 @@ import imageTeamPerson1 from "public/images/projects/pomopet/team/firstname1.png
 import imageTeamPerson2 from "public/images/projects/pomopet/team/firstname2.png";
 import imageTeamPerson3 from "public/images/projects/pomopet/team/firstname3.png";
 import imageTeamPerson4 from "public/images/projects/pomopet/team/firstname4.png";
-
-import imagePlaceholder300x600 from "public/images/projects/pomopet/post/300x600.png";
-import imagePlaceholder400x400 from "public/images/projects/pomopet/post/400x400.png";
-import imagePlaceholder600x300 from "public/images/projects/pomopet/post/600x300.png";
-import imagePlaceholder1200x800 from "public/images/projects/pomopet/post/1200x800.png";
+// TODO: Add Abel's photo as firstname5.png and uncomment the import below
+// import imageTeamPerson5 from "public/images/projects/pomopet/team/firstname5.png";
 
 import t1walkthrough1 from "public/images/projects/pomopet/post/t1walkthrough1.png";
 import t1walkthrough2 from "public/images/projects/pomopet/post/t1walkthrough2.png";
@@ -94,6 +91,7 @@ import ioa2 from "public/images/projects/pomopet/post/IOA2.png";
   *   This consistent image size provides a cleaner gallery.
   */}
 
+{/* TODO: Once Abel's photo (firstname5.png) is added, update Abel's entry to use imageTeamPerson5 */}
 <ProjectTeamGallery members={[
     {
         name: ["Sahej", "Kochhar"],
@@ -313,13 +311,39 @@ One participant mentioned that they found value in self-growth and finding satis
 
 ### Rewards to Encourage Task Completion
 
+<ProjectImagesBlock
+    images={[
+        {
+            src: insight3,
+            alt: "A mobile app mockup showing a 'Session Complete!!' screen with the number 67 displayed next to a gold coin icon, representing the in-app currency reward earned for completing a study session. A large green 'Back to Home' button appears at the bottom.",
+            caption: "The session complete screen rewards users with in-app currency, providing tangible recognition for their productivity efforts.",
+        }
+    ]}
+    direction={"row"}
+    width={8}
+    maxHeight={"400px"}
+>
+</ProjectImagesBlock>
+
 Participants generally viewed rewards as a good incentive to encourage task completion and as a sustainable form of motivation. Participants would usually set up rewards that they would treat themselves with after completing their tasks. Other participants also wanted to see something tangible as a result of their hard work after completing tasks. This encouraged us to implement a gamified reward system for completing tasks and also ways for groups to form rewards after completing tasks. This way users have ways to feel rewarded in both the app and in real life.
 
 ## Iterative Design and Key Insights
 
-Our initial paper prototypes explored the physical-to-digital interaction, using a plush toy to control the app's timer
+<ProjectImageBlock
+    image={{
+        src: initPrototype,
+        alt: "An overview of the paper prototype showing multiple hand-drawn screens on paper with sticky notes, depicting the full user flow of the Pomopet app. The screens include goal setting, group chat, timer, session complete, reflection, shop, and pet room interfaces. Two physical plush toy prototypes (yellow bird characters) are shown on the right side of the image.",
+    }}
+    caption={
+        "Our initial paper prototype explored the physical-to-digital interaction, using a plush toy to control the app's timer."
+    }
+    width={8}
+    maxHeight={"400px"}
+>
 
 Our iterative design process began with creating low-fidelity paper prototypes to test the core interaction of physically "squishing" a toy to activate a digital timer. We refined these designs through a heuristic evaluation to address navigation consistency, followed by usability testing with target users to validate our task flows. These evaluations revealed a disconnect between our initial "strict" productivity philosophy and the realistic needs of students, prompting significant changes as we transitioned into our final high-fidelity digital mockup.
+
+</ProjectImageBlock>
 
 
 ### Information Over Aesthetic
