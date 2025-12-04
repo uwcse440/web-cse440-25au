@@ -47,10 +47,10 @@ import { ProjectTeamGallery } from "@/components/project/ProjectTeamGallery";
   * - If an import is not working, double-check that you have the correct file extension.
   */}
 
-import imageTeamPerson1 from "public/images/projects/template/team/firstname1.png";
-import imageTeamPerson2 from "public/images/projects/template/team/firstname2.png";
-import imageTeamPerson3 from "public/images/projects/template/team/firstname3.png";
-import imageTeamPerson4 from "public/images/projects/template/team/firstname4.png";
+import imageTeamPerson1 from "public/images/projects/pomopet/team/firstname1.png";
+import imageTeamPerson2 from "public/images/projects/pomopet/team/firstname2.png";
+import imageTeamPerson3 from "public/images/projects/pomopet/team/firstname3.png";
+import imageTeamPerson4 from "public/images/projects/pomopet/team/firstname4.png";
 
 import imagePlaceholder300x600 from "public/images/projects/pomopet/post/300x600.png";
 import imagePlaceholder400x400 from "public/images/projects/pomopet/post/400x400.png";
@@ -165,13 +165,12 @@ While using Pomopet, users will need to know their priorities when it comes to t
     images={[
         {
             src: t1walkthrough1,
-            alt: "Every image requires alt text. This should describe the content of that image.",
+            alt: "A user flow diagram consisting of five mobile interface screens illustrating the process of \"(1) Creating an informed plan to manage your goals.\" The flow begins on the Home screen, where the \"Start Working!\" button is circled. Arrows connect this to a Goals screen, highlighting the \"Add a goal\" and \"Continue\" buttons. The user then moves to a settings screen where \"Change Color\" is selected, leading to a customization screen to pick an \"Activity Color\" and \"Save\" the preferences. The final screen shows the active session timer counting down from 51:24.",
         },
     ]}
     direction={"row"}
     caption={
-        "This caption is applied to the entire block of images. " +
-        "See that it spans across the area of the images."
+        "When first creating a plan, the user navigates from the home page to begin creating the goals they want to fulfill during their study session. They can adjust things like how many goals they want to set, how long their study session will be for, and what colors their Pomopet will change to during the session and breaks. After setting their preferences, they can save them, and are placed into the session."
     }
     width={1200}
     maxHeight={"800"}
@@ -185,11 +184,10 @@ When first creating a plan, the user navigates from the home page to begin creat
 <ProjectImageBlock
     image={{
         src: t1walkthrough2,
-        alt: "Every image requires alt text. This should describe the content of that image.",
+        alt: "A user flow diagram showing two mobile screens connected by an arrow. 1. Reflection Screen: A form titled \"Reflection\" where the user checks off completed goals and answers three text prompts: \"What went well?\", \"What didn't go well?\", and \"What can I do better next time?\". The \"Reflection\" title and the green \"Claim Reward!\" button at the bottom are circled in red. 2. Session Complete Screen: An arrow points from the \"Claim Reward!\" button to this screen, which displays \"Session Complete!!\" and a coin icon with the number \"67\". A green \"Back to Home\" button at the bottom is highlighted with a red circle.",
     }}
     caption={
-        "A good caption supports helps a reader understand what is important. " +
-        "It thus supports skimming and also provides an emphasis on key points of related text."
+        "After completing their session, the user completes a reflection activity to see what goals they achieved, and input any feedback they had from their session. After completing the reflection, they can claim their session reward, and move back to the home page."
     }
     width={6}
     maxHeight={"400px"}
@@ -208,80 +206,72 @@ Users can access their group of friends, or join a group by using the group code
     images={[
         {
             src: t2walkthrough1,
-            alt: "Every image requires alt text. This should describe the content of that image.",
+            alt: "A user flow diagram titled \"(2) Collaborating with other users to stay productive\" showing three mobile screens. 1. Home: A group icon (three people) near the progress bar is circled in red. 2. Group Code: A modal screen prompting the user to \"Enter group code\". The messages icon (envelope) in the bottom navigation bar is circled. 3. Messages: A list of group chats. The top chat, \"Best Group Chat Ever!\", is highlighted in pink with a red circle around its icon, distinguishing it from the grayed-out past chats below it.",
         },
     ]}
     caption={
-        "The text above is outside the image block, then we have these full width images."
+        "Users can access their group of friends, or join a group by using the group code provided, and communicate with them using messages. Past group chats of sections you've worked in are gray, while pink chats are ones associated with your current working section."
     }
     width={12}
     maxHeight={"400px"}
 >
-
-
-You and others in the group chat can decide what reward you want to set for completing a study session, and once decided, can navigate to the home page to start working in the session. Other group members can change the reward set up until the session begins. After the session starts, the users once again can set the goals they want to achieve during the session, the length of time they have, and the colors of their Pomopets, like in the first focus task.
 </ProjectImagesBlock>
 
 <ProjectImagesBlock
     images={[
         {
             src: t2walkthrough2,
-            alt: "Every image requires alt text. This should describe the content of that image.",
+            alt: "A user flow diagram consisting of three mobile screens illustrating the process of setting a group reward and starting a session. 1. Group Chat: The first screen shows a messaging interface where users with animal avatars discuss plans, with messages like \"How about we go out for coffee together...\". 2. Group Dashboard: The middle screen displays the decided \"Group Reward: Grab coffee together!\" and a \"Today's Progress\" section showing progress bars for three users (You, Jane, John). The home icon in the bottom navigation bar is circled in red, with an arrow pointing to the next screen. 3. Home Screen: The final screen shows the main dashboard with a chicken avatar and a \"Start Working!\" button circled in red.",
         },
     ]}
     caption={
-        "The text above is outside the image block, then we have these full width images."
+        "You and others in the group chat can decide what reward you want to set for completing a study session, and once decided, can navigate to the home page to start working in the session. Other group members can change the reward set up until the session begins. After the session starts, the users once again can set the goals they want to achieve during the session, the length of time they have, and the colors of their Pomopets, like in the first focus task."
     }
     width={12}
     maxHeight={"400px"}
 >
 </ProjectImagesBlock>
 
-After the session ends, the users fill out the reflection and claim their reward, while their group reward remains locked until the complete end of the session. When they navigate back to the home page, they receive their group reward.
-
 <ProjectImagesBlock
     images={[
         {
             src: t2walkthrough3,
-            alt: "Every image requires alt text. This should describe the content of that image.",
+            alt: "A user flow diagram illustrating the process of unlocking a group reward. Left: A group chat interface shows a \"Group Reward\" card labeled \"Grab coffee together!\" with a visible lock icon, indicating it is locked. Middle: A sequence showing the \"Reflection\" screen where the user inputs feedback and taps \"Claim Reward!\", leading to a \"Session Complete!!\" screen displaying earned currency and a \"Back to Home\" button. Right: The user returns to the \"Today's Progress\" home screen and then navigates back to the group chat, where the \"Group Reward\" card is now shown without the lock icon, indicating it has been unlocked.",
         },
     ]}
     caption={
-        "The text above is outside the image block, then we have these full width images."
+        "After the session ends, the users fill out the reflection and claim their reward, while their group reward remains locked until the complete end of the session. When they navigate back to the home page, they receive their group reward."
     }
     width={20}
     maxHeight={"400px"}
 >
 
 </ProjectImagesBlock>
-Users can talk about their group reward after receiving it, and can use the currency they claimed from the session to buy items to customize their pet’s home with.
 
 <ProjectImagesBlock
     images={[
         {
             src: t2walkthrough4,
-            alt: "Every image requires alt text. This should describe the content of that image.",
+            alt: "A user flow diagram consisting of three mobile screens illustrating post-reward interactions. 1. Reward Dashboard: The first screen displays the unlocked \"Group Reward\" of \"Grab coffee together!\" with the back arrow in the top left corner circled in red. 2. Group Chat: The middle screen shows a chat interface where users with animal avatars discuss meeting details (e.g., \"How about the cafe near the bookstore...\"). The shop icon (storefront) in the bottom navigation bar is circled in red. 3. Shop Interface: The final screen displays a shop where users can purchase furniture items, such as tables, using their earned currency (67 coins are visible at the top).",
         },
     ]}
     caption={
-        "The text above is outside the image block, then we have these full width images."
+        "Users can talk about their group reward after receiving it, and can use the currency they claimed from the session to buy items to customize their pet's home with."
     }
     width={8}
     maxHeight={"400px"}
 >
 </ProjectImagesBlock>
 
-After purchasing, they can position & orient the furniture by accessing their inventory, and can later change it by editing the room.
-
 <ProjectImagesBlock
     images={[
         {
             src: t2walkthrough5,
-            alt: "Every image requires alt text. This should describe the content of that image.",
+            alt: "A user flow diagram illustrating the furniture placement and editing process across four mobile screens. 1. Access Inventory: On the first screen showing the pet's room, the inventory icon (a box) is circled in red. 2. Select Item: An arrow points to the adjacent \"Inventory\" screen, where a table item is selected from a grid. 3. Place Item: An arrow points to the next screen showing the \"Pet's room\" (labeled in red) with the table now placed inside. 4. Edit Room: A final arrow points to a screen showing the room with directional controls (four-way arrows) for positioning the furniture.",
         },
     ]}
     caption={
-        "The text above is outside the image block, then we have these full width images."
+        "After purchasing, they can position & orient the furniture by accessing their inventory, and can later change it by editing the room."
     }
     width={12}
     maxHeight={"400px"}
