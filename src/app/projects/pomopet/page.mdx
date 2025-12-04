@@ -77,6 +77,9 @@ import bdf2 from "public/images/projects/pomopet/post/BDF2.png";
 import reflection1 from "public/images/projects/pomopet/post/r1.png";
 import reflection2 from "public/images/projects/pomopet/post/r2.png";
 
+import ioa1 from "public/images/projects/pomopet/post/IOA1.png";
+import ioa2 from "public/images/projects/pomopet/post/IOA2.png";
+
 # Pomopet
 
 {/*<ProjectSubtitle>Optional Subtitle</ProjectSubtitle>
@@ -132,27 +135,11 @@ import reflection2 from "public/images/projects/pomopet/post/r2.png";
   * Later in the template you will also find examples of the plural `ProjectImagesBlock` tag.
 */}
 
-<ProjectImageBlock
-    image={{
-        src: imagePlaceholder1200x800,
-        alt: "Every image requires alt text. This should describe the content of that image."
-    }}
-    caption={
-        "A good caption supports helps a reader understand what is important. " +
-        "It thus supports skimming and also provides an emphasis on key points of related text."
-    }
-    width={6}
-    maxHeight={"400px"}
->
+Being able to manage your time, study, and get work done is something that every student needs to do to be successful, but this can be difficult for a multitude of reasons. From structuring their schedules to effectively completing assignments, to lack of motivation, or feelings of isolation from tackling everything alone, all of these factors eventually lead to burnout and poor productivity.
 
-Being able to manage your time, study, and get work done is something that every student needs to do to be successful, but this can be difficult for a multitude of reasons. From structuring their schedules to effectively completing assignments, to lack of motivation, or feelings of isolation from tackling everything alone, all of these factors eventually lead to burnout and poor productivity. 
+Current platforms focus on only tracking individual productivity, but over-rely on self-accountability to consistently use the app and build and maintain long-term motivation, leading to an eventual return to poor productivity due to not feeling a need to get things done.
 
-Current platforms focus on only tracking individual productivity, but over-rely on self-accountability to consistently use the app and build and maintain long-term motivation, leading to an eventual return to poor productivity due to not feeling a need to get things done. 
- 
-Pomopet combines a physical light-up companion that pairs with a social platform to encourage and motivate users to improve productivity through gamification and social accountability. Allowing friends to form groups to work alongside each other toward goals, unlocking collaborative rewards, gamifying productivity, and holding each other accountable to achieve their productivity goals. 
-
-
-</ProjectImageBlock>
+Pomopet combines a physical light-up companion that pairs with a social platform to encourage and motivate users to improve productivity through gamification and social accountability. Allowing friends to form groups to work alongside each other toward goals, unlocking collaborative rewards, gamifying productivity, and holding each other accountable to achieve their productivity goals.
 
 ## Design Walkthrough
 
@@ -291,8 +278,8 @@ From our design research, one key insight that came up was the preference of col
     images={[
         {
             src: insight1,
-            alt: "Every image requires alt text. This should describe the content of that image.",
-            caption: "This caption is applied to the image. Each can have a different caption.",
+            alt: "A mobile app mockup showing a group collaboration screen titled 'Best Group Chat Ever!' with a purple header. The screen displays a 'Group Reward' card reading 'Grab coffee together!' and a 'Today's Progress' section showing three user avatars (You, Jane, John) with progress bars beneath each. A bottom navigation bar shows home, shop, pet room, stats, and messages icons.",
+            caption: "The group collaboration screen allows users to set shared rewards and track each other's progress, fostering teamwork over competition.",
         }
     ]}
     direction={"row"}
@@ -311,8 +298,8 @@ From our design research, one key insight that came up was the preference of col
     images={[
         {
             src: insight2,
-            alt: "Every image requires alt text. This should describe the content of that image.",
-            caption: "This caption is applied to the image. Each can have a different caption.",
+            alt: "A mobile app mockup showing a 'Reflection' screen with a form for post-session self-assessment. The screen includes checkboxes under 'What goals did you complete?', and three text input fields labeled 'What went well?', 'What didn't go well?', and 'What can I do better next time?' with placeholder text 'xxxxx'. A large green 'Claim Reward!' button appears at the bottom.",
+            caption: "The reflection screen encourages internal motivation by prompting users to assess their accomplishments and identify areas for growth after each study session.",
         }
     ]}
     direction={"row"}
@@ -337,17 +324,23 @@ Our iterative design process began with creating low-fidelity paper prototypes t
 
 ### Information Over Aesthetic
 
-<ProjectImageBlock
-    image={{
-        src: imagePlaceholder1200x800,
-        alt: "Every image requires alt text. This should describe the content of that image.",
-    }}
+<ProjectImagesBlock
+    images={[
+        {
+            src: ioa1,
+            alt: "A hand-drawn paper prototype of a goal-setting screen featuring a large bird character avatar with a speech bubble asking 'Before we begin, what are your goals for this session?' with sticky notes representing goal inputs and a Continue button.",
+        },
+        {
+            src: ioa2,
+            alt: "A high-fidelity digital mockup of the same goal-setting screen, now with a clean, minimal interface showing an 'Add a goal' button, a list of current goals like 'Take a walk' and 'Drink water', previous goals section, and a Continue button - with no character avatar present.",
+        },
+    ]}
+    direction={"row"}
     caption={
-        "A good caption supports helps a reader understand what is important. " +
-        "It thus supports skimming and also provides an emphasis on key points of related text."
+        "We removed the conversational avatar from the goal-setting screen to maximize space and reduce friction when inputting tasks."
     }
     width={6}
-    maxHeight={"200px"}
+    maxHeight={"400px"}
 >
 
 In our initial paper prototype, we incorporated a large character avatar with dialogue bubbles on the goal-setting screen to add personality and guide the user. We thought this would make the app feel more friendly. However, during usability testing, we observed that these large aesthetic elements consumed valuable screen real estate, distracting participants from the primary task of setting their intentions for the session.
@@ -355,7 +348,7 @@ In our initial paper prototype, we incorporated a large character avatar with di
 Users struggled to focus on their list management because the dialogue elements dominated the interface. In response to this feedback, we pivoted to a "function-first" layout in the digital mockup. We removed the character dialogue entirely from the setup phase, maximizing the screen space for goal management. This reduced friction during the setup phase, ensuring users could see and edit their list clearly before committing to a study session.
 
 
-</ProjectImageBlock>
+</ProjectImagesBlock>
 
 ### Balancing Discipline with Flexibility
 
