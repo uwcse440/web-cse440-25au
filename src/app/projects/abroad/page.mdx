@@ -57,7 +57,7 @@ import imagePlaceholder300x600 from "public/images/projects/template/post/300x60
 import imagePlaceholder600x300 from "public/images/projects/template/post/600x300.png";
 import imagePlaceholder1200x800 from "public/images/projects/template/post/1200x800.png";
 
-import group_photo from "public/images/projects/abroad/group_photo.png"
+import group_photo from "public/images/projects/abroad/group_photo.png";
 import imageFestival from "public/images/projects/abroad/festival.png";
 import imageFrustration from "public/images/projects/abroad/overwhelmed.png";
 
@@ -75,6 +75,7 @@ import paperEvent from "public/images/projects/abroad/paper_events_screen.png";
 import PaperFriend from "public/images/projects/abroad/paper_friends_screen.png";
 import paperRSVP from "public/images/projects/abroad/paper_RSVP_screen.png";
 import paperMain from "public/images/projects/abroad/paper_main_screen.png";
+import paperProto from "public/images/projects/abroad/paperPrototype.png";
 
 # Abroad
 
@@ -162,16 +163,6 @@ location, meet other attendees in person, and create more informed discoveries f
 
 ## Design Walkthrough
 
-After identifying relevant data sources (primarily, other current and past study abroad students and travelers)
-we turned our focus towards providing useability in areas that mattered most to our target audience: improving 
-their experience by making connections with others and discovering more niche local events. These tasks were easy
-in some ways in terms of essential design, but difficult to implement specifics on. Social connections could be established
-through the same system as standard social media apps, but this might destroy what makes study abroad special; similarly,
-we could just display maps of 'hot spot' local events (this was actually a heavily considered initial design), but this
-might remove the 'tangible and niche advice' element we aim to achieve by leveraging past travelers as a data source. 
-
-### Finding local events
-
 <ProjectImagesBlock
     images={[
         {
@@ -192,23 +183,17 @@ might remove the 'tangible and niche advice' element we aim to achieve by levera
     maxHeight={"400px"}
 >
 
-The core feature of the app revolves around 'events'. Any user can make an event, or discover
-other users' events. These are filtered by location, price to attend, date, number of people going,
-and how many 'friends' you have going. This makes it so that users can find events conducive to their
-school schedule and location, and can either opt to go to events with people they haven't met yet on
-the app, or go with friends. Importantly, by accessing the event details, users can see what others
-in the past have commented / reflected on about previous events in similar locations. For example,
-if user Ava is organizing a visit at a cafe near the Eiffel Tower, others who have visited will have
-their experiences show up in the event details: for instance, the app finds James' old comment about
-how 5:30 is the perfect time to go in fall, which may help Ava and her event attendees to refine their
-event. These recommendations / past reviews are organized by exact proximity (ones that are closest appear
-first), or when enough have been looked over, the number of upvotes they have. 'Events' can range from
-generic things like visiting the Eiffel Tower, to more small / niche meetups at little known cafes, all
-the way to day-long or one-time events that are planned in advance. Tags relating to these ("meetup", 
-"landmark", "festival" may be a couple, for example) can also be established in making events and filtered
-by users searching for more events.
+After identifying relevant data sources (primarily, other current and past study-abroad students and travelers)
+we turned our focus towards providing useability in areas that mattered most to our target audience: improving 
+their experience by making connections with others and discovering more niche local events. These tasks were easy
+in some ways in terms of essential design, but difficult to implement specifics on. Social connections could be established
+through the same system as standard social media apps, but this might destroy what makes study-abroad special; similarly,
+we could just display maps of 'hot spot' local events (this was actually a heavily considered initial design), but this
+might remove the 'tangible and niche advice' element we aim to achieve by leveraging past travelers as a data source. 
 
 </ProjectImagesBlock>
+
+### Finding local events
 
 <ProjectImagesBlock
     images={[
@@ -229,6 +214,22 @@ by users searching for more events.
     width={6}
     maxHeight={"400px"}
 >
+
+The core feature of the app revolves around 'events'. Any user can make an event, or discover
+other users' events. These are filtered by location, price to attend, date, number of people going,
+and how many 'friends' you have going. This makes it so that users can find events conducive to their
+school schedule and location, and can either opt to go to events with people they haven't met yet on
+the app, or go with friends. Importantly, by accessing the event details, users can see what others
+in the past have commented / reflected on about previous events in similar locations. For example,
+if user Ava is organizing a visit at a cafe near the Eiffel Tower, others who have visited will have
+their experiences show up in the event details: for instance, the app finds James' old comment about
+how 5:30 is the perfect time to go in fall, which may help Ava and her event attendees to refine their
+event. These recommendations / past reviews are organized by exact proximity (ones that are closest appear
+first), or when enough have been looked over, the number of upvotes they have. 'Events' can range from
+generic things like visiting the Eiffel Tower, to more small / niche meetups at little known cafes, all
+the way to day-long or one-time events that are planned in advance. Tags relating to these ("meetup", 
+"landmark", "festival" may be a couple, for example) can also be established in making events and filtered
+by users searching for more events.
 
 </ProjectImagesBlock>
 
@@ -356,42 +357,47 @@ was turning into a kitchen sink design. In Milestone 3, we saw our designs lacke
 user interactions. The paper prototyping phase revealed fundamental issues with tasks flows. In particular, it became obvious that
 users felt overwhelmed and struggled to discover events and build connections. 
 
+<ProjectImageBlock
+    image={{
+        src: paperProto,
+        alt: "Initial crude paper prototype"
+    }}
+    caption={
+        "Our first full paper prototype design; " +
+        "this was more informed than initial sketches via design research methods, but still needed heavy modification following heuristic evaluation and usability testing."
+    }
+    width={6}
+    maxHeight={"400px"}
+>
+
+We identified problems in our design through varying means: Initially, we draftied prototypes and sketches based on our
+own personal knowledge and of what we wanted the app to be; through design research we were able to narrow down and get
+new ideas on what actual users may be interested in, identifying designs which were unnecessary or unhelpful to a user.
 Through heuristic evaluation, we identified multiple problems, with the reviewers noting excessive text on the main event
 page, and how our layout wasn’t seamless and consistent. Usability testing revealed that participants couldn’t unfriend
 someone in the friends lists. This led to multiple redesigns including splitting event information from past reviews,
 introducing a bucket list feature, and adding a proper RSVP system with text reminders. Going from paper model to digital
 mockups forced us to properly implement details we glossed over in the paper prototype. 
 
+</ProjectImageBlock>
 
 ### Information overload obscured the core value of connecting students with past traveler experiences
-
 
 During heuristic evaluation, multiple people commented that our events page was too cluttered and violated the Aesthetic
 and Minimalist Design heuristic by presenting too much information simultaneously. One evaluator noted “the events page
 having too many words for someone on a phone to reasonably read.” This criticism saw us revamp our entire events screen,
 opting to split it into multiple more readable screens. 
 
-
-<ProjectImageBlock
-    image={{
-        src: paperEvent,
-        alt: "The first iteration in the paper prototype phase for the events page ",
-    }}
-    caption={
-        "The first iteration of the events page being too cluttered and an information overload."
-    }
-    width={6}
-    maxHeight={"400px"}
->
-
 The original design displayed event information (time, location, description) alongside a scrolling list of past attendees
 and reviews and tips. In practice, usability testers fixated on the event details and “rarely made it to the feature of
 interacting with past users who had also attended events” which was a key element in our design.
 
-</ProjectImageBlock>
-
 <ProjectImagesBlock
     images={[
+        {
+            src: paperEvent,
+            alt: "The first iteration in the paper prototype phase for the events page ",
+        },
         {
             src: imageEvents3,
             alt: "Event near you.",
@@ -403,29 +409,21 @@ interacting with past users who had also attended events” which was a key elem
     ]}
     direction={"row"}
     caption={
-        "A new split screen with a less cluttered events near you and reviews page"
+        "The first iteration of the events page was too cluttered and suffered from information overload. " +
+        "We created a split design with cleaner events-near-you and reviews screens."
     }
     width={6}
     maxHeight={"400px"}
 >
 
 We fundamentally restructured the information architecture by separating these concerns. The revised design presents event
-details first on a cleaner, more minimal screen with a prominent “Events Near You” at the top. This then led to a list of events
+details first on a cleaner, more minimal screen with a prominent “Events Near You” at the top. This then leads to a list of events
 that each had its main event details. Clicking on each one would then provide more information about the event and a button to show
 past travelers reviews and tips. This separation ensures users first understand what the event is, then can choose to see knowledge
-from previous travelers. 
+from previous travelers upon further investigation. Giving this core functionality it's own space not only helps users process
+information presented to them, but also allows for more of a focus on what makes our app unique.
 
 </ProjectImagesBlock>
-
-
-### Social connection required concrete affordances, not just conceptual features
-
-
-Usability testing revealed that “testers were confused by the friend requesting process, and that limited the potential networks that
-were formed.” Participants understood the concept of connecting with other students but found no clear pathway to actually act on it.
-One of the participants commented, “I want to meet people, but I don’t know where to start” while another asked, “How do I find students
-with similar interests?” The initial paper prototype just included a friends list and profiles but provided no mechanism for discovery
-or meaningful connections.
 
 <ProjectImageBlock
     image={{
@@ -433,11 +431,19 @@ or meaningful connections.
         alt: "The first iteration in the paper prototype phase for the friends page",
     }}
     caption={
-        "Our old friends page with no way meaningfully add friends or to remove friends"
+        "Old 'friends page'-- no intuitive way add friends or to remove friends"
     }
-    width={6}
-    maxHeight={"400px"}
+    width={3}
+    maxHeight={"275px"}
 >
+
+### Social connection required concrete affordances, not just conceptual features
+
+Usability testing revealed that “there's confusion by the friend requesting process, which can limit the potential networks formed.” 
+Participants understood the concept of connecting with other students but found the route to engage with this was too convoluted, unclear,
+or not unique enough in design. One of the participants commented, “I want to meet people, but I don’t know where to start” while another asked, 
+“How do I find students with similar interests?” The initial paper prototype just included a friends list and profiles but provided no 
+mechanism for discovery or meaningful connections.
 
 This insight extended beyond interface design, instead questioning how we were conceptualizing social features. We treated "making friends"
 as a single binary action (add friend: yes/no) rather than recognizing it as a process requiring scaffolding, context, and shared interest
@@ -463,7 +469,7 @@ want to connect with any particular person or what you might do together.
     ]}
     direction={"row"}
     caption={
-        "A revamped firends page where you can add/remove friends and find new connections with similar interests"
+        "A revamped friends page where you can add/remove friends and find new connections with similar interests"
     }
     width={6}
     maxHeight={"400px"}
@@ -478,38 +484,32 @@ and purpose.
 
 </ProjectImagesBlock>
 
-
 ### Event commitment needed trust-building mechanisms beyond a simple join button
-
-Heuristic evaluation identified that our "Join" button violated the User Control and Freedom heuristic because users couldn't easily verify their
-commitment status or manage their attendance after clicking the “Join” button. Usability testing showed participants hesitated to commit to events
-because they lacked confidence about logistics and didn't trust they'd actually remember to attend. One participant said, "I'd join this, but I know
-I'll forget about it by next week." Another questioned, "Can I really get there? What if something comes up?" The original toggle between "Join" and
-"Joined" provided no sense of commitment, reminder system, or easy withdrawal.
-
 
 <ProjectImagesBlock
     images={[
         {
             src: paperMain,
             alt: "Main screen",
-            caption: "The main screen of Abroad showing you can host an event, events, near you, and upcoming events"
+            caption: "Home screen showing you can host an event, see others' events near you, or see saved upcoming events"
         },
         {
             src: paperRSVP,
             alt: "The RSVP page for events",
-            caption: "The RSVP page with no ability to unRSVP or change your status"
+            caption: "The initial RSVP page-- no ability to unRSVP or change your status"
         },
     ]}
-    direction={"column"}
-    width={6}
-    maxHeight={"200px"}
+    direction={"row"}
+    width={7}
+    maxHeight={"350px"}
 >
 
-This insight revealed a gap between our technical model (binary event attendance: true/false) and users' needs around commitment. Students studying
-abroad face uncertainty, with unfamiliar transportation, unpredictable schedules, and social anxiety about attending alone being key factors. A single
-button couldn't address these complex concerns or build the trust needed for users to actually commit to and attend events.
-
+Heuristic evaluation identified that our "Join" button violated the User Control and Freedom heuristic because users couldn't easily verify their
+commitment status or manage their attendance after clicking the “Join” button. Usability testing showed participants hesitated to commit to events
+because they lacked confidence about logistics and didn't trust they'd actually remember to attend. One participant said, "I'd join this, but I know
+I'll forget about it by next week." Another questioned, "Can I really get there? What if something comes up?" The original toggle between "Join" and
+"Joined" provided no sense of commitment, reminder system, or easy withdrawal. 
+This insight revealed a gap between our technical model (binary event attendance: true/false) and users' needs around commitment. 
 
 </ProjectImagesBlock>
 
@@ -526,12 +526,16 @@ button couldn't address these complex concerns or build the trust needed for use
             caption: "New RSVP options with the ability to opt in for text reminders"
         },
     ]}
-    direction={"column"}
-    width={6}
+    direction={"row"}
+    width={5}
     maxHeight={"200px"}
 >
 
-We redesigned the entire RSVP flow into a deliberate, supportive process. The new "RSVP" button opens a modal with multiple affordances.Users
+Students studying abroad face uncertainty: With unfamiliar transportation, unpredictable schedules, and social anxiety about attending events alone, we're faced with 
+a complex problem in our design of social communication. A single new button couldn't address these complex concerns or build the trust needed for users to actually 
+commit to and attend events-- thus we needed to rethink our approach.
+
+We redesigned the entire RSVP flow into a deliberate, supportive process. The new "RSVP" button opens a modal with multiple affordances. Users
 can opt in for text reminders, view directions and transportation options, see who else is attending, and easily modify or cancel their RSVP
 status. We added an "Upcoming Events" dashboard widget that consolidates all events the user has RSVP'd to, with filters for "Events you're
 hosting," "Events you're attending," and "Events you've been invited to." This transformation of event commitment from a single click to a
