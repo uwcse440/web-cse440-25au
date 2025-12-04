@@ -19,10 +19,19 @@ import imageTeamPerson3 from "public/images/projects/template/team/nathan.png";
 import imageTeamPerson4 from "public/images/projects/template/team/shivani.png";
 import imageTeamPerson5 from "public/images/projects/template/team/tamara.png";
 
-import imagePlaceholder300x600 from "public/images/projects/template/post/300x600.png";
-import imagePlaceholder400x400 from "public/images/projects/template/post/400x400.png";
-import imagePlaceholder600x300 from "public/images/projects/template/post/600x300.png";
-import imagePlaceholder1200x800 from "public/images/projects/template/post/1200x800.png";
+import focusflowLogo from "public/images/projects/focusflow/post/logo.png";
+import reflectSummary from "public/images/projects/template/post/reflect-summary.png";
+import reflectPrompts from "public/images/projects/template/post/reflect-prompts.png";
+import planInputs from "public/images/projects/template/post/plan-inputs.png";
+import planGenerated from "public/images/projects/template/post/plan-generated.png";
+import planConflicts from "public/images/projects/template/post/plan-conflicts.png";
+import researchDiary from "public/images/projects/template/post/research-diary.png";
+import researchFocusChart from "public/images/projects/template/post/research-focus-chart.png";
+import paperPrototypeOverview from "public/images/projects/template/post/paper-overview.png";
+import neroBefore from "public/images/projects/template/post/nero-before.png";
+import neroAfter from "public/images/projects/template/post/nero-after.png";
+import reflectOld from "public/images/projects/template/post/reflect-old.png";
+import planOld from "public/images/projects/template/post/plan-old.png";
 
 # FocusFlow
 
@@ -80,12 +89,11 @@ import imagePlaceholder1200x800 from "public/images/projects/template/post/1200x
 
 <ProjectImageBlock
     image={{
-        src: imagePlaceholder1200x800,
-        alt: "Every image requires alt text. This should describe the content of that image."
+        src: focusflowLogo,
+        alt: "FocusFlow logo representing reflection and adaptive planning."
     }}
     caption={
-        "A good caption supports helps a reader understand what is important. " +
-        "It thus supports skimming and also provides an emphasis on key points of related text."
+        "The FocusFlow logo represents Nero’s role in helping students reflect, adapt, and plan their week with clarity."
     }
     width={6}
     maxHeight={"400px"}
@@ -111,14 +119,14 @@ The second task, **Generate a Schedule That Fits Priorities**, shows how Nero us
 <ProjectImagesBlock
     images={[
         {
-            src: imagePlaceholder300x600,
-            alt: "Reflection screen summarizing how much time the student spent on school, work, and personal activities over the past week.",
-            caption: "Students start by reviewing a simple breakdown of how they spent their time in the previous week.",
+            src: reflectSummary,
+            alt: "Reflection summary screen showing time spent on school, work, and personal activities in the past week.",
+            caption: "Students start by reviewing a breakdown of how they spent their time across school, work, and personal activities."
         },
         {
-            src: imagePlaceholder300x600,
+            src: reflectPrompts,
             alt: "Nero reflection screen prompting the student to describe what felt manageable or overwhelming.",
-            caption: "Nero then prompts students to reflect on what worked, what didn’t, and what they want to change going into the next week.",
+            caption: "Nero then prompts students to reflect on what felt sustainable, what caused stress, and what they want to change going into the next week."
         },
     ]}
     direction={"row"}
@@ -142,19 +150,19 @@ as which days felt too packed or which routines actually helped so the upcoming 
 <ProjectImagesBlock
     images={[
         {
-            src: imagePlaceholder300x600,
+            src: planInputs,
             alt: "Input screen where the student lists upcoming deadlines, work shifts, and priorities for the week.",
-            caption: "Students share their upcoming deadlines, events, and priorities so Nero knows what needs to fit into the week.",
+            caption: "Students share their upcoming deadlines, work shifts, and recurring events so Nero knows what needs to fit into the week."
         },
         {
-            src: imagePlaceholder300x600,
+            src: planGenerated,
             alt: "Weekly schedule view showing Nero’s first-pass generated schedule.",
-            caption: "Nero generates a tentative weekly schedule that balances classes, work, study time, and breaks.",
+            caption: "Nero generates a tentative weekly schedule that balances classes, focused work blocks, and breaks."
         },
         {
-            src: imagePlaceholder300x600,
-            alt: "Schedule view with highlighted conflicts and options to adjust or move events.",
-            caption: "FocusFlow highlights conflicts and lets students work with Nero to resolve overlaps or unrealistic blocks.",
+            src: planConflicts,
+            alt: "Schedule view with overlapping events highlighted and options to adjust or move tasks.",
+            caption: "FocusFlow highlights conflicts and suggests adjustments so students can collaboratively refine the plan with Nero."
         },
     ]}
     direction={"row"}
@@ -190,14 +198,14 @@ Across both interviews and diary entries, students described their routines as u
 <ProjectImagesBlock
     images={[
         {
-            src: imagePlaceholder400x400,
-            alt: "Every image requires alt text. This should describe the content of that image.",
-            caption: "This caption is applied to the image. Each can have a different caption.",
+            src: researchDiary,
+            alt: "Weekly reflection screen prompting the student to review their past week.",
+            caption: "Reflection interactions helped us understand how students naturally summarize their week and what details they notice or ignore."
         },
         {
-            src: imagePlaceholder400x400,
-            alt: "Every image requires alt text. This should describe the content of that image.",
-            caption: "This caption is applied to the image. Each can have a different caption.",
+            src: researchFocusChart,
+            alt: "Mood-selection interface where students report how they felt overall during the week.",
+            caption: "Mood and focus check-ins revealed differences between students’ perceived energy levels and their actual reported productivity."
         },
     ]}
     direction={"row"}
@@ -229,13 +237,10 @@ These cycles helped us refine the interface, clarify the AI’s purpose, and str
 
 <ProjectImageBlock
     image={{
-        src: imagePlaceholder1200x800,
-        alt: "Every image requires alt text. This should describe the content of that image.",
+        src: paperPrototypeOverview,
+        alt: "Paper prototype screens laid out showing early versions of reflection, Nero, and weekly planning without clear navigation."
     }}
-    caption={
-        "A good caption supports helps a reader understand what is important. " +
-        "It thus supports skimming and also provides an emphasis on key points of related text."
-    }
+    caption="Our paper prototype highlighted early gaps in navigation. Participants had trouble understanding how to move between reflection, Nero, and planning screens."
     width={6}
     maxHeight={"400px"}
 >
@@ -251,19 +256,18 @@ Iteration: We added a consistent navigation bar, clearer icons, and more visible
 <ProjectImagesBlock
     images={[
         {
-            src: imagePlaceholder300x600,
-            alt: "Every image requires alt text. This should describe the content of that image.",
+            src: neroBefore,
+            alt: "Early Nero chat screen with minimal guidance and no explanation of what the assistant can do.",
+            caption: "In early designs, Nero lacked context, leaving students unsure how to interact with the assistant."
         },
         {
-            src: imagePlaceholder300x600,
-            alt: "Every image requires alt text. This should describe the content of that image.",
+            src: neroAfter,
+            alt: "Revised Nero screen featuring onboarding text and suggested prompts for planning and reflection.",
+            caption: "Adding onboarding text and suggested prompts helped students immediately understand how Nero supports planning."
         },
     ]}
     direction={"row"}
-    caption={
-        "This caption is applied to the entire block of images. " +
-        "See that it spans across the area of the images."
-    }
+    caption="Clarifying Nero’s role and offering suggested prompts helped students feel more comfortable engaging with the AI."
     width={6}
     maxHeight={"400px"}
 >
@@ -279,16 +283,14 @@ Iteration: We added onboarding text, explanation sections, and suggested prompts
 <ProjectImagesBlock
     images={[
         {
-            src: imagePlaceholder600x300,
-            alt: "Every image requires alt text. This should describe the content of that image.",
-            caption: "These are two images stacked in a column. " +
-                     "Notice that the text on the left is not broken up by the images."
+            src: reflectOld,
+            alt: "Earlier reflection screen with a layout very similar to planning, causing confusion.",
+            caption: "Students confused reflection screens with planning screens because the layouts were too similar in early iterations."
         },
         {
-            src: imagePlaceholder600x300,
-            alt: "Every image requires alt text. This should describe the content of that image.",
-            caption: "These are two images stacked in a column. " +
-                     "Notice that the text on the left is not broken up by the images."
+            src: planOld,
+            alt: "Updated planning screen with clearer headings and distinct visual structure.",
+            caption: "We redesigned the planning layout with clearer cues so students can immediately tell they are planning ahead, not reflecting on the past."
         },
     ]}
     direction={"column"}
