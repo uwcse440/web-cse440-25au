@@ -363,8 +363,8 @@ users felt overwhelmed and struggled to discover events and build connections.
         alt: "Initial crude paper prototype"
     }}
     caption={
-        "Our first full paper prototype design, " +
-        "while this was more informed than initial sketches via design research methods, this still needed heavy modification following heuristic evaluation and usability testing."
+        "Our first full paper prototype design; " +
+        "this was more informed than initial sketches via design research methods, but still needed heavy modification following heuristic evaluation and usability testing."
     }
     width={6}
     maxHeight={"400px"}
@@ -382,7 +382,6 @@ mockups forced us to properly implement details we glossed over in the paper pro
 </ProjectImageBlock>
 
 ### Information overload obscured the core value of connecting students with past traveler experiences
-
 
 During heuristic evaluation, multiple people commented that our events page was too cluttered and violated the Aesthetic
 and Minimalist Design heuristic by presenting too much information simultaneously. One evaluator noted “the events page
@@ -426,27 +425,25 @@ information presented to them, but also allows for more of a focus on what makes
 
 </ProjectImagesBlock>
 
-
-### Social connection required concrete affordances, not just conceptual features
-
-
-Usability testing revealed that “there's confusion by the friend requesting process, which can limit the potential networks formed.” 
-Participants understood the concept of connecting with other students but found the route to engage with this was too convoluted, unclear,
-or not unique enough in design. One of the participants commented, “I want to meet people, but I don’t know where to start” while another asked, 
-“How do I find students with similar interests?” The initial paper prototype just included a friends list and profiles but provided no 
-mechanism for discovery or meaningful connections.
-
 <ProjectImageBlock
     image={{
         src: PaperFriend,
         alt: "The first iteration in the paper prototype phase for the friends page",
     }}
     caption={
-        "Our old friends page with no way meaningfully add friends or to remove friends"
+        "Old 'friends page'-- no intuitive way add friends or to remove friends"
     }
-    width={6}
-    maxHeight={"400px"}
+    width={3}
+    maxHeight={"275px"}
 >
+
+### Social connection required concrete affordances, not just conceptual features
+
+Usability testing revealed that “there's confusion by the friend requesting process, which can limit the potential networks formed.” 
+Participants understood the concept of connecting with other students but found the route to engage with this was too convoluted, unclear,
+or not unique enough in design. One of the participants commented, “I want to meet people, but I don’t know where to start” while another asked, 
+“How do I find students with similar interests?” The initial paper prototype just included a friends list and profiles but provided no 
+mechanism for discovery or meaningful connections.
 
 This insight extended beyond interface design, instead questioning how we were conceptualizing social features. We treated "making friends"
 as a single binary action (add friend: yes/no) rather than recognizing it as a process requiring scaffolding, context, and shared interest
@@ -472,7 +469,7 @@ want to connect with any particular person or what you might do together.
     ]}
     direction={"row"}
     caption={
-        "A revamped firends page where you can add/remove friends and find new connections with similar interests"
+        "A revamped friends page where you can add/remove friends and find new connections with similar interests"
     }
     width={6}
     maxHeight={"400px"}
@@ -487,39 +484,34 @@ and purpose.
 
 </ProjectImagesBlock>
 
-
 ### Event commitment needed trust-building mechanisms beyond a simple join button
-
-Heuristic evaluation identified that our "Join" button violated the User Control and Freedom heuristic because users couldn't easily verify their
-commitment status or manage their attendance after clicking the “Join” button. Usability testing showed participants hesitated to commit to events
-because they lacked confidence about logistics and didn't trust they'd actually remember to attend. One participant said, "I'd join this, but I know
-I'll forget about it by next week." Another questioned, "Can I really get there? What if something comes up?" The original toggle between "Join" and
-"Joined" provided no sense of commitment, reminder system, or easy withdrawal.
-
 
 <ProjectImagesBlock
     images={[
         {
             src: paperMain,
             alt: "Main screen",
-            caption: "The main screen of Abroad showing you can host an event, events, near you, and upcoming events"
+            caption: "Home screen showing you can host an event, see others' events near you, or see saved upcoming events"
         },
         {
             src: paperRSVP,
             alt: "The RSVP page for events",
-            caption: "The RSVP page with no ability to unRSVP or change your status"
+            caption: "The initial RSVP page-- no ability to unRSVP or change your status"
         },
     ]}
     direction={"row"}
-    width={6}
-    maxHeight={"200px"}
+    width={7}
+    maxHeight={"350px"}
 >
 
-</ProjectImagesBlock>
+Heuristic evaluation identified that our "Join" button violated the User Control and Freedom heuristic because users couldn't easily verify their
+commitment status or manage their attendance after clicking the “Join” button. Usability testing showed participants hesitated to commit to events
+because they lacked confidence about logistics and didn't trust they'd actually remember to attend. One participant said, "I'd join this, but I know
+I'll forget about it by next week." Another questioned, "Can I really get there? What if something comes up?" The original toggle between "Join" and
+"Joined" provided no sense of commitment, reminder system, or easy withdrawal. 
+This insight revealed a gap between our technical model (binary event attendance: true/false) and users' needs around commitment. 
 
-This insight revealed a gap between our technical model (binary event attendance: true/false) and users' needs around commitment. Students studying
-abroad face uncertainty, with unfamiliar transportation, unpredictable schedules, and social anxiety about attending alone being key factors. A single
-button couldn't address these complex concerns or build the trust needed for users to actually commit to and attend events.
+</ProjectImagesBlock>
 
 <ProjectImagesBlock
     images={[
@@ -535,9 +527,13 @@ button couldn't address these complex concerns or build the trust needed for use
         },
     ]}
     direction={"row"}
-    width={6}
+    width={5}
     maxHeight={"200px"}
 >
+
+Students studying abroad face uncertainty: With unfamiliar transportation, unpredictable schedules, and social anxiety about attending events alone, we're faced with 
+a complex problem in our design of social communication. A single new button couldn't address these complex concerns or build the trust needed for users to actually 
+commit to and attend events-- thus we needed to rethink our approach.
 
 We redesigned the entire RSVP flow into a deliberate, supportive process. The new "RSVP" button opens a modal with multiple affordances. Users
 can opt in for text reminders, view directions and transportation options, see who else is attending, and easily modify or cancel their RSVP
