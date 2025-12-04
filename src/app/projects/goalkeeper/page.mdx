@@ -50,7 +50,7 @@ import { ProjectTeamGallery } from "@/components/project/ProjectTeamGallery";
 import imageTeamPerson1 from "public/images/projects/goalkeeper/team/Photo_Jacklyn.jpg";
 import imageTeamPerson2 from "public/images/projects/template/team/firstname1.png";
 import imageTeamPerson3 from "public/images/projects/goalkeeper/team/Photo_Jamie.jpg";
-import imageTeamPerson4 from "public/images/projects/goalkeeper/team/Photo_Victor.png";
+import imageTeamPerson4 from "public/images/projects/goalkeeper/team/Photo_Victor.jpg";
 import imageTeamPerson5 from "public/images/projects/goalkeeper/team/Photo_Patricia.jpg";
 
 import imagePlaceholder300x600 from "public/images/projects/template/post/300x600.png";
@@ -87,23 +87,23 @@ import progress_help from "public/images/projects/goalkeeper/post/progress-help.
 
 <ProjectTeamGallery members={[
     {
-        name: ["Jacklyn", "Cui"],
+        name: ["Jacklyn Cui", "(she/her)"],
         photo: imageTeamPerson1,
     },
     {
-        name: ["Ronin", "Crawford"],
+        name: ["Ronin Crawford", "(he/him)"],
         photo: imageTeamPerson2,
     },
     {
-        name: ["Jamie", "Gashler"],
+        name: ["Jamie Gashler", "(she/her)"],
         photo: imageTeamPerson3,
     },
     {
-        name: ["Victor", "Wong"],
+        name: ["Victor Wong", "(he/him)"],
         photo: imageTeamPerson4,
     },
     {
-        name: ["Patricia", "Lee"],
+        name: ["Patricia Lee", "(she/her)"],
         photo: imageTeamPerson5,
     },
 ]} />
@@ -128,54 +128,55 @@ import progress_help from "public/images/projects/goalkeeper/post/progress-help.
 
 It is often difficult for people to reduce their alcohol use, even when they genuinely want
 to cut back, because drinking can become habitual and socially reinforced. Existing tools
-for managing consumption are often too tedious, or backfire by creating guilt-driven cycles
-of motivation and relapse. Additionally, people are not interested manual tracking that
-involves high-effort, but more interested in support that helps them stay connected to their
-long-term goals.
+for managing consumption are often too tedious or backfire by creating guilt-driven cycles
+of motivation and relapse. Additionally, people are not interested in manual tracking that
+involves high effort, but are more interested in support that helps them stay connected to
+their long-term goals.
 
 <ProjectImageBlock
     image={{
         src: overview,
         alt: "Four koozies standing in a row with the first in red, second in purple and the remaining in green.",
-        caption: "Koozie designs with different colors",
+        caption: "Koozie designs with different colors.",
     }}
     width={6}
     maxHeight={"400px"}
 >
 
-    Our design, **GoalKeeper**, is a customizable Koozie for folks who continue drinking after
-    college. This offers a convenient way for users to automatically track their drinking,
-    create goals, and manage habits with friends through a companion social app. You can work
-    together with friends to reflect on and share progress while staying motivated. The main
-    purpose of the Koozie is to encourage mindful drinking in conjunction with a sustained
-    connection to personal and social goals.
+Our design, **GoalKeeper**, is a customizable Koozie for folks who continue drinking after college.
+This offers a convenient way for users to automatically track their drinking, create goals,
+and manage habits with friends through a companion social app. You can work together with
+friends to reflect on and share progress while staying motivated. The main purpose of the
+Koozie is to encourage mindful drinking in conjunction with a sustained connection to personal
+and social goals.
 
 </ProjectImageBlock>
 
 ## Design Walkthrough
 
-    One of our main objectives is to build a tracking system that avoids the issues people
-    have with current methods, which include high-effort manual tracking and invasive design.
-    Koozie is already popular in drinking contexts and offers a convenient way for users to
-    automatically track their drinking goals and those of their friends through a companion
-    social app. People can work together along with buddies, which provides incentives for
-    users to reflect on and share their progress in a motivating way. Specifically, The main
-    purpose of the Koozie is not to serve as a perfect drink counter, but rather to encourage
-    mindful drinking and sustained connection to personal and social goals.
+Since Koozies are already popular in drinking contexts and offer a convenient way for users to track their
+drinking goals, we utilized them as a medium for our design, as they also avoid the issues associated with
+current tracking methods (e.g., high-effort manual tracking and invasive design).
 
-    The GoalKeeper Koozie allows for easy, passive tracking that can be fit onto any cup
-    shape and size. One of our tasks is to collaborate with friends on alcohol consumption.
-    We chose this task because from our findings, we realized that a lot of people depend on
-    the people around them to keep them accountable with their drinking habits. So, our
-    design supports the user by connecting them with their friends and emphasizes that it is
-    not an isolating journey. Our other task is to set and manage personalized drinking goals.
-    Each person has their own set of goals that they want to achieve and thus, our app becomes
-    a space to reflect and manage said goals. This combination of tasks allows us to design A
-    Koozie that is simple, portable, and lightweight for easy tracking, and an app that lets
-    the user reflect on their individual and/or shared goals.
+Furthermore, we focused on celebratory design in drinking contexts: we developed its companion App so that
+people can work together with friends to reflect on and share their progress in a motivating way; based on
+our findings, we realized that many people rely on those around them to keep them accountable for their
+drinking habits, and celebratory design in drinking contexts could be useful.
+
+Specifically, the main purpose of the Koozie is not to serve as a perfect drink counter that fully stops
+the user from drinking, but rather to encourage mindful drinking and sustained connection to personal and
+social goals in an easy and passive way by simply placing drinks into the Koozie.
+
+One of our tasks is to set, track, and manage drinking goals. Each person has their own set of goals that
+they want to achieve, and thus, our app serves as a space to reflect on and manage these goals. Meanwhile,
+our design supports the user by connecting them with their friends and sharing drinking goals and live
+drinking activities, emphasizing that it is not an isolating journey. The second task is to encourage
+self-reflection and celebration of drinking milestones, allowing users to commemorate moments when they
+achieved their drinking goals by inviting them to post on the Celebration board to reflect on their
+individual and/or shared goals with friends.
 
 
-### Set, track, and Manage Drinking Goals with Friends
+### Set, Track, and Manage Drinking Goals with Friends
 
 <ProjectImagesBlock
     images={[
@@ -193,17 +194,16 @@ long-term goals.
         },
     ]}
     direction={"row"}
-    caption="After specifying the goal in App, user can use the kooize during drinking sessions."
+    caption="After specifying the goal in App, user can use the koozie during drinking sessions once connected via Bluetooth."
     maxHeight={"400px"}
 >
 
-    First, users could specify a goal in-app on how much they plan to drink during a given
-    time period. During a drinking event, users wrap their GoalKeeper koozies around their
-    cup(s), which detects the weight of a cup/drink and tracks the number of drinks from a
-    dial the user sets initially. Then the koozie sends their drink info to their phone
-    via bluetooth. The koozie acts as a visual reminder of a users goal as they are
-    actively drinking that they’ve made commitments and want to keep using it to track their
-    consumption.
+First, users could specify a goal in-app on how much they plan to drink during a given time period.
+During a drinking event, users wrap their GoalKeeper koozies around their cup(s), which detects the
+weight of the cup/drink and tracks the number of drinks using a dial the user initially sets. Then
+the koozie sends the drink information to the user’s phone via Bluetooth. The koozie serves as a
+visual reminder of a user’s goal as they actively drink, reminding them that they’ve made commitments
+and want to continue using it to track their consumption.
 
 </ProjectImagesBlock>
 
@@ -217,26 +217,27 @@ long-term goals.
     maxHeight={"400px"}
 >
 
-    After an event, the app stores the koozie drink info and creates a report on the Progress
-    page. When the user clicks the Progress button, they can see their drinking habits over
-    time and indicated by different colors, and there would be a notification push to the user.
-    Furthermore, they can see their friends’ drinking and goals over time if they decided to
-    share. Friends that are under or over limits are indicated with color. This lets friends
-    monitor in real time, and they can then act on this in a way that suits the needs of the
-    friend. After the goal time is over, the user can update their goal for next time in the
-    Set a Goal page.
+After an event, the app stores the koozie drink info and creates a report on the “Progress” page.
+When the user clicks the Progress button, they can view their drinking habits over time, indicated
+by different colors (red means they’ve exceeded the limit while green means they are still under the
+limit), and receive a notification push. Furthermore, they can see their friends’ drinking and goals
+over time if they decide to share. Friends who are under or over their limits are also indicated by
+color, and people can click the “message” button on the UI to open their preferred Messaging App to
+send messages to their friends. This allows friends to monitor in real-time, and they can then act
+accordingly to meet the needs of the friend. After the goal time is over, the user can update their
+goal for next time in the Set a Goal page.
 
 </ProjectImageBlock>
 
 ### Encourage Self-Reflection and Intentional Drinking
 
-    After the user’s goal is complete, the app analyzes the progress data and sends
-    notifications with tailored motivational prompts to the user and encourages them to
-    interact with the app’s Celebration Board. The users can reward their personal
-    efforts by posting these achievements, and look back on past snapshots so they
-    can stay motivated & plan for their next steps. Everything is kept private to the user,
-    but they can share their achievements with friends. This lets the user reinforce their
-    commitment through social encouragement to reducing their usage.
+After the tracking period set by the user, the app analyzes the progress data and sends notifications
+with tailored motivational prompts to the user, indicating whether they’ve achieved the goal or not.
+It also encourages them to interact with the app’s Celebration Board to post their highlights after
+completing the goal. Users can reward their personal efforts by posting these achievements and looking
+back on past snapshots, which helps them stay motivated & plan for their next periods of time.
+Everything is kept private to the user, but they can also choose to share their achievements with friends.
+This allows the user to reinforce their commitment through social encouragement, reducing their usage.
 
 <ProjectImagesBlock
     images={[
