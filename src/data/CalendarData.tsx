@@ -291,7 +291,7 @@ export const calendarData: {
       date: verifyCalendarDate("2025-11-25", "Tue"),
       timeAndLocation: TIME_AND_LOCATION_LECTURE,
       title: "History",
-      // slides: "https://canvas.uw.edu/files/126691264/",
+      slides: "https://canvas.uw.edu/files/142286940/",
     },
   ],
 
@@ -307,7 +307,7 @@ export const calendarData: {
         verifyCalendarDate("2025-11-07", "Fri"),
         verifyCalendarDate("2025-11-14", "Fri"),
         verifyCalendarDate("2025-11-21", "Fri"),
-        verifyCalendarDate("2025-12-05", "Fri"),
+        // verifyCalendarDate("2025-12-05", "Fri"),
       ],
       timeAndLocations: TIME_AND_LOCATIONS_SECTION,
       title: "Studio",
@@ -328,11 +328,14 @@ export const calendarData: {
     },
     {
       type: "studio",
-      dates: [
-        // verifyCalendarDate("2025-11-25", "Tue"),
-        verifyCalendarDate("2025-12-02", "Tue"),
-        verifyCalendarDate("2025-12-04", "Thu"),
-      ],
+      date: verifyCalendarDate("2025-12-02", "Tue"),
+      timeAndLocation: TIME_AND_LOCATION_LECTURE,
+      title: "Studio",
+      slides: "https://canvas.uw.edu/files/142314410/",
+    },
+    {
+      type: "studio",
+      date: verifyCalendarDate("2025-12-04", "Thu"),
       timeAndLocation: TIME_AND_LOCATION_LECTURE,
       title: "Studio",
     },
