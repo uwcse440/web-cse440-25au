@@ -4,7 +4,7 @@ import imageLogoC from "public/images/projects/rxflect/project_thumb.png";
 import imageLogoD from "public/images/projects/pomopet/project_thumb.png";
 import imageLogoE from "public/images/projects/abroad/project_thumb.png";
 import imageLogoF from "public/images/projects/nextleap/project_thumb.png";
-import imageLogoG from "public/images/projects/quackback/project_thumb.png";
+import imageLogoG from "public/images/projects/quackback/quackback_logo.jpg";
 import imageLogoH from "public/images/projects/reform/project_thumb.png";
 import imageLogoI from "public/images/projects/skinsync/project_thumb.png";
 import imageLogoJ from "public/images/projects/campuskey/project_thumb.png";
