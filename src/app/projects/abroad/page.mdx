@@ -57,7 +57,7 @@ import imagePlaceholder300x600 from "public/images/projects/template/post/300x60
 import imagePlaceholder600x300 from "public/images/projects/template/post/600x300.png";
 import imagePlaceholder1200x800 from "public/images/projects/template/post/1200x800.png";
 
-import group_photo from "public/images/projects/abroad/group_photo.png"
+import group_photo from "public/images/projects/abroad/group_photo.png";
 import imageFestival from "public/images/projects/abroad/festival.png";
 import imageFrustration from "public/images/projects/abroad/overwhelmed.png";
 
@@ -75,6 +75,7 @@ import paperEvent from "public/images/projects/abroad/paper_events_screen.png";
 import PaperFriend from "public/images/projects/abroad/paper_friends_screen.png";
 import paperRSVP from "public/images/projects/abroad/paper_RSVP_screen.png";
 import paperMain from "public/images/projects/abroad/paper_main_screen.png";
+import paperProto from "public/images/projects/abroad/paperPrototype.png";
 
 # Abroad
 
@@ -351,17 +352,34 @@ making connections and discovering local social events.
 ## Iterative Design and Key Insights
 
 Our iterative design process for Abroad evolved significantly from the initial concept to the final digital mock up.
-Starting with our idealization of Abroad in Milestone 1 and 2, we quickly realized our early design lacked a focus and
-was turning into a kitchen sink design. In milestone 3, we saw our designs lacked sufficient detail to support meaningful
+Starting with our ideation of Abroad in Milestone 1 and 2, we quickly realized our early design lacked a focus and
+was turning into a kitchen sink design. In Milestone 3, we saw our designs lacked sufficient detail to support meaningful
 user interactions. The paper prototyping phase revealed fundamental issues without tasks flows. Particularly showing how
 users felt overwhelmed and struggled to discover events and build connections. 
 
+<ProjectImageBlock
+    image={{
+        src: paperProto,
+        alt: "Initial crude paper prototype"
+    }}
+    caption={
+        "Our first full paper prototype design, " +
+        "while this was more informed than initial sketches via design research methods, this still needed heavy modification following heuristic evaluation and usability testing."
+    }
+    width={6}
+    maxHeight={"400px"}
+>
+
+We identified problems in our design through varying means: Initially, we draftied prototypes and sketches based on our
+own personal knowledge and of what we wanted the app to be; through design research we were able to narrow down and get
+new ideas on what actual users may be interested in, identifying designs which were unnecessary or unhelpful to a user.
 Through heuristic evaluation, we identified multiple problems, with the reviewers noting excessive text on the main event
 page, and how our layout wasn’t seamless and consistent. Usability testing revealed that participants couldn’t unfriend
 someone in the friends lists. This led to multiple redesigns including splitting event information from past reviews,
 introducing a bucket list feature, and adding a proper RSVP system with text reminders. Going from paper model to digital
 mockups forced us to properly implement details we glossed over in the paper prototype. 
 
+</ProjectImageBlock>
 
 ### Information overload obscured the core value of connecting students with past traveler experiences
 
@@ -371,27 +389,16 @@ and Minimalist Design heuristic by presenting too much information simultaneousl
 having too many words for someone on a phone to reasonably read.” This criticism saw us revamp our entire events screen,
 opting to split it into more readable screens. 
 
-
-<ProjectImageBlock
-    image={{
-        src: paperEvent,
-        alt: "The first iteration in the paper prototype phase for the events page ",
-    }}
-    caption={
-        "The first iteration of the events page being too cluttered and an information overload."
-    }
-    width={6}
-    maxHeight={"400px"}
->
-
 The original design displayed event information (time, location, description) alongside a scrolling list of past attendees
 and reviews and tips. In practice, usability testers fixated on the event details and “rarely made it to the feature of
 interacting with past users who had also attended events.” Which was a key element in our design.
 
-</ProjectImageBlock>
-
 <ProjectImagesBlock
     images={[
+        {
+            src: paperEvent,
+            alt: "The first iteration in the paper prototype phase for the events page ",
+        },
         {
             src: imageEvents3,
             alt: "Event near you.",
@@ -403,7 +410,8 @@ interacting with past users who had also attended events.” Which was a key ele
     ]}
     direction={"row"}
     caption={
-        "A new split screen with a less cluttered events near you and reviews page"
+        "The first iteration of the events page was too cluttered and suffered from information overload. " +
+        "We created a split design with cleaner events-near-you and reviews screens."
     }
     width={6}
     maxHeight={"400px"}
