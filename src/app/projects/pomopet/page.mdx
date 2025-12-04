@@ -211,9 +211,10 @@ Users can access their group of friends, or join a group by using the group code
     width={12}
     maxHeight={"400px"}
 >
-</ProjectImagesBlock>
+
 
 You and others in the group chat can decide what reward you want to set for completing a study session, and once decided, can navigate to the home page to start working in the session. Other group members can change the reward set up until the session begins. After the session starts, the users once again can set the goals they want to achieve during the session, the length of time they have, and the colors of their Pomopets, like in the first focus task.
+</ProjectImagesBlock>
 
 <ProjectImagesBlock
     images={[
@@ -245,8 +246,8 @@ After the session ends, the users fill out the reflection and claim their reward
     width={20}
     maxHeight={"400px"}
 >
-</ProjectImagesBlock>
 
+</ProjectImagesBlock>
 Users can talk about their group reward after receiving it, and can use the currency they claimed from the session to buy items to customize their pet’s home with.
 
 <ProjectImagesBlock
@@ -338,7 +339,7 @@ Our initial paper prototypes explored the physical-to-digital interaction, using
 Our iterative design process began with creating low-fidelity paper prototypes to test the core interaction of physically "squishing" a toy to activate a digital timer. We refined these designs through a heuristic evaluation to address navigation consistency, followed by usability testing with target users to validate our task flows. These evaluations revealed a disconnect between our initial "strict" productivity philosophy and the realistic needs of students, prompting significant changes as we transitioned into our final high-fidelity digital mockup.
 
 
-### Title for an Insight
+### Information Over Aesthetic
 
 <ProjectImageBlock
     image={{
@@ -353,23 +354,15 @@ Our iterative design process began with creating low-fidelity paper prototypes t
     maxHeight={"200px"}
 >
 
-Quis eleifend quam adipiscing vitae. Justo nec ultrices dui sapien eget mi.
-Viverra maecenas accumsan lacus vel facilisis volutpat. Dignissim suspendisse
-in est ante in nibh mauris. Vitae ultricies leo integer malesuada. Ultrices mi
-tempus imperdiet nulla. Erat velit scelerisque in dictum. Elit ut aliquam purus
-sit amet luctus. Congue quisque egestas diam in arcu cursus euismod. Proin nibh
-nisl condimentum id venenatis a condimentum. Nisl nunc mi ipsum faucibus vitae.
-Ac tortor dignissim convallis aenean et. Bibendum enim facilisis gravida neque
-convallis a cras semper. Sed risus ultricies tristique nulla aliquet enim
-tortor at auctor. Sed felis eget velit aliquet sagittis id consectetur purus
-ut. Ac odio tempor orci dapibus ultrices in iaculis nunc sed. Aliquet lectus
-proin nibh nisl condimentum id. Ornare aenean euismod elementum nisi quis
-eleifend quam adipiscing vitae. Parturient montes nascetur ridiculus mus mauris
-vitae ultricies. Id velit ut tortor pretium viverra suspendisse.
+In our initial paper prototype, we incorporated a large character avatar with dialogue bubbles on the goal-setting screen to add personality and guide the user. We thought this would make the app feel more friendly. However, during usability testing, we observed that these large aesthetic elements consumed valuable screen real estate, distracting participants from the primary task of setting their intentions for the session.
+
+Users struggled to focus on their list management because the dialogue elements dominated the interface. In response to this feedback, we pivoted to a "function-first" layout in the digital mockup. We removed the character dialogue entirely from the setup phase, maximizing the screen space for goal management. This reduced friction during the setup phase, ensuring users could see and edit their list clearly before committing to a study session.
+
 
 </ProjectImageBlock>
 
-### Title for an Insight
+### Balancing Discipline with Flexibility
+
 
 <ProjectImagesBlock
     images={[
@@ -391,20 +384,14 @@ vitae ultricies. Id velit ut tortor pretium viverra suspendisse.
     maxHeight={"400px"}
 >
 
-Feugiat vivamus at augue eget arcu. Bibendum est ultricies integer quis auctor
-elit sed vulputate mi. At tempor commodo ullamcorper a lacus vestibulum sed.
-Vitae aliquet nec ullamcorper sit amet risus. Morbi non arcu risus quis varius
-quam quisque id diam. Nulla pellentesque dignissim enim sit amet venenatis.
-Morbi tristique senectus et netus et malesuada fames ac turpis. Molestie a
-iaculis at erat pellentesque adipiscing commodo elit at. Ut eu sem integer
-vitae justo eget magna. Etiam non quam lacus suspendisse faucibus. Nulla
-aliquet enim tortor at auctor urna nunc id. Lobortis elementum nibh tellus
-molestie. Mauris in aliquam sem fringilla ut morbi tincidunt. In nisl nisi
-scelerisque eu ultrices vitae auctor.
+Our initial design philosophy was rigid as could not pause the timer, reinforcing the idea that the session was solely for productivity. We believed that allowing pauses would encourage procrastination. However, usability testing challenged this assumption when a participant noted that short-term, unavoidable distractions, like phone calls or restroom breaks, would currently force a user to terminate the session entirely, losing their progress.
+
+We realized that our strict approach ignored the realities of a student's environment. We decided to compromise to accommodate real-life circumstances while maintaining our core philosophy. We introduced a "Pause" button but implemented a constraint: users have a limited number of pauses available (e.g., 3 remaining pauses displayed on screen). This provides necessary flexibility for emergencies without allowing the timer to become a tool for procrastination.
+
 
 </ProjectImagesBlock>
 
-### Title for an Insight
+### Granular Goal Tracking for Reflection
 
 <ProjectImagesBlock
     images={[
@@ -426,12 +413,9 @@ scelerisque eu ultrices vitae auctor.
     maxHeight={"200px"}
 >
 
-Leo duis ut diam quam. Sit amet volutpat consequat mauris nunc congue nisi. Id
-eu nisl nunc mi ipsum. Rhoncus aenean vel elit scelerisque mauris pellentesque
-pulvinar pellentesque habitant. Duis ut diam quam nulla porttitor massa id.
-Facilisis volutpat est velit egestas. Nulla facilisi cras fermentum odio eu
-feugiat pretium. Lectus magna fringilla urna porttitor rhoncus dolor. Mollis
-nunc sed id semper risus in. Quis imperdiet massa tincidunt nunc. Sed
-adipiscing diam donec adipiscing.
+In our early prototypes, the post-session reflection asked the question: "Did you complete your activity?" with simple Yes/No checkboxes. As we iterated, we realized this data was vague and insufficient for users trying to track productivity across sessions involving multiple tasks. There was no way for a user to specify which objectives were met if they had set multiple goals for a single session.
+
+We overhauled the reflection flow in the final design to make the data more actionable. Instead of a single generic question, the app now presents the user’s specific goals from that session as a checklist. Users can mark exactly which items were completed, providing granular data that helps them form more accurate study plans in the future.
+
 
 </ProjectImagesBlock>
