@@ -45,9 +45,9 @@ export const UnsortedProjectLinks: ProjectLink[] = [
     logo: imageLogoE,
   },
   {
-      href: "/projects/nextleap/",
-      anchor: "NextLeap",
-      logo: imageLogoF,
+    href: "/projects/nextleap/",
+    anchor: "NextLeap",
+    logo: imageLogoF,
   },
   {
     href: "/projects/quackback/",
