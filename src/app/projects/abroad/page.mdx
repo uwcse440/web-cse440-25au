@@ -386,7 +386,7 @@ mockups forced us to properly implement details we glossed over in the paper pro
 
 During heuristic evaluation, multiple people commented that our events page was too cluttered and violated the Aesthetic
 and Minimalist Design heuristic by presenting too much information simultaneously. One evaluator noted “the events page
-having too many words for someone on a phone to reasonably read.” This criticism saw us revamp our entire events screen,
+has too many words for someone on a phone to reasonably read.” This criticism led us to revamp our entire events screen,
 opting to split it into more readable screens. 
 
 The original design displayed event information (time, location, description) alongside a scrolling list of past attendees
@@ -418,10 +418,11 @@ interacting with past users who had also attended events.” Which was a key ele
 >
 
 We fundamentally restructured the information architecture by separating these concerns. The revised design presents event
-details first on a cleaner, more minimal screen with a prominent “Events Near You” at the top. This then led to a list of events
+details first on a cleaner, more minimal screen with a prominent “Events Near You” at the top. This then leads to a list of events
 that each had its main event details. Clicking on each one would then provide more information about the event and a button to show
 past travelers reviews and tips. This separation ensures users first understand what the event is, then can choose to see knowledge
-from previous travelers. 
+from previous travelers upon further investigation. Giving this core functionality it's own space not only helps users process
+information presented to them, but also allows for more of a focus on what makes our app unique.
 
 </ProjectImagesBlock>
 
@@ -429,11 +430,11 @@ from previous travelers.
 ### Social connection required concrete affordances, not just conceptual features
 
 
-Usability testing revealed that “testers were confused by the friend requesting process, and that limited the potential networks that
-were formed.” Participants understood the concept of connecting with other students but found no clear pathway to actually act on it.
-One of the participants commented, “I want to meet people, but I don’t know where to start” while another asked, “How do I find students
-with similar interests?” The initial paper prototype just included a friends list and profiles but provided no mechanism for discovery
-or meaningful connections.
+Usability testing revealed that “there's confusion by the friend requesting process, which can limit the potential networks formed.” 
+Participants understood the concept of connecting with other students but found the route to engage with this was too convoluted, unclear,
+or not unique enough in design. One of the participants commented, “I want to meet people, but I don’t know where to start” while another asked, 
+“How do I find students with similar interests?” The initial paper prototype just included a friends list and profiles but provided no 
+mechanism for discovery or meaningful connections.
 
 <ProjectImageBlock
     image={{
@@ -480,7 +481,7 @@ want to connect with any particular person or what you might do together.
 Our redesign introduced a "Bucket List" feature that transforms networking into concrete shared experiences. Users create lists of experiences
 they want to have like visiting the Eiffel Tower, trying ramen, or attending a sports match, and the system recommends other students with
 overlapping bucket list items. This provides natural conversation starters and activity partners rather than forcing cold networking. We also
-added event-based connection points, after attending an event, you can easily add other attendees as friends, creating connections from shared
+added event-based connection points, such that after attending an event you can easily add other attendees as friends, creating connections from shared
 experiences. The revised friends interface shows not just names but common interests and upcoming plans, giving every connection concrete context
 and purpose.
 
@@ -538,9 +539,7 @@ button couldn't address these complex concerns or build the trust needed for use
     maxHeight={"200px"}
 >
 
-</ProjectImagesBlock>
-
-We redesigned the entire RSVP flow into a deliberate, supportive process. The new "RSVP" button opens a modal with multiple affordances.Users
+We redesigned the entire RSVP flow into a deliberate, supportive process. The new "RSVP" button opens a modal with multiple affordances. Users
 can opt in for text reminders, view directions and transportation options, see who else is attending, and easily modify or cancel their RSVP
 status. We added an "Upcoming Events" dashboard widget that consolidates all events the user has RSVP'd to, with filters for "Events you're
 hosting," "Events you're attending," and "Events you've been invited to." This transformation of event commitment from a single click to a
