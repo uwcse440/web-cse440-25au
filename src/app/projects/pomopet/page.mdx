@@ -71,6 +71,12 @@ import insight3 from "public/images/projects/pomopet/post/insight3.png";
 
 import initPrototype from "public/images/projects/pomopet/post/initprototype.png";
 
+import bdf1 from "public/images/projects/pomopet/post/BDF 1.png";
+import bdf2 from "public/images/projects/pomopet/post/BDF2.png";
+
+import reflection1 from "public/images/projects/pomopet/post/r1.png";
+import reflection2 from "public/images/projects/pomopet/post/r2.png";
+
 # Pomopet
 
 {/*<ProjectSubtitle>Optional Subtitle</ProjectSubtitle>
@@ -367,18 +373,17 @@ Users struggled to focus on their list management because the dialogue elements 
 <ProjectImagesBlock
     images={[
         {
-            src: imagePlaceholder300x600,
-            alt: "Every image requires alt text. This should describe the content of that image.",
+            src: bdf1,
+            alt: "A hand-drawn sketch with a yellow sticky note displaying a timer concept, representing a rigid design philosophy without pause options.",
         },
         {
-            src: imagePlaceholder300x600,
-            alt: "Every image requires alt text. This should describe the content of that image.",
+            src: bdf2,
+            alt: "A high-fidelity mobile screen showing a countdown timer at \"51:32\". It features a green \"Pause\" button and a red \"Cancel\" button, with a specific counter at the bottom reading \"Pauses Left: 3\", demonstrating the compromise between discipline and flexibility.",
         },
     ]}
     direction={"row"}
     caption={
-        "This caption is applied to the entire block of images. " +
-        "See that it spans across the area of the images."
+        "To accommodate interruptions without breaking the flow, we added a 'Pause' button with a strict usage limit."
     }
     width={6}
     maxHeight={"400px"}
@@ -396,26 +401,25 @@ We realized that our strict approach ignored the realities of a student's enviro
 <ProjectImagesBlock
     images={[
         {
-            src: imagePlaceholder600x300,
-            alt: "Every image requires alt text. This should describe the content of that image.",
-            caption: "These are two images stacked in a column. " +
-                     "Notice that the text on the left is not broken up by the images."
+            src: reflection1,
+            alt: "A hand-drawn sketch titled \"Reflection\" asking a generic question, \"Did you complete your activity?\" with simple \"Yes\" and \"No\" checkboxes, followed by open-ended feedback boxes.",
         },
         {
-            src: imagePlaceholder600x300,
-            alt: "Every image requires alt text. This should describe the content of that image.",
-            caption: "These are two images stacked in a column. " +
-                     "Notice that the text on the left is not broken up by the images."
+            src: reflection2,
+            alt: "A polished mobile interface where the single question is replaced by a \"What goals did you complete?\" section containing a specific checklist. This is followed by text input fields for feedback and a large green \"Claim Reward!\" button.",
         },
     ]}
-    direction={"column"}
+    direction={"row"}
+    caption={
+        "The reflection interface was updated from a generic Yes/No question to a specific checklist, allowing users to track exactly which goals were achieved."
+    }
     width={6}
-    maxHeight={"200px"}
+    maxHeight={"400px"}
 >
 
 In our early prototypes, the post-session reflection asked the question: "Did you complete your activity?" with simple Yes/No checkboxes. As we iterated, we realized this data was vague and insufficient for users trying to track productivity across sessions involving multiple tasks. There was no way for a user to specify which objectives were met if they had set multiple goals for a single session.
 
-We overhauled the reflection flow in the final design to make the data more actionable. Instead of a single generic question, the app now presents the user’s specific goals from that session as a checklist. Users can mark exactly which items were completed, providing granular data that helps them form more accurate study plans in the future.
+We overhauled the reflection flow in the final design to make the data more actionable. Instead of a single generic question, the app now presents the user's specific goals from that session as a checklist. Users can mark exactly which items were completed, providing granular data that helps them form more accurate study plans in the future.
 
 
 </ProjectImagesBlock>
