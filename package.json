@@ -39,7 +39,7 @@
     "@types/react": "18.3.x",
     "@types/react-dom": "18.3.x",
     "eslint": "8.x",
-    "eslint-config-next": "^16.0.7",
+    "eslint-config-next": "14.2.x",
     "eslint-config-prettier": "9.1.x",
     "http-server": "14.1.x",
     "next-image-export-optimizer": "1.15.0",
@@ -50,7 +50,7 @@
     "sharp": "0.33.5",
     "tsx": "4.20.x",
     "typescript": "5.5.x",
-    "webpack": "^5.103.0"
+    "webpack": "5.93.x"
   },
   "@comment scripts": [
     "clean - Clean caches and temporary files.",
