@@ -1,62 +1,14 @@
-{/* CSE 440 Project Post Template
-  *
-  * This template aims to guide you in how to use the supported syntax.
-  *
-  * Refer to the assignment description for details on what content is expected.
-  *
-  * If you delete or modify template content that you later find you need,
-  * the original template can also be found in `/src/app/projects/template/page.mdx`.
-  *
-  * Note this template's use of comment syntax.
-  * Curly brackets delineate a code block, within which you can then initiate a comment.
-  * The column of `*` characters has no effect and is included only for readability.
-  */}
-
-{/* Tool Documentation
-  *
-  * This post is primarily formatted in Markdown.
-  * For one example of how to use Markdown, see <https://www.markdownguide.org/>.
-  *
-  * The post then uses [MDX](https://mdxjs.com/) to embedded JSX components.
-  * You are not expected to fully understand these components,
-  * but can just embed them in your Markdown like you would any HTML tag.
-  */}
-
-{/* Project Imports
-  *
-  * These import components you can then use in your post.
-  * You could inspect those components, but this template is intended to be sufficient.
-  *
-  * The full [MUI](https://mui.com/material-ui/getting-started/overview/) component library is also available,
-  * but we do not expect or recommend you will need or want additional components.
-  * If you find the provided components insufficient, we encourage you to check in with the course staff.
-  */}
-
 import { ProjectImageBlock } from "@/components/project/ProjectImageBlock";
 import { ProjectImagesBlock } from "@/components/project/ProjectImagesBlock";
 import { ProjectSubtitle } from "@/components/project/ProjectSubtitle";
 import { ProjectTeamGallery } from "@/components/project/ProjectTeamGallery";
 
-{/* Image Imports
-  *
-  * Every image should be imported via its path in your `images` directory.
-  * - That directory is within `public/images/projects`.
-  * - These imports all reference the `template` project, you will reference your own project directory.
-  * - Give your images meaningful names (e.g., "overview.png").
-  * - Only `.jpg` and `.png` file extensions are supported.
-  * - If an import is not working, double-check that you have the correct file extension.
-  */}
+{/* Image Imports */}
 
 import imageTeamPerson1 from "public/images/projects/foodpassport/team/Aiden.png";
 import imageTeamPerson2 from "public/images/projects/foodpassport/team/Andy.png";
 import imageTeamPerson3 from "public/images/projects/foodpassport/team/Kass.png";
 import imageTeamPerson4 from "public/images/projects/foodpassport/team/Mawi.png";
-
-import imagePlaceholder300x600 from "public/images/projects/template/post/300x600.png";
-import imagePlaceholder400x400 from "public/images/projects/template/post/400x400.png";
-import imagePlaceholder600x300 from "public/images/projects/template/post/600x300.png";
-import imagePlaceholder1200x800 from "public/images/projects/template/post/1200x800.png";
-
 import teamLogo from "public/images/projects/foodpassport/project_thumb.png";
 
 import countrySelectImage from "public/images/projects/foodpassport/post/country_select.png";
@@ -66,31 +18,27 @@ import confirmTaskImage from "public/images/projects/foodpassport/post/confirm_t
 import checklistCreatedImage from "public/images/projects/foodpassport/post/checklist_created.png";
 import checklistImage from "public/images/projects/foodpassport/post/checklist.png";
 
-import pastReviewsImage from "public/images/projects/foodpassport/post/past_reviews.png";
-import profileImage from "public/images/projects/foodpassport/post/profile.png";
-import usPersonalReflection from "public/images/projects/foodpassport/post/us_personal_reflection.png";
+import reviewNowImage from "public/images/projects/foodpassport/post/review_now.png";
 import reviewImage from "public/images/projects/foodpassport/post/review.png";
+import reviewConfirmImage from "public/images/projects/foodpassport/post/review_confirm.png";
+import profileImage from "public/images/projects/foodpassport/post/profile.png";
+import pastReviewsImage from "public/images/projects/foodpassport/post/past_reviews.png";
 import personalReflectionImage from "public/images/projects/foodpassport/post/personal_reflections.png";
+import usPersonalReflection from "public/images/projects/foodpassport/post/us_personal_reflection.png";
 
 import paperPrototypeImage from "public/images/projects/foodpassport/post/paper_prototype.png";
-import reviewConfirmImage from "public/images/projects/foodpassport/post/review_confirm.png";
-import reviewNowImage from "public/images/projects/foodpassport/post/review_now.png";
-import taskSelectionPaperImage from "public/images/projects/foodpassport/post/task_selection_paper.jpg";
-import reviewPaperImage from "public/images/projects/foodpassport/post/review_paper.png";
 import tripDetailsPaperImage from "public/images/projects/foodpassport/post/trip_details_paper.png";
+import reviewPaperImage from "public/images/projects/foodpassport/post/review_paper.png";
+import taskSelectionPaperImage from "public/images/projects/foodpassport/post/task_selection_paper.jpg";
+import ratePaperImage from "public/images/projects/foodpassport/post/rate_paper.png";
+import reviewFinalImage from "public/images/projects/foodpassport/post/review_final.png";
+
 
 # Food Passport
 
 <ProjectSubtitle>Stamp Your Way Through the World’s Kitchens</ProjectSubtitle>
 
 ## Team
-
-{/* The ProjectTeamGallery displays names and images of your project team.
-  * - Split each name across two lines to ensure consistent rendering.
-  * - Consider including pronouns as another line.
-  * - Crop and scale images to be the size of the placeholder (125px x 150px).
-  *   This consistent image size provides a cleaner gallery.
-  */}
 
 <ProjectTeamGallery members={[
     {
@@ -113,29 +61,13 @@ import tripDetailsPaperImage from "public/images/projects/foodpassport/post/trip
 
 ## Problem and Design Overview
 
-{/* A ProjectImageBlock displays text with an associated image.
-  * - The image is configured through properties on the opening `ProjectImageBlock` tag.
-  * - Text is placed within the opening and closing `ProjectImageBlock` tags.
-  * - In a small browser window, the image will be rendered below the text.
-  * - In a large browser window, the image will be rendered on the right.
-  *
-  * - The width property controls how much of the grid is assigned to the image column.
-  *   Values can be 4 (the smallest image), 6 (half the width of the page), or 8 (the largest image).
-  *
-  * - The maxHeight property controls the rendered height of an image.
-  *   Although the image here is 1200x800, maxHeight limits its rendered height to 400px.
-  *   If not specified, the default maxHeight is 400px.
-  *
-  * Later in the template you will also find examples of the plural `ProjectImagesBlock` tag.
-*/}
-
 <ProjectImageBlock
     image={{
         src: teamLogo,
         alt: "Food Passport"
     }}
     caption={
-        "Food Passport Logo"
+        "Food Passport Logo."
     }
     width={4}
     maxHeight={"400px"}
@@ -143,12 +75,12 @@ import tripDetailsPaperImage from "public/images/projects/foodpassport/post/trip
 
 Food is a cornerstone of cultural identity, community, and heritage. It reflects who we are, where we come from,
 and how we connect with others. Engaging with cultural foods when traveling can present a challenge to some.
-Barriers such as accessibility, reliability, and exposure can limit how people experience and appreciate the
+Barriers such as accessibility, reliability, and exposure limit how people experience and appreciate the
 food and culture.
 
-Food Passport transforms cultural discovery into a guided culinary journey. Users select a set of
+Food Passport transforms cultural discovery into a guided culinary journey. Users select a list of
 tasks from a set of guided activities such as trying a new dish/restaurant, reading up on reviews,
-and watching videos made by other users. Users complete those tasks to enrich their cultural understanding
+and watching videos made by other users. Users complete these tasks to enrich their cultural understanding
 and insight. Over time, users will earn “passport stamps” which function as community badges.
 Food Passport celebrates food as a dynamic expression of identity, community connection, and personal growth.
 
@@ -156,7 +88,7 @@ Food Passport celebrates food as a dynamic expression of identity, community con
 
 Our goal in this introduction is to establish why cultural food exploration matters and to clearly frame the barriers
 that prevent people from engaging with it meaningfully. By highlighting how Food Passport transforms this challenge into
-an intentional, guided experience, we aim to spark curiosity and motivate users to learn more about how our design
+an intentional and guided experience, we aim to spark curiosity and motivate users to learn more about how our design
 supports cultural connection, personal growth, and community engagement. This overview sets the stage for understanding
 not just what our app does, but why it matters and why the rest of our work is worth exploring.
 
@@ -165,23 +97,24 @@ not just what our app does, but why it matters and why the rest of our work is w
 As part of Food Passport’s goal to make cultural food exploration more intentional and accessible, our two focus
 tasks highlight the core moments where users actively engage with new cuisines and reflect on their experiences.
 First, “Develop and Increase Comfort to Try Unfamiliar Cuisines” guides users through curated activities that reduce
-uncertainty and build confidence when exploring foods outside their comfort zone. The second task “Evaluate and
+uncertainty and build confidence when exploring foods outside their comfort zone. The second task, “Evaluate and
 Reflect on the Experience” helps users process what they learned, document their cultural insights, and earn
 meaningful “passport stamps” that reinforce growth over time. Together, these tasks showcase how our design supports
 both the action and reflection needed for deeper cultural connection and personal development.
 
 ### Develop and Increase Comfort to Try Unfamiliar Cuisines
 
-To develop and increase comfort to try unfamiliar cuisines, Food Passport allows users to select from a list
-of curated tasks that reduce uncertainty and build confidence when exploring foods outside of their comfort
-zone. The tasks come in several forms including:
+Food Passport allows users to build a customized task checklist by selecting from a list of curated tasks that aim to
+reduce uncertainty and build confidence when exploring foods outside of their comfort zone. The tasks come in several
+forms including:
 
- * __Learn:__ The user gains insight or context about foods.
- * __Taste:__ The user goes to a restaurant, tries a certain food, or cooks with a recipe.
- * __Review:__ The user reviews and reflects on an experience.
+ * __Learn:__ Gain insight or context about foods and cultures.
+ * __Taste:__ Go to a restaurant, try a certain food, or cook with a provided recipe.
+ * __Review:__ Review or read reviews about certain experiences.
 
 The tasks are curated based on a user's travel details but still allows flexibility in deciding what
-they are and are not prepared for. The full process is displayed below.
+they are and are not interested in. Users may also skip this process by auto-generating the tasks after selecting their
+desired country. The full process is displayed below.
 
 <ProjectImagesBlock
     images={[
@@ -212,7 +145,7 @@ they are and are not prepared for. The full process is displayed below.
     ]}
     direction={"row"}
     caption={
-        "Creating a Checklist for USA Exploration"
+        "Creating a Checklist for USA Exploration."
     }
     width={12}
     maxHeight={"400px"}
@@ -222,7 +155,7 @@ they are and are not prepared for. The full process is displayed below.
 ### Evaluate and Reflect on the Experience
 
 After completing tasks, users are asked to fill out a short review on the experience. This review is quick and allows
-the user to evaluate the overall task, in terms of effectiveness and enjoyability. This is used to ease the user into
+the user to evaluate the overall task in terms of effectiveness and enjoyability. This is used to ease the user into
 further thinking and to evaluate if the task is relevant and should continue to be used. Users can also decide to defer
 the review process until later in the case where they are not able to properly evaluate at the current moment.
 
@@ -242,7 +175,7 @@ the review process until later in the case where they are not able to properly e
         }
     ]}
     caption={
-        "Review Page"
+        "Review Pages."
     }
     width={12}
     maxHeight={"400px"}
@@ -255,7 +188,7 @@ and what the user learned about the culture by interacting with foods.
 
 Users are also able to keep track of their past reviews and edit ones that are less than 24 hours old. The 24 hour time
 limit is used to preserve the authenticity of the reviews and allow edits to minor mistakes. They can access all of their
-previous reflections, restaurants visited and more.
+previous reflections, restaurants visited, and more.
 
 <ProjectImagesBlock
     images={[
@@ -298,7 +231,7 @@ The participants included:
 
 We chose this group since they had perspectives of multiple cultures and likely had deeper and very valuable connections
 to certain foods and cultures. We used interviews to gather the stories, emotions, and their personal motivation since
-other research methods are less likely to garner the insightful qualitative information we are looking for. From these
+other research methods are less likely to garner the same insightful qualitative information. From these
 interviews, we came away with the following three key insights.
 
 ### Food is Emotional: Seek Comfort, Connection, and Cultural Meaning
@@ -307,22 +240,18 @@ Participants consistently described food as a way connect with their culture/com
 One participant shared that trying food from home makes them feel grounded, while another stated they try new cuisines to
 understand people better. Moreover, one of the participants claimed “I don’t like seafood so I stayed away from sushi spots
 and stuff...but I did go to the McDonald's (in Japan) once which had different items than over here (USA).” From this, we
-learned that they look for familiar food but are fine exploring some changes. Another person said “I usually travel within
+learned that they look for familiar food but are fine exploring some changes. Another participant said “I usually travel within
 (my home state) but sometimes go out of state once a year...I love trying new foods as much as possible! When I cook, I
 usually tend to stick to whatever I already know how to cook but when I go out to eat, I try to find new places or cuisines
 to try.” We learned that people who aren't able to travel connect to food exploration through curiosity and discovery. This
 directly led to the concept of the passport stamps and our focus on cultural journey which distinguishes Food Passport from
-existing restaurant finders. Food Passport celebrates learning, progress, reflection instead of merely relying on ratings or
+existing restaurant finders. Food Passport celebrates learning, progress, and reflection instead of merely relying on ratings or
 transactions. It grounded our design in personal growth, not consumption.
 
 ### Users Want to Track Progress and Reflect
 
-Several participants expressed that they liked the idea of seeing what they’ve tried over time like a journal so they could
-reflect on their progress. During usability testing, testers tried to navigate back to their previous tasks to see their
-progress and reflections, but it was not fully supported. When asked about what they expected to happen, they
-responded that familiarity with similar apps made them believe that it would be possible.
-
-To facilitate this task, we created sections for users to add personal reflections and access past reviews so the user
+Several participants expressed that they liked the idea of seeing what they’ve done over time like a journal so they could
+reflect on their progress. To facilitate this task, we created sections for users to add personal reflections and access past reviews so the user
 can examine and evaluate their overall journey. We also added shortcuts to both of these options to provide clearer navigation
 and accessibility. Adding the ability to track progress and reflect transforms the Food Passport from a checklist into a
 long-term personal growth tool.
@@ -360,9 +289,9 @@ context, history, or lessons that are immersive and help break down the wall of 
 
 ## Iterative Design and Key Insights
 
-Our iterative design process combined paper prototyping, inspection, usability testing, and a digital mockup
+Our iterative design process combined paper prototyping, heuristic evaluations (inspection), usability testing, and a digital mockup
 to progressively refine our concept. Paper prototypes helped us explore the design space, understand our target
-users, and identify the core feature flows. Inspection and usability testing then highlighted underdeveloped areas,
+users, and identify the core feature flows. Heuristic evaluations and usability testing then highlighted underdeveloped areas,
 especially the unintuitive flows for leaving reviews, obtaining stamps, and navigating between screens. These insights
 revealed gaps we failed to fully consider during early prototyping. We used this feedback to create the digital mockup which
 improved navigation, redesigned the task checklist for earning a stamp, and expanded the review and edit-review flows,
@@ -381,17 +310,21 @@ ultimately making the interface more intuitive and cohesive.
 >
 </ProjectImageBlock>
 
-### People Avoid Unfamiliar Foods when the Learning Feels Intimidating or Boring
+### People Avoid Learning that is Intimidating or Boring
 
 In the interviews, participants mentioned that they gained most of their food recommendations from social media,
 community forums, or local recommendations. They also claimed that they would avoid anything that felt like
-"reading an article." This was supported in our heuristic evaluations where participants claimed that many of the instructions
-and provided screens were text-heavy and lacked freedom of choice. This was also present in our usability testing where
-participants ignored or overlooked the "Learn" tasks due to it being blended into the interface.
+"reading an article." We were mindful of this when creating our designs and tried to avoid this feeling
+by adding a sense of accomplishment through stamps and achievements. Despite this, our heuristic evaluations
+uncovered that many of our screens were too text-heavy. Since this linked with the feeling of "reading an article", we
+revised the paper prototype to eliminate the unnecessary text. In our usability testing, some participants
+noted that the Task Checklist page was very expansive but it was unclear how long it should take to complete which could
+make other users quit early since it is boring to set up.
 
-We redesigned the interface to be more visual, structured, and interactive. We increased user freedom by adding navigation
-buttons and increased the visibility of task selection progress. This was done to discourage user early exits. We also focused
-on shifting tasks to be more digestible micro-lessons which aimed to reduce intimidation and encourage cultural exploration.
+We redesigned the interface to be more visual, structured, and interactive. First, we increased the visibility of task
+selection progress by adding a progress bar on the top of the screen for each major step. This was done to discourage
+user early exits. We also minimized text and added drop-down menus on each page to reduce clutter. Finally, we focused on
+shifting tasks to be more digestible micro-lessons which aimed to reduce intimidation and encourage cultural exploration.
 
 <ProjectImagesBlock
     images={[
@@ -420,69 +353,63 @@ on shifting tasks to be more digestible micro-lessons which aimed to reduce inti
 >
 </ProjectImagesBlock>
 
-### Title for an Insight
+### User Freedom and Navigation
 
 <ProjectImagesBlock
     images={[
         {
-            src: imagePlaceholder300x600,
-            alt: "Every image requires alt text. This should describe the content of that image.",
+            src: tripDetailsPaperImage,
+            alt: "Trip Details Paper Prototype.",
         },
         {
-            src: imagePlaceholder300x600,
-            alt: "Every image requires alt text. This should describe the content of that image.",
+            src: tripDetailsImage,
+            alt: "Trip Details Digital Mockup.",
         },
     ]}
     direction={"row"}
     caption={
-        "This caption is applied to the entire block of images. " +
-        "See that it spans across the area of the images."
+        "Addition of Navigation Buttons."
     }
     width={6}
-    maxHeight={"400px"}
+    maxHeight={"350px"}
 >
 
-Feugiat vivamus at augue eget arcu. Bibendum est ultricies integer quis auctor
-elit sed vulputate mi. At tempor commodo ullamcorper a lacus vestibulum sed.
-Vitae aliquet nec ullamcorper sit amet risus. Morbi non arcu risus quis varius
-quam quisque id diam. Nulla pellentesque dignissim enim sit amet venenatis.
-Morbi tristique senectus et netus et malesuada fames ac turpis. Molestie a
-iaculis at erat pellentesque adipiscing commodo elit at. Ut eu sem integer
-vitae justo eget magna. Etiam non quam lacus suspendisse faucibus. Nulla
-aliquet enim tortor at auctor urna nunc id. Lobortis elementum nibh tellus
-molestie. Mauris in aliquam sem fringilla ut morbi tincidunt. In nisl nisi
-scelerisque eu ultrices vitae auctor.
+In our heuristic evaluations, many of the evaluators noted that our paper prototype was difficult to navigate. The primary
+cause of this was the lack of navigation buttons. When designing the paper prototype, we were too focused on
+creating the main pages and features that we overlooked the intermediate pages and actions that a user needs.
+We added navigation buttons to the paper prototype prior to starting usability testing. Despite this, our paper prototype
+only had the necessary screens for our two focus tasks. Therefore, when an evaluator attempted to make an unsupported
+action, we noted it down so we could incorporate it into our digital mockup. For example, one user wanted to go back to
+their old reviews and edit it. Although we did not support this initially, we revised our design to add a 24 hour time
+limit to edit reviews. This allows the user to fix any mistakes or add clarifications to their reviews without completely
+changing the thoughts/feelings that they originally had.
 
 </ProjectImagesBlock>
 
-### Title for an Insight
+### Ensuring Actual Learning and Exploration
 
 <ProjectImagesBlock
     images={[
         {
-            src: imagePlaceholder600x300,
-            alt: "Every image requires alt text. This should describe the content of that image.",
-            caption: "These are two images stacked in a column. " +
-                     "Notice that the text on the left is not broken up by the images."
+            src: ratePaperImage,
+            alt: "Rate Experience Paper Prototype.",
         },
         {
-            src: imagePlaceholder600x300,
-            alt: "Every image requires alt text. This should describe the content of that image.",
-            caption: "These are two images stacked in a column. " +
-                     "Notice that the text on the left is not broken up by the images."
+            src: reviewFinalImage,
+            alt: "Final Review Digital Mockup.",
         },
     ]}
-    direction={"column"}
+    caption={"Reflection Paper Prototype to Digital Mockup."}
+    direction={"row"}
     width={6}
-    maxHeight={"200px"}
+    maxHeight={"240px"}
 >
 
-Leo duis ut diam quam. Sit amet volutpat consequat mauris nunc congue nisi. Id
-eu nisl nunc mi ipsum. Rhoncus aenean vel elit scelerisque mauris pellentesque
-pulvinar pellentesque habitant. Duis ut diam quam nulla porttitor massa id.
-Facilisis volutpat est velit egestas. Nulla facilisi cras fermentum odio eu
-feugiat pretium. Lectus magna fringilla urna porttitor rhoncus dolor. Mollis
-nunc sed id semper risus in. Quis imperdiet massa tincidunt nunc. Sed
-adipiscing diam donec adipiscing.
+During usability testing, one evaluator questioned how we can ensure that actual learning occurs if a user selects
+only “Learn” tasks, but then skips through the content without actually engaging to earn stamps quickly. We addressed this
+by adding short review/reflection questions after each task in addition to the final reflection to try promoting internal
+thinking. Another evaluator noted that the reflection questions were too vague to garner any actual insight and could
+also be intimidating to answer due to its scope. We revised the questions to be more specific to the task
+which should make it easier to recall and reflect on.
 
 </ProjectImagesBlock>
