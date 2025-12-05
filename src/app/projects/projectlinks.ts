@@ -76,7 +76,7 @@ export const UnsortedProjectLinks: ProjectLink[] = [
   },
   {
     href: "/projects/netizen/",
-    anchor: "Netizen!",
+    anchor: "Netizen",
     logo: imageLogoL,
   },
 ];

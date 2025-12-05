@@ -53,20 +53,20 @@ import imageTeamPerson3 from "public/images/projects/netizen/team/iman.jpg";
 import imageTeamPerson4 from "public/images/projects/netizen/team/weizhe.png";
 import imageTeamPerson5 from "public/images/projects/netizen/team/mason.jpg";
 
-import imageOverview from "public/images/projects/netizen/post/netizenOverview.png";
-import imageTask1 from "public/images/projects/netizen/post/walkthrough2step1.png";
+import imageOverview from "public/images/projects/netizen/post/netizen_welcome.png";
+import imageTask1 from "public/images/projects/netizen/post/friendList.png";
 import imageTask2 from "public/images/projects/netizen/post/netizenOverview.png";
-import imageTask3 from "public/images/projects/netizen/post/ManageFriendship.png";
+import imageTask3 from "public/images/projects/netizen/post/friendProfilePage.png";
 import imageFriendProfile from "public/images/projects/netizen/post/walkthrough2step2.png";
-import imageMemories from "public/images/projects/netizen/post/walkthrough2step6.png";
-import imageSocialPlatforms from "public/images/projects/netizen/post/walkthrough2step9.png";
-import imageGameHistory from "public/images/projects/netizen/post/walkthrough2step5.png";
-import imageProfilePrototype from "public/images/projects/netizen/post/ProfilePrototype.png";
+import imageMemories from "public/images/projects/netizen/post/memories.png";
+import imageSocialPlatforms from "public/images/projects/netizen/post/socialPlatforms.png";
+import imageGameHistory from "public/images/projects/netizen/post/history.png";
+import imageProfilePrototype from "public/images/projects/netizen/post/ProfilePrototype.jpg";
 import imageMutualFriendshipinit from "public/images/projects/netizen/post/MutualFriendship.png";
 import imageChangeFriendsStatus from "public/images/projects/netizen/post/manageFriendshipSetting.png";
 import imageResearchDesign1 from "public/images/projects/netizen/post/initDesign1.png";
 import imageResearchDesign2 from "public/images/projects/netizen/post/initDesign2.png"
-import imageDocumentation from "public/images/projects/netizen/post/imageDocumentation.png";
+import imageDocumentation from "public/images/projects/netizen/post/documentation.png";
 
 # Netizen
 
@@ -132,15 +132,15 @@ import imageDocumentation from "public/images/projects/netizen/post/imageDocumen
     caption={
         "The friends list screen shows which of your friends are online and what they are currently doing."
     }
-    width={6}
+    width={4.5}
     maxHeight={"400px"}
 >
 
 Online friendships are often categorized as being sporadic, short-lived, and easy to lose track of. 
 Many times a friendship online can be lost solely because someone stops playing a game, or they change their username and profile, 
 or simply because people just drift apart due to extensive periods of no communication. Current solutions to problems like this are 
-sometimes effective — such as Discord’s notepad feature, Instagram’s close friends list, Steam’s ability to invite people to play games 
-together, etc. — but suffer from the exceptional amount of work required to interface with in a meaningful way. 
+sometimes effective - such as Discord's notepad feature, Instagram's close friends list, Steam's ability to invite people to play games 
+together, etc. - but suffer from the exceptional amount of work required to interface with in a meaningful way. 
 
 Finding a solution that is easy to use, and safe, could help to maintain and create new long lasting connections between people. 
 We think that anything that helps to foster community is a generally good thing! Not only that, but losing connections with people 
@@ -163,16 +163,16 @@ social medias, friends that you have in common with others, and lots more in the
     images={[
         {
             src: imageTask1,
-            alt: "Main screen on the Netizen display. Showcases the user's friends list",
+            alt: "Main screen on the Netizen display. Showcases the user's friends list.",
         },
         {
             src: imageTask3,
-            alt: "Netizen scren that allows the user to adjust their frienship tier and make changes to what information is shared.",
+            alt: "The friends profile provide information such as friends information, game history, highlighted memories, and connected accounts.",
         },
     ]}
     direction={"column"}
     caption={
-        "From the home screen, you can open a friend’s profile, review your shared history, and decide what " +
+        "From the home screen, you can open a friend's profile, review your shared history, and decide what " +
         "details you want to exchange to rebuild the connection."
     }
     width={6}
@@ -184,7 +184,7 @@ through this new system. After users turn the system on, it gives you a title sc
 introduction to help them set up and get acquainted with the system. Once set up, the friends 
 from other accounts auto-populate onto home screen. If users want to connect with their friends,
 by clicking on their profile, users can check some basic statistics of their friends such as Play Time, 
-Favorite Game, Highlighted Memories, etc... Users can also click on “Manage Friendship” button to go to 
+Favorite Game, Highlighted Memories, and more. Users can also click on "Manage Friendship" button to go to 
 the manage friendship screen, and they can do functions like make a new friend, and set all of the information 
 they want to share with them based on the closeness level of tehy and their friends.
 
@@ -203,8 +203,8 @@ can be used to reach out to their online friend!
 <ProjectImagesBlock
     images={[
         {
-            src: imageFriendProfile,
-            alt: "Netizen screen showing a friend's profile",
+            src: imageTask3,
+            alt: "Netizen screen showing a friend's profile.",
         },
         {
             src: imageGameHistory,
@@ -234,9 +234,9 @@ can be used to reach out to their online friend!
 We started our design research by investigating the challenges people face maintaining online friendships and
 how people want those relationships to evolve, if at all. We conducted interviews with several participants with
 varying levels of online activity. We chose these participants to get a better idea of how people use online spaces
-in different contexts. These interviews are conversational under relaxed enviroment to help user express their 
-thoughts freely and easily follow the question scripts. With this approach, it eases interviewees pressure and 
-encourage them to say their opinions and share information with us.
+in different contexts. We made sure our interviews were conversational in nature and conducted in a relaxed enviroment.
+With this approach, we encouraged the participants to share stories about their experiences with and opinions about
+the online environments they occupy. For the sake of their privacy, we will refer to all participants by pseudonyms.
 
 Cam: a 20-year-old who monitors his socials online and primarily interacts with people he knows in real life
 via Discord and Instagram.
@@ -250,67 +250,64 @@ All of our interviews were conducted over Zoom or Discord calls for the convenie
 we had each of the participants share stories from their online experiences to better understand how to improve the process 
 of forming and maintaining online friendships.
 
-### For people who make friends online, it’s difficult to keep track of and stay connected with the people they meet.
+### Difficulty Maintaining Online Connections
 
-Talking about maintain connection with online friends, almost everyone has the same experience of lose connections.
-One most important thing we noticed is people usually make a lot of friends then forget they are. The reasons
-are similar such as changing icon, name, and profiles. Since all of interviewees are either have a deep experience
-in online games, or have a lot of online friend, we believe their insight are sharp and crucial. Therefore,
-we conclude that people mostly remember them based on their profiles.
+For people who make friends online, it is difficult to keep track of and stay connected with the people they meet.
+Everyone we intervied had a similar same experience of losing connections. People usually make a lot of friends then 
+forget who they are. This is often due to changing profile pictures and names.
 
 Banana described how they have played games with hundreds of different people that, and how they are constantly forgetting 
 people who are on their friends list. 
 Basil: "no idea" where some of their online friends came from. Especially after some time passes, they're just another 
 username in their friends list."
-Cam: "How did I meet this person? For them, this usually doesn't matter that much in conversation, but it's just a thought 
-that bugs me in the back of my head.”
+Cam: "How did I meet this person? For them, this usually does not matter that much in conversation, but it's just a thought 
+that bugs me in the back of my head."
 
-### Online and in-person friendships occupy different parts of participants’ lives and satisfy different social needs.
+### Online and In-Person Social Needs
 
 <ProjectImagesBlock
     images={[
         {
             src: imageResearchDesign1,
-        alt: "Overview sketch from original sketching that showcased a friends profile, the information shown, and an early version of the QR code system to access other connected accounts.",
+            alt: "Overview sketch from original sketching that showcased a friends profile, the information shown, and an early version of the QR code system to access other connected accounts.",
             caption: "Overview sketch from original sketching that showcased a friends profile, the information shown, and an early version of the QR code system to access other connected accounts.",
         },
         {
             src: imageResearchDesign2,
             alt: "Netizen screen showing a friend's profile. Screen is now much more organized with less content and more buttons to see additional information.",
-            caption: "The mutual friendship is connected with amount of information that people share with each other",
+            caption: "The mutual friendship is connected with amount of information that people share with each other.",
         },
     ]}
-    direction={"row"}
-    width={8}
+    direction={"column"}
+    width={6}
     maxHeight={"400px"}
 >
 
-Another thing we noticed is even though our interviewees enjoy the time with online friends, they still want
-to keep some distances from them. When we ask that are they willing to let their online friends being
-in-person friends, the answers are not firm yes. Instead, they mention that they just want online friends to 
+Online and in-person friendships occupy different parts of each participant's life and satisfy different social needs. 
+When we asked participants if they would like their online friendships to evolve into in-person friendships, their
+answers were not  yes. Instead, they mention that they just want online friends to 
 stay online, and sometimes they accecpt online friend to leave. These insights bring us with hints that the
 position and trust level of online friends is different and special, thus maintaining a comfortable distance
 between them may let the friendship even deeper.
-Basil has “a few online friendships" that they "would not want to translate in person.” 
-"online and in-person friendships occupy a slightly different niche"
-“okay with it staying that way.”
-"They are sort of person to be happy seeing people come and go.” 
 
+Basil has "a few online friendships" that they "would not wante to translate in person."
+To Cam, "online and in-person friendships occupy a slightlytht niche" in their life, 
+and they are okay with it staying that way.
+Banana is the "sort of person to be happy seeing people come and go" an enjoys meeting new people online. 
 </ProjectImagesBlock>
 
-### Friendships that develop online are difficult to maintain because of artificial pressure created by existing platforms.
+### Pressure to Present an Artifical Personality
 
+Friendships that develop online are difficult to maintain because of artificial pressure created by existing platforms. 
+We had participants speak about their experiences interacting with others online, both when they post their own content
+and consume conetent made by other people.
 
-Lastly, we talked about the current platform they are using and we get a couple of popular names, Instagrams,
-Discord, and Steam Friend. However, even we assume they are all social platform with similar functions, 
-interviewees gave us different feedbacks that they are also different.
-
-Basil says that, especially on platforms like Instagram, there’s more of a “content creator 
-and content consumer” relationship than “people interacting online.” While this can be easier 
-on other platforms like Discord, this implies that the people will like you based on how “good” 
-the content you share is, rather than on your personality. 
-Cam says, “a common problem with texting is you don't get tone across,” and, ”how you communicate 
-... is the biggest concern for online friendships.” Because it’s harder to express yourself in 
+Basil says that, especially on platforms like Instagram, there is more of a "content creator 
+and content consumer" between people, rather than authentic relationships. While this can be easier 
+on other platforms like Discord, this implies that the people will like you based on how "good"
+the content you share is instead of your personality. 
+Cam says, "a common problem with texting is you do not get tone across," and, "how you communicate 
+... is the biggest concern for online friendships." Since it's harder to express yourself in 
 a way that others will understand, people have to find workarounds to properly maintain their 
 online friendships.
 
@@ -323,15 +320,15 @@ a process of usability and heuristic testing we realized that a lot of our initi
 did not function in the way that we wanted it to. Our core mindset was ease of use, and clarity of message, which guided
 our entire iterative process.
 
-### Helping users understand how to use Netizen!
+### Helping users understand how to use Netizen
 
 <ProjectImageBlock
     image={{
         src: imageDocumentation,
-        alt: "Every image requires alt text. This should describe the content of that image.",
+        alt: "The documentation page of Netizen, showing different sections including Overview, Setup, Profile, Manage Friendship, Game History, Memories, Connected Accounts, and Voice Commands.",
     }}
     caption={
-        "The documentation helps users to know the basic functions of Netizen and shows how to use Netizen"
+        "The documentation helps users to know the basic functions of Netizen and shows how to use Netizen."
     }
     width={6}
     maxHeight={"400px"}
@@ -340,44 +337,43 @@ our entire iterative process.
 One theme that surfaced over the course of both heuristic evaluation and usability testing 
 was understanding the purpose of Netizen and its features. Participants commented that the 
 setup page and the multiple available options were unclear, so they were likely to just blow 
-past it. From the main screen of Netizen, they found it difficult to navigate because they didn’t 
-know what it was able to do. They also found some of our word choices, such as “Profile History” 
-and “Memories,” to be confusing. With all of this feedback that Netizen was hard to understand, 
+past it. From the main screen of Netizen, they found it difficult to navigate because they did not 
+know what it was able to do. They also found some of our word choices, such as "Profile History" 
+and "Memories," to be confusing. With all of this feedback that Netizen was hard to understand, 
 we realized that it was difficult for users to build an effective mental model when using Netizen, 
 and we therefore needed to provide extra documentation from within the design. So, we made setting 
 up Netizen more modular and provided clearer explanations. Then, we added a button leading to a 
-“How-To” screen so that they could get that information in an unobtrusive way. Lastly, we added 
-extra pop-ups that would give explanations and ensure that they didn’t have to remember the meaning 
+"How-To" screen so that they could get that information in an unobtrusive way. Lastly, we added 
+extra pop-ups that would give explanations and ensure that they did not have to remember the meaning 
 of that terminology in the context of Netizen. 
 
 
 </ProjectImageBlock>
 
-### UI Clarity and Readability
+### Clarity and Readability
 
 <ProjectImagesBlock
     images={[
         {
             src: imageProfilePrototype,
-            alt: "The previous handwritten design of profile page of Netizen, showing profile name, icon, button of Profile Changes, button of Manage Friendship, favorite games, highlighted memories with a list of vedio memories, button og Game History, and button of connected accounts",
+            alt: "The previous handwritten design of profile page of Netizen, showing profile name, icon, button of Profile Changes, button of Manage Friendship, favorite games, highlighted memories with a list of vedio memories, button og Game History, and button of connected accounts.",
         },
         {
-            src: imageFriendProfile,
-            alt: "The new digital design of profile page of Netizen, showing profile name, icon, button of Profile Changes, button of Manage Friendship, favorite games, highlighted memories with a list of vedio memories, button og Game History, and button of connected accounts",
+            src: imageTask3,
+            alt: "The new digital design of profile page of Netizen, showing profile name, icon, button of Profile Changes, button of Manage Friendship, favorite games, highlighted memories with a list of vedio memories, button og Game History, and button of connected accounts.",
         },
     ]}
-    direction={"row"}
     caption={
-        "Iterated from unclear handwritten profile design to digital profile design with a better UI" +
-        "Improved to clearer layout to help users understand the functions"
+        "Iterated from unclear handwritten profile design to digital profile design with a clearer layout to help users understand the functions."
     }
+    direction={"column"}
     width={6}
     maxHeight={"400px"}
 >
 
-Another theme that came up in testing was that the UI felt cluttered, and at times, inconsistent. 
+Another theme that came up in testing was that the design felt cluttered, and at times, inconsistent. 
 Participants mentioned that it felt strange to have the exit buttons of pop-ups in the top left, 
-but “cancel” buttons in the bottom right. Some of the screens were too cluttered, particularly 
+but "cancel" buttons in the bottom right. Some of the screens were too cluttered, particularly 
 the profile screen, which made it difficult to parse all of the information available quickly. 
 This was especially problematic if you wanted to read information quickly while simultaneously 
 playing a game. It also made it more difficult and overwhelming to figure out which voice commands 
@@ -385,13 +381,12 @@ were usable at a quick glance. Lastly, participants noted that some of our butto
 when they should have been radio buttons, giving a false impression of how many options were allowed 
 to be selected. This feedback made us go back through our design and make sure that each of our 
 screens/pop-ups were consistent with each other and accurately portrayed their purpose. With the 
-updated UI, we ultimately felt that the voice controls were not as necessary. We’re leaving them in 
-as a helpful, optional feature, but they are no longer a core part of the design.
+updated design, we ultimately felt that the voice controls were not as necessary.
 
 
 </ProjectImagesBlock>
 
-### Access to Users’ Information
+### Access to User Information
 
 <ProjectImagesBlock
     images={[
@@ -404,8 +399,7 @@ as a helpful, optional feature, but they are no longer a core part of the design
         {
             src: imageChangeFriendsStatus,
             alt: "Netizen page that shows Default Infomation Sharing Settings page, where users can modify their defualt sharing settings.",
-            caption: "Page of default Information Sharing Settings" +
-                     " allows users choose their own preferences of the data they want to share with friends in different Tiers"
+            caption: "Page of default Information Sharing Settings allows users choose their own preferences of the data they want to share with friends in different Tiers."
         },
     ]}
     direction={"column"}
@@ -415,15 +409,15 @@ as a helpful, optional feature, but they are no longer a core part of the design
 
 Since Netizen's design focuses on information sharing, we received a lot of feedback on how we 
 decided to display personal information. First, participants found the Tier system confusing and 
-restrictive since the original version didn’t allow for many customization options. We decided make 
+restrictive since the original version did not allow for many customization options. We decided make 
 the friendship levels into a form of presets, where the user could specify what information they want 
 their Acquaintances, New Friends, Known Friends, and Trusted Friends to have access to. We decided 
 that people should only have access to a piece of information if both they and their friend decide 
-to share it with each other, so we also decided to add a “custom” tier option. This gives users better 
+to share it with each other, so we also decided to add a "custom" tier option. This gives users better 
 control over how much the people they meet online knows about them and helps to support a mutual flow 
-of information. We were also told that the “memories” feature felt under-integrated, as they were only 
-accessible on a friend’s profile page. To address this, we decided to connect memories to their own 
-screen so that you have a place to view all of your memories, regardless of who they’re with. The 
+of information. We were also told that the "memories" feature felt under-integrated, as they were only 
+accessible on a friend's profile page. To address this, we decided to connect memories to their own 
+screen so that you have a place to view all of your memories, regardless of who they're with. The 
 usability tests and feedback we received helped inform us which contexts people want to see and share 
 information about themselves and their online friendships in.
 
