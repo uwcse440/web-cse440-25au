@@ -55,7 +55,8 @@ import imageTeamPerson5 from "public/images/projects/netizen/team/mason.jpg";
 
 import imageOverview from "public/images/projects/netizen/post/netizenOverview.png";
 import imageTask1 from "public/images/projects/netizen/post/walkthrough2step1.png";
-import imageTask2 from "public/images/projects/netizen/post/ManageFriendship.png";
+import imageTask2 from "public/images/projects/netizen/post/netizenOverview.png";
+import imageTask3 from "public/images/projects/netizen/post/ManageFriendship.png";
 import imageFriendProfile from "public/images/projects/netizen/post/walkthrough2step2.png";
 import imageMemories from "public/images/projects/netizen/post/walkthrough2step6.png";
 import imageSocialPlatforms from "public/images/projects/netizen/post/walkthrough2step9.png";
@@ -66,10 +67,6 @@ import imageChangeFriendsStatus from "public/images/projects/netizen/post/manage
 import imageResearchDesign1 from "public/images/projects/netizen/post/initDesign1.png";
 import imageResearchDesign2 from "public/images/projects/netizen/post/initDesign2.png"
 import imageDocumentation from "public/images/projects/netizen/post/imageDocumentation.png";
-import imagePlaceholder400x400 from "public/images/projects/netizen/post/400x400.png";
-import imagePlaceholder300x600 from "public/images/projects/netizen/post/300x600.png";
-import imagePlaceholder600x300 from "public/images/projects/netizen/post/600x300.png";
-import imagePlaceholder1200x800 from "public/images/projects/netizen/post/1200x800.png";
 
 # Netizen
 
@@ -128,12 +125,12 @@ import imagePlaceholder1200x800 from "public/images/projects/netizen/post/1200x8
 <ProjectImageBlock
     image={{
         src: imageOverview,
-        alt: "The friends list screen of Netizen. Shows a list of all of your friends, whether or not " +
-        "they're online, which game they're playing, and either how long they've been playing the game or " +
-        "how long they've been offline."
+        alt: "Netizen friends list. Alist of all of your friends, whether " +
+        "they are online, what game they are playing, and either how long they have been playing the game or " +
+        "how long they have been offline."
     }}
     caption={
-        "The friends list screen shows which of your friends are online and what they're currently doing."
+        "The friends list screen shows which of your friends are online and what they are currently doing."
     }
     width={6}
     maxHeight={"400px"}
@@ -144,6 +141,7 @@ Many times a friendship online can be lost solely because someone stops playing 
 or simply because people just drift apart due to extensive periods of no communication. Current solutions to problems like this are 
 sometimes effective — such as Discord’s notepad feature, Instagram’s close friends list, Steam’s ability to invite people to play games 
 together, etc. — but suffer from the exceptional amount of work required to interface with in a meaningful way. 
+
 Finding a solution that is easy to use, and safe, could help to maintain and create new long lasting connections between people. 
 We think that anything that helps to foster community is a generally good thing! Not only that, but losing connections with people 
 can be isolating and damaging, so finding a way to help to prevent that happening (when the friendship is safe and wanted by both parties), is exceptionally important.
@@ -153,11 +151,11 @@ can be isolating and damaging, so finding a way to help to prevent that happenin
 
 ## Design Walkthrough
 
-A Netizen is a tool to help you thrive in an online setting! Netizen hopes to help you recognize and reach
-out to friends online, and to help strengthen those friendships. Netizen integrates to your accounts on any major gaming platform 
+Netizen is a tool to help you thrive in an online setting! To accomplish this, Netizen has two main goals: help you recognize and reach
+out to friends online, and to help strengthen those friendships. Netizen integrates your accounts on any major gaming platform 
 (Steam, GOG, PlayStation, etc.) and can be taken on the go to keep you connected to your online friends in whatever setting you prefer.
 Netizens track data about you and your online friends like old username and profile pictures, match history,
-social medias, friends that you have in common with othrs, and lots more in the hopes of being able to make your online friendships last.
+social medias, friends that you have in common with others, and lots more in the hopes of being able to make your online friendships last.
 
 ### Strengthen an Online Friendship
 
@@ -168,62 +166,61 @@ social medias, friends that you have in common with othrs, and lots more in the 
             alt: "Main screen on the Netizen display. Showcases the user's friends list",
         },
         {
-            src: imageTask2,
+            src: imageTask3,
             alt: "Netizen scren that allows the user to adjust their frienship tier and make changes to what information is shared.",
         },
     ]}
-    direction={"row"}
+    direction={"column"}
     caption={
         "From the home screen, you can open a friend’s profile, review your shared history, and decide what " +
         "details you want to exchange to rebuild the connection."
     }
     width={6}
-    maxHeight={"400px"}
+    maxHeight={"200px"}
 >
 
-You get a new Netizen system and are excited to set it up and connect with some of your friends 
-through this new system. When you turn the system on, it gives you a title screen, then an 
-introduction to help you set up and get acquainted with the system. Once set up, your friends 
-from other accounts auto-populate onto your home screen. You want to connect with your friend 
-PWNR647 so you click on their profile. You admire their profile and their ridiculous hours in CS:GO 
-before clicking on “Manage Friendship”. Looking at the manage friendship screen, you make them a new 
-friend, and confirm all of the new information you want to share with them. Congratulations on your 
-new strengthened connection!
+When users first open Netizen, they need to set it up and connect with some of their friends 
+through this new system. After users turn the system on, it gives you a title screen, then an 
+introduction to help them set up and get acquainted with the system. Once set up, the friends 
+from other accounts auto-populate onto home screen. If users want to connect with their friends,
+by clicking on their profile, users can check some basic statistics of their friends such as Play Time, 
+Favorite Game, Highlighted Memories, etc... Users can also click on “Manage Friendship” button to go to 
+the manage friendship screen, and they can do functions like make a new friend, and set all of the information 
+they want to share with them based on the closeness level of tehy and their friends.
 
 </ProjectImagesBlock>
 
 ### Recognize and Reach Out to a Friend Online
 
-While playing a game of Rocket League, Netizen! notifies you that your friend PWNR647 
-is in the lobby with you and that you recently played a match of PUBG with them. You don’t 
-recognize this person, so you go to investigate. You click on their profile, then their 
-profile changes. It says that this is your close friend PWNRGUY! Just to make sure, you 
-investigate your shared game history and memories together online. Upon seeing that it is 
-definitely them, you go back to their profile and look at their connected accounts. You click 
-on Discord, and a QR code pops up so that you can reach out to them to see if they would like 
-to play a match of the new hit game Arc Raiders with you!
+While playing a game, Netizen notifies users when their friends 
+are in the lobby with them as well as when the last time they played together may be. Even if 
+a user does not recognize this person, they can investigate. Clicking on a friend's profile, 
+gives access to their profile changes, including old usernames or profile pictures. It also gives 
+access to shared game history and memories made together online. Once a user recognizes their friend,
+they can find all of their connected accounts, which allows a user to pull up a QR code that
+can be used to reach out to their online friend!
 
 <ProjectImagesBlock
     images={[
         {
             src: imageFriendProfile,
-            alt: "Netizen screen showing the friend profile of PWNR64.7",
+            alt: "Netizen screen showing a friend's profile",
         },
         {
             src: imageGameHistory,
-            alt: "Netizen screen showing the Game History screen for PWNR647. Also shows clips shared between the friends and additional statistics between the two users.",
+            alt: "Netizen screen showing the Game History, memories, and shared statistics with an online friend.",
         },
         {
             src: imageMemories,
-            alt: "Netizen screen showing all the memories saved with PWNR647.",
+            alt: "Netizen screen showing all the memories made with an online friend.",
         },
         {
             src: imageSocialPlatforms,
-            alt: "Netizen screen showing all of PWNR647's coonnected social platforms.",
+            alt: "Netizen screen showing all of your friend's coonnected social platforms.",
         }
     ]}
     caption={
-        "Connecting other social and gaming accounts allows you to see all a list of all your " + 
+        "Connecting other social and gaming accounts allows you to see a list of all of your " + 
         "online friends. Clicking on a profile shows you information about the friend and memories " +
         "from your shared in-game experiences."
     }
@@ -237,7 +234,9 @@ to play a match of the new hit game Arc Raiders with you!
 We started our design research by investigating the challenges people face maintaining online friendships and
 how people want those relationships to evolve, if at all. We conducted interviews with several participants with
 varying levels of online activity. We chose these participants to get a better idea of how people use online spaces
-in different contexts.
+in different contexts. These interviews are conversational under relaxed enviroment to help user express their 
+thoughts freely and easily follow the question scripts. With this approach, it eases interviewees pressure and 
+encourage them to say their opinions and share information with us.
 
 Cam: a 20-year-old who monitors his socials online and primarily interacts with people he knows in real life
 via Discord and Instagram.
@@ -253,14 +252,18 @@ of forming and maintaining online friendships.
 
 ### For people who make friends online, it’s difficult to keep track of and stay connected with the people they meet.
 
-Banana described how they have played games with hundreds of different people that, and how they are 
-constantly forgetting people who are on their friends list. They even went and found an example on 
-their friends list during the interview.
-Basil spoke about having "no idea" where some of their online friends came from. Especially after some time passes,
-they're just another username in their friends list.
-Similarly, Cam would often wonder, "How did I meet this person?" For them, this usuallyU"oesn't matter that m
-uch in conversation, 
-but it's just a thought that bugs me in the back of my head.”
+Talking about maintain connection with online friends, almost everyone has the same experience of lose connections.
+One most important thing we noticed is people usually make a lot of friends then forget they are. The reasons
+are similar such as changing icon, name, and profiles. Since all of interviewees are either have a deep experience
+in online games, or have a lot of online friend, we believe their insight are sharp and crucial. Therefore,
+we conclude that people mostly remember them based on their profiles.
+
+Banana described how they have played games with hundreds of different people that, and how they are constantly forgetting 
+people who are on their friends list. 
+Basil: "no idea" where some of their online friends came from. Especially after some time passes, they're just another 
+username in their friends list."
+Cam: "How did I meet this person? For them, this usually doesn't matter that much in conversation, but it's just a thought 
+that bugs me in the back of my head.”
 
 ### Online and in-person friendships occupy different parts of participants’ lives and satisfy different social needs.
 
@@ -273,7 +276,7 @@ but it's just a thought that bugs me in the back of my head.”
         },
         {
             src: imageResearchDesign2,
-            alt: "Netizen screen showing the friend profile of PWNR647. Screen is now much more organized with less content and more buttons to see additional information.",
+            alt: "Netizen screen showing a friend's profile. Screen is now much more organized with less content and more buttons to see additional information.",
             caption: "The mutual friendship is connected with amount of information that people share with each other",
         },
     ]}
@@ -282,16 +285,25 @@ but it's just a thought that bugs me in the back of my head.”
     maxHeight={"400px"}
 >
 
+Another thing we noticed is even though our interviewees enjoy the time with online friends, they still want
+to keep some distances from them. When we ask that are they willing to let their online friends being
+in-person friends, the answers are not firm yes. Instead, they mention that they just want online friends to 
+stay online, and sometimes they accecpt online friend to leave. These insights bring us with hints that the
+position and trust level of online friends is different and special, thus maintaining a comfortable distance
+between them may let the friendship even deeper.
 Basil has “a few online friendships" that they "would not want to translate in person.” 
-Their online and in-person friendships occupy “a slightly different niche” in their life, and they’re 
+"online and in-person friendships occupy a slightly different niche"
 “okay with it staying that way.”
-am  is “the sort of person to be happy seeing people come and go.” They find it fun to meet
-Candtalk with strangers online.
+"They are sort of person to be happy seeing people come and go.” 
 
 </ProjectImagesBlock>
 
 ### Friendships that develop online are difficult to maintain because of artificial pressure created by existing platforms.
 
+
+Lastly, we talked about the current platform they are using and we get a couple of popular names, Instagrams,
+Discord, and Steam Friend. However, even we assume they are all social platform with similar functions, 
+interviewees gave us different feedbacks that they are also different.
 
 Basil says that, especially on platforms like Instagram, there’s more of a “content creator 
 and content consumer” relationship than “people interacting online.” While this can be easier 
@@ -385,7 +397,7 @@ as a helpful, optional feature, but they are no longer a core part of the design
     images={[
         {
             src: imageMutualFriendshipinit,
-            alt: "Original sketch of how we had planned a 'mutual friendship'.",
+            alt: "Original sketch of a 'mutual friendship' concept.",
             caption: "Early concept that showed a mutual-path system where users defined how" 
             + "close they felt to someone, and the final level was only set when both users agreed.",
         },
@@ -401,7 +413,7 @@ as a helpful, optional feature, but they are no longer a core part of the design
     maxHeight={"200px"}
 >
 
-Since Netizen’s design focuses on information sharing, we received a lot of feedback on how we 
+Since Netizen's design focuses on information sharing, we received a lot of feedback on how we 
 decided to display personal information. First, participants found the Tier system confusing and 
 restrictive since the original version didn’t allow for many customization options. We decided make 
 the friendship levels into a form of presets, where the user could specify what information they want 
