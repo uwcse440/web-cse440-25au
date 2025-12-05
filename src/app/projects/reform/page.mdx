@@ -47,6 +47,7 @@ import { ProjectTeamGallery } from "@/components/project/ProjectTeamGallery";
   * - If an import is not working, double-check that you have the correct file extension.
   */}
 
+
 import imageTeamPerson1 from "public/images/projects/reform/team/yian.jpg";
 import imageTeamPerson2 from "public/images/projects/reform/team/tracy.jpg";
 import imageTeamPerson3 from "public/images/projects/reform/team/erin.jpg";
@@ -60,17 +61,25 @@ import imagePlaceholder1200x800 from "public/images/projects/template/post/1200x
 
 import landfilldesign from "public/images/projects/reform/post/landfill.png";
 import personalstyle from "public/images/projects/reform/post/personalstyle.png";
+import personalstyle2 from "public/images/projects/reform/post/personalstyle2.png";
 import eventwalk from "public/images/projects/reform/post/eventwalk.png";
+import eventwalk2 from "public/images/projects/reform/post/eventwalk2.png";
 import stylewalkthru from "public/images/projects/reform/post/stylewalkthru.png";
 import community from "public/images/projects/reform/post/community.png";
 import notifs from "public/images/projects/reform/post/notifs.png";
 import availability from "public/images/projects/reform/post/availability.png";
 import navigation from "public/images/projects/reform/post/navigation.png";
+import banner from "public/images/projects/reform/post/banner.png";
 
 
-# Project Template
-
-<ProjectSubtitle>Closet swap app</ProjectSubtitle>
+<ProjectImageBlock
+    image={{
+        src: banner,
+        alt: "Banner displaying logo and RE:FORM."
+    }}
+    width={12}
+    maxHeight={"400px"}
+></ProjectImageBlock>
 
 ## Team
 
@@ -125,10 +134,10 @@ import navigation from "public/images/projects/reform/post/navigation.png";
 <ProjectImageBlock
     image={{
         src: landfilldesign,
-        alt: "Every image requires alt text. This should describe the content of that image."
+        alt: "Landfill with garbage clothing layered over it, plus a trash can in the very front with more garbage clothing."
     }}
     caption={
-        "In the US, about 17 million tons of textile waste is produced annually, with most of it ending up in landfills"
+        "In the US, about 17 million tons of textile waste is produced annually, with most of it ending up in landfills."
     }
     width={6}
     maxHeight={"400px"}
@@ -144,6 +153,7 @@ consuming and taking action in a way that reinforces sustainable habits.
 Current common habits include donations and hand-me-downs, but other options are often hard to come by and 
 organize for, especially beyond close personal circles.
 
+</ProjectImageBlock>
 
 Our app aims to go beyond building a digital closet by incorporating outfit tracking habits and building 
 community through shared senses of style to build sustainability in practices people already engage in naturally.
@@ -151,9 +161,6 @@ Track, RE:FORM, Style: an article swap platform for users to sustainably explore
 The platform enables users to curate their personal style and see what they wear most, create a digital closet 
 with outfit checks, and build a community through local clothing swap events, removing the stress of expenses 
 from fashion while staying sustainable! 
-
-
-</ProjectImageBlock>
 
 ## Design Walkthrough
 
@@ -163,31 +170,47 @@ By centering this process on a mobile application, individuals can conveniently 
 while also connecting with others who share the goals of building style and sustainability.
 
 
-### Building personal style through outfit management 
-
-<ProjectImagesBlock
-    images={[
-        {
-            src: personalstyle,
-            alt: "Every image requires alt text. This should describe the content of that image.",
-        }
-    ]}
-    caption={
-        "Users can keep track of fits (whether they choose to share or not to their friends), as well as label articles with tags"
-    }
-    width={12}
-    maxHeight={"800px"}
->
+### Building Personal Style Through Outfit Management 
 
 When users start building their digital closet, their outfits can be uploaded through (out)fit checks, 
 which can be uploaded to a clothing inventory or to a social feed. Users have the option to add tags to 
 individual pieces, which allows for convenient organization and categorization. They can also add individual 
 items to their digital closet along with items extracted from their (out)fit checks. 
 
+<ProjectImagesBlock
+    images={[
+        {
+            src: personalstyle,
+            alt: "Various screens showing how users can manage their clothing.",
+        },
+    ]}
+    caption={
+        "Users can keep track of fits (whether they choose to share or not to their friends), as well as label articles with tags."
+    }
+    width={12}
+    maxHeight={"800px"}
+>
+
+</ProjectImagesBlock>
+
+<ProjectImagesBlock
+    images={[
+        {
+            src: personalstyle2,
+            alt: "Various screens showing how users can edit availability of clothing.",
+        },
+    ]}
+    caption={
+        "Users can edit the availability of their clothes for others to see."
+    }
+    width={12}
+    maxHeight={"800px"}
+>
+
 </ProjectImagesBlock>
 
 
-### Explore social clothing events
+### Explore Social Clothing Events
 
 As users start to build their digital closets, they can also explore community clothing swapping events 
 around the area. Events are organized by various factors, including location, style/occasion, and mutual 
@@ -198,11 +221,27 @@ and explore and preview items in others’ closets.
     images={[
         {
             src: eventwalk,
-            alt: "Every image requires alt text. This should describe the content of that image.",
+            alt: "Various screens showing how users can create and join events.",
         }
     ]}
     caption={
-        "Users are able to create and join public or private events local in the area, and can scope out pieces ahead of time"
+        "Users are able to create and join public or private events local in the area, and can scope out pieces ahead of time."
+    }
+    width={12}
+    maxHeight={"800px"}
+>
+
+</ProjectImagesBlock>
+
+<ProjectImagesBlock
+    images={[
+        {
+            src: eventwalk2,
+            alt: "Various screens showing how users explore one specific event.",
+        },
+    ]}
+    caption={
+        "Users can see the profiles of other users attending events."
     }
     width={12}
     maxHeight={"800px"}
@@ -225,13 +264,13 @@ research method since we were able to create personalized and reflective convers
 to more learn about how their environment and communities shape their relationship with their clothes. 
 
 
-### Communities and socialization are key components in shaping behaviors related to style and sustainability.
+### Communities and Socialization Affect Style and Sustainability
 <ProjectImagesBlock
     images={[
         {
             src: community,
-            alt: "Every image requires alt text. This should describe the content of that image.",
-            caption: "Shared experiences and fulfillment results in better retainment and satisfaction",
+            alt: "Comic showing how someone struggling to clean out their closet.",
+            caption: "Shared experiences and fulfillment results in better retainment and satisfaction.",
         }
     ]}
     width={12}
@@ -251,13 +290,13 @@ to more learn about how their environment and communities shape their relationsh
 
 
 
-### Shopping creates barriers that forming habits doesn’t. 
+### Avoiding Shopping Barriers
 
 <ProjectImagesBlock
     images={[
         {
             src: stylewalkthru,
-            alt: "Every image requires alt text. This should describe the content of that image.",
+            alt: "Comic showing how the app facilitates a user in exploring their style.",
             caption: "Without the additional processes of shopping, people are more inclined to practice sustainably while feeling fulfilled!",
         }
     ]}
@@ -278,7 +317,7 @@ articles for better organization and management.
 
 </ProjectImagesBlock>
 
-### Designing for low-effort usage is critical in maintaining continued engagement. 
+### Low-Effort Usage Maintains Engagement
 Another main barrier that we found was that most users don’t have the time nor energy to be manually 
 uploading pieces of their closet and accessories with each new update. While there are many apps already out 
 there that support digital closet functionality, most people do not use them because of how much manual setup 
@@ -301,14 +340,14 @@ In the early stages of paper prototyping, we initially had a rough idea of how w
  through cohesive design choices.
 
 
-### Users wanted confirmation, but not at the cost of their workflow.
+### Confirmation Interrupting Workflow
 
 <ProjectImagesBlock
     images={[
         {
             src: notifs,
-            alt: "Every image requires alt text. This should describe the content of that image.",
-            caption: "This shows the before and after of us applying the changes to the pop up notifications",
+            alt: "Original paper notification design on the left, new digital notification design on the right.",
+            caption: "This shows the before and after of us applying the changes to the pop up notifications.",
         }
     ]}
     width={12}
@@ -335,8 +374,8 @@ In the early stages of paper prototyping, we initially had a rough idea of how w
     images={[
         {
             src: availability,
-            alt: "Every image requires alt text. This should describe the content of that image.",
-            caption: "This shows the before and after of us applying the visual changes to indicate the availability of an item",
+            alt: "Original paper availability indicator on the left, new digital availability indicator on the right.",
+            caption: "This shows the before and after of us applying the visual changes to indicate the availability of an item.",
         }
     ]}
     width={12}
@@ -355,13 +394,13 @@ universally understandable icon (i.e. price tag) to convey availability while al
 
 
 
-### Need for consistency in the user navigation process 
+### Consistency During Navigation
 <ProjectImagesBlock
     images={[
         {
             src: navigation,
-            alt: "Every image requires alt text. This should describe the content of that image.",
-            caption: "This shows the before and after of us applying a navigation bar in response to inconsistencies",
+            alt: "Original paper navigation on the left, new digital navigation bar on the right.",
+            caption: "This shows the before and after of us applying a navigation bar in response to inconsistencies.",
         }
     ]}
     width={12}

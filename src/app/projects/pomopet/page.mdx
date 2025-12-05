@@ -47,12 +47,11 @@ import { ProjectTeamGallery } from "@/components/project/ProjectTeamGallery";
   * - If an import is not working, double-check that you have the correct file extension.
   */}
 
-import imageTeamPerson1 from "public/images/projects/pomopet/team/firstname1.png";
-import imageTeamPerson2 from "public/images/projects/pomopet/team/firstname2.png";
-import imageTeamPerson3 from "public/images/projects/pomopet/team/firstname3.png";
-import imageTeamPerson4 from "public/images/projects/pomopet/team/firstname4.png";
-// TODO: Add Abel's photo as firstname5.png and uncomment the import below
-// import imageTeamPerson5 from "public/images/projects/pomopet/team/firstname5.png";
+import imageTeamPerson1 from "public/images/projects/pomopet/team/sahej.jpg";
+import imageTeamPerson2 from "public/images/projects/pomopet/team/andy.png";
+import imageTeamPerson3 from "public/images/projects/pomopet/team/lisa.png";
+import imageTeamPerson4 from "public/images/projects/pomopet/team/hugh.png";
+import imageTeamPerson5 from "public/images/projects/pomopet/team/abel.png";
 
 import t1walkthrough1 from "public/images/projects/pomopet/post/t1walkthrough1.png";
 import t1walkthrough2 from "public/images/projects/pomopet/post/t1walkthrough2.png";
@@ -93,7 +92,6 @@ import logo from "public/images/projects/pomopet/post/logo.png";
   *   This consistent image size provides a cleaner gallery.
   */}
 
-{/* TODO: Once Abel's photo (firstname5.png) is added, update Abel's entry to use imageTeamPerson5 */}
 <ProjectTeamGallery members={[
     {
         name: ["Sahej", "Kochhar"],
@@ -113,7 +111,7 @@ import logo from "public/images/projects/pomopet/post/logo.png";
     },
     {
         name: ["Abel", "Mitiku"],
-        photo: imageTeamPerson4,
+        photo: imageTeamPerson5,
     },
 ]} />
 
@@ -177,7 +175,6 @@ While using Pomopet, users will need to know their priorities when it comes to t
     maxHeight={"800"}
 >
 
-When first creating a plan, the user navigates from the home page to begin creating the goals they want to fulfill during their study session. They can adjust things like how many goals they want to set, how long their study session will be for, and what colors their Pomopet will change to during the session and breaks. After setting their preferences, they can save them, and are placed into the session.
 
 
 </ProjectImagesBlock>
@@ -194,14 +191,11 @@ When first creating a plan, the user navigates from the home page to begin creat
     maxHeight={"400px"}
 >
 
-After completing their session, the user completes a reflection activity to see what goals they achieved, and input any feedback they had from their session. After completing the reflection, they can claim their session reward, and move back to the home page.
 
 
 </ProjectImageBlock>
 
 ### Collaborating with other users to stay productive
-
-Users can access their group of friends, or join a group by using the group code provided, and communicate with them using messages. Past group chats of sections you’ve worked in are gray, while pink chats are ones associated with your current working section.
 
 <ProjectImagesBlock
     images={[
