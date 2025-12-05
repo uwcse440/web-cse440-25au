@@ -37,6 +37,28 @@ import { ProjectImagesBlock } from "@/components/project/ProjectImagesBlock";
 import { ProjectSubtitle } from "@/components/project/ProjectSubtitle";
 import { ProjectTeamGallery } from "@/components/project/ProjectTeamGallery";
 
+import ExportedImage from "next-image-export-optimizer";
+
+export default function ProjectTeamGallery({ members }) {
+  return (
+    <div style={{ display: "flex", gap: "20px", flexWrap: "wrap" }}>
+      {members.map((m) => (
+        <div key={m.name[0]} style={{ textAlign: "center" }}>
+          <ExportedImage
+            src={m.photo}
+            alt={m.name[0]}
+            width={125}
+            height={150}
+            style={{ objectFit: "cover", borderRadius: "8px" }}
+          />
+          <div>{m.name[0]}</div>
+          <div>{m.name[1]}</div>
+        </div>
+      ))}
+    </div>
+  );
+}
+
 {/* Image Imports
   *
   * Every image should be imported via its path in your `images` directory.
@@ -82,25 +104,27 @@ import one from "public/images/projects/nextLeap/post/1.png";
   *   This consistent image size provides a cleaner gallery.
   */}
 
-<ProjectTeamGallery members={[
+<ProjectTeamGallery
+  members={[
     {
-        name: ["Noa Joseph-Laleh", "She/Her"],
-        photo: imageTeamPerson1,
-        
+      name: ["Noa Joseph-Laleh", "She/Her"],
+      photo: imageTeamPerson1,
     },
     {
-        name: ["Czarin Dela Cruz", "She/Her"],
-        photo: imageTeamPerson2,
+      name: ["Czarin Dela Cruz", "She/Her"],
+      photo: imageTeamPerson2,
     },
     {
-        name: ["Hasan Wazir", "He/Him"],
-        photo: imageTeamPerson3,
+      name: ["Hasan Wazir", "He/Him"],
+      photo: imageTeamPerson3,
     },
     {
-        name: ["Raghavi Putluri", "She/Her"],
-        photo: imageTeamPerson4,
+      name: ["Raghavi Putluri", "She/Her"],
+      photo: imageTeamPerson4,
     },
-]} />
+  ]}
+/>
+
 
 ## Problem and Design Overview
 
@@ -126,7 +150,7 @@ import one from "public/images/projects/nextLeap/post/1.png";
         alt: "NextLeap logo featuring a dancer silhouette with the tagline ‘Train with clarity. Move with confidence.’"
     }}
     caption={
-        "NextLeap combines structured guidance and supportive feedback to help dancers practice with confidence."
+        "Next Leap combines structured guidance and supportive feedback to help dancers practice with confidence."
     }
     width={6}
     maxHeight={"400px"}
@@ -162,7 +186,7 @@ The second focus task, staying motivated and overcoming mental blocks, supports 
     ]}
     direction={"row"}
     caption={
-        "NextLeap guides dancers through clear tutorials and real-time feedback to build precise technique and confidence."
+        "Next Leap guides dancers through clear tutorials and real-time feedback to build precise technique and confidence."
     }
     width={6}
     maxHeight={"400px"}
@@ -172,7 +196,7 @@ Improving movement and form based on personalized feedback is essential for help
 
 As the user practices, the system records their attempt and plays it back with real-time, personalized annotations that highlight areas needing adjustment. Visual cues such as alignment markers, posture reminders, and form corrections help dancers understand exactly what to change and why it matters. This immediate, targeted feedback reduces uncertainty, prevents the reinforcement of incorrect habits, and promotes safer skill development. By combining guided instruction with feedback, the experience helps users build precision, confidence, and body awareness which are key elements for effective independent practice.
 
-</ProjectImagesBlock>
+
 
 <ProjectImageBlock
     image={{
@@ -180,7 +204,7 @@ As the user practices, the system records their attempt and plays it back with r
         alt: "Smart mirror showing a dancer with on-screen corrections for arm placement and leg alignment, plus Done and Replay Feedback buttons.",
     }}
     caption={
-        "NextLeap delivers clear, real-time corrections to help dancers practice safely and refine their technique."
+        "Next Leap delivers clear, real-time corrections to help dancers practice safely and refine their technique."
     }
     width={6}
     maxHeight={"400px"}
@@ -191,7 +215,7 @@ Before any attempt, the dancer is asked to confirm prerequisite knowledge such a
 
 Once the dancer transitions from learning to trying the movement, the system introduces a set of customizable session settings. The user can select the number of tries they want before receiving feedback, choose whether or not to use a timer, and adjust music and volume to create a practice environment that feels comfortable and motivating. During each attempt, a clear recording indicator appears to show that their movements are being captured, while a small version of the tutorial plays on the side for quick reference if they need a reminder. After completing their tries, the mirror presents feedback in a step-by-step format rather than overwhelming the dancer with everything at once. Each correction, such as adjusting arm placement or improving knee alignment, appears as its own message and is layered directly over the dancer’s playback so the connection between movement and feedback is easy to understand
 
-
+</ProjectImagesBlock>
 
 ### Stay Motivated and Overcome Mental Blocks
 
@@ -210,7 +234,7 @@ Staying motivated during independent practice is often difficult, especially whe
         },
     ]}
     caption={
-        "NextLeap celebrates small wins and shows visible progress to keep dancers motivated and confident in their growth."
+        "Next Leap celebrates small wins and shows visible progress to keep dancers motivated and confident in their growth."
     }
     width={12}
     maxHeight={"400px"}
@@ -269,10 +293,11 @@ Our research showed that dancers rely heavily on instructor judgment to understa
             caption: "Step 2 builds on the technique with guided corrections that reinforce safe progression and good form."
         },
     ]}
-    direction={"row"}
+    direction={"column"}  
     width={8}
     maxHeight={"400px"}
 >
+
 
 This insight led us to integrate multiple features that personalize the learning experience while ensuring safety. Before a dancer begins a new skill, the system presents prerequisite checks, along with links to learn missing foundations, preventing users from attempting movements they may not be prepared for. Tutorials are delivered in step-by-step segments rather than fast demonstrations, mirroring how instructors break skills down to reduce risk and encourage proper technique. Finally, the ability to set personalized goals ensures that each user’s path reflects their pace, strengths, and comfort level. Together, these features recreate the instructor’s role in pacing, scaffolding, and tailoring instruction, allowing dancers to push themselves safely and confidently during independent practice.
 
@@ -291,9 +316,7 @@ Our design evolved through four major iterations, each building on the clarity a
 
 Next, we created our initial paper prototype, laying out the core screens for selecting skills, viewing tutorials, configuring sessions, and receiving feedback. Running this version through heuristic evaluations highlighted several issues, such as unclear navigation paths, overly crowded screens, and redundant elements that made interactions feel less intuitive.
 
-Using these findings, we developed a final paper prototype with a more streamlined task flow, clearer labeling, prerequisite safety checks, and refined feedback screens. This version reflected a much more coherent learning experience and resolved many of the usability problems identified earlier.
-
-Finally, we translated the design into a digital mockup, refining visual hierarchy, spacing, button placement, and interaction pacing to better fit a digital interface.
+Using these findings, we developed a final paper prototype with a more streamlined task flow, clearer labeling, prerequisite safety checks, and refined feedback screens. This version reflected a much more coherent learning experience and resolved many of the usability problems identified earlier. Finally, we translated the design into a digital mockup, refining visual hierarchy, spacing, button placement, and interaction pacing to better fit a digital interface.
 
 
 ### Lack of Efficient Navigation
@@ -310,7 +333,7 @@ Finally, we translated the design into a digital mockup, refining visual hierarc
     maxHeight={"400px"}
 >
 
-In our original prototype of the NextLeap Reflect if there is a specific skill or choreo that a user has in mind, they have to go through a lot of reading and/or scrolling to find the specific option they were looking for. We wanted to provide easier navigation options in addition to our current navigation so users don’t have to go through all the possible options for “Skills” and “Dance Styles” before finding the one they want. 
+In our original prototype, users had to read and scroll through long lists to find a specific skill or choreo. We wanted to provide easier navigation options in addition to our current navigation so users don’t have to go through all the possible options for “Skills” and “Dance Styles” before finding the one they want.
 
 To address the feedback about the difficulty of navigating long lists of skills and dance styles, we updated the interface by adding a search bar to both the “Skills” and “Dance Styles” screens. Users can now quickly find skills using either typed search or voice-activated search through the remote, reducing the need for extensive scrolling. We also introduced a favorites feature that allows dancers to mark frequently used styles, making them immediately accessible from the top of the list. Together, these changes significantly reduce navigation effort and support faster, more intuitive task selection. 
 
@@ -329,15 +352,16 @@ To address the feedback about the difficulty of navigating long lists of skills 
             alt: "Smart mirror displaying a completion screen with the message ‘Great Work! You met your goal!’ and options to set a new goal or exit.",
         },
     ]}
-    direction={"row"}
-    caption={
-        "NextLeap guides safe progression by checking foundational skills and celebrating completed goals."
-    }
+    direction={"column"}   
+    caption="Next Leap guides safe progression by checking foundational skills and celebrating completed goals."
     width={6}
     maxHeight={"400px"}
 >
 
-In our previous iteration of the NextLeap Reflect Smart Mirror dancers wouldn’t be prevented from attempting advanced skills without proper foundation. This raised important concerns about dancers’ safety and proper skill progression. We asked ourselves how the system would help users understand what they need to learn first, especially for beginner dancers. We wanted a system that would allow for this without locking them out or making the process to rigid for more advanced dancers.
+
+
+
+In our previous iteration of the Next Leap Reflect Smart Mirror dancers wouldn’t be prevented from attempting advanced skills without proper foundation. This raised important concerns about dancers’ safety and proper skill progression. We asked ourselves how the system would help users understand what they need to learn first, especially for beginner dancers. We wanted a system that would allow for this without locking them out or making the process to rigid for more advanced dancers.
  
 To address these concerns we introduced a prerequisite pop-up window which guides users towards safe and logical progression without restricting their freedom. Instead of blocking skills, the mirror now educate users about necessary foundational skills and offers direct navigation links directly to the learning paths for those prerequisite skills. This change balances users education on safe progression with their freedom of attempting more complex skills. This change creates a supportive and safety-minded experience aligned with real dance training.
 
@@ -360,7 +384,7 @@ To address these concerns we introduced a prerequisite pop-up window which guide
     maxHeight={"200px"}
 >
 
-In our original design for the NextLeap Reflect if dancers forgot what the skill or choreography looked like while performing it, they had no easy way to check without exiting the attempt workflow entirely. This was especially problematic for complex skills or for beginner dancers who rely heavily on visual references. We wanted quick access to the tutorial during attempts without interrupting their workflow similar to how dance instructors tend to perform skills alongside beginner dancers. 
+In our original design for the Next Leap Reflect if dancers forgot what the skill or choreography looked like while performing it, they had no easy way to check without exiting the attempt workflow entirely. This was especially problematic for complex skills or for beginner dancers who rely heavily on visual references. We wanted quick access to the tutorial during attempts without interrupting their workflow similar to how dance instructors tend to perform skills alongside beginner dancers. 
 
 To address recall issues related to remembering skills we added an optional picture-in-picture tutorial window to support dancers who need visual reminders while practicing. The “on/off” toggle ensures the screen stays flexible. Users who prefer a clean layout and would like to test their knowledge without the added visual cue can turn this feature off easily, while those who want ongoing reference can keep it visible. This directly addresses the need for mid-practice support without disrupting the attempt progress. 
 
