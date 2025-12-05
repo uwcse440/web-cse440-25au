@@ -37,28 +37,6 @@ import { ProjectImagesBlock } from "@/components/project/ProjectImagesBlock";
 import { ProjectSubtitle } from "@/components/project/ProjectSubtitle";
 import { ProjectTeamGallery } from "@/components/project/ProjectTeamGallery";
 
-import ExportedImage from "next-image-export-optimizer";
-
-export default function ProjectTeamGallery({ members }) {
-  return (
-    <div style={{ display: "flex", gap: "20px", flexWrap: "wrap" }}>
-      {members.map((m) => (
-        <div key={m.name[0]} style={{ textAlign: "center" }}>
-          <ExportedImage
-            src={m.photo}
-            alt={m.name[0]}
-            width={125}
-            height={150}
-            style={{ objectFit: "cover", borderRadius: "8px" }}
-          />
-          <div>{m.name[0]}</div>
-          <div>{m.name[1]}</div>
-        </div>
-      ))}
-    </div>
-  );
-}
-
 {/* Image Imports
   *
   * Every image should be imported via its path in your `images` directory.
@@ -104,27 +82,25 @@ import one from "public/images/projects/nextLeap/post/1.png";
   *   This consistent image size provides a cleaner gallery.
   */}
 
-<ProjectTeamGallery
-  members={[
+<ProjectTeamGallery members={[
     {
-      name: ["Noa Joseph-Laleh", "She/Her"],
-      photo: imageTeamPerson1,
+        name: ["Noa Joseph-Laleh", "She/Her"],
+        photo: imageTeamPerson1,
+        
     },
     {
-      name: ["Czarin Dela Cruz", "She/Her"],
-      photo: imageTeamPerson2,
+        name: ["Czarin Dela Cruz", "She/Her"],
+        photo: imageTeamPerson2,
     },
     {
-      name: ["Hasan Wazir", "He/Him"],
-      photo: imageTeamPerson3,
+        name: ["Hasan Wazir", "He/Him"],
+        photo: imageTeamPerson3,
     },
     {
-      name: ["Raghavi Putluri", "She/Her"],
-      photo: imageTeamPerson4,
+        name: ["Raghavi Putluri", "She/Her"],
+        photo: imageTeamPerson4,
     },
-  ]}
-/>
-
+]} />
 
 ## Problem and Design Overview
 
