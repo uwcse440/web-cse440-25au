@@ -1,0 +1,237 @@
+{/* CSE 440 Project Post Template
+  *
+  * This template aims to guide you in how to use the supported syntax.
+  *
+  * Refer to the assignment description for details on what content is expected.
+  *
+  * If you delete or modify template content that you later find you need,
+  * the original template can also be found in `/src/app/projects/template/page.mdx`.
+  *
+  * Note this template's use of comment syntax.
+  * Curly brackets delineate a code block, within which you can then initiate a comment.
+  * The column of `*` characters has no effect and is included only for readability.
+  */}
+
+{/* Tool Documentation
+  *
+  * This post is primarily formatted in Markdown.
+  * For one example of how to use Markdown, see <https://www.markdownguide.org/>.
+  *
+  * The post then uses [MDX](https://mdxjs.com/) to embedded JSX components.
+  * You are not expected to fully understand these components,
+  * but can just embed them in your Markdown like you would any HTML tag.
+  */}
+
+{/* Project Imports
+  *
+  * These import components you can then use in your post.
+  * You could inspect those components, but this template is intended to be sufficient.
+  *
+  * The full [MUI](https://mui.com/material-ui/getting-started/overview/) component library is also available,
+  * but we do not expect or recommend you will need or want additional components.
+  * If you find the provided components insufficient, we encourage you to check in with the course staff.
+  */}
+
+import { ProjectImageBlock } from "@/components/project/ProjectImageBlock";
+import { ProjectImagesBlock } from "@/components/project/ProjectImagesBlock";
+import { ProjectSubtitle } from "@/components/project/ProjectSubtitle";
+import { ProjectTeamGallery } from "@/components/project/ProjectTeamGallery";
+
+{/* Image Imports
+  *
+  * Every image should be imported via its path in your `images` directory.
+  * - That directory is within `public/images/projects`.
+  * - These imports all reference the `template` project, you will reference your own project directory.
+  * - Give your images meaningful names (e.g., "overview.png").
+  * - Only `.jpg` and `.png` file extensions are supported.
+  * - If an import is not working, double-check that you have the correct file extension.
+  */}
+
+import imageTeamPerson1 from "public/images/projects/skinsync/team/kris.jpeg";
+import imageTeamPerson2 from "public/images/projects/skinsync/team/kevin.png";
+import imageTeamPerson3 from "public/images/projects/skinsync/team/matt.JPG";
+import imageTeamPerson4 from "public/images/projects/skinsync/team/riya.jpeg";
+import imageTeamPerson5 from "public/images/projects/skinsync/team/laura.jpeg";
+
+import imageStartScreen from "public/images/projects/skinsync/post/Start.png";
+import imageLogin from "public/images/projects/skinsync/post/Login.png";
+import imageSurvey from "public/images/projects/skinsync/post/survey.png";
+import imageSurveyComplete from "public/images/projects/skinsync/post/Survey complete.png";
+import imageProfile from "public/images/projects/skinsync/post/profile.png";
+import imageSkinTypeInfo from "public/images/projects/skinsync/post/Skin Type Info.png";
+import imageConditionInfo from "public/images/projects/skinsync/post/condition info.png";
+
+import imageProductBrowse from "public/images/projects/skinsync/post/Product browse.png";
+import imageProductInfo from "public/images/projects/skinsync/post/Product info.png";
+import imageAddProduct from "public/images/projects/skinsync/post/Adding product to routine.png";
+import imageRoutineTimelines from "public/images/projects/skinsync/post/Routine timelines.png";
+import imageRoutineTimeline from "public/images/projects/skinsync/post/Routline timeline.png";
+
+# SkinSync
+
+<ProjectSubtitle>Optional Subtitle </ProjectSubtitle>
+
+## Team
+
+{/* The ProjectTeamGallery displays names and images of your project team.
+  * - Split each name across two lines to ensure consistent rendering.
+  * - Consider including pronouns as another line.
+  * - Crop and scale images to be the size of the placeholder (125px x 150px).
+  *   This consistent image size provides a cleaner gallery.
+  */}
+
+<ProjectTeamGallery members={[
+    {
+        name: ["Kris Tong", "He/Him"],
+        photo: imageTeamPerson1,
+    },
+    {
+        name: ["Kevin Duong", "He/Him"],
+        photo: imageTeamPerson2,
+    },
+    {
+        name: ["Matthew Pham", "He/Him"],
+        photo: imageTeamPerson3,
+    },
+    {
+        name: ["Riya Affrin", "She/Her"],
+        photo: imageTeamPerson4,
+    },
+    {
+        name: ["Laura Tran", "She/Her"],
+        photo: imageTeamPerson5,
+    },
+]} />
+
+## Problem and Design Overview
+
+SkinSync is a mobile app which helps users create a skincare routine that works for them and also helps educate users who are new to skincare! This app features a timeline so that users can track their progress towards their skincare goals and create a routine list. Users will create an account and start a questionnaire to get detailed information on the users skin type and concerns. From there SkinSync can recommend products that are compatible with their skin type, goals, and clean ingredient list.
+
+### Problem
+People getting into skincare today are often overwhelmed by all the information and advertising when trying to figure out their skin type and skin concerns. There is not an easy way for them to self-diagnose their skin type or conditions without either seeing a dermatologist or testing countless products that often don't work, ultimately wasting time and money.
+
+### Our Solution
+SkinSync lets users monitor their skincare progress and discover products tailored to their skin needs or goals. Its social feature allows users to share and read product reviews from others, making it easier to choose what actually works and avoid wasting money.
+
+## Design Walkthrough
+
+### Onboarding and Personalization
+
+<ProjectImagesBlock
+    images={[
+        {
+            src: imageStartScreen,
+            alt: "Start screen of the SkinSync app.",
+            caption: "Start Screen"
+        },
+        {
+            src: imageLogin,
+            alt: "Login screen.",
+            caption: "Login"
+        },
+        {
+            src: imageSurvey,
+            alt: "Survey screen for skin conditions.",
+            caption: "Skin Survey"
+        },
+        {
+            src: imageSkinTypeInfo,
+            alt: "Information about skin types.",
+            caption: "Educational Info"
+        }
+    ]}
+    direction={"row"}
+    width={8}
+    maxHeight={"500px"}
+>
+    Users begin by creating an account and completing a comprehensive survey. SkinSync provides educational information during this process to help users accurately identify their skin type and concerns.
+</ProjectImagesBlock>
+
+<ProjectImagesBlock
+    images={[
+        {
+            src: imageSurveyComplete,
+            alt: "Survey completion screen.",
+            caption: "Survey Complete"
+        },
+        {
+            src: imageProfile,
+            alt: "User profile showing skin stats.",
+            caption: "User Profile"
+        }
+    ]}
+    direction={"row"}
+    width={8}
+    maxHeight={"500px"}
+>
+    Once the survey is complete, a personalized profile is generated, highlighting the user's specific skin needs and goals.
+</ProjectImagesBlock>
+
+### Routine Management and Discovery
+
+<ProjectImagesBlock
+    images={[
+        {
+            src: imageProductBrowse,
+            alt: "Browsing products.",
+            caption: "Browse Products"
+        },
+        {
+            src: imageProductInfo,
+            alt: "Detailed product information.",
+            caption: "Product Details"
+        },
+        {
+            src: imageAddProduct,
+            alt: "Adding a product to a routine.",
+            caption: "Add to Routine"
+        }
+    ]}
+    direction={"row"}
+    width={8}
+    maxHeight={"500px"}
+>
+    Users can browse products tailored to their profile, view detailed ingredient analyses, and easily add products to their daily routines.
+</ProjectImagesBlock>
+
+<ProjectImagesBlock
+    images={[
+        {
+            src: imageRoutineTimelines,
+            alt: "Routine timeline view.",
+            caption: "Choosing a timeline"
+        },
+        {
+            src: imageRoutineTimeline,
+            alt: "Routine timeline view.",
+            caption: "Routine Timeline"
+        }
+    ]}
+    direction={"row"}
+    width={8}
+    maxHeight={"500px"}
+>
+    The timeline view helps users stay consistent with their morning and evening routines, allowing for easy tracking and adjustments.
+</ProjectImagesBlock>
+
+## Design Research and Key Insights
+
+### Evaluation insights: heuristic evaluation
+
+One specific heuristic evaluation that was violated was on our product suggestion screen. Where the user is presented with a product that is helpful for their current skin condition situation. This violated the “Match Between System and the Real World” because on the paper screen prototype there was nothing where why this product was suited for the user’s skin type. As well as not adding anything negative about the product so that the user has full transparency about the product.
+
+Another specific heuristic evaluation that was violated was the lack of help and documentation for the user to know. On one of our paper prototype screen we ask about the user’s skin type but there was no option or information for the user to learn more about the different skin type or skin condition. This is important because we’re assuming the user already know something about their skin type and skin condition. We are limiting our application to a limited number of users, by adding information for the user to learn more about the users skin type and skin condition then it can open up to a lot more range of users using our application.
+
+### Evaluation Insights: Usability Testing
+
+One specific feedback that we got from our usability testing that was similar throughout all of our participants was that the lack information on the product suggestion screen. From our participants they have shared out that it was confusing to them why this specific product was being suggested for them. They would of like if there was more information on the product screen page why this is being suggested to them. They also shared out that they would of like it if there was a better indication of how much this product can closely solve their problem or goal. Because before the percentage was lacking a lot of information to the user why the product is suitable for them.
+
+Another specific feedback that we got was the lack of routine building flexibility. From our participants they have shared out that they would like it if they have full freedom of making their routines that is catered towards their goal. They would like it if the app can suggest them products that is catered towards their goal and suggest it in their routine. One interesting perspective feedback that we got from one of our participant was that if a user has no clue of building a routine they would like it if the app can help them with that. For example, guide them through their skin care routine building and help them complete their goal of taking care of their skin.
+
+With these main feedbacks we incorporated by having more detailed product suggestion screen page in our paper prototype that can help the user understand the product being suggested to then. As well as help them guide them through their skin care routine no matter how knowledgeable they are about building one, so that we don’t limit a specific group of users to use our application but instead increase our usability to a wider range of users.
+
+## Iterative Design and Key Insights
+
+### Reflection: Heuristic Evaluation vs. Usability Testing
+
+An portion of our design that received more feedback and revision was from the usability testing while we felt that it was nice to get feedback through the heuristic evaluation we couldn’t get a better idea of the problem and instead had to rely it through text. We favoured more of the usability testing because it was more interactive and real time with the participant with us and watch them interact with our paper prototype. We could also see then specifically in our paper prototype they were confused about. With this level of depth of a feedback we could not get with the heuristic evaluation. The real time feedback and interactive part from the usability we all agree that we could not get from just a heuristic evaluation feedback. Because we were able to catch and ask question to the participant and get real time understanding while performing the usability testing method. There was small feedback that we got from usability testing that could of been a heuristic evaluation , for example we got feedback on the product feedback suggestions and we also noted that we got that same feedback from our heuristic evaluation. There was a lot of overlapping between the two methods but overall we chose the usability testing as the best choice because of the real time component of it.
