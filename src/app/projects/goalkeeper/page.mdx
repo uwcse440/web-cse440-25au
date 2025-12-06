@@ -48,15 +48,10 @@ import { ProjectTeamGallery } from "@/components/project/ProjectTeamGallery";
   */}
 
 import imageTeamPerson1 from "public/images/projects/goalkeeper/team/Photo_Jacklyn.jpg";
-import imageTeamPerson2 from "public/images/projects/template/team/firstname1.png";
+import imageTeamPerson2 from "public/images/projects/goalkeeper/team/Photo_Ronin.png";
 import imageTeamPerson3 from "public/images/projects/goalkeeper/team/Photo_Jamie.jpg";
-import imageTeamPerson4 from "public/images/projects/goalkeeper/team/Photo_Victor.png";
+import imageTeamPerson4 from "public/images/projects/goalkeeper/team/Photo_Victor.jpg";
 import imageTeamPerson5 from "public/images/projects/goalkeeper/team/Photo_Patricia.jpg";
-
-import imagePlaceholder300x600 from "public/images/projects/template/post/300x600.png";
-import imagePlaceholder400x400 from "public/images/projects/template/post/400x400.png";
-import imagePlaceholder600x300 from "public/images/projects/template/post/600x300.png";
-import imagePlaceholder1200x800 from "public/images/projects/template/post/1200x800.png";
 
 import overview from "public/images/projects/goalkeeper/post/overview.png";
 import set_goals from "public/images/projects/goalkeeper/post/set_goals.png";
@@ -65,9 +60,22 @@ import visual_cues from "public/images/projects/goalkeeper/post/visual_cues.png"
 import drinking_progress from "public/images/projects/goalkeeper/post/drinking_progress.png";
 import celebration_board from "public/images/projects/goalkeeper/post/celebration_board.png";
 
+import board_help from "public/images/projects/goalkeeper/post/board-help.png";
+import friends_help from "public/images/projects/goalkeeper/post/friends-help.png";
+import intro1 from "public/images/projects/goalkeeper/post/intro1.png";
+import intro2 from "public/images/projects/goalkeeper/post/intro2.png";
+import intro3 from "public/images/projects/goalkeeper/post/intro3.png";
+import intro4 from "public/images/projects/goalkeeper/post/intro4.png";
+import progress_edit_help from "public/images/projects/goalkeeper/post/progress_edit_help.png";
+import progress_help from "public/images/projects/goalkeeper/post/progress_help.png";
+import celebrate from "public/images/projects/goalkeeper/post/celebrate_with_friends.png";
+import usability from "public/images/projects/goalkeeper/post/usability.png";
+import one_drink from "public/images/projects/goalkeeper/post/one_drink.png";
+import rewards from "public/images/projects/goalkeeper/post/rewards.png";
+import cele_board from "public/images/projects/goalkeeper/post/cele_board.png";
 
 # GoalKeeper
-
+<ProjectSubtitle>Raise the glass to progress</ProjectSubtitle>
 ## Team
 
 {/* The ProjectTeamGallery displays names and images of your project team.
@@ -79,23 +87,23 @@ import celebration_board from "public/images/projects/goalkeeper/post/celebratio
 
 <ProjectTeamGallery members={[
     {
-        name: ["Jacklyn", "Cui"],
+        name: ["Jacklyn Cui", "(she/her)"],
         photo: imageTeamPerson1,
     },
     {
-        name: ["Ronin", "Crawford"],
+        name: ["Ronin Crawford", "(he/him)"],
         photo: imageTeamPerson2,
     },
     {
-        name: ["Jamie", "Gashler"],
+        name: ["Jamie Gashler", "(she/her)"],
         photo: imageTeamPerson3,
     },
     {
-        name: ["Victor", "Wong"],
+        name: ["Victor Wong", "(he/him)"],
         photo: imageTeamPerson4,
     },
     {
-        name: ["Patricia", "Lee"],
+        name: ["Patricia Lee", "(she/her)"],
         photo: imageTeamPerson5,
     },
 ]} />
@@ -118,56 +126,30 @@ import celebration_board from "public/images/projects/goalkeeper/post/celebratio
   * Later in the template you will also find examples of the plural `ProjectImagesBlock` tag.
 */}
 
-It is often difficult for people to reduce their alcohol use, even when they genuinely want
-to cut back, because drinking can become habitual and socially reinforced. Existing tools
-for managing consumption are often too tedious, or backfire by creating guilt-driven cycles
-of motivation and relapse. Additionally, people are not interested manual tracking that
-involves high-effort, but more interested in support that helps them stay connected to their
-long-term goals.
+It is often difficult for people to reduce their alcohol use, even when they genuinely want to cut back, because drinking can become habitual and socially reinforced. Existing tools for managing consumption are often too tedious or backfire by creating guilt-driven cycles of motivation and relapse. Additionally, people are not interested in manual tracking that involves high effort, but are more interested in support that helps them stay connected to their long-term goals.
+
 
 <ProjectImageBlock
     image={{
         src: overview,
         alt: "Four koozies standing in a row with the first in red, second in purple and the remaining in green.",
-        caption: "Koozie designs with different colors",
+        caption: "Koozie designs with different colors.",
     }}
     width={6}
     maxHeight={"400px"}
 >
 
-    Our design, **GoalKeeper**, is a customizable Koozie for folks who continue drinking after
-    college. This offers a convenient way for users to automatically track their drinking,
-    create goals, and manage habits with friends through a companion social app. You can work
-    together with friends to reflect on and share progress while staying motivated. The main
-    purpose of the Koozie is to encourage mindful drinking in conjunction with a sustained
-    connection to personal and social goals.
+Our design, **GoalKeeper**, is a customizable Koozie for folks who continue drinking after college. This offers a convenient way for users to automatically track their drinking, create goals, and manage habits with friends through a companion social app. You can work together with friends to reflect on and share progress while staying motivated. The main purpose of the Koozie is to encourage mindful drinking in conjunction with a sustained connection to personal and social goals.
 
 </ProjectImageBlock>
 
 ## Design Walkthrough
 
-    One of our main objectives is to build a tracking system that avoids the issues people
-    have with current methods, which include high-effort manual tracking and invasive design.
-    Koozie is already popular in drinking contexts and offers a convenient way for users to
-    automatically track their drinking goals and those of their friends through a companion
-    social app. People can work together along with buddies, which provides incentives for
-    users to reflect on and share their progress in a motivating way. Specifically, The main
-    purpose of the Koozie is not to serve as a perfect drink counter, but rather to encourage
-    mindful drinking and sustained connection to personal and social goals.
+Since koozies are already common in social and sports settings, especially among folks who continue drinking after college, our design reframes the koozie as a tool for mindful drinking. It’s non-invasive, convenient, and fun to use. Paired with a companion app, the koozie’s main task is to help users set and maintain personal drinking goals to reduce their usage. A simple dial on the back allows the user to set the number of standard drinks in their can or glass. During an event, the koozie detects when a drink is placed inside through a built-in weight sensor. It syncs this information to the app, offering personalized feedback while also serving as a visual reminder of the user’s goal in real time.
 
-    The GoalKeeper Koozie allows for easy, passive tracking that can be fit onto any cup
-    shape and size. One of our tasks is to collaborate with friends on alcohol consumption.
-    We chose this task because from our findings, we realized that a lot of people depend on
-    the people around them to keep them accountable with their drinking habits. So, our
-    design supports the user by connecting them with their friends and emphasizes that it is
-    not an isolating journey. Our other task is to set and manage personalized drinking goals.
-    Each person has their own set of goals that they want to achieve and thus, our app becomes
-    a space to reflect and manage said goals. This combination of tasks allows us to design A
-    Koozie that is simple, portable, and lightweight for easy tracking, and an app that lets
-    the user reflect on their individual and/or shared goals.
+After an event, the app presents progress through clear, color-coded indicators and sends supportive notifications that celebrate small wins. Users can monitor their habits over time, hold each other accountable, check in on friends who need support, and view personal milestones through the Celebration Board. We focus on encouraging self-reflection and intentional drinking to help users perpetuate the habits they want to keep for the long term.
 
-
-### Set, track, and Manage Drinking Goals with Friends
+### Set, Track, and Manage Drinking Goals
 
 <ProjectImagesBlock
     images={[
@@ -185,17 +167,14 @@ long-term goals.
         },
     ]}
     direction={"row"}
-    caption="After specifying the goal in App, user can use the kooize during drinking sessions."
+    caption="After specifying the goal in App, user can use the koozie during drinking sessions once connected via Bluetooth."
     maxHeight={"400px"}
 >
 
-    First, users could specify a goal in-app on how much they plan to drink during a given
-    time period. During a drinking event, users wrap their GoalKeeper koozies around their
-    cup(s), which detects the weight of a cup/drink and tracks the number of drinks from a
-    dial the user sets initially. Then the koozie sends their drink info to their phone
-    via bluetooth. The koozie acts as a visual reminder of a users goal as they are
-    actively drinking that they’ve made commitments and want to keep using it to track their
-    consumption.
+First, users can specify a goal in-app for how much they plan to drink during a given time period. On the dial at the back of the koozie, they initialize the typical number of standard drinks in their beverage(s) of choice. 
+
+During a drinking event, users place their beverage inside the GoalKeeper koozie, which automatically adds the specified number of standard drinks to an ongoing tally tracked throughout the day. The koozie then sends this drink information to the user’s phone via Bluetooth. The koozie serves as a visual reminder of a user’s goal as they actively drink to help them keep their commitment. On the friends page, each user can monitor their friends who are currently drinking and encourage them to stick to their goals in real time. If a friend is over their limit, you can quickly press the message button, which is a UI shortcut to their preferred Messaging App, and check in to offer support.
+
 
 </ProjectImagesBlock>
 
@@ -209,26 +188,15 @@ long-term goals.
     maxHeight={"400px"}
 >
 
-    After an event, the app stores the koozie drink info and creates a report on the Progress
-    page. When the user clicks the Progress button, they can see their drinking habits over
-    time and indicated by different colors, and there would be a notification push to the user.
-    Furthermore, they can see their friends’ drinking and goals over time if they decided to
-    share. Friends that are under or over limits are indicated with color. This lets friends
-    monitor in real time, and they can then act on this in a way that suits the needs of the
-    friend. After the goal time is over, the user can update their goal for next time in the
-    Set a Goal page.
+After an event, the app stores the koozie drink info and creates a report on the Progress page. When the user clicks the Progress button, they can view their drinking habits over time, indicated by different colors (red means they’ve exceeded the limit, while green means they are still under the limit). During and after their goal, the users will receive regular, tailored push notifications that motivate and encourage them to share their progress in the app. At any time, users may share their progress with friends and celebrate achievements together. After the goal is over, the user can update their goal or set a new one in the Set a Goal page.
+
 
 </ProjectImageBlock>
 
 ### Encourage Self-Reflection and Intentional Drinking
 
-    After the user’s goal is complete, the app analyzes the progress data and sends
-    notifications with tailored motivational prompts to the user and encourages them to
-    interact with the app’s Celebration Board. The users can reward their personal
-    efforts by posting these achievements, and look back on past snapshots so they
-    can stay motivated & plan for their next steps. Everything is kept private to the user,
-    but they can share their achievements with friends. This lets the user reinforce their
-    commitment through social encouragement to reducing their usage.
+During the goal tracking period set by the user, the app analyzes the progress data and sends notifications with tailored motivational prompts to the user, whether they’ve achieved the goal or not. These notifications also encourage them to interact with the app’s Celebration Board to post their highlights after completing the goal. Users can reward their personal efforts by posting these achievements and looking back on past snapshots, which helps them reflect & plan for their next goal. Everything is kept private to the user, but they always have the option to share their achievements with friends. This allows the user to reinforce their commitment and feel motivated to drink intentionally through genuine social encouragement.
+
 
 <ProjectImagesBlock
     images={[
@@ -247,192 +215,121 @@ long-term goals.
 
 ## Design Research and Key Insights
 
-    The research process happened in a more casual manner, since some of our friends fell
-    within our target audience. We got plenty of bad examples of how to track information
-    from the interviewees. We did not get enough about different methods people think are
-    good ways to track data. 
+The goal of our design research was to gain a deeper understanding of accountability in people’s drinking habits and the factors that influence or distract them from self-tracking. We ultimately decided to design for college graduate students who aim to be more aware of their drinking habits. To gain insights into their drinking experiences, we conducted several interviews with some friends who had a background with alcohol usage.
+
 
 ### Passive Drink Tracking
 
-    We found that people prefer tracking methods that require very low effort from the user.
-    In particular, many noted that as you get more intoxicated, it will be increasingly
-    difficult to remember to track. This effect will be particularly problematic if tracking
-    requires high effort. The main implication of this for our design was that efficiency of
-    tracking is far more important that accuracy, an important perspective that eliminated
-    many potential design options.
+We found that people prefer tracking methods that require little to no effort from the user. In particular, many noted that as you get more intoxicated, it becomes increasingly more difficult to remember to track. The main implication of this for our design was that efficiency of tracking is far more important than accuracy, an important perspective that eliminated many potential design options.
 
 ### Socially Motivated Tracking
 
-{/*
+
 <ProjectImagesBlock
     images={[
         {
-            src: imagePlaceholder400x400,
-            alt: "Every image requires alt text. This should describe the content of that image.",
-            caption: "This caption is applied to the image. Each can have a different caption.",
-        },
-        {
-            src: imagePlaceholder400x400,
-            alt: "Every image requires alt text. This should describe the content of that image.",
-            caption: "This caption is applied to the image. Each can have a different caption.",
-        },
+            src: celebrate,
+            alt: "The low-fidality design of shot glass and scanrio with friends.",
+            caption: "In the early low-fidality design stages, we focused heavily on the social aspect of drinking.",
+        }
     ]}
     direction={"row"}
-    width={8}
+    width={6}
     maxHeight={"400px"}
 >
-*/}
 
-    We found people are much more likely to track and be aware of their drinking habits when there
-    is social connection involved. In our design research participants frequently mentioned real 
-    life accountability with partners and friends as something they already used to manage habits,
-    and the ability to see friends usage was a very popular concept. For our design, this implied
-    that we should build in a core social element to help users achieve their goals. This manifested
-    in our design as the friends system and celebration board.
 
-{/*</ProjectImagesBlock>*/}
+We found that people are more motivated to track their drinking habits when there is social reinforcement. Current solutions, with an abundance of precise statistics, end up being more demotivating and negatively focused on failed goals. In our design research, participants frequently mentioned that they ask their friends to hold them accountable for their drinking habits. In social drinking contexts, the ability to monitor one’s drinking with friends was also a significant appeal. Based on this feedback, we focused on creating a core social environment that emphasizes success and personal achievements, while encouraging users to maintain their goals. This is manifested in our friends’ system and celebration board.
 
-### Tracking Exact Numbers Can Be Harmful
-    A very important finding in our design was that seeing too many precise statistics can be more
-    demotivating than it is helpful. Participants in our research noted that they often find
-    themselves in cycles of motivation and then depression when they feel like they have failed
-    to meet their goals. They said this was further emphasized by having these failure moments
-    highlighted by precise tracking. In our design, we addressed this issue by intentionally 
-    avoiding any type of feature that could cause this negative feeling associated with failure, 
-    and attempted to instead build something that would highlight successes to keep users motivated
-    to continue to work towards their goals.
+
+</ProjectImagesBlock>
+
+### Prioritizing Privacy
+Early on in our design research, we also learned that users who were interested in tracking their alcohol usage were concerned about an extra device collecting an excessive amount of personal information or one that was too invasive to use regularly. We cycled through various forms, including a BAC sweatband, a drink buddy, and a drink-sensing shot glass, until we settled on our automated Koozie and app. In our koozie, the only thing that’s being tracked is whether you’ve placed a drink in the koozie and how many standard drinks you have had per day, according to the simple weight sensor and dial. In-app, we prioritize privacy: the user’s progress, goals, and achievements are by default private unless intentionally shared.
+
 
 ## Iterative Design and Key Insights
 
-    The social aspect of this design is interesting and could be something to work on later,
-    as social pressure can have a high impact on future choices that are related to drinking.
-    We believe an app is a suitable form for this social aspect, which can be combined with
-    other forms of tracking to create a more comprehensive design. In our design research,
-    we found that many people are heavily disincentivized by tracking that requires too much
-    effort, and the critique we received also reinforced this. For this reason, we have
-    intentionally chosen not to further explore designs that rely heavily on manual tracking.
-    We learned that an app that helps visualize tracking data and integrates the social aspect
-    is a good idea, but we need to improve the method of actually performing this tracking.
+Our initial paper prototype had several issues brought up by heuristic evaluations with the visibility of system status and missing help resources. The usability tests revealed similar issues where users didn’t know how to interact with our koozie because there was a lack of documentation. The digital mockup also provided an opportunity to refine the app's aesthetics, which was the area that saw the most improvement during our final design iterations.
+As we iterated on our design, we found that our participants found the help documentation unclear, logging drink amounts was confusing, and we had competitive features that took away from our supportive and celebratory intention. To address these problems, we improved the introductory walkthrough and added additional help buttons to provide quick guidance throughout the app, improved the input system to make tracking more intuitive and accurate, and added the celebration board, which centers around personal progress and encourages a shared community experience. These changes, directly informed by participant feedback, played a pivotal role in evolving our design to effectively meet user needs.
+
+### Clarifying Help Documentation
+
+<ProjectImagesBlock
+    images={[
+        {
+            src: board_help,
+            alt: "Help on the celebration board page.",
+        },
+        {
+            src: friends_help,
+            alt: "Help on the friends page.",
+        },
+    ]}
+    direction={"row"}
+    width={6}
+    caption="Extra information on the Help Page."
+>
+
+  For our initial prototype, we included an intro tutorial on how to use the koozie, but it was all text and included a great deal of unnecessary information that was not directly important for setup. During our usability testing, one of the testers completely skipped these intro instructions because they were too long and wordy, and thus was confused using the app. Another tester did not understand the instructions and couldn’t figure out how to work the koozie. This was clearly a major problem. To fix it, we made the instructions much more intuitive by removing all information that was not absolutely necessary for understanding the use of the koozie. We also added pictures to remove any remaining confusion. We turned the vague tutorial into a clear walkthrough on how to connect the koozie to ensure users feel guided through the initial experience. Then, to explain the app use in more detail, we added a help button in the top corner of most screens that explained how to use the features currently available to the user on that screen.
+
+</ProjectImagesBlock>
 
 
-### Insights from Heuristic Evaluation
-
-{/*
 <ProjectImageBlock
     image={{
-        src: imagePlaceholder1200x800,
-        alt: "Every image requires alt text. This should describe the content of that image.",
+        src: usability,
+        alt: "Heuristic Evaluation feedback that the help and documentation is unclear.",
     }}
     caption={
-        "A good caption supports helps a reader understand what is important. " +
-        "It thus supports skimming and also provides an emphasis on key points of related text."
+        "In the heuristic Evaluation, we got some feedback that the documentation of koozie was unclear."
+    }
+    maxHeight={"400px"}
+>
+
+</ProjectImageBlock>
+
+### Standard Drink Amount
+
+<ProjectImagesBlock
+    images={[
+        {
+            src: one_drink,
+            alt: "On the \"Set Goal\" page, the meaning of \"Drink\" was unclear to user.",
+        }
+    ]}
+    direction={"row"}
+    caption={
+        "On the \"Set Goal\" page, the meaning of \"Drink\" was unclear to user."
     }
     width={6}
     maxHeight={"400px"}
 >
-*/}
 
-    The first heuristic that the evaluation showed we were failing to successfully meet was
-    **Visibility of System Status**. The heuristic evaluation revealed a lot of confusion with
-    how tracking with the koozie actually worked, with evaluators frequently bringing up concerns
-    with what is considered “one drink”, partial drinks, and lack of feedback on user consumption
-    in the moment. Also, the evaluators mentioned a lot of difficulty in understanding the
-    functionality of the statistics page. The second heuristic that the evaluation showed we were
-    failing to meet was Help and Documentation. Our prototype initially had essentially no
-    documentation to teach users how to use the design. This issue was also brought up with
-    evaluators mentioning that the rewards feature was very vague, and the goals feature
-    was difficult to fully understand without additional guidance. This issue can be partially
-    solved by addressing the first heuristic problem, by making the design more intuitive.
-    However, we also will add some level of tutorial/documentation to make it as easy as
-    possible for the users to use our design.
+   For our first prototype, the koozie featured a dial that allowed the user to select the type of drink, such as beer, wine, cocktails, etc. We thought that this would be a good way to standardize input among different types of beverages. However, many of our heuristic evaluators were confused as to how “one drink” would be calculated. They raised a point that a drink with a much higher ABV would not be equivalent to a drink with a low ABV. A participant shared that some beers are counted as 2 standard drinks due to their higher alcohol content. Some evaluators are also concerned about how partially empty drinks will be calculated, as it may be the case that people share drinks with their friends or refill their cups halfway. With these issues in mind, we changed the dial from selecting types of beverages to selecting the estimated number of standard drinks (decimals allowed). This way, it is both simpler to set the amount of alcohol you plan to drink and more accurate than the previous system.
 
 
-{/*</ProjectImageBlock>*/}
+</ProjectImagesBlock>
 
-### Insights from Usability Testing
+### Shifting From Competition to Celebration
 
-{/*<ProjectImagesBlock
-    images={[
-        {
-            src: imagePlaceholder300x600,
-            alt: "Every image requires alt text. This should describe the content of that image.",
-        },
-        {
-            src: imagePlaceholder300x600,
-            alt: "Every image requires alt text. This should describe the content of that image.",
-        },
-    ]}
-    direction={"row"}
-    caption={
-        "This caption is applied to the entire block of images. " +
-        "See that it spans across the area of the images."
-    }
-    width={6}
-    maxHeight={"400px"}
->*/}
-
-    We found 3 friends after a game night who were willing to be a part of our usability tests.
-    We provided each of the participants with some overall context “This koozie and app is to
-    be used by individuals who are trying to cut back on their alcohol consumption and hold
-    themselves accountable with friends” One of our team members acted as the computer,
-    moving around the paper pieces as if the tester was interacting directly with our app.
-    Another, acted as the observer by taking notes on the process. We made some changes from
-    session 1 to session 2 to prompt the user more for their thoughts as they were interacting
-    with the app. We also led with the app first instead of starting with the Koozie interaction
-    so that the user could gather more context. Some of the main issues that surfaced from our
-    usability testing included confusion on interpreting graphs on the progress page, how to
-    use all the elements of the koozie, how to delete posts in the celebration board and
-    creating impossible goals on accident. During the usability testing, all participants
-    commented that the koozie seemed somewhat redundant for individuals going to parties
-    and switching cups/cans/glasses a lot. The second major flaw we found is the bar graph
-    for alcohol consumption was unclear to the user and the participants wished to have a
-    clearer way for representing the alcohol consumption and the limit for them. We decided
-    to use a bar graph instead to represent their consumption. Furthermore, based on that
-    feedback, we decided to use different colors in these graph and interactions to inform
-    the user about their goals (“red” is exceeding consumption while “green” is within the
-    limits).
-
-
-{/*</ProjectImagesBlock>*/}
-
-### Insights from the overall process
-{/*
 <ProjectImagesBlock
     images={[
         {
-            src: imagePlaceholder600x300,
-            alt: "Every image requires alt text. This should describe the content of that image.",
-            caption: "These are two images stacked in a column. " +
-                     "Notice that the text on the left is not broken up by the images."
+            src: rewards,
+            alt: "The original rewards design in App",
         },
         {
-            src: imagePlaceholder600x300,
-            alt: "Every image requires alt text. This should describe the content of that image.",
-            caption: "These are two images stacked in a column. " +
-                     "Notice that the text on the left is not broken up by the images."
+            src: cele_board,
+            alt: "Celebration Board for the App",
         },
     ]}
-    direction={"column"}
-    width={6}
-    maxHeight={"200px"}
->*/}
+    direction={"row"}
+    caption="We shifted the design from Rewards system to Celebration Board."
+>
 
-    We learned through feedback on our design that physical rewards (gift cards, etc.) had a
-    lot of problems associated with them as a concept. We concluded that these physical rewards
-    would provide the wrong incentive for users to work towards their goal, and they also incentivize
-    cheating the system. We still wanted some type of reward system, to give users a sense of
-    accomplishment and pride when they achieved their goal. Instead of having a physical reward
-    system for the digital mockup, we changed to a “celebration board”, where users can create
-    their own achievements that they can look back on and share with their friends. This new
-    concept merges together the social and goal setting aspects of our design in a convenient and
-    engaging manner.
-    
-    During our usability testing, we found that some people experience confusion when using our prototype.
-    The prototype had no guidance on how to get started or how to connect the koozie, which makes it
-    difficult for first-time users. So, we added an introduction on how to use the koozie to address this.
-    In the digital mockup, the app opens with an introduction screen, followed by a simple walkthrough that
-    explains how to pair the koozie to the app and how to use the koozie for the most accurate tracking,
-    making users feel more confident and supported from the start.
+</ProjectImagesBlock>
 
 
-{/*</ProjectImagesBlock>*/}
+    In the very early stages of our design, we had a leaderboard that was meant to encourage playful competition among friends. However, some raised concerns that consistently ranking low could feel discouraging and shameful. We then explored a rewards system so users can benefit regardless of their performance, though this shifted the focus towards external incentives rather than the personal sense of accomplishment that we wanted to establish. In light of this, we transitioned the rewards system into a celebration board. This approach enables users to post and revisit personal milestones that are meaningful to them. This approach acknowledges that everyone’s goals are different and allows users to share achievements with friends, fostering encouragement and progress rather than comparison. 
+
