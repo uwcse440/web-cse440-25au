@@ -53,6 +53,7 @@ import imageTeamPerson3 from "public/images/projects/skinsync/team/matt.JPG";
 import imageTeamPerson4 from "public/images/projects/skinsync/team/riya.jpeg";
 import imageTeamPerson5 from "public/images/projects/skinsync/team/laura.jpeg";
 
+import imageTikTokAdd from "public/images/projects/skinsync/post/tiktokProductAdd.jpeg";
 import imageStartScreen from "public/images/projects/skinsync/post/Start.png";
 import imageLogin from "public/images/projects/skinsync/post/Login.png";
 import imageSurvey from "public/images/projects/skinsync/post/survey.png";
@@ -105,17 +106,26 @@ import imageRoutineTimeline from "public/images/projects/skinsync/post/Routline 
 
 ## Problem and Design Overview
 
-SkinSync is a mobile app which helps users create a skincare routine that works for them and also helps educate users who are new to skincare! This app features a timeline so that users can track their progress towards their skincare goals and create a routine list. Users will create an account and start a questionnaire to get detailed information on the users skin type and concerns. From there SkinSync can recommend products that are compatible with their skin type, goals, and clean ingredient list.
-
-### Problem
 People getting into skincare today are often overwhelmed by all the information and advertising when trying to figure out their skin type and skin concerns. There is not an easy way for them to self-diagnose their skin type or conditions without either seeing a dermatologist or testing countless products that often don't work, ultimately wasting time and money.
 
-### Our Solution
 SkinSync lets users monitor their skincare progress and discover products tailored to their skin needs or goals. Its social feature allows users to share and read product reviews from others, making it easier to choose what actually works and avoid wasting money.
 
+<ProjectImagesBlock
+    images={[
+        {
+            src: imageTikTokAdd,
+            alt: "TikTok Ad",
+            caption: "A screen of a TikTok video showcasing a product. This is usually a sponsorship promoting the product and does not help the user be inform about the skin care product."
+        }
+    ]}
+    direction={"row"}
+    maxHeight={"500px"}
+>
+</ProjectImagesBlock>
+    
 ## Design Walkthrough
 
-SkinSync supports two core user experience when using the app: understanding one’s skin and setting a personalized foundation, and building routines that users can maintain and refine over time.
+SkinSync supports two core user experiences that help people feel more confident and consistent in their skincare journey. First, the app helps users understand their skin and establish a personalized foundation through a guided survey that identifies skin type, concerns, and goals. Using this information, SkinSync recommends products that align with the user’s needs and ingredient preferences, reducing the guesswork that often leads to wasted time and money. Second, SkinSync helps users build and maintain routines they can refine over time by organizing products into customizable routines and pairing them with progress tracking. As users log use and observe changes through the timeline, they can better evaluate what is working and make informed adjustments. Together, these two experiences allow SkinSync to support both beginners and more experienced users by combining personalized guidance with long-term routine and progress management.
 
 ### Onboarding and Personalization
 
