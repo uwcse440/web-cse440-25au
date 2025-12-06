@@ -13,9 +13,22 @@ import designOverview from "public/images/projects/quackback/team/DesignOverview
 import workLife from "public/images/projects/quackback/team/WorkLife.png";
 import privacy from "public/images/projects/quackback/team/Privacy.png";
 import walkthrough from "public/images/projects/quackback/team/Walkthrough.png";
+import paper from "public/images/projects/quackback/team/paper.png";
+import logo from "public/images/projects/quackback/team/logo.png";
+
+import calendar from "public/images/projects/quackback/team/calendar.png";
+import dndHome from "public/images/projects/quackback/team/DNDHome.png";
+import settings from "public/images/projects/quackback/team/settings.png";
+import voiceInteraction from "public/images/projects/quackback/team/VoiceMemo.png";
+import addInteraction from "public/images/projects/quackback/team/addInteraction.png";
+import profile from "public/images/projects/quackback/team/profile.png";
+import profileDate from "public/images/projects/quackback/team/profileDate.png";
+import welcome1 from "public/images/projects/quackback/team/Welcome1.png";
+import welcome2 from "public/images/projects/quackback/team/Welcome2.png";
+import welcome3 from "public/images/projects/quackback/team/Welcome3.png";
+import addFriend from "public/images/projects/quackback/team/AddFriend.png";
 
 import task1_slide1 from "public/images/projects/quackback/post/task1_slide1.png";
-import task1_slide2 from "public/images/projects/quackback/post/task1_slide2.png";
 import task1_slide3 from "public/images/projects/quackback/post/task1_slide3.png";
 
 import task2_slide1 from "public/images/projects/quackback/post/task2_slide1.png";
@@ -27,7 +40,7 @@ import imagePlaceholder1200x800 from "public/images/projects/quackback/post/1200
 
 # QuackBack
 
-<ProjectSubtitle>Commitments to your friends shouldn't be muddled due to your busy life. QuackBack helps you remember to talk to your friends!</ProjectSubtitle>
+<ProjectSubtitle>Commitments to your friends should not be muddled due to your busy life. QuackBack helps you remember to talk to your friends!</ProjectSubtitle>
 
 ## Team
 
@@ -60,125 +73,159 @@ import imagePlaceholder1200x800 from "public/images/projects/quackback/post/1200
 ## Problem and Design Overview
 
 <ProjectImageBlock
-    image={{
-        src: designOverview,
-        alt: "Four mobile phone screens showcasing QuackBack app features: friends list homepage with search and interaction history, contact profile showing AI summary and past interactions, add new interaction options for voice memos, text entries, and images, and calendar view with import functionality for scheduling do-not-disturb periods."
+    image ={{
+        src: logo,
+        alt: "A hand drawn duck quacking."
     }}
     caption={
-        "QuackBack tracks your interactions, warns you when you’re neglecting a friend, and stores conversation starters. " +
-        "You can also block out busy times to take a break from the duck."
+        "QuackBack logo."
     }
     width={6}
-    maxHeight={"400px"}
 >
 
-Our design challenge focuses on supporting university students who want to maintain their 
-existing relationships but struggle to do so consistently. Many students face significant barriers 
-to social interaction, not because they lack the desire to connect, 
-but because they lack the mental energy or space required to initiate it. 
-Academic demands, work commitments, and mental-health pressures often 
+Many university students face significant barriers to maintaining their existing
+relationships, not because they lack the desire to connect, 
+but because they lack the mental energy or space required to initiate it.
+Academic demands, work commitments, and mental health struggles often 
 consume their cognitive bandwidth, making even small social efforts feel overwhelming.
+We aim to make sustaining meaningful relationships feel more manageable and 
+intuitive.
 
 Through our research, we found that one of the most effective ways to lower this 
-“activation barrier” is to provide students with timely cues— natural or intentionally 
+“activation barrier” is to provide students with timely cues—natural or intentionally 
 designed reminders that bring specific friends or social opportunities to mind. 
 These cues help externalize the effort of remembering, prompting students to reach 
-out when they otherwise might not have the capacity to generate ideas for interaction. 
-By integrating such reminders into daily routines, we aim to make sustaining meaningful 
-relationships feel more manageable, intuitive, and emotionally rewarding.
+out when they otherwise might not have the capacity to generate ideas for interaction.
+
+
 
 
 </ProjectImageBlock>
 
 ## Design Walkthrough
 
-QuackBack is a duck-shaped color-changing trinket and app that delivers contextual cues 
-to help students maintain relationships. The trinket will provide visual cues in the real world, 
-separated from the busy ecosystem that is our phones. More functionalities to encourage a balance 
-in social interaction for the user is then introduced in the app. It combines manual inputs from
-the user & the physical duck and limited automatic tracking to surface timely reminders, 
-such as photos or messages. Users can pause it when needed, set limits to avoid prolonged silence, 
-and sync busy hours for unobtrusive support.
-
-### Reaching Out to Friends
+QuackBack is a color-changing duck trinket paired with an app. Both components work together to deliver contextual signals 
+to help students maintain relationships. The trinket will provide visual and audio signals in the real world, 
+separated from the emotional burden that our phones can introduce. The app adds more functionalities to encourage a balance 
+in social interaction for the user. It combines manual logging of social interaction
+the user with limited automatic tracking to provide timely reminders to reach out to friends. Users can pause it when needed,
+set limits to avoid prolonged silence, and sync busy hours for unobtrusive support.
 
 <ProjectImagesBlock
     images={[
         {
-            src: task1_slide1,
-            alt: "This flow shows how to view a friend's profile through the homepage of the app by clicking the friend's name. You can see the friend's name, an AI summary of all your past interactions with this friend, uploaded photos, voice memos, and journal entries organized by date, and an edit button at the top right corner. When clicking the edit button, users can delete photos, voice memos, and journal entries if they'd like. A warning pop up asking if they want to delete the element will show up every time an element is deleted. There is also a search bar functionality to search for a specific friend from the homepage.",
+            src: dndHome,
+            alt: "Add new interaction screen to add a voice, text, or image interaction with links.",
         },
         {
-            src: task1_slide2,
-            alt: "Describes the flow to add a new friend by clicking the \"add friend\" icon in the homepage.",
+            src: addFriend,
+            alt: "Adding friend with a list of questions including their name and basic information.",
         },
         {
-            src: task1_slide3,
-            alt: "Describes how to add all the text entries, voice memos, and images to save a particular interaction with friend(s), and shows that the friend's profile page will be updated accordingly with all the new information.",
+            src: profile,
+            alt: "Recording screen with a duck saying duck is ready to listen with a start recording button.",
         },
+        {
+            src: addInteraction,
+            alt: "Profile screen of Johnny Depp with images and interactions from 11.11.111 date header.",
+        },
+        {
+            src: settings,
+            alt: "Settings screen with privacy settings button and max quiet mode duration set to 2 hours.",
+        }
     ]}
-    direction={"column"}
+    direction={"row"}
     caption={
-        "Shows all the work flows of how the task Reaching out to Friends is achieved by the user."
+        "Various features of the app."
     }
-    width={8}
+    width={100}
+    maxHeight={"400px"}
+>
+</ProjectImagesBlock>
+
+
+### Reaching out to friends
+
+<ProjectImagesBlock
+    images={[
+        {
+            src: voiceInteraction,
+            alt: "Recording screen with a duck saying duck is ready to listen with a start recording button.",
+        },
+        {
+            src: profile,
+            alt: "Profile screen of Johnny Depp with images and interactions from 11.11.111 date header.",
+        }
+    ]}
+    direction={"row"}
+    caption={
+        "Users log interaction information for each friend which can become cues in the future."
+    }
+    width={6}
     maxHeight={"400px"}
 >
 
 QuackBack helps students reconnect by providing subtle, timely cues. 
-When you haven’t interacted with a friend for a while, the duck-shaped 
+When users have not interacted with a friend for a while, the duck-shaped 
 trinket glows red and quacks a couple times, signaling that it might be a good moment to check in. 
-Through the companion app, you can open that friend’s profile to review past interaction 
-logs—voice notes, photos, or text entries you’ve saved—to remind yourself of shared moments.
+Through the companion app, users can open that friend’s profile to review past interaction 
+logs—voice notes, photos, or text entries—to remind themselves of shared moments.
 These can serve as conversation starters.
 
-After you hang out or catch up, you can easily log the interaction with a quick voice note, 
-text entry, or image upload. Note that these interactions aren't just restricted to in-person
+After users hang out or catch up, they can easily log the interaction with a quick voice note, 
+text entry, or image upload; the variety of mediums seek to make interaction tracking low-stress
+and accessible. Note that these interactions are not just restricted to in-person
 interactions, but online as well, if the user allows the app to access call history and text
-notification history. This builds a personal history of your relationships that 
-QuackBack can draw from in the future. Once you've reconnected, the duck pulses green, 
-reflecting a healthy, active connection and reinforcing the positive effort you’ve made.
+notification history. This builds a personal history of the user's relationships that 
+QuackBack can draw from in the future. After reconnecting, the duck pulses green, 
+reflecting a healthy, active connection and reinforcing the positive effort the user has made.
 
 </ProjectImagesBlock>
 
-### Balancing Social Goals and Mental Health
+### Balancing social goals and mental health
 
 <ProjectImagesBlock
     images={[
         {
-            src: task2_slide1,
-            alt: "Different screens of the UI to introduce how we make it easier for the user to log interactions and utilize the calendar feature to make sure the duck and app don't disturb them when they don't want to be disturbed. Particularly, the import calendar feature.",
+            src: dndHome,
+            alt: "Home screen with list of friend sand a do not disturb logo toggled on."
         },
         {
-            src: task2_slide2,
-            alt: "Describes the flow to delete a friend, maintaining mental health, and protecting the user's privacy.",
+            src: calendar,
+            alt: "Calendar screen with two blocks imported, CSE lecture and study group."
+        },
+        {
+            src: settings,
+            alt: "Settings screen with privacy settings button and max quiet mode duration set to 2 hours."
         }
     ]}
-    direction={"column"}
+    direction={"row"}
     caption={
-        "Shows all the work flows of how the task Balancing social goals and mental health is achieved by the user."
+        "Customizable do not disturb settings allow users to take time for themselves whenever they need it."
     }
-    width={8}
+    width={6}
     maxHeight={"400px"}
 >
 
 QuackBack supports students in maintaining relationships without overwhelming 
-their mental bandwidth. Using the calendar feature, you can import or add your 
-schedule to set dedicated “do not disturb” periods. During these times, the duck 
-won’t glow red or quack, ensuring it never adds pressure when you’re busy or drained.
+their mental bandwidth. Using the calendar feature, users can import or add their 
+schedule to set dedicated “quiet mode” periods. During these times, the duck 
+will not glow red or quack, ensuring it never adds pressure when users are busy or drained.
 
-If you need additional quiet time beyond what’s on your calendar, the app allows 
-you to extend your do-not-disturb period at any moment. You can adjust this through 
-the DND button or set a maximum DND duration in the settings. This ensures QuackBack 
-respects your boundaries while still helping you stay connected on your own terms.
+If users need additional quiet time beyond what is on their calendar, the app allows 
+them to toggle quiet mode at any moment. Users can also tap the duck to signal it
+to enter quiet mode when they don't have the app handy. While a user is in quiet mode,
+the app will enforce the maximum quiet mode duration that the user configured in
+settings. This ensures QuackBack respects user boundaries while still helping them stay
+connected on their own terms.
 
 </ProjectImagesBlock>
 
 ## Design Research and Key Insights
 
-Our participants were University of Washington students who often felt they weren’t 
+Our participants were University of Washington students who often felt they were not 
 meeting their own social expectations, such as common forgetfulness or not reaching out 
-as much as they’d like, and who all identified at least one close friend they genuinely 
+as much as they would like, and who all identified at least one close friend they genuinely 
 cared about.
 
 To understand their interaction patterns and barriers, we structured our research 
@@ -189,62 +236,68 @@ reflect on why they struggle to engage with their existing circles. Together, th
 revealed key factors driving dissatisfaction and clarified where support is most needed.
 
 
-### Comfort and Emotional Well-Being Shape Social Engagement
+### Comfort and emotional well-being shape social engagement
 
-For many students, emotional safety and personal well-being strongly influence when 
-and how they socialize, even with close friends. Participants shared that they only 
-engage in social activities when the environment feels comfortable, familiar, or 
-aligned with mutual interests. Individuals who appear overly opinionated, judgmental, 
-or intense discourage them from initiating conversation. Environments that are crowded, 
-high-energy, or sophisticated can trigger anxiety, making them less likely to branch out 
-or attend events altogether unless accompanied by a friend they are comfortable with.
+For many students, emotional well-being strongly influence when and how they socialize,
+even with close friends. Participants shared that they only engage in social activities 
+when it doesn't pose a threat to their mental health. If they feel tired or mentally unwell, 
+they intentionally withdraw from most social interaction until they regain stability. 
+This highlights how maintaining well-being is essential for enabling consistent, meaningful social interaction.
 
-They also prioritize physical and emotional health above social obligations. 
-Sleep, meals, and personal routines take precedence, and if they feel tired or 
-mentally unwell, they intentionally withdraw from most social interaction until 
-they regain stability. This highlights how maintaining well-being is essential for 
-enabling consistent, meaningful social interaction.
+As a result, we knew that QuackBack would have to find the balance between being overly
+pushy with a user's social life and not being noticeable enough. Even though we want to 
+push users out of their comfort zones a little bit to maintain their existing relationships
+if necessary, we don’t want to cross these boundaries that they are absolutely unwilling
+to give up, i.e. forcing users to neglect their mental well-being.
+As a result, our design avoids using overly serious consequences to incentivize the user into socialization; 
+instead, we gently nudge them towards interaction by helping them overcome the initial activation barrier.
 
-### Obligations Override Social Intentions
+### Obligations override social intentions
+
+College students consistently prioritize obligations such as academics and career responsibilities over
+their physical and emotional well-being over choosing to socialize.
+When they feel stressed, short on time, emotionally drained, 
+anxious, or tired, they intentionally withdraw from interactions. Two of our interview participants
+highlighted this pattern: P1 and P2 both juggle demanding academic workloads that have
+gradually led to increasing social isolation, and their pursuit of career goals have
+diminished the bandwidth available for interaction. These examples emphasize that students 
+have firm personal limits they are unwilling to compromise.
+
+This insight inspired us to allow users to set specific "quiet mode" durations in which they do not
+receive visual or audio cues to interaction so that they can focus on tasks like studying or working.
+To facilitate coordinating their schedules with QuackBack, students are able to import
+their calendars into the app, causing the duck to enter "quiet mode" during busy times without
+extra prompting.
+
+
+
+### Lack of reason to reach out
+
 
 <ProjectImageBlock
     image={{
-            src: workLife,
-            alt: "Four mobile phone screens showcasing QuackBack app features: friends list homepage with search and interaction history, contact profile showing AI summary and past interactions, add new interaction options for voice memos, text entries, and images, and calendar view with import functionality for scheduling do-not-disturb periods."
+            src: profileDate,
+            alt: "Profile screen with specific date 11.10.1111 with a text and incldued image."
         }}
         caption={
-            "Balancing is hard!"
+            "View specific interactions per friend for each date."
         }
         width={6}
         maxHeight={"400px"}
 >
 
-College students consistently prioritize academics, career responsibilities, 
-and their physical and emotional well-being before choosing to socialize. 
-When they feel stressed, short on time, emotionally drained, 
-anxious, or tired, they intentionally withdraw from interactions. This makes spontaneous 
-or casual connections difficult, especially in environments that feel overwhelming, 
-unfamiliar, or unsafe.
 
-Two of our interview participants highlighted this pattern: P1 places mental health 
-above all social activity, even with close friends, while P2’s demanding academic 
-load has led to increasing social isolation. These examples emphasize that students 
-have firm personal limits they are unwilling to compromise.
-
-
-</ProjectImageBlock>
-
-### Lack of reason to reach out
 
 Throughout our design research investigating the interaction patterns and barriers
 of college students, we found that many students would only initiate social interactions
-with their friends over a common ground. Whether that'd be an event, shared interest,
+with their friends over a common ground. Whether that be an event, shared interest,
 course work, career goals, etc., many students need a common ground and cues to get
 started talking. Some cues often relate to these shared qualities between friends
 such as instagram reels that remind them of a friend, or an experience that reminds them
 of their friend(s). These often serve the basis for reaching out to their friend(s) and
 maintaining social connection.
 
+</ProjectImageBlock>
 
 ## Iterative Design and Key Insights
 
@@ -258,7 +311,23 @@ confusion across many primary features. These insights guided us to strengthen v
 improve navigation, add walkthroughs, and refine workflows shaping a more intuitive, supportive 
 user experience.
 
-### Lack of Clarity and User Control Hindered Navigation
+<ProjectImageBlock
+    image={
+        {
+            src: paper,
+            alt: "Layout of hand drawn slides and photos of ducks in various colors.",
+        }}
+    caption={
+        "Initial paper prototype."
+    }
+    width={100}
+    maxHeight={"400px"}
+>
+</ProjectImageBlock>
+
+
+
+### Lack of clarity and user control hindered navigation
 
 The majority of our heuristic evaluation feedback centered on issues of user control, freedom, 
 and overall clarity. Even though our prototype incorporated familiar visual signals, many 
@@ -270,18 +339,28 @@ widely misunderstood as most participants were unsure of what it was for or how 
 In response, we incorporated clearer visual cues, more intuitive navigation elements, and 
 additional guidance to make key tasks and features easier to understand.
 
-### Key Features Lacked Usability and Clear Affordances
+### Key features lacked  usability and clear affordances
 
-<ProjectImageBlock
-    image={
+<ProjectImagesBlock
+    images={[
         {
-            src: walkthrough,
-            alt: "Every image requires alt text. This should describe the content of that image.",
-        }}
+            src: welcome1,
+            alt: "Home screen with list of friend sand a do not disturb logo toggled on."
+        },
+        {
+            src: welcome2,
+            alt: "Calendar screen with two blocks imported, CSE lecture and study group."
+        },
+        {
+            src: welcome3,
+            alt: "Settings screen with privacy settings button and max quiet mode duration set to 2 hours."
+        }
+    ]}
+    direction={"row"}
     caption={
-        "Added Walkthrough Animation"
+        "Added walkthrough screens guide users through the app purpose."
     }
-    width={6}
+    width={7}
     maxHeight={"400px"}
 >
 
@@ -297,16 +376,16 @@ This pattern appeared across nearly all major features. In response, we refined
 the prototype by strengthening visual cues, adding guided walkthroughs, and
 simplifying or enhancing workflows to better support users as they navigate essential tasks.
 
-</ProjectImageBlock>
+</ProjectImagesBlock>
 
-### Privacy and Controlled Access Are Essential
+### Privacy and controlled access are essential
 <ProjectImageBlock
     image={{
         src: privacy,
-        alt: "Every image requires alt text. This should describe the content of that image.",
+        alt: "An image of a phone screen with a title of Privacy Settings and options to change automatic detection per friend.",
     }}
     caption={
-        "Privacy Settings Page"
+        "Privacy settings page."
     }
     width={6}
     maxHeight={"400px"}
@@ -318,7 +397,7 @@ Even helpful features, like automatic detection of interactions, can feel invasi
 consented to or easily adjustable. Transparent permissions and the ability to opt in or out at 
 any time is crucial. However, that quality of our design was not clear to all our participants,
 leading to recurring feedback on concerns despite iterating the design. To address this, we
-incorporated walk throughs and added more cues (text) to encourage visibility of this characteristic.
+incorporated walkthroughs and added more descriptions to encourage visibility of this characteristic.
 
 </ProjectImageBlock>
 
