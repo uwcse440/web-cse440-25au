@@ -307,7 +307,7 @@ export const calendarData: {
         verifyCalendarDate("2025-11-07", "Fri"),
         verifyCalendarDate("2025-11-14", "Fri"),
         verifyCalendarDate("2025-11-21", "Fri"),
-        verifyCalendarDate("2025-12-05", "Fri"),
+        // verifyCalendarDate("2025-12-05", "Fri"),
       ],
       timeAndLocations: TIME_AND_LOCATIONS_SECTION,
       title: "Studio",

@@ -56,7 +56,7 @@ RewriteRule ^projects/foodpassport[/]?$ projects/foodpassport.html
 RewriteRule ^projects/goalkeeper[/]?$ projects/goalkeeper.html
 RewriteRule ^projects/netizen[/]?$ projects/netizen.html
 RewriteRule ^projects/nextleap[/]?$ projects/nextleap.html
-RewriteRule ^projects/personalizehealthycare[/]?$ projects/personalizehealthycare.html
+RewriteRule ^projects/skinsync[/]?$ projects/skinsync.html
 RewriteRule ^projects/pomopet[/]?$ projects/pomopet.html
 RewriteRule ^projects/quackback[/]?$ projects/quackback.html
 RewriteRule ^projects/reform[/]?$ projects/reform.html
