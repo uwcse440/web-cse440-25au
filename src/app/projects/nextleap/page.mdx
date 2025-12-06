@@ -71,7 +71,7 @@ import one from "public/images/projects/nextLeap/post/1.png";
 
 # Next Leap
 
-<ProjectSubtitle>Optional Subtitle</ProjectSubtitle>
+<ProjectSubtitle>Move with clarity. Train with confidence.</ProjectSubtitle>
 
 ## Team
 
@@ -288,14 +288,9 @@ This insight shaped our decision to design a dedicated View Progress experience 
 
 ## Iterative Design and Key Insights
 
-Our design evolved through four major iterations, each building on the clarity and feedback from the last. We began with storyboarding, where we sketched out broad concepts and explored multiple directions, including a Smart Mirror, a mobile app, and a gamified platform on the Nintendo Switch. These early drawings helped us compare how each concept supported dancers’ learning needs, ultimately leading us to choose the Smart Mirror because it best mirrored real studio practice and allowed for embodied interaction.
+Our design iterations highlighted three core breakdowns in how dancers interact with the system: navigating long lists created unnecessary cognitive load, unclear skill progression introduced safety risks, and lack of mid-attempt visual support disrupted learning flow. These issues surfaced through heuristic evaluation and usability testing, not as process steps, but as indicators of where our design failed to support real dance learning. Addressing them led to targeted improvements, including streamlined navigation, clear prerequisite guidance, and real-time visual support. These all collectively shaped a system that better mirrors studio-based instruction and reduces friction during practice.
 
-Next, we created our initial paper prototype, laying out the core screens for selecting skills, viewing tutorials, configuring sessions, and receiving feedback. Running this version through heuristic evaluations highlighted several issues, such as unclear navigation paths, overly crowded screens, and redundant elements that made interactions feel less intuitive.
-
-Using these findings, we developed a final paper prototype with a more streamlined task flow, clearer labeling, prerequisite safety checks, and refined feedback screens. This version reflected a much more coherent learning experience and resolved many of the usability problems identified earlier. Finally, we translated the design into a digital mockup, refining visual hierarchy, spacing, button placement, and interaction pacing to better fit a digital interface.
-
-
-### Lack of Efficient Navigation
+### Improving Navigation to Reduce Cognitive Load
 
 <ProjectImageBlock
     image={{
@@ -309,13 +304,13 @@ Using these findings, we developed a final paper prototype with a more streamlin
     maxHeight={"400px"}
 >
 
-In our original prototype, users had to read and scroll through long lists to find a specific skill or choreo. We wanted to provide easier navigation options in addition to our current navigation so users don’t have to go through all the possible options for “Skills” and “Dance Styles” before finding the one they want.
+Our heuristic evaluation made it clear that the original design placed unnecessary cognitive load on dancers. As seen in the paper prototype, users had to scroll through long lists of dance styles and skills, and testers noted that finding a specific skill required “a lot of reading and scanning,” which slowed down practice and made the interface feel overwhelming. This directly violated Recognition Over Recall, as users needed to remember where items were located rather than easily identifying them.
 
-To address the feedback about the difficulty of navigating long lists of skills and dance styles, we updated the interface by adding a search bar to both the “Skills” and “Dance Styles” screens. Users can now quickly find skills using either typed search or voice-activated search through the remote, reducing the need for extensive scrolling. We also introduced a favorites feature that allows dancers to mark frequently used styles, making them immediately accessible from the top of the list. Together, these changes significantly reduce navigation effort and support faster, more intuitive task selection. 
+What made the design better was realizing that dancers needed multiple lightweight entry points into the content, and not just lists. In response, we introduced a search bar, voice search, and a favorites section. These additions transformed navigation from a time-consuming scan to a fast, intuitive lookup. This insight significantly improved usability by reducing memory load, eliminating friction during practice, and allowing dancers to move through the system with minimal effort.
 
 </ProjectImageBlock>
 
-### Safe Skill Progression Prerequisites are Unclear
+### Clarifying Skill Progression to Support Safe Learning
 
 <ProjectImagesBlock
     images={[
@@ -334,17 +329,13 @@ To address the feedback about the difficulty of navigating long lists of skills 
     maxHeight={"400px"}
 >
 
+The need for prerequisite clarity emerged when we saw how the paper prototype let users select advanced skills without any guidance. During evaluation, reviewers raised safety concerns, noting that “high-level skills appeared equally accessible to elementary skills,” which did not reflect how real dance instruction scaffolds learning. Beginners would have no way of knowing whether they were ready to attempt a movement safely. This was not a process insight, but a fundamental design flaw: our interface failed to communicate progression, readiness, and risk.
 
-
-
-In our previous iteration of the Next Leap Reflect Smart Mirror dancers wouldn’t be prevented from attempting advanced skills without proper foundation. This raised important concerns about dancers’ safety and proper skill progression. We asked ourselves how the system would help users understand what they need to learn first, especially for beginner dancers. We wanted a system that would allow for this without locking them out or making the process to rigid for more advanced dancers.
- 
-To address these concerns we introduced a prerequisite pop-up window which guides users towards safe and logical progression without restricting their freedom. Instead of blocking skills, the mirror now educate users about necessary foundational skills and offers direct navigation links directly to the learning paths for those prerequisite skills. This change balances users education on safe progression with their freedom of attempting more complex skills. This change creates a supportive and safety-minded experience aligned with real dance training.
-
+Our design improved when we reframed this as a learning-support problem, not a blocking problem. Instead of restricting access, we introduced a prerequisite pop-up that lists foundational skills and links dancers to those tutorials. This addition shifted our system toward the logic of actual studio learning, where instructors help dancers advance safely while still giving them autonomy. This insight strengthened the instructional quality and trustworthiness of the system.
 
 </ProjectImagesBlock>
 
-### Dancers Might Forget a Skill Mid-Attempt
+### Adding Real-Time Visual Support to Maintain Learning Flow
 
 
 <ProjectImagesBlock
@@ -360,9 +351,8 @@ To address these concerns we introduced a prerequisite pop-up window which guide
     maxHeight={"200px"}
 >
 
-In our original design for the Next Leap Reflect if dancers forgot what the skill or choreography looked like while performing it, they had no easy way to check without exiting the attempt workflow entirely. This was especially problematic for complex skills or for beginner dancers who rely heavily on visual references. We wanted quick access to the tutorial during attempts without interrupting their workflow similar to how dance instructors tend to perform skills alongside beginner dancers. 
+Usability testing revealed a critical breakdown: once dancers began attempting a skill, many “forgot what the choreography looked like” and had “no way to re-reference the tutorial”. This wasn’t merely a navigation issue, as it exposed a deeper insight about how learning unfolds. Dancing requires visual memory, and losing that reference mid-attempt disrupted flow, increased hesitation, and led to incorrect movements.
 
-To address recall issues related to remembering skills we added an optional picture-in-picture tutorial window to support dancers who need visual reminders while practicing. The “on/off” toggle ensures the screen stays flexible. Users who prefer a clean layout and would like to test their knowledge without the added visual cue can turn this feature off easily, while those who want ongoing reference can keep it visible. This directly addresses the need for mid-practice support without disrupting the attempt progress. 
-
+This insight led to one of the most impactful improvements in our design: adding a toggleable picture-in-picture tutorial window. The revised prototype shows how dancers can keep a small moving reference visible or hide it for a clean interface. This flexibility mirrors real studio environments, where instructors often demonstrate movements alongside dancers. It transformed attempt mode from a “recording state” into a true learning state, offering continuous support without interrupting practice.
 
 </ProjectImagesBlock>
