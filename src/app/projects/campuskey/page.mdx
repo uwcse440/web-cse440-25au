@@ -52,7 +52,7 @@ import aditiSrinivasan from "public/images/projects/campuskey/team/aditi_sriniva
 import janviJagtap from "public/images/projects/campuskey/team/janvi_jagtap.jpeg";
 import ambikaShastry from "public/images/projects/campuskey/team/ambika_shastry.png";
 
-import introImage from "public/images/projects/campuskey/post/intro_image.jpg";
+import hookImage from "public/images/projects/campuskey/post/hook_image.jpg";
 import profilePage from "public/images/projects/campuskey/post/profile_page.png";
 import registerFriendsPage from "public/images/projects/campuskey/post/register_friends_page.png";
 import registerServicesPage from "public/images/projects/campuskey/post/register_services_page.png";
@@ -126,10 +126,10 @@ import updatedUpdate from "public/images/projects/campuskey/post/updated_update.
 
 <ProjectImageBlock
     image={{
-        src: introImage,
-        alt: "Image of people with CampusKey keychain and mobile app."
+        src: hookImage,
+        alt: "Image of person using CampusKey keychain in a campus."
     }}
-    caption={"CampusKey keychain and mobile app."}
+    caption={"The CampusKey keychain can be used anywhere and anytime."}
     width={6}
     maxHeight={"400px"}
 >
@@ -178,17 +178,17 @@ activated.
     images={[
         {
             src: profilePage,
-            alt: "Every image requires alt text. This should describe the content of that image.",
+            alt: "Image of profile page of the website with health, profile, and user information.",
             caption: "Profile Setup"
         },
         {
             src: registerFriendsPage,
-            alt: "Every image requires alt text. This should describe the content of that image.",
+            alt: "Image of registering friends page with current friends, recommended friends, and their contact info.",
             caption: "Registration of Trusted Friends"
         },
         {
             src: registerServicesPage,
-            alt: "Every image requires alt text. This should describe the content of that image.",
+            alt: "Image of emergency services page with permissions such as location sharing, health information, etc.",
             caption: "Emergency Services Permissions"
         },
     ]}
@@ -213,7 +213,7 @@ User Activation:
         },
         {
             src: appFriends,
-            alt: "Every image requires alt text. This should describe the content of that image.",
+            alt: "Mobile app image that shows where to click on home page to contact trusted friends for support.",
             caption: "Alternatively, the user can press the Friends button within the CampusKey mobile app."
         },
     ]}
@@ -227,22 +227,22 @@ System and Friend Response:
     images={[
         {
             src: friendMessage,
-            alt: "Every image requires alt text. This should describe the content of that image.",
+            alt: "Image of text message to trusted friend that the user needs support.",
             caption: "The application immediately notifies all the registered friends within a specified radius via a text message containing a hyperlink."
         },
         {
             src: friendLink,
-            alt: "Every image requires alt text. This should describe the content of that image.",
+            alt: "Image of page where trusted friends can see other friends' locations and the user's location.",
             caption: "Upon clicking the link, it opens a response view that displays the user's live location and the status of the request."
         },
         {
             src: friendLinkAccept,
-            alt: "Every image requires alt text. This should describe the content of that image.",
+            alt: "Same image of the page of locations but indicating that friend can accept or deny to support user.",
             caption: "The friend may Accept or Deny the request to assist. The friend is able to view location indicators of the other trusted friends in the vicinity."
         },
         {
             src: friendUpdate,
-            alt: "Every image requires alt text. This should describe the content of that image.",
+            alt: "Text images to friend about status updates on user's request for support and whether other friends have accepted / denied.",
             caption: "Regardless of whether a friend accepts or denies the request, they continue to receive updates through texts and within the app about the status of the request, including which friends have accepted and when the situation has been marked as resolved."
         },
     ]}
@@ -282,12 +282,12 @@ User Activation:
     images={[
         {
             src: keychainServices,
-            alt: "Every image requires alt text. This should describe the content of that image.",
+            alt: "Keychain that indicates to first switch safety activation and then click on the emergency services button.",
             caption: "The user flips the safety activation lever to turn the device on." + "Then the user presses the clearly marked Emergency Services button on the keychain."
         },
         {
             src: appServices,
-            alt: "Every image requires alt text. This should describe the content of that image.",
+            alt: "Mobile app that indicates where to click on emergency services button on the main home page.",
             caption: "Alternatively, the user can press the Emergency Services button within the CampusKey mobile app."
         },
     ]}
@@ -309,12 +309,12 @@ services vehicles as they would when using the friends function; however, they w
     images={[
         {
             src: userServicesMessage,
-            alt: "Every image requires alt text. This should describe the content of that image.",
+            alt: "Text messages to the user indicating that emergency services are on their way.",
             caption: "Confirmation text is sent to user."
         },
         {
             src: registerServicesPage,
-            alt: "Every image requires alt text. This should describe the content of that image.",
+            alt: "Register services page with permissions to send to emergency services, such as location, health info, emergency contacts, etc.",
             caption: "Only information enabled in app permissions is shared to emergency services."
         },
     ]}
@@ -350,17 +350,6 @@ reassuring like the physical presence.
 
 ### The "Brain Freeze" Effect Demands Guided Response Strategies
 
-<ProjectImageBlock
-    image={{
-            src: initialDesignNav,
-            alt: "Every image requires alt text. This should describe the content of that image.",
-            caption: "Initial design prototype where users are shown nearest open stores and map to navigate there.",
-        }}
-    direction={"row"}
-    width={8}
-    maxHeight={"400px"}
->
-
 A major finding was that the internal response to an unsafe situation is often marked 
 by disorientation and the inability to take immediate, actionable steps. Users 
 articulated that the source of feeling unsafe did not come from the danger itself, but 
@@ -375,6 +364,15 @@ drove the need for a solution that provided immediate, easy-to-follow, customize
 guidance and connection options-like calling friends or 911-integrated into our keychain 
 and app designs.
 
+<ProjectImageBlock
+    image={{
+            src: initialDesignNav,
+            alt: "Images of 3 prototype phone screens where users are shown directions to nearest open stores.",
+            caption: "Initial design prototype where users are shown nearest open stores and map to navigate there.",
+        }}
+    width={12}
+    maxHeight={"400px"}
+>
 </ProjectImageBlock>
 
 ### Safety Sentiment is Deeply Influenced by Prior Knowledge and Experience
@@ -411,11 +409,11 @@ and usability to help us move from complex to simpler, more reliable interaction
     images={[
         {
         src: initialKeychain,
-        alt: "Every image requires alt text. This should describe the content of that image.",
+        alt: "Before image of keychain prototype with 1 button, no activation lever, and pattern clicking.",
         },
         {
         src: keychain,
-        alt: "Every image requires alt text. This should describe the content of that image.",
+        alt: "After image of keychain prototype with 2 buttons, activation lever, and no pattern clicking.",
         },
     ]}
     caption={
@@ -444,11 +442,11 @@ chances of accidental activation.
     images={[
         {
             src: initialProfile,
-            alt: "Every image requires alt text. This should describe the content of that image.",
+            alt: "Before image of profile page with only patterns, friends, and emergency services.",
         },
         {
             src: profilePage,
-            alt: "Every image requires alt text. This should describe the content of that image.",
+            alt: "After image of profile page with health records, no patterns, and separate screens for friends and emergency services.",
         },
     ]}
     direction={"row"}
@@ -479,12 +477,12 @@ effective support.
     images={[
         {
             src: initialUpdate,
-            alt: "Every image requires alt text. This should describe the content of that image.",
+            alt: "Before image where user's keychain buzzes and mobile phone screen of friend that shows user's location.",
             caption: "Initially, only the user's keychain would buzz when their friend accepted or were nearby."
         },
         {
             src: updatedUpdate,
-            alt: "Every image requires alt text. This should describe the content of that image.",
+            alt: "After image of status update text messages and mobile phone screen of friend and user's locations to both user and friend.",
             caption: "Now, all of the trusted friends and the user can see where their friend (who accepted) is."
         },
     ]}
