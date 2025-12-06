@@ -69,7 +69,7 @@ import imagePlaceholder400x400 from "public/images/projects/template/post/400x40
 import imagePlaceholder600x300 from "public/images/projects/template/post/600x300.png";
 import one from "public/images/projects/nextLeap/post/1.png";
 
-# Next Leap
+# NextLeap
 
 <ProjectSubtitle>Move with clarity. Train with confidence.</ProjectSubtitle>
 
@@ -102,6 +102,7 @@ import one from "public/images/projects/nextLeap/post/1.png";
     },
 ]} />
 
+
 ## Problem and Design Overview
 
 {/* A ProjectImageBlock displays text with an associated image.
@@ -132,19 +133,16 @@ import one from "public/images/projects/nextLeap/post/1.png";
     maxHeight={"400px"}
 >
 
-Many dancers, athletes, and performers struggle to develop skills on their own because they lack the structured guidance, real-time feedback, and emotional support they typically get in a studio. Without clear cues about alignment, readiness, or progress, practicing new tricks often feels confusing or risky. This can lead to frustration, inconsistent improvement, and hesitation to try harder skills, especially for users with different bodies, confidence levels, or learning needs.
+Many dancers struggle to develop new skills independently because they lack the structured guidance and real-time feedback they receive in a studio. Without cues about alignment, readiness, or progress, self-practice can feel confusing or unsafe, leading to frustration, inconsistent improvement, and hesitation when approaching harder skills.
 
-To address these gaps, we designed Next Leap, a smart mirror that blends familiar studio habits with intelligent, personalized support. Because dancers naturally rely on mirrors, this surface becomes an ideal place to layer tutorials, recorded practice sessions, and adaptive feedback. The mirror helps users learn new skills, understand their progress, and receive the kind of feedback is personalized, while also supporting the emotional side of practice through encouraging reminders.
-
-By integrating real-time guidance with positive reinforcement, Next Leap bridges the gap between self-practice and studio instruction helping dancers build confidence, resilience, and mastery through reflective feedback-driven learning. 
+NextLeap introduces a smart mirror that brings studio-style support into at-home practice. By combining step-by-step tutorials, adaptive feedback, and progress tracking directly on the mirror surface, the system helps dancers learn skills with clearer guidance and safer progression. The design blends familiar studio habits with personalized, real-time support, making independent practice more intuitive, confidence-building, and motivating.
 
 </ProjectImageBlock>
 
+
 ## Design Walkthrough
 
-We focused on two important focus tasks to design our solution on which includes "improving movement and form based on personalized feedback" and "staying motivated and overcoming mental blocks". The first focus task, improving movement and form based on personalized feedback, addresses a core challenge dancers face when practicing alone: the inability to recognize alignment errors, understand readiness, or track progress in real time. Without structured guidance, skill development becomes guesswork, increasing the risk of injury and slowing improvement. Personalized feedback helps users self-correct with precision, build safer technique, and gain clarity on how their body is moving, all of which are essential for progressing confidently outside a studio environment.
-
-The second focus task, staying motivated and overcoming mental blocks, supports the emotional side of learning that often goes unnoticed in current tools. Independent practice can feel discouraging, especially when progress feels slow or users doubt their ability to improve. Motivational prompts, small wins, and reflection tools help sustain confidence and persistence during challenging moments. By reinforcing effort, celebrating improvements, and offering emotional support, this task ensures users remain engaged and resilient as they continue developing their skills over time.
+Next Leap focuses on two key tasks that support both the technical and emotional needs of dancers practicing on their own: improving movement and form through personalized feedback, and staying motivated while managing mental blocks. These tasks were chosen because they represent the most common challenges dancers face during independent practice. Together, they demonstrate how the system guides users from selecting a skill to completing a full learning session.
 
 
 ### Improve Movement and Form Based on Personalized Feedback
@@ -168,11 +166,13 @@ The second focus task, staying motivated and overcoming mental blocks, supports 
     maxHeight={"400px"}
 >
 
-Improving movement and form based on personalized feedback is essential for helping dancers understand their technique without relying on an in-person instructor. The system guides users through selecting a dance style, skill category, and specific movement they want to learn, ensuring they enter practice with clarity and structure. Once they begin, the mirror provides a step-by-step tutorial that demonstrates correct technique, allowing dancers to see an ideal version of the movement before attempting it themselves. Our design supports dancers of all levels by breaking down complex skills into manageable parts and establishing a clear reference for what proper form looks like.
+Improving movement and form is difficult without an instructor, so the system begins by guiding dancers to choose a dance style, skill category, and specific movement. This gives users a clear sense of direction. Before beginning, the mirror asks the dancer to confirm prerequisite knowledge such as knowing first and second position. This ensures that users do not enter a skill unprepared or at risk of injury.
 
-As the user practices, the system records their attempt and plays it back with real-time, personalized annotations that highlight areas needing adjustment. Visual cues such as alignment markers, posture reminders, and form corrections help dancers understand exactly what to change and why it matters. This immediate, targeted feedback reduces uncertainty, prevents the reinforcement of incorrect habits, and promotes safer skill development. By combining guided instruction with feedback, the experience helps users build precision, confidence, and body awareness which are key elements for effective independent practice.
+The tutorial opens with a brief explanation of what the movement is, followed by a sequence of clearly separated steps. Each step includes a visual demonstration and a verbal explanation that highlights why body placement matters. This structure provides dancers with a clear reference for what proper form looks like and helps break complex skills into manageable pieces.
 
+When dancers move from learning to attempting the skill, they can set up their session by choosing the number of tries, deciding whether to use a timer, and adjusting music or volume. During each attempt, a recording indicator appears so the user knows their movement is being captured. A small picture-in-picture version of the tutorial stays visible on the side in case they need a quick reminder of the technique.
 
+After the attempts are complete, the system presents personalized annotations directly on top of the dancer’s playback. Corrections appear one at a time and point out specific adjustments such as posture, alignment, or arm placement. This focused and immediate feedback helps dancers understand what to change and why, which reduces uncertainty and supports safer, more confident skill development.
 
 <ProjectImageBlock
     image={{
@@ -187,16 +187,16 @@ As the user practices, the system records their attempt and plays it back with r
 >
 </ProjectImageBlock>
 
-Before any attempt, the dancer is asked to confirm prerequisite knowledge such as knowing first and second position, so they never enter a skill unprepared or at risk of injury. The skill tutorial then starts with a short introduction that explains what the movement means, followed by a series of clearly segmented steps. Each step is paired with a verbal explanation and a visual demonstration, helping dancers understand not only how to perform the movement but also why certain positions matter.
-
-Once the dancer transitions from learning to trying the movement, the system introduces a set of customizable session settings. The user can select the number of tries they want before receiving feedback, choose whether or not to use a timer, and adjust music and volume to create a practice environment that feels comfortable and motivating. During each attempt, a clear recording indicator appears to show that their movements are being captured, while a small version of the tutorial plays on the side for quick reference if they need a reminder. After completing their tries, the mirror presents feedback in a step-by-step format rather than overwhelming the dancer with everything at once. Each correction, such as adjusting arm placement or improving knee alignment, appears as its own message and is layered directly over the dancer’s playback so the connection between movement and feedback is easy to understand
-
 </ProjectImagesBlock>
+
 
 ### Stay Motivated and Overcome Mental Blocks
 
+Staying motivated during independent practice can be challenging, especially when dancers are unsure about their progress or feel stuck. To support this, the system provides small, clearly written pieces of feedback after each attempt. These messages help users stay focused on achievable improvements rather than feeling overwhelmed by everything at once. Encouraging phrasing and safety reminders create a more supportive environment that helps reduce frustration and fear of making mistakes.
 
-Staying motivated during independent practice is often difficult, especially when dancers feel stuck or unsure about their progress. The system supports motivation by offering clear, bite-sized feedback that appears after each attempt, helping users focus on manageable improvements rather than feeling overwhelmed by the full skill. Encouraging language and safety-oriented reminders help reduce frustration and fear of failure, creating a more supportive emotional environment. Features like “next” prompts guide dancers forward at a steady pace through their feedback, helping them stay engaged and move through feedback step by step. 
+Feedback is delivered in simple steps. Each message appears on its own with a clear Next button. This rhythm keeps dancers engaged and allows them to work through guidance at a comfortable pace. Users can also replay feedback whenever they want more clarity or reassurance.
+
+At the end of the sequence, the system highlights what the dancer accomplished. A session summary displays the first and most recent attempts side by side along with a short explanation of what improved. This makes progress easy to understand and helps users recognize the growth that may not feel obvious in the moment. The final screen congratulates the dancer for meeting their goal and offers next steps such as setting a new goal or ending the session. These features help users finish with a sense of progress and motivation to continue improving.
 
 <ProjectImagesBlock
     images={[
@@ -217,11 +217,6 @@ Staying motivated during independent practice is often difficult, especially whe
 >
 </ProjectImagesBlock>
 
-To support dancers in staying motivated and pushing through mental blocks, the system breaks feedback into simple, sequential steps. After an attempt, only one piece of feedback is shown at a time, paired with a clear “Next” button that lets the dancer move forward without feeling overwhelmed. Each tip is short, actionable, and directly tied to the user’s movement, helping them stay focused on one improvement before advancing to the next. The option to replay feedback gives dancers a chance to revisit guidance when they need reassurance or clarity, creating a steady and encouraging rhythm throughout practice.
-
-As the feedback sequence ends, the system shifts toward reinforcing progress by showing a “Session Complete” summary followed by a detailed comparison of the dancer’s first and most recent attempts. This includes side-by-side visuals and a short explanation of what improved, making progress tangible and easy to understand.
-
-The final screen celebrates the dancer for meeting their goal and offers simple next steps—either set a new goal or exit, so users end the session with a sense of accomplishment and forward momentum. These step-by-step features work together to keep dancers encouraged, grounded, and motivated even when the skill feels challenging.
 
 ## Design Research and Key Insights
 
