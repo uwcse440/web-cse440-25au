@@ -68,6 +68,19 @@ import imageAddProduct from "public/images/projects/skinsync/post/Adding product
 import imageRoutineTimelines from "public/images/projects/skinsync/post/Routine timelines.png";
 import imageRoutineTimeline from "public/images/projects/skinsync/post/Routline timeline.png";
 
+import imagePaperProductBefore from "public/images/projects/skinsync/post/PaperProductBefore.png";
+import imagePaperProductAfter from "public/images/projects/skinsync/post/PaperProductAfter.png";
+
+import imagePaperRoutineBefore from "public/images/projects/skinsync/post/PaperRoutineBefore.png";
+import imagePaperRoutineAfter1 from "public/images/projects/skinsync/post/PaperRoutineAfter1.png";
+import imagePaperRoutineAfter2 from "public/images/projects/skinsync/post/PaperRoutineAfter2.png";
+import imagePaperRoutineAfter3 from "public/images/projects/skinsync/post/PaperRoutineAfter3.png";
+import imagePaperRoutineAfter4 from "public/images/projects/skinsync/post/PaperRoutineAfter4.png";
+
+import imagePaperSkinInfoBefore from "public/images/projects/skinsync/post/PaperSkinInfoBefore.png";
+import imagePaperSkinInfoAfter1 from "public/images/projects/skinsync/post/PaperSkinInfoAfter1.png";
+import imagePaperSkinInfoAfter2 from "public/images/projects/skinsync/post/PaperSkinInfoAfter2.png";
+
 # SkinSync
 
 <ProjectSubtitle>Track. Learn. Glow.</ProjectSubtitle>
@@ -248,6 +261,93 @@ With these main feedbacks we incorporated by having more detailed product sugges
 
 We created our initial paper prototype from sketches, guided by our two focus tasks. Because this was our first complete version, it went through many revisions. We gathered feedback through a heuristic evaluation, which helped us identify issues in how SkinSync communicates with and guides the user. We also conducted usability testing with a participant interacting with the paper prototype in person. Observing the prototype in real time allowed us to spot breakdowns in the flow and uncover unclear interactions. We documented these issues and made immediate revisions to improve the experience.
 
-### Reflection: Heuristic Evaluation vs. Usability Testing
+### Relationship From Product to User
 
-An portion of our design that received more feedback and revision was from the usability testing while we felt that it was nice to get feedback through the heuristic evaluation we couldn’t get a better idea of the problem and instead had to rely it through text. We favoured more of the usability testing because it was more interactive and real time with the participant with us and watch them interact with our paper prototype. We could also see then specifically in our paper prototype they were confused about. With this level of depth of a feedback we could not get with the heuristic evaluation. The real time feedback and interactive part from the usability we all agree that we could not get from just a heuristic evaluation feedback. Because we were able to catch and ask question to the participant and get real time understanding while performing the usability testing method. There was small feedback that we got from usability testing that could of been a heuristic evaluation , for example we got feedback on the product feedback suggestions and we also noted that we got that same feedback from our heuristic evaluation. There was a lot of overlapping between the two methods but overall we chose the usability testing as the best choice because of the real time component of it.
+A key insight from our heuristic inspection was that users didn’t have enough information or visual cues explaining why a recommended product matched their skin concerns. To address this, we added a more detailed product screen that clearly shows how each product relates to the user’s skin type and goals. We also included simple pros and cons to increase transparency and help users make more confident decisions.
+
+<ProjectImagesBlock
+    images={[
+        {
+            src: imagePaperProductBefore,
+            alt: "Before Paper Product",
+            caption: "Before photo of our paper product screen before the revisions."
+        },
+        {
+            src: imagePaperProductAfter,
+            alt: "After Paper Product",
+            caption: "After photo of our paper product screen after the revisions."
+        }
+    ]}
+    direction={"row"}
+    maxHeight={"500px"}
+>
+</ProjectImagesBlock>
+
+### Routine Flexibility
+
+Another key insight from our heuristic inspection was that our routine-building process didn’t feel flexible enough for users to create the kind of skincare routine they wanted. To address this, we added a multi-step flow that prompts users to choose the skin concern they want to focus on, making it easier to build personalized routines based on their specific goals.
+
+<ProjectImagesBlock
+    images={[
+        {
+            src: imagePaperRoutineBefore,
+            alt: "Before Paper Routinet",
+            caption: "Initially we had only one paper screen for our routine building process."
+        }
+    ]}
+    direction={"row"}
+    maxHeight={"500px"}
+>
+</ProjectImagesBlock>
+
+<ProjectImagesBlock
+    images={[
+        {
+            src: imagePaperRoutineAfter1,
+            alt: "Before Paper Product",
+        },
+        {
+            src: imagePaperRoutineAfter2,
+            alt: "After Paper Product",
+        },
+        {
+            src: imagePaperRoutineAfter3,
+            alt: "After Paper Product",
+        },
+        {
+            src: imagePaperRoutineAfter4,
+            alt: "After Paper Product",
+        }
+    ]}
+    direction={"row"}
+    maxHeight={"500px"}
+>
+</ProjectImagesBlock>
+Then we added a multi step process for user to easily build their skin care routine.
+
+### Skin Terminology Info
+
+Lastly, a key insight from our usability testing was that participants wanted clearer explanations of what different skin types and skin concerns mean. With this feedback in mind, we revised our paper prototype to include brief definitions and guidance so users could better understand these terms while using the app.
+
+<ProjectImagesBlock
+    images={[
+        {
+            src: imagePaperSkinInfoBefore,
+            alt: "Before Paper Product",
+            caption: "Our survey for user to select their skin type or skin concern. There was a lack of indication for the user to learn about the terms."
+        },
+        {
+            src: imagePaperSkinInfoAfter1,
+            alt: "After Paper Product",
+            caption: "Include a icon for the user to read more about the skin type."
+        },
+        {
+            src: imagePaperSkinInfoAfter2,
+            alt: "After Paper Product",
+            caption: "Include a icon for the user to read more about the skin concern."
+        }
+    ]}
+    direction={"row"}
+    maxHeight={"500px"}
+>
+</ProjectImagesBlock>
