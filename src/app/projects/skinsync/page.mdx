@@ -47,12 +47,15 @@ import { ProjectTeamGallery } from "@/components/project/ProjectTeamGallery";
   * - If an import is not working, double-check that you have the correct file extension.
   */}
 
+import imageLogo from "public/images/projects/skinsync/project_thumb.png";
+
 import imageTeamPerson1 from "public/images/projects/skinsync/team/kris.jpeg";
 import imageTeamPerson2 from "public/images/projects/skinsync/team/kevin.png";
 import imageTeamPerson3 from "public/images/projects/skinsync/team/matt.JPG";
 import imageTeamPerson4 from "public/images/projects/skinsync/team/riya.jpeg";
 import imageTeamPerson5 from "public/images/projects/skinsync/team/laura.jpeg";
 
+import imageTikTokAdd from "public/images/projects/skinsync/post/tiktokProductAdd.jpeg";
 import imageStartScreen from "public/images/projects/skinsync/post/Start.png";
 import imageLogin from "public/images/projects/skinsync/post/Login.png";
 import imageSurvey from "public/images/projects/skinsync/post/survey.png";
@@ -67,9 +70,22 @@ import imageAddProduct from "public/images/projects/skinsync/post/Adding product
 import imageRoutineTimelines from "public/images/projects/skinsync/post/Routine timelines.png";
 import imageRoutineTimeline from "public/images/projects/skinsync/post/Routline timeline.png";
 
+import imagePaperProductBefore from "public/images/projects/skinsync/post/PaperProductBefore.png";
+import imagePaperProductAfter from "public/images/projects/skinsync/post/PaperProductAfter.png";
+
+import imagePaperRoutineBefore from "public/images/projects/skinsync/post/PaperRoutineBefore.png";
+import imagePaperRoutineAfter1 from "public/images/projects/skinsync/post/PaperRoutineAfter1.png";
+import imagePaperRoutineAfter2 from "public/images/projects/skinsync/post/PaperRoutineAfter2.png";
+import imagePaperRoutineAfter3 from "public/images/projects/skinsync/post/PaperRoutineAfter3.png";
+import imagePaperRoutineAfter4 from "public/images/projects/skinsync/post/PaperRoutineAfter4.png";
+
+import imagePaperSkinInfoBefore from "public/images/projects/skinsync/post/PaperSkinInfoBefore.png";
+import imagePaperSkinInfoAfter1 from "public/images/projects/skinsync/post/PaperSkinInfoAfter1.png";
+import imagePaperSkinInfoAfter2 from "public/images/projects/skinsync/post/PaperSkinInfoAfter2.png";
+
 # SkinSync
 
-<ProjectSubtitle>Optional Subtitle </ProjectSubtitle>
+<ProjectSubtitle>Track. Learn. Glow.</ProjectSubtitle>
 
 ## Team
 
@@ -105,15 +121,26 @@ import imageRoutineTimeline from "public/images/projects/skinsync/post/Routline 
 
 ## Problem and Design Overview
 
-SkinSync is a mobile app which helps users create a skincare routine that works for them and also helps educate users who are new to skincare! This app features a timeline so that users can track their progress towards their skincare goals and create a routine list. Users will create an account and start a questionnaire to get detailed information on the users skin type and concerns. From there SkinSync can recommend products that are compatible with their skin type, goals, and clean ingredient list.
-
-### Problem
 People getting into skincare today are often overwhelmed by all the information and advertising when trying to figure out their skin type and skin concerns. There is not an easy way for them to self-diagnose their skin type or conditions without either seeing a dermatologist or testing countless products that often don't work, ultimately wasting time and money.
 
-### Our Solution
 SkinSync lets users monitor their skincare progress and discover products tailored to their skin needs or goals. Its social feature allows users to share and read product reviews from others, making it easier to choose what actually works and avoid wasting money.
 
+<ProjectImagesBlock
+    images={[
+        {
+            src: imageTikTokAdd,
+            alt: "TikTok Ad",
+            caption: "The Problem: Information overload and biased advertising make it hard to find products that work."
+        }
+    ]}
+    direction={"row"}
+    maxHeight={"400px"}
+>
+</ProjectImagesBlock>
+    
 ## Design Walkthrough
+
+SkinSync supports two two core user experiences that help people feel more confident and consistent in their skincare journey. First, the app helps users understand their skin and establish a personalized foundation through a guided survey that identifies skin type, concerns, and goals. Using this information, SkinSync recommends products that align with the user’s needs and ingredient preferences, reducing the guesswork that often leads to wasted time and money. Second, SkinSync helps users build and maintain routines they can refine over time by organizing products into customizable routines and pairing them with progress tracking. As users log use and observe changes through the timeline, they can better evaluate what is working and make informed adjustments. Together, these two experiences allow SkinSync to support both beginners and more experienced users by combining personalized guidance with long-term routine and progress management.
 
 ### Onboarding and Personalization
 
@@ -216,22 +243,124 @@ SkinSync lets users monitor their skincare progress and discover products tailor
 
 ## Design Research and Key Insights
 
-### Evaluation insights: heuristic evaluation
+We conducted early research to understand how people learn about skincare. To capture a range of perspectives, we recruited three participants with different levels of experience: one complete beginner, one highly engaged skincare user, and one professional (a Sephora employee). This mix gave us insight across multiple knowledge levels and helped us identify key points in flaws and opportunities to address in our design.
 
-One specific heuristic evaluation that was violated was on our product suggestion screen. Where the user is presented with a product that is helpful for their current skin condition situation. This violated the “Match Between System and the Real World” because on the paper screen prototype there was nothing where why this product was suited for the user’s skin type. As well as not adding anything negative about the product so that the user has full transparency about the product.
+### The Feedback Loop is Broken
 
-Another specific heuristic evaluation that was violated was the lack of help and documentation for the user to know. On one of our paper prototype screen we ask about the user’s skin type but there was no option or information for the user to learn more about the different skin type or skin condition. This is important because we’re assuming the user already know something about their skin type and skin condition. We are limiting our application to a limited number of users, by adding information for the user to learn more about the users skin type and skin condition then it can open up to a lot more range of users using our application.
+Users abandon skincare routines because they cannot objectively see progress day to day. Our beginner participants noted that skincare requires patience, but the lack of immediate visual results makes it hard to stay motivated. They often forgot which products they used when they had a "good skin day" or a breakout. This insight revealed the need for a visual timeline feature, allowing users to log photos and routine consistency so they can correlate product usage with actual skin changes over time.
 
-### Evaluation Insights: Usability Testing
+### Simplifying Choices
 
-One specific feedback that we got from our usability testing that was similar throughout all of our participants was that the lack information on the product suggestion screen. From our participants they have shared out that it was confusing to them why this specific product was being suggested for them. They would of like if there was more information on the product screen page why this is being suggested to them. They also shared out that they would of like it if there was a better indication of how much this product can closely solve their problem or goal. Because before the percentage was lacking a lot of information to the user why the product is suitable for them.
+Users are paralyzed by too many skincare options and often blindly follow trends. Our beginner participant described feeling lost in stores with thousands of products, often buying viral items that harmed their skin. This insight led us to design a system that only shows products matching the user's profile. By filtering out irrelevant items, we help users trust their decisions and avoid wasting money on products that won't work.
 
-Another specific feedback that we got was the lack of routine building flexibility. From our participants they have shared out that they would like it if they have full freedom of making their routines that is catered towards their goal. They would like it if the app can suggest them products that is catered towards their goal and suggest it in their routine. One interesting perspective feedback that we got from one of our participant was that if a user has no clue of building a routine they would like it if the app can help them with that. For example, guide them through their skin care routine building and help them complete their goal of taking care of their skin.
+### Understanding Skin Needs
 
-With these main feedbacks we incorporated by having more detailed product suggestion screen page in our paper prototype that can help the user understand the product being suggested to then. As well as help them guide them through their skin care routine no matter how knowledgeable they are about building one, so that we don’t limit a specific group of users to use our application but instead increase our usability to a wider range of users.
+Users lack the vocabulary to correctly identify their own needs, leading to expensive trial and error. Our research showed that Dry or Oily are subjective terms that beginners often misinterpret. Participants described buying products for acne that exacerbated their dryness because they didn't understand the interaction. This insight focused our design on Education First Onboarding, where we don't just ask for a skin type, but guide the user to discover it through symptom-based questions.
 
-## Iterative Design and Key Insights
+## Iterative Design
 
-### Reflection: Heuristic Evaluation vs. Usability Testing
+We created our initial paper prototype from sketches, guided by our two focus tasks. Because this was our first complete version, it went through many revisions. We gathered feedback through a heuristic evaluation, which helped us identify issues in how SkinSync communicates with and guides the user. We also conducted usability testing with a participant interacting with the paper prototype in person. Observing the prototype in real time allowed us to spot breakdowns in the flow and uncover unclear interactions. We documented these issues and made immediate revisions to improve the experience.
 
-An portion of our design that received more feedback and revision was from the usability testing while we felt that it was nice to get feedback through the heuristic evaluation we couldn’t get a better idea of the problem and instead had to rely it through text. We favoured more of the usability testing because it was more interactive and real time with the participant with us and watch them interact with our paper prototype. We could also see then specifically in our paper prototype they were confused about. With this level of depth of a feedback we could not get with the heuristic evaluation. The real time feedback and interactive part from the usability we all agree that we could not get from just a heuristic evaluation feedback. Because we were able to catch and ask question to the participant and get real time understanding while performing the usability testing method. There was small feedback that we got from usability testing that could of been a heuristic evaluation , for example we got feedback on the product feedback suggestions and we also noted that we got that same feedback from our heuristic evaluation. There was a lot of overlapping between the two methods but overall we chose the usability testing as the best choice because of the real time component of it.
+<ProjectImagesBlock
+    images={[
+        {
+            src: imagePaperRoutineBefore,
+            alt: "Overview of the initial paper prototype.",
+            caption: "Early paper prototype sketches exploring the routine building flow."
+        }
+    ]}
+    direction={"row"}
+    maxHeight={"400px"}
+>
+</ProjectImagesBlock>
+
+### Explaining Why Products Fit
+
+Users are more likely to trust and adopt product recommendations when the why is explicitly communicated, rather than presented as a black box match. This insight emerged from our heuristic evaluation, which flagged a violation of Match Between System and the Real World; the initial prototype recommended products without explaining their relevance to the user's specific skin conditions. Participants in our usability study echoed this, expressing confusion about why a product was chosen. In response, we iterated the product detail screen to clearly highlight how each product addresses the user's identified goals (e.g., Good for: Dryness), and we carried this transparency into the final digital design by including detailed ingredient breakdowns.
+
+<ProjectImagesBlock
+    images={[
+        {
+            src: imagePaperProductBefore,
+            alt: "Original paper prototype product screen.",
+            caption: "Before: The original product screen listed items without explaining their relevance to the user's profile."
+        },
+        {
+            src: imagePaperProductAfter,
+            alt: "Revised paper prototype product screen with explanations.",
+            caption: "After: We added clear indicators of why a product fits the user's needs, plus Pros/Cons for transparency."
+        }
+    ]}
+    direction={"row"}
+    maxHeight={"500px"}
+>
+</ProjectImagesBlock>
+
+### Flexible Routine Building
+
+A rigid, linear routine builder fails to accommodate the diverse goals users have for their skin, such as targeting specific concerns versus general maintenance. During usability testing, we observed that participants felt restricted by our initial one size fits all routine flow. They wanted the freedom to build routines focused on specific outcomes, like treating acne or improving texture. We iterated the design to introduce a multi step preference flow, allowing users to select their primary focus early on. This change transformed the routine builder from a passive checklist into an active, personalized planning tool.
+
+<ProjectImagesBlock
+    images={[
+        {
+            src: imagePaperRoutineBefore,
+            alt: "Original single step routine builder.",
+            caption: "Before: The initial routine builder was a single screen that lacked customization options."
+        }
+    ]}
+    direction={"row"}
+    maxHeight={"500px"}
+>
+</ProjectImagesBlock>
+
+<ProjectImagesBlock
+    images={[
+        {
+            src: imagePaperRoutineAfter1,
+            alt: "Step 1 of the new multi step routine builder.",
+        },
+        {
+            src: imagePaperRoutineAfter2,
+            alt: "Step 2 identifying skin goals.",
+        },
+        {
+            src: imagePaperRoutineAfter3,
+            alt: "Step 3 selecting products.",
+        },
+        {
+            src: imagePaperRoutineAfter4,
+            alt: "Step 4 finalizing the routine.",
+        }
+    ]}
+    direction={"row"}
+    maxHeight={"500px"}
+>
+    After: We implemented a multi step wizard that guides users to build a routine based on their specific skin goals.
+</ProjectImagesBlock>
+
+### Explaining Skin Terms
+
+Assuming prior knowledge of domain specific terms creates a significant barrier to entry for novice users. Our usability testing revealed that asking users to self identify their skin type or conditions without guidance led to hesitation and uncertainty. Participants struggled to distinguish between terms like combination vs. oily skin. To address this, we integrated educational tooltips and clear definitions directly into the survey flow. This iteration ensures that users of all knowledge levels can provide accurate data, leading to better personalization outcomes.
+
+<ProjectImagesBlock
+    images={[
+        {
+            src: imagePaperSkinInfoBefore,
+            alt: "Original survey screen without definitions.",
+            caption: "Before: The survey asked for skin type input without providing definitions, confusing beginners."
+        },
+        {
+            src: imagePaperSkinInfoAfter1,
+            alt: "Revised screen with info icons.",
+            caption: "After: We added information icons that users can tap to learn more about each term."
+        },
+        {
+            src: imagePaperSkinInfoAfter2,
+            alt: "Pop up explanation of skin types.",
+            caption: "After: Tapping an icon reveals a clear definition, helping users self identify accurately."
+        }
+    ]}
+    direction={"row"}
+    maxHeight={"500px"}
+>
+</ProjectImagesBlock>
